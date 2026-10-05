@@ -1,0 +1,705 @@
+{
+  "adept": {
+    "pos": "adj.",
+    "definition": "highly skilled and proficient at something",
+    "definitionFr": "habile, expert en",
+    "sentences": [
+      "Although she had never sailed before, the young diplomat proved adept at navigating the delicate negotiations between the two rival delegations.",
+      "Years of practice made the old carpenter so adept with his tools that he could craft a flawless drawer in an afternoon."
+    ],
+    "synonyms": ["skilled", "proficient", "deft", "adroit"],
+    "mnemonic": "Adept ≠ adepte (disciple) : l'adept est surtout doué, pas fidèle."
+  },
+  "advocate": {
+    "pos": "verb",
+    "definition": "to publicly support or recommend a cause or policy",
+    "definitionFr": "prôner, défendre une cause",
+    "sentences": [
+      "The senator has long advocated stricter environmental regulations, arguing that voluntary measures by industry have repeatedly failed to protect the nation's rivers.",
+      "Many economists advocate lowering trade barriers, convinced that open markets ultimately benefit consumers even if some domestic producers suffer in the short term."
+    ],
+    "synonyms": ["champion", "support", "promote", "endorse"],
+    "mnemonic": "Un avocat plaide, mais to advocate = prôner une cause, pas exercer la profession."
+  },
+  "affluent": {
+    "pos": "adj.",
+    "definition": "having a great deal of money; wealthy",
+    "definitionFr": "riche, aisé",
+    "sentences": [
+      "The affluent suburb, with its sprawling lawns and gated mansions, stood in sharp contrast to the struggling neighborhoods just across the highway.",
+      "Because the region had become increasingly affluent, restaurants and boutiques catering to wealthy residents multiplied rapidly along the once-quiet main street."
+    ],
+    "synonyms": ["wealthy", "prosperous", "opulent", "rich"]
+  },
+  "arresting": {
+    "pos": "adj.",
+    "definition": "strikingly attractive; capturing attention immediately",
+    "definitionFr": "saisissant, frappant",
+    "sentences": [
+      "The photographer's most arresting image showed a lone fisherman silhouetted against a blood-red sky, and visitors paused before it for several minutes.",
+      "Critics praised the novel's arresting opening line, which was so startling that readers felt compelled to continue past the first page."
+    ],
+    "synonyms": ["striking", "captivating", "remarkable", "riveting"],
+    "mnemonic": "Une image « arrête » le regard : elle vous saisit."
+  },
+  "candid": {
+    "pos": "adj.",
+    "definition": "honest and straightforward, even when the truth is uncomfortable",
+    "definitionFr": "franc, direct, sans détour",
+    "sentences": [
+      "In a candid interview, the retiring coach admitted that the team's poor season resulted from his own strategic mistakes rather than from bad luck.",
+      "Her candid assessment of the manuscript, though painful for the author to hear, was exactly the honest feedback needed to improve the book."
+    ],
+    "synonyms": ["frank", "forthright", "blunt", "outspoken"],
+    "mnemonic": "Candid ≠ candide : en anglais, franc ; en français, naïf."
+  },
+  "catholic": {
+    "pos": "adj.",
+    "definition": "broad and wide-ranging, especially in interests or tastes",
+    "definitionFr": "éclectique, universel, très large",
+    "sentences": [
+      "The librarian's catholic taste in reading ranged from medieval poetry and quantum physics to detective fiction and obscure cookbooks.",
+      "Unlike colleagues who studied only one narrow period, the historian had catholic interests that embraced almost every era and region of the world."
+    ],
+    "synonyms": ["eclectic", "universal", "broad", "wide-ranging"],
+    "mnemonic": "Catholique vient du grec « universel » : catholic = très large."
+  },
+  "censure": {
+    "pos": "verb",
+    "definition": "to criticize or condemn formally and severely",
+    "definitionFr": "blâmer publiquement",
+    "sentences": [
+      "The committee voted to censure the mayor for misusing public funds, though it stopped short of demanding that he resign from office.",
+      "Parliament moved to censure the minister after he misled lawmakers, publicly condemning his conduct as a serious breach of the trust of voters."
+    ],
+    "synonyms": ["condemn", "reprimand", "rebuke", "denounce"],
+    "mnemonic": "Censure anglaise = blâme officiel, pas interdiction d'un contenu."
+  },
+  "chauvinism": {
+    "pos": "noun",
+    "definition": "prejudiced belief in the superiority of one's own sex or group",
+    "definitionFr": "sexisme, machisme (male chauvinism)",
+    "sentences": [
+      "The executive's open chauvinism, which led him to ignore every suggestion made by his female colleagues, eventually prompted a formal complaint to human resources.",
+      "Feminist writers of the 1970s exposed the male chauvinism embedded in everyday language, advertising, and hiring practices, which had long been dismissed as harmless tradition."
+    ],
+    "synonyms": ["sexism", "bias", "prejudice", "partisanship"],
+    "mnemonic": "Chauvinisme patriotique en français ; au GRE, souvent « male chauvinism »."
+  },
+  "complacent": {
+    "pos": "adj.",
+    "definition": "smugly self-satisfied and unaware of possible dangers or the need to improve",
+    "definitionFr": "content de soi, sans vigilance",
+    "sentences": [
+      "After three consecutive championships, the team grew complacent, skipping practices and assuming that victory would come automatically, and a humiliating defeat soon followed.",
+      "Health officials warned that the public must not become complacent about the virus, since relaxed precautions could quickly allow infections to surge again."
+    ],
+    "synonyms": ["smug", "self-satisfied", "unconcerned", "placid"],
+    "mnemonic": "Complacent ≠ complaisant : trop content de soi, donc endormi."
+  },
+  "condone": {
+    "pos": "verb",
+    "definition": "to overlook or tolerate wrongdoing, treating it as acceptable",
+    "definitionFr": "tolérer, fermer les yeux sur",
+    "sentences": [
+      "The principal refused to condone cheating, insisting that any student caught copying answers would face suspension regardless of past academic performance.",
+      "By failing to punish the offenders, the board seemed to condone the harassment, and critics accused its members of quietly tolerating abuse."
+    ],
+    "synonyms": ["overlook", "tolerate", "excuse", "forgive"],
+    "mnemonic": "Condone ≠ condamner : c'est exactement le contraire !"
+  },
+  "contention": {
+    "pos": "noun",
+    "definition": "a claim or argument asserted in a debate",
+    "definitionFr": "thèse défendue ; querelle",
+    "sentences": [
+      "The biologist's central contention, that the species evolved far earlier than previously believed, was challenged by several skeptical colleagues at the conference.",
+      "Her contention that the policy would reduce unemployment was undermined by the data, which showed that joblessness had actually risen since its introduction."
+    ],
+    "synonyms": ["assertion", "claim", "argument", "dispute"],
+    "mnemonic": "Contention ≠ contention médicale : ici, thèse défendue ou querelle."
+  },
+  "destitute": {
+    "pos": "adj.",
+    "definition": "lacking the basic necessities of life; extremely poor",
+    "definitionFr": "sans le sou, indigent",
+    "sentences": [
+      "After the factory closed and the family lost their home, they were left destitute, dependent on charity for food and shelter.",
+      "The novelist depicted the destitute orphans of the industrial city, children so poor that they scavenged scraps of bread from the gutters."
+    ],
+    "synonyms": ["impoverished", "penniless", "indigent", "needy"],
+    "mnemonic": "Destitué = démis ; destitute = dépourvu de tout, sans un sou."
+  },
+  "disinterested": {
+    "pos": "adj.",
+    "definition": "impartial; free from personal bias or self-interest",
+    "definitionFr": "impartial, sans intérêt personnel",
+    "sentences": [
+      "A judge must remain disinterested in the outcome of a trial, ruling solely on the evidence rather than on any personal gain.",
+      "Seeking a disinterested opinion, the company hired an outside auditor with no financial stake in the results to review the disputed accounts."
+    ],
+    "synonyms": ["impartial", "neutral", "unbiased", "objective"],
+    "mnemonic": "Disinterested = impartial ; ne pas confondre avec uninterested (indifférent)."
+  },
+  "enervate": {
+    "pos": "verb",
+    "definition": "to weaken or drain of energy and vitality",
+    "definitionFr": "vider de son énergie, épuiser",
+    "sentences": [
+      "The oppressive tropical heat seemed to enervate the expedition members, who dragged themselves forward with barely enough strength to lift their packs.",
+      "Critics argued that years of constant fighting would enervate the nation, draining its resources and leaving its citizens too exhausted to rebuild."
+    ],
+    "synonyms": ["weaken", "exhaust", "drain", "debilitate"],
+    "mnemonic": "Enervate ≠ énerver : il ne rend pas nerveux, il affaiblit."
+  },
+  "exigent": {
+    "pos": "adj.",
+    "definition": "urgent and demanding immediate attention or action",
+    "definitionFr": "urgent, pressant",
+    "sentences": [
+      "The hospital's exigent need for blood donors, caused by a sudden highway accident, led administrators to broadcast an emergency appeal across the region.",
+      "Faced with exigent circumstances, the captain abandoned his careful plans and ordered the crew to patch the hull at once before the ship sank."
+    ],
+    "synonyms": ["urgent", "pressing", "critical", "imperative"],
+    "mnemonic": "Exigent ≠ exigeant : ce sont les circonstances qui sont pressantes."
+  },
+  "expeditious": {
+    "pos": "adj.",
+    "definition": "quick and efficient, done with speed and skill",
+    "definitionFr": "rapide et efficace",
+    "sentences": [
+      "The clerk's expeditious handling of the paperwork meant that applicants received their permits within a day instead of waiting several weeks.",
+      "Praising the engineers for their expeditious repair of the bridge, the governor noted that traffic resumed far sooner than anyone had predicted."
+    ],
+    "synonyms": ["speedy", "swift", "prompt", "efficient"],
+    "mnemonic": "Expeditious ≠ expéditif : vite ET bien fait, sens positif."
+  },
+  "fastidious": {
+    "pos": "adj.",
+    "definition": "very attentive to detail and hard to please",
+    "definitionFr": "méticuleux, pointilleux",
+    "sentences": [
+      "The fastidious editor combed through every paragraph, correcting even the smallest errors in punctuation before allowing the book to go to press.",
+      "Known for his fastidious habits, the chef insisted that every knife be polished and every ingredient measured precisely before service began."
+    ],
+    "synonyms": ["meticulous", "finicky", "punctilious", "exacting"],
+    "mnemonic": "Fastidious ≠ fastidieux (tedious) : méticuleux, pas ennuyeux."
+  },
+  "fitness": {
+    "pos": "noun",
+    "definition": "suitability or qualification for a particular purpose or role",
+    "definitionFr": "aptitude, adéquation à qqch",
+    "sentences": [
+      "The committee questioned the nominee's fitness for the judgeship, citing her lack of experience and several controversial rulings earlier in her career.",
+      "Darwin argued that an organism's evolutionary fitness depends on how well its traits suit its environment, not on its strength alone."
+    ],
+    "synonyms": ["suitability", "aptness", "competence", "qualification"],
+    "mnemonic": "Fitness = adéquation (« fit for the job »), pas seulement le sport."
+  },
+  "formidable": {
+    "pos": "adj.",
+    "definition": "inspiring fear or awe because of size, power, or difficulty",
+    "definitionFr": "redoutable, impressionnant, intimidant",
+    "sentences": [
+      "The challenger faced a formidable opponent, a champion who had never lost a match and whose sheer power intimidated even veteran players.",
+      "Scaling the icy north face proved a formidable task, so daunting that most of the climbers privately doubted they would succeed."
+    ],
+    "synonyms": ["daunting", "intimidating", "fearsome", "imposing"],
+    "mnemonic": "Formidable en anglais fait peur : il ne veut pas dire « génial »."
+  },
+  "fortuitous": {
+    "pos": "adj.",
+    "definition": "happening by fortunate chance; lucky",
+    "definitionFr": "heureux, opportun (par hasard)",
+    "sentences": [
+      "A fortuitous meeting with a publisher on the train led the unknown author to a lucrative contract she had never expected.",
+      "The discovery of penicillin is often called fortuitous, since the mold that spoiled Fleming's experiment happened by luck to produce a life-saving drug."
+    ],
+    "synonyms": ["lucky", "providential", "fortunate", "serendipitous"],
+    "mnemonic": "Fortuitous contient « fortune » : un hasard heureux."
+  },
+  "futile": {
+    "pos": "adj.",
+    "definition": "pointless; incapable of producing any useful result",
+    "definitionFr": "vain, voué à l'échec",
+    "sentences": [
+      "Rescuers realized that further digging was futile, since the collapsed mine had been sealed for days and no one could have survived.",
+      "Arguing with the committee proved futile; despite hours of eloquent protest, the members refused to reconsider their decision."
+    ],
+    "synonyms": ["pointless", "vain", "fruitless", "useless"],
+    "mnemonic": "Futile ≠ futile (frivole) : en anglais, inutile, voué à l'échec."
+  },
+  "gauche": {
+    "pos": "adj.",
+    "definition": "socially awkward, lacking tact or polish",
+    "definitionFr": "maladroit socialement",
+    "sentences": [
+      "The teenager's gauche attempt at small talk, in which he loudly asked the ambassador how much his watch cost, left the guests cringing.",
+      "Although brilliant in the laboratory, the young scientist was gauche at formal dinners and often committed embarrassing blunders in front of influential donors."
+    ],
+    "synonyms": ["awkward", "tactless", "clumsy", "unsophisticated"],
+    "mnemonic": "Gauche = côté gauche, maladroit : « avoir deux mains gauches »."
+  },
+  "hardy": {
+    "pos": "adj.",
+    "definition": "robust and able to endure difficult conditions",
+    "definitionFr": "robuste, résistant",
+    "sentences": [
+      "Only the hardy mountain goats could survive the brutal winters on the exposed ridge, where temperatures dropped far below freezing.",
+      "The gardener chose hardy perennials that would withstand frost and drought, since she rarely had time to protect the flowers."
+    ],
+    "synonyms": ["robust", "sturdy", "tough", "resilient"],
+    "mnemonic": "Hardy ≠ hardi : robuste, pas audacieux."
+  },
+  "incense": {
+    "pos": "verb",
+    "definition": "to make extremely angry; to enrage",
+    "definitionFr": "mettre hors de soi, exaspérer",
+    "sentences": [
+      "The company's decision to lay off hundreds of workers while paying executives huge bonuses incensed the community and sparked angry protests outside headquarters.",
+      "Nothing could incense the old professor more than students who plagiarized, and he would turn red with fury whenever he discovered copied passages."
+    ],
+    "synonyms": ["enrage", "infuriate", "outrage", "anger"],
+    "mnemonic": "Incense verbe = mettre en fureur, pas l'encens (qui est un nom : incense)."
+  },
+  "inconsequential": {
+    "pos": "adj.",
+    "definition": "of little or no importance or significance",
+    "definitionFr": "sans importance, négligeable",
+    "sentences": [
+      "The mayor dismissed the complaints as inconsequential, insisting that the minor delays would have no effect on the project's overall success.",
+      "What seemed an inconsequential remark at the dinner party later proved crucial, for it revealed the secret that the detective had been seeking."
+    ],
+    "synonyms": ["trivial", "negligible", "insignificant", "minor"],
+    "mnemonic": "Inconsequential ≠ inconséquent : sans conséquence, donc sans importance."
+  },
+  "inept": {
+    "pos": "adj.",
+    "definition": "clumsy or incompetent; lacking skill",
+    "definitionFr": "incompétent, maladroit",
+    "sentences": [
+      "The inept waiter spilled soup on two customers and then forgot the third table's order entirely, prompting the manager to apologize profusely.",
+      "Critics blamed the crisis on the government's inept handling of the economy, pointing to a series of blunders that showed its lack of competence."
+    ],
+    "synonyms": ["incompetent", "unskilled", "bungling", "clumsy"],
+    "mnemonic": "Inept ≠ inepte (stupide) : surtout incompétent, maladroit."
+  },
+  "ingenuous": {
+    "pos": "adj.",
+    "definition": "innocent and trusting; lacking worldly cunning",
+    "definitionFr": "ingénu, naïf, sans détour",
+    "sentences": [
+      "The ingenuous young tourist trusted every stranger who offered help, never suspecting that some of them intended to cheat him.",
+      "Her ingenuous questions about politics, asked with complete sincerity and no hidden agenda, charmed the senator and disarmed his usual defensiveness."
+    ],
+    "synonyms": ["naive", "innocent", "artless", "guileless"],
+    "mnemonic": "Ingenuous ≠ ingenious (ingénieux) : ingénu, naïf et sincère."
+  },
+  "integral": {
+    "pos": "adj.",
+    "definition": "essential and necessary to make something complete",
+    "definitionFr": "essentiel, indispensable",
+    "sentences": [
+      "Music is an integral part of the festival, so organizers refused to cut the orchestra even when the budget shrank dramatically.",
+      "The treaty's final clause, once viewed as a minor detail, proved integral to the agreement, because without it neither side would have signed."
+    ],
+    "synonyms": ["essential", "indispensable", "fundamental", "vital"],
+    "mnemonic": "Integral = partie intégrante : on ne peut pas l'enlever."
+  },
+  "martinet": {
+    "pos": "noun",
+    "definition": "a person who enforces strict discipline and rigid obedience to rules",
+    "definitionFr": "personne qui impose une discipline de fer",
+    "sentences": [
+      "The new sergeant was a notorious martinet, inspecting every bunk with white gloves and punishing recruits for the slightest wrinkle in a blanket.",
+      "Employees dreaded working for the office martinet, who timed their lunch breaks to the second and reprimanded anyone who arrived a minute late."
+    ],
+    "synonyms": ["disciplinarian", "stickler", "taskmaster", "tyrant"],
+    "mnemonic": "Le martinet (fouet) = image du chef qui fouette la discipline."
+  },
+  "mercurial": {
+    "pos": "adj.",
+    "definition": "unpredictable and prone to sudden changes of mood",
+    "definitionFr": "lunatique, d'humeur changeante",
+    "sentences": [
+      "The director's mercurial temperament made rehearsals unpredictable, for he could shift from joyful praise to furious shouting within a single minute.",
+      "Investors grew wary of the mercurial founder, whose enthusiasm for new projects changed so quickly that no strategy ever lasted through a single quarter."
+    ],
+    "synonyms": ["volatile", "capricious", "fickle", "erratic"],
+    "mnemonic": "Mercure, le métal liquide et vif : humeur qui change sans cesse."
+  },
+  "minute": {
+    "pos": "adj.",
+    "definition": "extremely small; tiny",
+    "definitionFr": "minuscule, infime",
+    "sentences": [
+      "The detective examined the minute traces of blood on the floor, each smaller than a grain of sand, through a powerful magnifying glass.",
+      "Even a minute error in the calculation could cause the spacecraft to miss its target by thousands of miles, so engineers checked every figure."
+    ],
+    "synonyms": ["tiny", "minuscule", "microscopic", "infinitesimal"],
+    "mnemonic": "Minute adjectif se prononce maï-nioute : minuscule, pas la durée."
+  },
+  "miscreant": {
+    "pos": "noun",
+    "definition": "a person who behaves badly or breaks the law; a wrongdoer",
+    "definitionFr": "délinquant, vaurien",
+    "sentences": [
+      "The village constable chased the miscreant who had been vandalizing shop windows at night, and soon brought the young troublemaker before the magistrate.",
+      "Once a respected banker, he was now branded a miscreant by the press after investigators uncovered his scheme to defraud thousands of elderly clients."
+    ],
+    "synonyms": ["wrongdoer", "scoundrel", "villain", "criminal"],
+    "mnemonic": "Miscreant ≠ mécréant (incroyant) : un voyou, pas un athée."
+  },
+  "miser": {
+    "pos": "noun",
+    "definition": "a person who hoards money and spends as little as possible",
+    "definitionFr": "avare, grippe-sou",
+    "sentences": [
+      "The old miser refused to heat his house in winter, counting every coin in his cellar while his neighbors wondered at his poverty-like habits.",
+      "Dickens's Scrooge is the classic miser, a man so devoted to hoarding wealth that he begrudges his clerk a single lump of coal."
+    ],
+    "synonyms": ["skinflint", "hoarder", "penny-pincher", "niggard"],
+    "mnemonic": "Miser rime avec misère : il vit pauvre alors qu'il est riche."
+  },
+  "motif": {
+    "pos": "noun",
+    "definition": "a recurring theme, subject, or distinctive idea in a work of art",
+    "definitionFr": "thème récurrent (œuvre)",
+    "sentences": [
+      "The recurring motif of water in the novel, appearing in storms, rivers, and tears, symbolizes the characters' longing for renewal.",
+      "Throughout the symphony, a haunting four-note motif returns in different keys, tying the separate movements together into one unified work."
+    ],
+    "synonyms": ["theme", "pattern", "leitmotif", "design"],
+    "mnemonic": "Motif ≠ raison : en anglais, thème récurrent d'une œuvre."
+  },
+  "mundane": {
+    "pos": "adj.",
+    "definition": "ordinary, dull, and concerned with everyday matters",
+    "definitionFr": "banal, terre à terre, quotidien",
+    "sentences": [
+      "After the thrill of the expedition, the explorer found the mundane routines of office life, with its meetings and memos, almost unbearable.",
+      "The poet had a gift for finding beauty in mundane objects, transforming a chipped teacup or a worn doorstep into subjects of wonder."
+    ],
+    "synonyms": ["ordinary", "banal", "humdrum", "commonplace"],
+    "mnemonic": "Mundane ≠ mondain : du monde quotidien, pas de la haute société."
+  },
+  "mystify": {
+    "pos": "verb",
+    "definition": "to bewilder or puzzle completely",
+    "definitionFr": "rendre perplexe, laisser perplexe",
+    "sentences": [
+      "The magician's final trick continued to mystify the audience, who could find no explanation for how the elephant had vanished from the stage.",
+      "Scientists remain mystified by the strange signal from deep space, which follows a pattern that none of their existing theories can account for."
+    ],
+    "synonyms": ["baffle", "puzzle", "bewilder", "perplex"],
+    "mnemonic": "Mystify ≠ mystifier : ici on désoriente, on ne dupe pas."
+  },
+  "noisome": {
+    "pos": "adj.",
+    "definition": "having an extremely offensive or foul smell; disgusting",
+    "definitionFr": "nauséabond, répugnant (odeur)",
+    "sentences": [
+      "The noisome stench rising from the abandoned sewer forced the workers to cover their faces and retreat before they could finish the inspection.",
+      "Residents complained about the noisome fumes drifting from the chemical plant, a repulsive odor so strong that it made schoolchildren feel sick."
+    ],
+    "synonyms": ["foul", "fetid", "putrid", "repugnant"],
+    "mnemonic": "Noisome n'a rien à voir avec noisy : ça sent mauvais, ça ne fait pas de bruit."
+  },
+  "notorious": {
+    "pos": "adj.",
+    "definition": "famous or well known for something bad",
+    "definitionFr": "tristement célèbre",
+    "sentences": [
+      "The notorious bandit, wanted in three states for robbing stagecoaches, was finally captured after a decade of eluding the sheriff.",
+      "The city became notorious for its corrupt police force, a bad reputation that discouraged tourists and investors from coming to the region."
+    ],
+    "synonyms": ["infamous", "disreputable", "scandalous", "ill-famed"],
+    "mnemonic": "Notorious ≠ notoire : toujours en mal, jamais en bien."
+  },
+  "novel": {
+    "pos": "adj.",
+    "definition": "new, original, and unlike anything previously known",
+    "definitionFr": "inédit, original",
+    "sentences": [
+      "The young engineer proposed a novel approach to desalination, one that differed so radically from existing methods that experts were initially skeptical.",
+      "Because the technique was entirely novel, no textbook described it, and surgeons had to learn the procedure directly from its inventor."
+    ],
+    "synonyms": ["new", "original", "innovative", "unprecedented"],
+    "mnemonic": "Novel adjectif = nouveau (nova), pas un roman."
+  },
+  "officious": {
+    "pos": "adj.",
+    "definition": "intrusively eager to offer unwanted help or advice",
+    "definitionFr": "envahissant, qui s'impose pour aider",
+    "sentences": [
+      "The officious clerk kept hovering over customers, offering unwanted advice and rearranging their purchases until they politely begged him to leave them alone.",
+      "Her officious neighbor constantly interfered in the family's affairs, offering opinions on their parenting and garden that nobody had requested."
+    ],
+    "synonyms": ["meddlesome", "intrusive", "interfering", "overzealous"],
+    "mnemonic": "Officious ≠ officieux : trop zélé, il se mêle de tout."
+  },
+  "onerous": {
+    "pos": "adj.",
+    "definition": "burdensome; requiring great effort or involving heavy obligations",
+    "definitionFr": "pesant, pénible",
+    "sentences": [
+      "The new regulations imposed such onerous paperwork on small businesses that many owners hired extra staff just to keep up with the demands.",
+      "Caring for three aging relatives was an onerous duty, one that left her exhausted and with almost no time for her own life."
+    ],
+    "synonyms": ["burdensome", "taxing", "arduous", "oppressive"],
+    "mnemonic": "Onerous ≠ onéreux (coûteux) : c'est la charge qui pèse, pas le prix."
+  },
+  "patent": {
+    "pos": "adj.",
+    "definition": "obvious and plain to see; clearly evident",
+    "definitionFr": "manifeste, évident",
+    "sentences": [
+      "It was patent to everyone in the room that the witness was lying, for his story contradicted itself within a few sentences.",
+      "The senator's patent disregard for the facts, obvious even to his supporters, damaged his credibility more than any rival's attack could have."
+    ],
+    "synonyms": ["obvious", "evident", "manifest", "blatant"],
+    "mnemonic": "Patent = « patent » = ouvert à tous les yeux : évident."
+  },
+  "pedestrian": {
+    "pos": "adj.",
+    "definition": "dull and unimaginative; ordinary and lacking inspiration",
+    "definitionFr": "d'une banalité plate, sans relief",
+    "sentences": [
+      "Reviewers dismissed the film as pedestrian, noting that its predictable plot and flat dialogue offered nothing that audiences had not already seen many times.",
+      "Although technically correct, the student's essay was pedestrian, lacking the spark of original thought that would have distinguished it from the other submissions."
+    ],
+    "synonyms": ["mundane", "banal", "prosaic", "uninspired"],
+    "mnemonic": "Le piéton marche à pied, terre à terre : style plat, sans éclat."
+  },
+  "petulant": {
+    "pos": "adj.",
+    "definition": "childishly sulky and irritable when not getting one's way",
+    "definitionFr": "capricieux, boudeur, grognon",
+    "sentences": [
+      "When the referee overturned his goal, the star striker threw a petulant tantrum, kicking the ball into the stands and sulking on the bench.",
+      "The petulant child folded her arms and refused to eat, complaining loudly that nobody had asked her what she wanted for dinner."
+    ],
+    "synonyms": ["sulky", "peevish", "irritable", "querulous"],
+    "mnemonic": "Petulant ≠ pétulant (plein d'entrain) : ici, il boude comme un enfant."
+  },
+  "plastic": {
+    "pos": "adj.",
+    "definition": "easily shaped or molded; capable of being changed",
+    "definitionFr": "malléable, modelable",
+    "sentences": [
+      "The sculptor preferred wet clay because its plastic quality allowed her to reshape the figure repeatedly until she achieved the form she wanted.",
+      "Neuroscientists describe the young brain as remarkably plastic, able to rewire itself in response to new experiences far more easily than an adult's."
+    ],
+    "synonyms": ["malleable", "pliable", "moldable", "flexible"],
+    "mnemonic": "Plastic ici = modelable (du grec plassein, former), pas la matière."
+  },
+  "prevaricate": {
+    "pos": "verb",
+    "definition": "to speak evasively in order to avoid telling the truth",
+    "definitionFr": "éluder la vérité, noyer le poisson",
+    "sentences": [
+      "Rather than admit that the funds were missing, the treasurer chose to prevaricate, answering each pointed question with vague and rambling remarks.",
+      "Pressed by reporters about the scandal, the spokesman continued to prevaricate, offering evasive replies that avoided any direct statement of the facts."
+    ],
+    "synonyms": ["equivocate", "evade", "hedge", "dodge"],
+    "mnemonic": "Prevaricate ≠ prévariquer : on tourne autour du pot, on n'est pas corrompu."
+  },
+  "prominent": {
+    "pos": "adj.",
+    "definition": "important, well known, or standing out in a position of note",
+    "definitionFr": "en vue, important, de premier plan",
+    "sentences": [
+      "As a prominent surgeon and former head of the medical association, she was frequently consulted by journalists on questions of national health policy.",
+      "The company's founder played a prominent role in the town's affairs, funding the library and serving on nearly every important civic committee."
+    ],
+    "synonyms": ["eminent", "leading", "notable", "distinguished"],
+    "mnemonic": "Prominent ≠ proéminent (physique) : ici, de premier plan."
+  },
+  "propriety": {
+    "pos": "noun",
+    "definition": "conformity to accepted standards of proper behavior and manners",
+    "definitionFr": "bienséance, convenances",
+    "sentences": [
+      "Victorian society placed enormous value on propriety, expecting young women to follow strict rules about how they dressed, spoke, and conducted themselves.",
+      "Offended by the senator's crude jokes, the audience felt he had violated all sense of propriety expected of a public official at such a ceremony."
+    ],
+    "synonyms": ["decorum", "decency", "etiquette", "correctness"],
+    "mnemonic": "Propriety ≠ propriété : les convenances, ce qui est « proper »."
+  },
+  "prowess": {
+    "pos": "noun",
+    "definition": "exceptional skill or ability in a particular activity",
+    "definitionFr": "maîtrise, grande compétence",
+    "sentences": [
+      "The young pianist's technical prowess astonished the judges, who agreed that no competitor had ever played such difficult passages with such ease.",
+      "Admired for his military prowess, the general won battle after battle, and his skill in strategy became legendary throughout the empire."
+    ],
+    "synonyms": ["skill", "mastery", "expertise", "ability"],
+    "mnemonic": "Prowess : la prouesse, mais au sens de compétence habituelle."
+  },
+  "rapport": {
+    "pos": "noun",
+    "definition": "a harmonious relationship marked by mutual understanding and sympathy",
+    "definitionFr": "bonne entente, complicité",
+    "sentences": [
+      "The therapist worked hard to build rapport with her patients, knowing that trust and mutual understanding were essential before any real progress could begin.",
+      "A natural rapport developed between the two negotiators, who quickly found common ground and began to joke easily despite representing opposing sides."
+    ],
+    "synonyms": ["bond", "harmony", "affinity", "understanding"],
+    "mnemonic": "Rapport ≠ rapport écrit : ici, une bonne entente, une complicité."
+  },
+  "rebut": {
+    "pos": "verb",
+    "definition": "to disprove or argue against a claim with evidence",
+    "definitionFr": "réfuter, contrer",
+    "sentences": [
+      "In her closing statement, the defense attorney sought to rebut each of the prosecutor's claims by presenting documents that proved her client's innocence.",
+      "The scientist published a detailed paper to rebut critics who had questioned her data, offering new experiments that directly disproved their objections."
+    ],
+    "synonyms": ["refute", "disprove", "counter", "contradict"],
+    "mnemonic": "Rebut ≠ rebut (déchet) : ici on réfute un argument."
+  },
+  "refrain": {
+    "pos": "verb",
+    "definition": "to hold oneself back from doing something",
+    "definitionFr": "s'abstenir de",
+    "sentences": [
+      "Visitors to the museum are asked to refrain from using flash photography, since the bright light can damage the fragile paintings.",
+      "Although he was tempted to retort angrily, the diplomat chose to refrain from replying, knowing that silence would better protect the delicate talks."
+    ],
+    "synonyms": ["abstain", "desist", "forbear", "avoid"],
+    "mnemonic": "Refrain verbe = se retenir (« refrain from »), pas le refrain d'une chanson."
+  },
+  "restive": {
+    "pos": "adj.",
+    "definition": "restless and unable to stay still or be controlled",
+    "definitionFr": "agité, incapable de tenir en place",
+    "sentences": [
+      "As the lecture dragged into its third hour, the restive audience began shifting in their seats and glancing impatiently at their watches.",
+      "The restive horse pawed the ground and tossed its head, refusing to stand still while the rider tried to mount it."
+    ],
+    "synonyms": ["restless", "fidgety", "uneasy", "impatient"],
+    "mnemonic": "Restive ≠ rester : au contraire, il ne peut pas rester en place."
+  },
+  "sanction": {
+    "pos": "verb",
+    "definition": "to give official permission or approval for something",
+    "definitionFr": "autoriser, approuver officiellement",
+    "sentences": [
+      "The university refused to sanction the protest, insisting that students needed official permission before holding any demonstration on the campus grounds.",
+      "Only the governor had the authority to sanction the new highway, and she approved the plan after months of study and public hearings."
+    ],
+    "synonyms": ["approve", "authorize", "permit", "endorse"],
+    "mnemonic": "Sanction verbe = approuver (sens rare) ; attention, pas punir ici."
+  },
+  "sanguine": {
+    "pos": "adj.",
+    "definition": "optimistic and confident, especially in a difficult situation",
+    "definitionFr": "optimiste, confiant",
+    "sentences": [
+      "Despite three consecutive failed experiments, the sanguine researcher remained confident that a breakthrough was only weeks away and encouraged her discouraged team.",
+      "Analysts were sanguine about the economy's prospects, predicting that growth would recover soon even though recent figures had been disappointing."
+    ],
+    "synonyms": ["optimistic", "hopeful", "confident", "buoyant"],
+    "mnemonic": "Sanguine ≠ sanguin (colérique) : le sang chaud rend optimiste, pas furieux."
+  },
+  "solicitous": {
+    "pos": "adj.",
+    "definition": "showing attentive care and concern for someone's well-being",
+    "definitionFr": "attentionné, aux petits soins",
+    "sentences": [
+      "The solicitous nurse checked on the elderly patient every hour, adjusting his pillows and asking whether he needed water or another blanket.",
+      "Her solicitous host hovered around the guests, constantly refilling glasses and inquiring whether everyone was comfortable and enjoying the meal."
+    ],
+    "synonyms": ["attentive", "caring", "considerate", "concerned"],
+    "mnemonic": "Solicitous ≠ soucieux (inquiet) : attentionné, aux petits soins."
+  },
+  "solvent": {
+    "pos": "adj.",
+    "definition": "having enough money to pay all one's debts",
+    "definitionFr": "solvable, capable de payer ses dettes",
+    "sentences": [
+      "Despite the recession, the family business remained solvent, with enough cash in reserve to pay all its suppliers and employees on time.",
+      "Auditors confirmed that the bank was still solvent, meaning its assets exceeded its debts, and they urged depositors not to panic."
+    ],
+    "synonyms": ["creditworthy", "financially sound", "profitable", "debt-free"],
+    "mnemonic": "Solvent adjectif ≠ solvant chimique : il peut payer ses dettes."
+  },
+  "suppress": {
+    "pos": "verb",
+    "definition": "to forcibly put an end to or hold back something",
+    "definitionFr": "réprimer, étouffer",
+    "sentences": [
+      "The regime used troops to suppress the uprising, arresting its leaders and crushing every attempt at open resistance across the northern provinces.",
+      "Officials tried to suppress the report, hoping that hiding its damaging findings would prevent a public scandal before the election."
+    ],
+    "synonyms": ["quell", "stifle", "repress", "squelch"],
+    "mnemonic": "Suppress ≠ supprimer (effacer) : on étouffe, on écrase."
+  },
+  "susceptible": {
+    "pos": "adj.",
+    "definition": "likely to be affected by something; vulnerable",
+    "definitionFr": "vulnérable à, exposé à",
+    "sentences": [
+      "Elderly patients are especially susceptible to pneumonia, so doctors recommend that they receive vaccinations before the cold season begins.",
+      "Because he was so susceptible to flattery, the king was easily manipulated by advisors who praised every one of his decisions."
+    ],
+    "synonyms": ["vulnerable", "prone", "liable", "open"],
+    "mnemonic": "Susceptible ≠ susceptible (vexable) : exposé à un danger ou une influence."
+  },
+  "testament": {
+    "pos": "noun",
+    "definition": "clear proof or evidence of something's existence or value",
+    "definitionFr": "preuve, témoignage (a testament to)",
+    "sentences": [
+      "The cathedral's soaring spires stand as a testament to the skill and devotion of the medieval craftsmen who built it.",
+      "Her recovery after the accident was a testament to her courage, offering clear evidence of the extraordinary determination she possessed."
+    ],
+    "synonyms": ["proof", "evidence", "tribute", "witness"],
+    "mnemonic": "Testament = « testimony » : preuve, pas seulement le testament d'héritage."
+  },
+  "titular": {
+    "pos": "adj.",
+    "definition": "holding a title or office in name only, without real power",
+    "definitionFr": "de nom seulement, sans pouvoir réel",
+    "sentences": [
+      "The queen was merely the titular head of state, since real power lay with the elected parliament and its prime minister.",
+      "Although he was the company's titular chairman, he rarely attended meetings, leaving every important decision to the executives who actually ran the firm."
+    ],
+    "synonyms": ["nominal", "token", "formal", "so-called"],
+    "mnemonic": "Titular ≠ titulaire : il porte le titre mais n'a pas le pouvoir."
+  },
+  "treatise": {
+    "pos": "noun",
+    "definition": "a formal, systematic written work on a particular subject",
+    "definitionFr": "ouvrage savant, traité théorique",
+    "sentences": [
+      "Adam Smith's lengthy treatise on economics, published in 1776, systematically examined how wealth is created and distributed across a nation.",
+      "The philosopher spent a decade writing a treatise on ethics, a dense scholarly work that scholars still study in universities today."
+    ],
+    "synonyms": ["dissertation", "monograph", "essay", "study"],
+    "mnemonic": "Treatise ≠ treaty : l'un est un livre, l'autre un accord."
+  },
+  "truculent": {
+    "pos": "adj.",
+    "definition": "eager to fight; aggressively defiant and hostile",
+    "definitionFr": "agressif, cherchant la bagarre",
+    "sentences": [
+      "The truculent customer slammed his fist on the counter and shouted threats at the staff, apparently eager to start a fight.",
+      "Truculent and defiant, the prisoner glared at his guards and answered every question with an insult, refusing to cooperate in any way."
+    ],
+    "synonyms": ["belligerent", "pugnacious", "combative", "hostile"],
+    "mnemonic": "Truculent ≠ truculent (haut en couleur) : en anglais, il cherche la bagarre."
+  },
+  "urbane": {
+    "pos": "adj.",
+    "definition": "polite, refined, and confident in social situations",
+    "definitionFr": "courtois, policé, à l'aise en société",
+    "sentences": [
+      "The urbane ambassador charmed the guests with witty conversation and impeccable manners, putting even the most nervous visitors at ease.",
+      "With his urbane charm and polished manners, the diplomat handled the awkward dinner gracefully, smoothing over every tense moment."
+    ],
+    "synonyms": ["suave", "polished", "refined", "courteous"],
+    "mnemonic": "Urbane ≠ urbain (de la ville) : poli et raffiné, comme un citadin."
+  }
+}
