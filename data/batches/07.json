@@ -1,0 +1,648 @@
+{
+  "scorn": {
+    "pos": "verb",
+    "definition": "to reject or dismiss with open disdain",
+    "definitionFr": "rejeter avec dédain",
+    "sentences": [
+      "The veteran critic scorned the new film as shallow entertainment, refusing even to review it because she considered it unworthy of serious attention.",
+      "Proud of their independence, the villagers scorned every offer of foreign aid, insisting that accepting charity would dishonor their community and its long traditions."
+    ],
+    "synonyms": ["spurn", "disdain", "rebuff", "reject"]
+  },
+  "skirt": {
+    "pos": "verb",
+    "definition": "to avoid dealing directly with a difficult issue or question",
+    "definitionFr": "contourner, éluder (une question)",
+    "sentences": [
+      "Asked about the budget deficit, the senator skirted the question by praising her opponent's record on education and then abruptly changing the subject.",
+      "Rather than confront his sister about the unpaid loan, Marcus skirted the issue throughout dinner, chatting about the weather and their parents' vacation plans."
+    ],
+    "synonyms": ["evade", "sidestep", "dodge", "bypass"]
+  },
+  "circumvent": {
+    "pos": "verb",
+    "definition": "to find a clever way around a rule or obstacle",
+    "definitionFr": "contourner (une règle)",
+    "sentences": [
+      "Several large corporations circumvented the new environmental regulations by relocating their factories to countries where such strict laws did not yet exist.",
+      "Unable to enter through the locked front gate, the hikers circumvented the barrier by following a narrow trail that wound around the edge of the property."
+    ],
+    "synonyms": ["bypass", "evade", "sidestep", "elude"]
+  },
+  "amity": {
+    "pos": "noun",
+    "definition": "friendly relations, especially between nations or groups",
+    "definitionFr": "entente cordiale",
+    "sentences": [
+      "After decades of hostility, the two neighboring countries signed a treaty of amity, pledging to settle future disputes through dialogue rather than armed conflict.",
+      "The committee members, who had once quarreled bitterly, worked together in such amity that the final report was approved without a single dissenting voice."
+    ],
+    "synonyms": ["concord", "harmony", "friendship", "goodwill"],
+    "mnemonic": "Amity ressemble à « amitié » : relations amicales."
+  },
+  "comity": {
+    "pos": "noun",
+    "definition": "courteous and considerate behavior among peers or nations",
+    "definitionFr": "courtoisie entre pairs",
+    "sentences": [
+      "Despite their sharp ideological differences, the judges maintained a spirit of comity, listening respectfully to each other's arguments and never resorting to personal insults.",
+      "International law relies partly on comity, the habit of nations recognizing one another's legal decisions out of mutual courtesy rather than strict obligation."
+    ],
+    "synonyms": ["courtesy", "civility", "politeness", "harmony"]
+  },
+  "congenial": {
+    "pos": "adj.",
+    "definition": "pleasant and agreeable because suited to one's tastes or temperament",
+    "definitionFr": "sympathique, assorti à ses goûts",
+    "sentences": [
+      "Elena found the small, quiet seminar far more congenial than the huge lecture hall, since she preferred thoughtful discussion to passive note-taking.",
+      "The innkeeper's warm manner and the crackling fireplace created such a congenial atmosphere that the weary travelers happily lingered long after their meal ended."
+    ],
+    "synonyms": ["agreeable", "pleasant", "genial", "compatible"]
+  },
+  "estrange": {
+    "pos": "verb",
+    "definition": "to cause someone to become unfriendly or distant from another",
+    "definitionFr": "éloigner, brouiller",
+    "sentences": [
+      "The bitter dispute over their father's inheritance estranged the two brothers, who did not speak to each other for nearly twenty years afterward.",
+      "Critics warned that the president's harsh rhetoric would estrange longtime allies, leaving the country increasingly isolated and without friends in the international community."
+    ],
+    "synonyms": ["alienate", "divide", "distance", "separate"],
+    "mnemonic": "Estrange ≈ « étranger » : rendre quelqu'un étranger à soi."
+  },
+  "interloper": {
+    "pos": "noun",
+    "definition": "an unwelcome person who intrudes into a place or group",
+    "definitionFr": "intrus, pièce rapportée",
+    "sentences": [
+      "The longtime members of the club regarded the newcomer as an interloper and pointedly ignored him whenever he tried to join their conversation.",
+      "Biologists worry that the aggressive species, an interloper in the fragile ecosystem, will drive out the native birds that have lived there for centuries."
+    ],
+    "synonyms": ["intruder", "trespasser", "outsider", "meddler"]
+  },
+  "dalliance": {
+    "pos": "noun",
+    "definition": "a brief, casual romantic involvement; also, idle or frivolous toying",
+    "definitionFr": "passade, flirt",
+    "sentences": [
+      "Her brief dalliance with a charming musician ended as quickly as it had begun, leaving neither of them with any lasting regrets or serious commitments.",
+      "The young painter's dalliance with sculpture lasted only one summer before he returned to canvas, the medium to which he devoted the rest of his career."
+    ],
+    "synonyms": ["fling", "flirtation", "affair", "trifling"]
+  },
+  "abet": {
+    "pos": "verb",
+    "definition": "to encourage or assist someone in wrongdoing",
+    "definitionFr": "être complice de, encourager",
+    "sentences": [
+      "The accountant was charged with abetting the fraud, since his falsified records had helped his employer hide the stolen funds from investigators for years.",
+      "By supplying the thieves with the building's security codes, the night guard abetted the burglary and later faced the same penalty as the burglars themselves."
+    ],
+    "synonyms": ["aid", "assist", "encourage", "incite"]
+  },
+  "adulterate": {
+    "pos": "verb",
+    "definition": "to make impure by adding inferior or unwanted substances",
+    "definitionFr": "frelater, altérer",
+    "sentences": [
+      "Dishonest merchants sometimes adulterate expensive spices with cheap powders, so that customers unknowingly pay premium prices for a diluted and inferior product.",
+      "Health inspectors discovered that the dairy had adulterated its milk with water and chemicals, and the company was promptly fined and ordered to close."
+    ],
+    "synonyms": ["contaminate", "taint", "dilute", "debase"],
+    "mnemonic": "Adultérer (le produit) en français = le frelater, pas tromper un conjoint."
+  },
+  "akin": {
+    "pos": "adj.",
+    "definition": "similar in nature or character; related",
+    "definitionFr": "apparenté, semblable",
+    "sentences": [
+      "Her fascination with the stars was akin to a religious devotion, shaping every decision she made about her education, friendships, and eventual career.",
+      "The two languages are so closely akin that speakers of one can usually follow a simple conversation in the other without any formal study."
+    ],
+    "synonyms": ["similar", "kindred", "related", "comparable"]
+  },
+  "apt": {
+    "pos": "adj.",
+    "definition": "suitable for the occasion; also, likely or inclined to do something",
+    "definitionFr": "approprié ; enclin à",
+    "sentences": [
+      "The poet's comparison of memory to a river was so apt that the audience nodded in recognition, instantly grasping the fleeting nature of the past.",
+      "Students who skip the preparatory exercises are apt to struggle with the final exam, since the more difficult problems build directly upon the earlier lessons."
+    ],
+    "synonyms": ["fitting", "appropriate", "inclined", "likely"]
+  },
+  "artless": {
+    "pos": "adj.",
+    "definition": "natural and innocent, without deceit; also, lacking skill",
+    "definitionFr": "ingénu, naturel ; maladroit",
+    "sentences": [
+      "The child's artless honesty charmed the guests, who were accustomed to polished politicians and who rarely heard anyone speak without calculation or hidden motives.",
+      "Though the amateur sketch was artless and clumsy in its proportions, the gallery displayed it because of the raw emotion that seemed to radiate from the page."
+    ],
+    "synonyms": ["naive", "ingenuous", "guileless", "unsophisticated"],
+    "mnemonic": "Art-less : sans art, donc sans artifice (ou sans talent)."
+  },
+  "behemoth": {
+    "pos": "noun",
+    "definition": "an enormous, powerful creature, organization, or thing",
+    "definitionFr": "mastodonte, géant",
+    "sentences": [
+      "The retail behemoth drove dozens of small neighborhood shops out of business within a few years, simply because it could offer lower prices than anyone else.",
+      "Standing beside the enormous ship, a behemoth of steel and rivets, the dockworkers looked like tiny figures dwarfed by its towering hull."
+    ],
+    "synonyms": ["giant", "colossus", "titan", "leviathan"]
+  },
+  "bemoan": {
+    "pos": "verb",
+    "definition": "to express sorrow or discontent about something",
+    "definitionFr": "déplorer",
+    "sentences": [
+      "Older residents often bemoan the loss of the town's traditional markets, complaining that the new shopping malls have destroyed the friendly spirit of the community.",
+      "The coach bemoaned his team's careless errors after the defeat, lamenting that months of careful training had been wasted in a single disappointing afternoon."
+    ],
+    "synonyms": ["lament", "deplore", "bewail", "regret"]
+  },
+  "bemuse": {
+    "pos": "verb",
+    "definition": "to confuse or puzzle someone",
+    "definitionFr": "rendre perplexe",
+    "sentences": [
+      "The strange symbols carved into the stone bemused the archaeologists, who could find no similar markings in any known ancient language or cultural record.",
+      "Her sudden decision to quit a lucrative job and raise goats bemused her friends, none of whom could understand what had prompted such a dramatic change."
+    ],
+    "synonyms": ["puzzle", "baffle", "perplex", "confuse"]
+  },
+  "bequeath": {
+    "pos": "verb",
+    "definition": "to leave property or a legacy to someone in a will",
+    "definitionFr": "léguer",
+    "sentences": [
+      "The elderly professor bequeathed his entire collection of rare manuscripts to the university library, hoping that future scholars would benefit from his lifetime of careful collecting.",
+      "Ancient Greece bequeathed to later civilizations a rich legacy of philosophy and democratic ideas that continue to shape political thought across the modern world."
+    ],
+    "synonyms": ["leave", "will", "bestow", "hand down"]
+  },
+  "betray": {
+    "pos": "verb",
+    "definition": "to reveal unintentionally; also, to be disloyal to",
+    "definitionFr": "laisser paraître ; trahir",
+    "sentences": [
+      "Although the diplomat smiled calmly, the slight trembling of his hands betrayed his deep anxiety about the outcome of the delicate negotiations.",
+      "His trembling voice betrayed the nervousness that he was desperately trying to conceal from the interviewers, who noticed it despite his confident words."
+    ],
+    "synonyms": ["reveal", "expose", "disclose", "divulge"]
+  },
+  "blunder": {
+    "pos": "noun",
+    "definition": "a stupid or careless mistake",
+    "definitionFr": "bévue, gaffe",
+    "sentences": [
+      "The general's blunder of sending his troops across the flooded valley cost the army hundreds of lives and ultimately decided the outcome of the war.",
+      "Forgetting to attach the contract was an embarrassing blunder, and the young lawyer spent the rest of the afternoon apologizing to the furious client."
+    ],
+    "synonyms": ["gaffe", "error", "faux pas", "bungle"]
+  },
+  "boisterous": {
+    "pos": "adj.",
+    "definition": "noisy, energetic, and rowdy",
+    "definitionFr": "turbulent, bruyant",
+    "sentences": [
+      "The boisterous crowd cheered, sang, and stamped their feet throughout the match, making it nearly impossible for the commentators to be heard.",
+      "After a quiet morning, the nursery filled with boisterous toddlers who shouted, laughed, and chased one another around the room until the teacher called for calm."
+    ],
+    "synonyms": ["rowdy", "raucous", "rambunctious", "unruly"]
+  },
+  "boon": {
+    "pos": "noun",
+    "definition": "a helpful blessing or benefit",
+    "definitionFr": "aubaine, bienfait",
+    "sentences": [
+      "The discovery of fresh water beneath the desert village was a tremendous boon, allowing farmers to grow crops in soil that had long been barren.",
+      "For the struggling author, the unexpected scholarship proved a boon, freeing her from financial worry so that she could finally finish her long-delayed novel."
+    ],
+    "synonyms": ["blessing", "benefit", "windfall", "advantage"]
+  },
+  "broach": {
+    "pos": "verb",
+    "definition": "to bring up a subject for discussion, often a delicate one",
+    "definitionFr": "aborder (un sujet)",
+    "sentences": [
+      "Nervous about the reaction, Daniel waited until after dinner to broach the subject of moving abroad with his aging and rather conservative parents.",
+      "The chairman carefully broached the topic of layoffs at the end of the meeting, aware that the announcement would alarm employees who feared for their jobs."
+    ],
+    "synonyms": ["raise", "introduce", "mention", "approach"]
+  },
+  "buffer": {
+    "pos": "noun",
+    "definition": "something that cushions against shock or acts as a protective barrier",
+    "definitionFr": "tampon, amortisseur",
+    "sentences": [
+      "The small neutral nation served as a buffer between the two rival empires, absorbing tensions that might otherwise have erupted into open warfare along their shared border.",
+      "Her savings acted as a buffer against financial disaster, so the sudden loss of her job did not immediately threaten her ability to pay rent."
+    ],
+    "synonyms": ["cushion", "shield", "safeguard", "barrier"]
+  },
+  "bumbling": {
+    "pos": "adj.",
+    "definition": "clumsy and inept in a foolish way",
+    "definitionFr": "maladroit, empoté",
+    "sentences": [
+      "The bumbling detective in the comedy tripped over furniture, lost his notes, and accidentally arrested his own partner before finally stumbling upon the real culprit.",
+      "Critics blamed the bumbling officials for the chaotic rollout of the program, citing lost paperwork, missed deadlines, and a series of embarrassing public mistakes."
+    ],
+    "synonyms": ["clumsy", "inept", "awkward", "maladroit"]
+  },
+  "cipher": {
+    "pos": "noun",
+    "definition": "a secret code or system of writing",
+    "definitionFr": "chiffre, code secret",
+    "sentences": [
+      "During the war, the spy transmitted his reports in a complicated cipher that enemy analysts struggled for months to decode without success.",
+      "Historians finally cracked the medieval cipher in the monk's diary, revealing that the seemingly meaningless symbols concealed a detailed account of a forbidden alchemical experiment."
+    ],
+    "synonyms": ["code", "cryptogram", "secret writing", "encryption"]
+  },
+  "coin": {
+    "pos": "verb",
+    "definition": "to invent a new word or phrase",
+    "definitionFr": "forger (un mot)",
+    "sentences": [
+      "The economist coined the term \"stagflation\" to describe the unusual combination of stagnant growth and rising prices that baffled policymakers during the decade.",
+      "Shakespeare is credited with coining hundreds of words that are still in daily use, from \"lonely\" to \"bedroom,\" enriching the English language enormously."
+    ],
+    "synonyms": ["invent", "create", "devise", "originate"]
+  },
+  "colloquial": {
+    "pos": "adj.",
+    "definition": "informal and conversational, typical of everyday speech rather than formal writing",
+    "definitionFr": "familier",
+    "sentences": [
+      "The novelist's colloquial prose, full of slang and contractions, made her characters sound like real neighbors rather than figures in a formal literary work.",
+      "Although expressions like \"gonna\" and \"kinda\" are acceptable in colloquial conversation, the professor warned that they had no place in a scholarly dissertation."
+    ],
+    "synonyms": ["informal", "conversational", "casual", "vernacular"]
+  },
+  "commensurate": {
+    "pos": "adj.",
+    "definition": "corresponding in size, degree, or amount; proportionate",
+    "definitionFr": "proportionné",
+    "sentences": [
+      "The firm promised to offer a salary commensurate with each candidate's experience, so that senior engineers would earn considerably more than recent graduates.",
+      "Critics argued that the punishment was not commensurate with the offense, since a minor clerical error had resulted in the employee's immediate dismissal."
+    ],
+    "synonyms": ["proportionate", "equivalent", "comparable", "corresponding"]
+  },
+  "compendium": {
+    "pos": "noun",
+    "definition": "a concise but comprehensive collection of information on a subject",
+    "definitionFr": "recueil",
+    "sentences": [
+      "The botanist's latest book is a compendium of garden lore, gathering in a single volume everything known about the cultivation of rare alpine flowers.",
+      "Students relied on the thick compendium of grammar rules, which summarized centuries of linguistic scholarship in a form that was easy to consult before examinations."
+    ],
+    "synonyms": ["digest", "anthology", "compilation", "summary"]
+  },
+  "compromise": {
+    "pos": "verb",
+    "definition": "to weaken or endanger something, such as one's principles or reputation",
+    "definitionFr": "compromettre ; transiger",
+    "sentences": [
+      "The scandal threatened to compromise the senator's reputation, and several of his allies quietly distanced themselves to avoid being damaged by association.",
+      "Engineers refused to compromise safety standards in order to meet the deadline, insisting that a flawed bridge would endanger lives far more than a delayed opening."
+    ],
+    "synonyms": ["jeopardize", "undermine", "endanger", "weaken"]
+  },
+  "conducive": {
+    "pos": "adj.",
+    "definition": "making a certain result or outcome likely or possible; favorable",
+    "definitionFr": "propice à",
+    "sentences": [
+      "A quiet room with good lighting is conducive to concentrated study, whereas a noisy cafe tends to scatter the attention of even the most diligent students.",
+      "The country's stable laws and educated workforce were conducive to economic growth, attracting foreign investors who had previously hesitated to enter the market."
+    ],
+    "synonyms": ["favorable", "beneficial", "helpful", "advantageous"]
+  },
+  "consummate": {
+    "pos": "adj.",
+    "definition": "perfect or supremely skilled; complete in every respect",
+    "definitionFr": "consommé, accompli",
+    "sentences": [
+      "The pianist's consummate technique and emotional depth left the audience breathless, and critics hailed the recital as the finest performance of the entire season.",
+      "As a consummate diplomat, she calmed the angry delegates with such skill that even her harshest opponents admitted they could not fault her tact."
+    ],
+    "synonyms": ["accomplished", "perfect", "supreme", "masterly"]
+  },
+  "contempt": {
+    "pos": "noun",
+    "definition": "a feeling that someone or something is worthless and deserves scorn",
+    "definitionFr": "mépris",
+    "sentences": [
+      "The dictator's open contempt for ordinary citizens, whom he described as ignorant sheep, gradually turned even his early supporters against his government.",
+      "She regarded the plagiarist with contempt, unable to forgive someone who had stolen years of her colleague's research and then claimed the credit."
+    ],
+    "synonyms": ["scorn", "disdain", "disgust", "derision"]
+  },
+  "conundrum": {
+    "pos": "noun",
+    "definition": "a confusing or difficult problem that is hard to solve",
+    "definitionFr": "casse-tête, énigme",
+    "sentences": [
+      "The council faced a genuine conundrum: building the new highway would ease traffic, but it would also destroy the neighborhood that residents had fought to preserve.",
+      "How the ancient builders moved such enormous stones across the desert remains a conundrum that has puzzled engineers and historians for several generations."
+    ],
+    "synonyms": ["puzzle", "riddle", "dilemma", "enigma"]
+  },
+  "cunning": {
+    "pos": "adj.",
+    "definition": "clever at getting what one wants, often through deceit",
+    "definitionFr": "rusé",
+    "sentences": [
+      "The cunning merchant pretended to lose interest in the carpet, knowing that the eager buyer would soon offer a much higher price to secure it.",
+      "Fables often portray the fox as a cunning creature that uses trickery rather than strength to outwit larger and more powerful animals in the forest."
+    ],
+    "synonyms": ["crafty", "sly", "shrewd", "wily"]
+  },
+  "daunting": {
+    "pos": "adj.",
+    "definition": "seeming difficult enough to cause fear or loss of confidence",
+    "definitionFr": "intimidant, décourageant",
+    "sentences": [
+      "For the novice climber, the sheer ice wall looked like a daunting obstacle, and several members of the group quietly wondered whether they should turn back.",
+      "Rebuilding the war-torn city seemed a daunting task, requiring billions of dollars, thousands of skilled workers, and many years of patient political cooperation."
+    ],
+    "synonyms": ["intimidating", "formidable", "discouraging", "overwhelming"]
+  },
+  "debunk": {
+    "pos": "verb",
+    "definition": "to expose the falseness of a claim, belief, or myth",
+    "definitionFr": "démystifier, démentir",
+    "sentences": [
+      "The physicist devoted his career to debunking pseudoscientific claims, patiently demonstrating with careful experiments that the supposed miracle device could not possibly work.",
+      "A team of journalists debunked the viral story by tracing it to a satirical website, proving that the alleged scandal had never actually taken place."
+    ],
+    "synonyms": ["refute", "disprove", "expose", "discredit"]
+  },
+  "deft": {
+    "pos": "adj.",
+    "definition": "skillful and quick in movement or handling",
+    "definitionFr": "adroit, habile",
+    "sentences": [
+      "With a few deft strokes of her brush, the artist transformed the blank canvas into a lively portrait that captured the subject's mischievous smile.",
+      "The mayor's deft handling of the budget crisis impressed even her critics, who admitted that she had resolved the conflict quickly and without offending anyone."
+    ],
+    "synonyms": ["adroit", "skillful", "nimble", "dexterous"]
+  },
+  "demise": {
+    "pos": "noun",
+    "definition": "the end or downfall of something; also, death",
+    "definitionFr": "disparition, fin",
+    "sentences": [
+      "Analysts attributed the company's demise to its refusal to adapt to digital technology, since competitors had steadily taken away its customers over the past decade.",
+      "The sudden demise of the old king plunged the kingdom into a bitter struggle for succession among his ambitious sons and their scheming supporters."
+    ],
+    "synonyms": ["downfall", "end", "collapse", "death"]
+  },
+  "despicable": {
+    "pos": "adj.",
+    "definition": "deserving hatred and contempt because of vileness",
+    "definitionFr": "méprisable, ignoble",
+    "sentences": [
+      "Stealing donations meant for earthquake survivors was a despicable act, and the public reacted with outrage when the treasurer's crime was finally exposed.",
+      "The villain of the novel is truly despicable, betraying his closest friends and mocking the poor while he enjoys a life of luxury."
+    ],
+    "synonyms": ["contemptible", "vile", "loathsome", "ignoble"]
+  },
+  "dilatory": {
+    "pos": "adj.",
+    "definition": "tending to delay or waste time; slow to act",
+    "definitionFr": "lent ; dilatoire",
+    "sentences": [
+      "The dilatory contractor missed every deadline, making endless excuses while the homeowners waited months for repairs that should have taken only a few weeks.",
+      "Lawyers for the defense used dilatory tactics, filing unnecessary motions again and again in the hope that the trial would be postponed indefinitely."
+    ],
+    "synonyms": ["slow", "tardy", "procrastinating", "sluggish"]
+  },
+  "din": {
+    "pos": "noun",
+    "definition": "a loud, confusing, and unpleasant noise that continues",
+    "definitionFr": "vacarme",
+    "sentences": [
+      "The din of the factory machinery was so overwhelming that workers had to shout directly into one another's ears to be understood.",
+      "Over the din of honking horns and shouting vendors, the tourist could barely hear her guide describing the history of the crowded marketplace."
+    ],
+    "synonyms": ["racket", "clamor", "uproar", "cacophony"]
+  },
+  "discrepancy": {
+    "pos": "noun",
+    "definition": "a lack of agreement between facts or figures that should match",
+    "definitionFr": "écart, divergence",
+    "sentences": [
+      "The auditor noticed a troubling discrepancy between the reported revenue and the bank statements, which suggested that someone had been altering the company's records.",
+      "Investigators were puzzled by the discrepancy in the two witnesses' accounts, since one swore the car was blue while the other insisted it was red."
+    ],
+    "synonyms": ["inconsistency", "disparity", "difference", "divergence"]
+  },
+  "discriminating": {
+    "pos": "adj.",
+    "definition": "having or showing refined taste and good judgment",
+    "definitionFr": "averti, raffiné",
+    "sentences": [
+      "A discriminating collector, she examined every painting with great care and purchased only those works that truly demonstrated originality and technical mastery.",
+      "The restaurant caters to a discriminating clientele that can easily distinguish an excellent vintage from a merely ordinary bottle of wine."
+    ],
+    "synonyms": ["discerning", "refined", "selective", "judicious"],
+    "mnemonic": "Faux ami : ici « avisé, de goût sûr », pas « discriminant » (injuste)."
+  },
+  "dispassionate": {
+    "pos": "adj.",
+    "definition": "not influenced by strong emotion; impartial and objective",
+    "definitionFr": "impartial, objectif",
+    "sentences": [
+      "A good judge must remain dispassionate, weighing the evidence calmly rather than allowing personal sympathy or anger to influence the verdict.",
+      "The scientist gave a dispassionate account of the disaster, listing the facts and figures without any of the emotion that the tragedy might have provoked."
+    ],
+    "synonyms": ["objective", "impartial", "detached", "unbiased"]
+  },
+  "dispel": {
+    "pos": "verb",
+    "definition": "to drive away or make disappear, especially doubts or fears",
+    "definitionFr": "dissiper",
+    "sentences": [
+      "The company's clear financial report dispelled rumors of bankruptcy, and investors who had been planning to sell their shares quickly regained their confidence.",
+      "A strong wind rose in the afternoon and dispelled the thick morning fog, revealing the mountain peaks that had been hidden for days."
+    ],
+    "synonyms": ["dissipate", "banish", "allay", "scatter"]
+  },
+  "elate": {
+    "pos": "verb",
+    "definition": "to fill with great joy and pride",
+    "definitionFr": "transporter de joie",
+    "sentences": [
+      "News of the unexpected victory elated the whole town, and thousands of residents poured into the streets to sing, dance, and embrace complete strangers.",
+      "The young scientist was elated by the results of her experiment, which finally confirmed the theory she had defended for nearly ten difficult years."
+    ],
+    "synonyms": ["delight", "exhilarate", "thrill", "gladden"]
+  },
+  "epitome": {
+    "pos": "noun",
+    "definition": "a perfect or typical example of a quality or type",
+    "definitionFr": "incarnation, quintessence",
+    "sentences": [
+      "With her generosity, patience, and quiet humility, the nurse was the epitome of compassion, and patients remembered her kindness long after they had recovered.",
+      "The sleek glass tower, with its minimalist design, is often considered the epitome of modern architecture, and students travel across the globe to study it."
+    ],
+    "synonyms": ["embodiment", "quintessence", "paragon", "model"],
+    "mnemonic": "Épitomé se prononce « é-pi-to-mi » (4 syllabes), pas « épitome »."
+  },
+  "exonerate": {
+    "pos": "verb",
+    "definition": "to officially clear someone of blame or wrongdoing",
+    "definitionFr": "disculper",
+    "sentences": [
+      "New DNA evidence exonerated the prisoner after fifteen years behind bars, proving that he could not possibly have committed the crime for which he was convicted.",
+      "The official investigation exonerated the pilot of any responsibility for the crash, concluding instead that a mechanical failure in the engine had caused the accident."
+    ],
+    "synonyms": ["absolve", "acquit", "vindicate", "exculpate"]
+  },
+  "extemporaneous": {
+    "pos": "adj.",
+    "definition": "spoken or done without preparation; improvised",
+    "definitionFr": "improvisé, impromptu",
+    "sentences": [
+      "Although the senator seemed to deliver an extemporaneous speech, aides later revealed that he had rehearsed every pause and gesture for several days beforehand.",
+      "When the microphone failed, the lecturer gave an extemporaneous talk without notes, drawing on decades of experience to hold the audience's attention until the end."
+    ],
+    "synonyms": ["impromptu", "improvised", "unrehearsed", "spontaneous"]
+  },
+  "fester": {
+    "pos": "verb",
+    "definition": "to grow worse through neglect; also, to rot or become infected",
+    "definitionFr": "s'envenimer ; pourrir",
+    "sentences": [
+      "Resentment over the unfair promotion festered for months, poisoning the atmosphere in the office until two of the best employees finally resigned.",
+      "The untreated wound began to fester, and by the second day the soldier's arm was swollen, painful, and dangerously infected."
+    ],
+    "synonyms": ["rankle", "worsen", "smolder", "rot"]
+  },
+  "fodder": {
+    "pos": "noun",
+    "definition": "raw material for creative work or discussion; also, food for livestock",
+    "definitionFr": "matière première ; fourrage",
+    "sentences": [
+      "The senator's embarrassing remark became fodder for late-night comedians, who joked about it for weeks and kept the story alive long after it should have faded.",
+      "During the harsh winter, the farmers stored enough fodder in the barn to feed their cattle until the spring grass finally began to grow."
+    ],
+    "synonyms": ["material", "ammunition", "feed", "grist"]
+  },
+  "foe": {
+    "pos": "noun",
+    "definition": "an enemy or opponent",
+    "definitionFr": "ennemi, adversaire",
+    "sentences": [
+      "The two senators, once close friends, became bitter foes after the election, refusing to share a stage or even to acknowledge each other in public.",
+      "Facing a formidable foe on the battlefield, the commander ordered his weary troops to retreat to the hills and wait for reinforcements to arrive."
+    ],
+    "synonyms": ["enemy", "adversary", "opponent", "rival"]
+  },
+  "garner": {
+    "pos": "verb",
+    "definition": "to gather, collect, or earn, often with effort",
+    "definitionFr": "recueillir, obtenir",
+    "sentences": [
+      "The independent film garnered several prestigious awards at the festival, earning its young director a level of attention that she had never expected.",
+      "Through months of tireless campaigning, the candidate garnered enough support among rural voters to overcome her opponent's early lead in the polls."
+    ],
+    "synonyms": ["gather", "earn", "collect", "acquire"]
+  },
+  "germane": {
+    "pos": "adj.",
+    "definition": "relevant and closely connected to the subject under discussion",
+    "definitionFr": "pertinent",
+    "sentences": [
+      "The moderator interrupted the speaker, reminding him that his long story about childhood vacations was not germane to the question of municipal zoning laws.",
+      "Only evidence that is germane to the case may be presented to the jury, so the judge excluded testimony about the defendant's unrelated hobbies."
+    ],
+    "synonyms": ["relevant", "pertinent", "applicable", "apropos"]
+  },
+  "grapple": {
+    "pos": "verb",
+    "definition": "to struggle to deal with or overcome a difficult problem",
+    "definitionFr": "se colleter avec",
+    "sentences": [
+      "Governments around the world are still grappling with the ethical questions raised by artificial intelligence, and no clear consensus has yet emerged among experts.",
+      "For years the young poet grappled with self-doubt, wondering whether her work had any real value before she finally published her first collection."
+    ],
+    "synonyms": ["struggle", "wrestle", "contend", "tackle"]
+  },
+  "grudging": {
+    "pos": "adj.",
+    "definition": "given reluctantly or unwillingly",
+    "definitionFr": "réticent, à contrecœur",
+    "sentences": [
+      "After the brilliant presentation, even the skeptical director offered a grudging nod of approval, though he clearly disliked admitting that his rival had been right.",
+      "The landlord gave his grudging consent to the renovation, muttering complaints about the cost and the noise throughout the entire conversation."
+    ],
+    "synonyms": ["reluctant", "unwilling", "begrudging", "hesitant"]
+  },
+  "hallmark": {
+    "pos": "noun",
+    "definition": "a distinctive feature or characteristic that identifies something",
+    "definitionFr": "signe distinctif",
+    "sentences": [
+      "Careful attention to detail is the hallmark of a great surgeon, whose steady hands and patient discipline can mean the difference between life and death.",
+      "Dense, flowing sentences are a hallmark of the author's style, so that readers can often recognize a page of her prose within seconds."
+    ],
+    "synonyms": ["trademark", "signature", "characteristic", "earmark"]
+  },
+  "happenstance": {
+    "pos": "noun",
+    "definition": "a chance circumstance or coincidence",
+    "definitionFr": "hasard",
+    "sentences": [
+      "The two scientists met by sheer happenstance, when a delayed train forced them to share a table at a station cafe and discover their common research.",
+      "Rather than planning, the explorer attributed his famous discovery to happenstance, saying that a wrong turn in the fog had led him to the hidden valley."
+    ],
+    "synonyms": ["chance", "coincidence", "accident", "fluke"]
+  },
+  "haven": {
+    "pos": "noun",
+    "definition": "a place of safety or refuge",
+    "definitionFr": "refuge, havre",
+    "sentences": [
+      "The quiet mountain monastery served as a haven for refugees fleeing the war, providing food, shelter, and protection to hundreds of frightened families.",
+      "For the overworked executive, the small cabin by the lake was a peaceful haven, a place where no telephone could reach her and no deadline mattered."
+    ],
+    "synonyms": ["refuge", "sanctuary", "shelter", "retreat"]
+  },
+  "heartening": {
+    "pos": "adj.",
+    "definition": "giving courage, hope, or cheer; encouraging",
+    "definitionFr": "encourageant",
+    "sentences": [
+      "After months of discouraging reports, the sharp decline in unemployment was a heartening sign that the struggling economy might finally be starting to recover.",
+      "It was heartening to see so many volunteers arrive after the flood, and their generosity restored the survivors' hope that their town could be rebuilt."
+    ],
+    "synonyms": ["encouraging", "cheering", "uplifting", "reassuring"]
+  },
+  "heed": {
+    "pos": "verb",
+    "definition": "to pay careful attention to advice or a warning",
+    "definitionFr": "tenir compte de",
+    "sentences": [
+      "Had the captain heeded the warnings about the approaching storm, he would have kept his ship in harbor and spared the crew a terrible ordeal.",
+      "Investors who heed the advice of cautious economists tend to avoid risky speculation, preferring slow and steady returns to the lure of sudden wealth."
+    ],
+    "synonyms": ["mind", "obey", "regard", "follow"]
+  },
+  "hodgepodge": {
+    "pos": "noun",
+    "definition": "a confused mixture of unrelated things",
+    "definitionFr": "fatras, méli-mélo",
+    "sentences": [
+      "The apartment was a hodgepodge of mismatched furniture, faded posters, and boxes of books, with no evident plan connecting any one object to another.",
+      "Critics dismissed the museum's new exhibit as a hodgepodge of random artifacts that lacked any coherent theme to guide visitors through the collection."
+    ],
+    "synonyms": ["jumble", "medley", "mishmash", "farrago"]
+  }
+}
