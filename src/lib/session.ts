@@ -1,10 +1,9 @@
 import type {
-  ChoiceExercise,
   ExerciseType,
   LessonConfig,
   LessonState,
   QueueItem,
-  TypeExercise,
+  SingleExercise,
   WordProgress,
   WordsData,
 } from '../types';
@@ -53,6 +52,7 @@ export function buildQueue(
   data: WordsData,
   words: Record<string, WordProgress>,
   rng: Rng = Math.random,
+  listening = false,
 ): QueueItem[] {
   // 1 emplacement par exercice : mot nouveau = 2, mot dû = 1
   const slots = shuffle(
@@ -64,7 +64,7 @@ export function buildQueue(
   const items: QueueItem[] = [];
   let last: ExerciseType | undefined;
   for (const id of slots) {
-    const type = pickType(getWP(words, id).box, last, used[id] ?? [], rng);
+    const type = pickType(getWP(words, id).box, last, used[id] ?? [], rng, listening);
     const exercise = makeExercise(data, id, type, rng);
     last = exercise.type;
     (used[id] ??= []).push(exercise.type);
@@ -116,7 +116,7 @@ export function advanceIntro(s: LessonState): LessonState {
 export function resolveExercise(
   s: LessonState,
   correct: boolean,
-  retry?: ChoiceExercise | TypeExercise,
+  retry?: SingleExercise,
 ): LessonState {
   const head = s.queue[0];
   if (!head || head.kind !== 'ex' || head.exercise.kind === 'pairs') return s;

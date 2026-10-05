@@ -38,12 +38,24 @@ export const masteredCount = (ids: string[], words: Record<string, WordProgress>
 export const chapterDueCount = (ch: Chapter, words: Record<string, WordProgress>, now: number) =>
   dueIds(ch.wordIds, words, now).length;
 
+/**
+ * Adapte l'intervalle à la difficulté personnelle du mot : un mot souvent raté revient plus tôt (jusqu'à ×0,6),
+ * un mot presque toujours réussi plus tard (jusqu'à ×1,25). Neutre tant que le mot a été vu moins de 3 fois.
+ */
+export function difficultyFactor(wp: WordProgress): number {
+  if (wp.seen < 3) return 1;
+  return Math.min(1.25, Math.max(0.6, 1.25 - 0.5 * (wp.misses / wp.seen)));
+}
+
+/** Mot « difficile » : raté au moins aussi souvent que vu (après 4 rencontres). */
+export const isLeech = (wp: WordProgress) => wp.seen >= 4 && wp.misses >= wp.seen;
+
 /** Mise à jour d'un mot en fin de leçon. */
 export function applyResult(wp: WordProgress, hadError: boolean, now: number): WordProgress {
   let box: number;
   if (!hadError) box = Math.min(MAX_BOX, wp.box + 1);
   else box = wp.box >= 3 ? 1 : Math.max(1, wp.box - 1);
-  return { ...wp, box, dueAt: now + intervalMs(box), seen: wp.seen + 1 };
+  return { ...wp, box, dueAt: now + Math.round(intervalMs(box) * difficultyFactor(wp)), seen: wp.seen + 1 };
 }
 
 /** Tri initial. */

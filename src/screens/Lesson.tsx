@@ -5,13 +5,14 @@ import FeedbackBar from '../components/FeedbackBar';
 import Intro from '../components/exercises/Intro';
 import MatchPairs from '../components/exercises/MatchPairs';
 import MultipleChoice from '../components/exercises/MultipleChoice';
+import SentenceEquivalence from '../components/exercises/SentenceEquivalence';
 import TypeWord from '../components/exercises/TypeWord';
 import Modal from '../components/Modal';
 import ProgressBar from '../components/ProgressBar';
 import { Sentence } from '../components/WordCard';
-import { alternativeFor, grade, type Grade } from '../lib/exercises';
+import { MULTI_SEP, alternativeFor, grade, type Grade } from '../lib/exercises';
 import { data } from '../lib/data';
-import { speak } from '../lib/speak';
+import { canSpeak, speak } from '../lib/speak';
 import { clearLesson, saveLesson } from '../lib/storage';
 import { advanceIntro, isFinished, progressRatio, resolveExercise, resolvePairs } from '../lib/session';
 import { getWP } from '../lib/srs';
@@ -31,6 +32,7 @@ export default function Lesson({ snapshot, progress, onExit, onFinish }: Props) 
   const [value, setValue] = useState('');
   const [checked, setChecked] = useState<Checked | null>(null);
   const [confirmQuit, setConfirmQuit] = useState(false);
+  const listening = progress.sound && canSpeak();
 
   const item = state.queue[0];
   const exercise: Exercise | null = item?.kind === 'ex' ? item.exercise : null;
@@ -50,8 +52,11 @@ export default function Lesson({ snapshot, progress, onExit, onFinish }: Props) 
     else saveLesson({ ...snapshot, state: next }); // survit à un rechargement
   }
 
+  // « Vérifier » exige une réponse ; la Sentence Equivalence en demande exactement deux
+  const canCheck = exercise?.kind === 'multi' ? value.split(MULTI_SEP).filter(Boolean).length === 2 : !!value.trim();
+
   function check() {
-    if (!exercise || exercise.kind === 'pairs' || checked || !value.trim()) return;
+    if (!exercise || exercise.kind === 'pairs' || checked || !canCheck) return;
     const g = grade(exercise, data, value);
     setChecked({ grade: g });
     if (g !== 'wrong' && progress.sound) speak(data.words[exercise.wordId].word);
@@ -63,7 +68,7 @@ export default function Lesson({ snapshot, progress, onExit, onFinish }: Props) 
     if (exercise.kind === 'pairs') return commit(resolvePairs(state, checked.wrongPairs ?? []));
     const ok = checked.grade !== 'wrong';
     const box = getWP(progress.words, exercise.wordId).box;
-    commit(resolveExercise(state, ok, ok ? undefined : alternativeFor(data, exercise, box)));
+    commit(resolveExercise(state, ok, ok ? undefined : alternativeFor(data, exercise, box, Math.random, listening)));
   }
 
   // clavier : 1-4 choisit, Entrée vérifie / continue
@@ -78,6 +83,13 @@ export default function Lesson({ snapshot, progress, onExit, onFinish }: Props) 
       } else if (!inField && !checked && exercise?.kind === 'choice' && /^[1-4]$/.test(e.key)) {
         const o = exercise.options[Number(e.key) - 1];
         if (o) setValue(o.id);
+      } else if (!inField && !checked && exercise?.kind === 'multi' && /^[1-6]$/.test(e.key)) {
+        const o = exercise.options[Number(e.key) - 1];
+        if (o) {
+          const cur = value.split(MULTI_SEP).filter(Boolean);
+          const nxt = cur.includes(o.id) ? cur.filter((x) => x !== o.id) : [...cur, o.id].slice(-2);
+          setValue(nxt.join(MULTI_SEP));
+        }
       }
     };
     window.addEventListener('keydown', onKey);
@@ -92,6 +104,8 @@ export default function Lesson({ snapshot, progress, onExit, onFinish }: Props) 
     if (checked.grade === 'correct') title = 'Bravo !';
     else if (checked.grade === 'almost' && word) title = `Presque ! Orthographe : ${word.word}`;
     else if (exercise.kind === 'choice') title = `Bonne réponse : ${exercise.options.find((o) => o.id === exercise.answerId)?.label}`;
+    else if (exercise.kind === 'multi')
+      title = `Bonne réponse : ${exercise.answerIds.map((id) => exercise.options.find((o) => o.id === id)?.label).join(' et ')}`;
     else if (exercise.kind === 'type' && word) title = `Bonne réponse : ${word.word}`;
     else title = 'À revoir';
   }
@@ -113,7 +127,10 @@ export default function Lesson({ snapshot, progress, onExit, onFinish }: Props) 
       <main className="flex-1 overflow-y-auto">
         <div className="mx-auto w-full max-w-[760px] px-3 sm:px-6 pb-64 pt-8">
           {introWord && <Intro word={introWord} />}
-          {exercise?.kind === 'choice' && <MultipleChoice ex={exercise} value={value} onChange={setValue} locked={!!checked} />}
+          {exercise?.kind === 'choice' && (
+            <MultipleChoice ex={exercise} value={value} onChange={setValue} locked={!!checked} autoPlay={progress.sound} />
+          )}
+          {exercise?.kind === 'multi' && <SentenceEquivalence ex={exercise} value={value} onChange={setValue} locked={!!checked} />}
           {exercise?.kind === 'type' && word && <TypeWord ex={exercise} word={word} value={value} onChange={setValue} locked={!!checked} />}
           {exercise?.kind === 'pairs' && (
             <MatchPairs
@@ -137,7 +154,7 @@ export default function Lesson({ snapshot, progress, onExit, onFinish }: Props) 
               Associe toutes les paires
             </Button>
           ) : (
-            <Button full disabled={!value.trim()} onClick={check}>
+            <Button full disabled={!canCheck} onClick={check}>
               Vérifier
             </Button>
           )}
@@ -154,7 +171,7 @@ export default function Lesson({ snapshot, progress, onExit, onFinish }: Props) 
                 <strong>{word.word}</strong> — {word.definition} ({word.definitionFr})
               </p>
               <Sentence
-                text={exercise?.kind === 'choice' && exercise.sentence ? exercise.sentence : word.sentences[0]}
+                text={(exercise?.kind === 'choice' || exercise?.kind === 'multi') && exercise.sentence ? exercise.sentence : word.sentences[0]}
                 word={word.word}
                 className="italic"
               />

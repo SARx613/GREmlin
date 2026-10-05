@@ -1,6 +1,8 @@
 import { Download, Flame, Play, Trash2, Upload, Volume2, VolumeX } from 'lucide-react';
 import { useRef } from 'react';
+import AccountCard from '../components/AccountCard';
 import Button from '../components/Button';
+import type { useAccount } from '../hooks/useAccount';
 import ProgressBar from '../components/ProgressBar';
 import { data } from '../lib/data';
 import { parseProgress } from '../lib/storage';
@@ -9,6 +11,7 @@ import type { Progress } from '../types';
 
 type Props = {
   progress: Progress;
+  account: ReturnType<typeof useAccount>;
   hasPending: boolean;
   onResume: () => void;
   onReview: () => void;
@@ -18,7 +21,7 @@ type Props = {
   onReset: () => void;
 };
 
-export default function Home({ progress, hasPending, onResume, onReview, onChapter, onToggleSound, onImport, onReset }: Props) {
+export default function Home({ progress, account, hasPending, onResume, onReview, onChapter, onToggleSound, onImport, onReset }: Props) {
   const now = Date.now();
   const fileRef = useRef<HTMLInputElement>(null);
   const allIds = data.chapters.flatMap((c) => c.wordIds);
@@ -115,7 +118,10 @@ export default function Home({ progress, hasPending, onResume, onReview, onChapt
       ))}
 
       <section className="mt-12 border-t-2 border-line pt-6">
-        <h2 className="mb-3 text-sm font-extrabold uppercase tracking-wide text-muted">Ma progression</h2>
+        <h2 className="mb-3 text-sm font-extrabold uppercase tracking-wide text-muted">Compte et progression</h2>
+        <div className="mb-4">
+          <AccountCard account={account} />
+        </div>
         <div className="flex flex-wrap gap-3">
           <Button variant="white" className="flex items-center gap-2 !py-2 !text-sm" onClick={exportJson}>
             <Download size={16} /> Exporter

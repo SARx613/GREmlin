@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import type { ChoiceExercise, LessonState, QueueItem, WordsData } from '../types';
-import { alternativeFor, gradeTyped, makeExercise, typesForBox } from './exercises';
+import type { ChoiceExercise, LessonState, MultiExercise, QueueItem, WordsData } from '../types';
+import { MULTI_SEP, alternativeFor, grade, gradeTyped, makeExercise, typesForBox } from './exercises';
 import { findForm } from './match';
 import {
   MAX_NEW,
@@ -207,8 +207,8 @@ describe('choix des mots et file', () => {
 describe('exercices', () => {
   it('QCM : 4 options distinctes, bonne réponse présente une seule fois', () => {
     for (const id of data.chapters[0].wordIds) {
-      for (const type of typesForBox(3).concat('wordToDef') as ChoiceExercise['type'][]) {
-        if ((type as string) === 'typeWord') continue;
+      for (const type of typesForBox(3, true).concat('wordToDef') as ChoiceExercise['type'][]) {
+        if ((type as string) === 'typeWord' || (type as string) === 'equivalence') continue; // formats à part
         const ex = makeExercise(data, id, type) as ChoiceExercise;
         expect(ex.options).toHaveLength(4);
         expect(new Set(ex.options.map((o) => o.label.toLowerCase())).size).toBe(4);
@@ -231,6 +231,39 @@ describe('exercices', () => {
     expect(ex.prompt).toContain('_____');
     expect(ex.prompt.toLowerCase()).not.toContain(c1[0]);
     expect(findForm('The senator advocated reform.', 'advocate')).toBe('advocated');
+  });
+
+  it('Sentence Equivalence : 6 options distinctes, 2 réponses (le mot + un synonyme), aucun distracteur synonyme', () => {
+    for (let n = 0; n < 20; n++) {
+      const w = data.words[c1[n % 10]];
+      const ex = makeExercise(data, w.id, 'equivalence') as MultiExercise;
+      expect(ex.kind).toBe('multi');
+      expect(ex.options).toHaveLength(6);
+      expect(new Set(ex.options.map((o) => o.label.toLowerCase())).size).toBe(6);
+      expect(ex.answerIds).toHaveLength(2);
+      expect(ex.answerIds).toContain(w.id);
+      const wrong = ex.options.filter((o) => !ex.answerIds.includes(o.id)).map((o) => o.label);
+      expect(wrong.some((l) => w.synonyms.includes(l))).toBe(false);
+      expect(ex.prompt).toContain('_____');
+    }
+  });
+
+  it('Sentence Equivalence : correct seulement si les deux bonnes réponses sont cochées', () => {
+    const ex = makeExercise(data, c1[0], 'equivalence') as MultiExercise;
+    const [a, b] = ex.answerIds;
+    const wrong = ex.options.find((o) => !ex.answerIds.includes(o.id))!.id;
+    expect(grade(ex, data, [b, a].join(MULTI_SEP))).toBe('correct');
+    expect(grade(ex, data, [a, wrong].join(MULTI_SEP))).toBe('wrong');
+    expect(grade(ex, data, a)).toBe('wrong');
+  });
+
+  it('écoute : seulement quand le son est disponible, jamais pour un mot tout neuf', () => {
+    expect(typesForBox(3, false)).not.toContain('listen');
+    expect(typesForBox(3, true)).toContain('listen');
+    expect(typesForBox(0, true)).not.toContain('listen');
+    const ex = makeExercise(data, c1[0], 'listen') as ChoiceExercise;
+    expect(ex.type).toBe('listen');
+    expect(ex.options).toHaveLength(4);
   });
 
   it('écrire le mot : faute de frappe tolérée (« Presque ! »)', () => {

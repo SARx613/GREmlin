@@ -37,8 +37,8 @@ export type Progress = {
   sound: boolean;
 };
 
-export type ChoiceType = 'wordToDef' | 'defToWord' | 'fillBlank' | 'synonym';
-export type ExerciseType = ChoiceType | 'typeWord' | 'pairs';
+export type ChoiceType = 'wordToDef' | 'defToWord' | 'fillBlank' | 'synonym' | 'listen';
+export type ExerciseType = ChoiceType | 'equivalence' | 'typeWord' | 'pairs';
 
 export type Choice = { id: string; label: string };
 
@@ -50,6 +50,18 @@ export type ChoiceExercise = {
   sentence?: string; // phrase complète (pour le feedback)
   options: Choice[];
   answerId: string;
+  retry?: boolean;
+};
+
+/** Sentence Equivalence (GRE) : une phrase, 6 mots, 2 réponses qui donnent le même sens. */
+export type MultiExercise = {
+  kind: 'multi';
+  type: 'equivalence';
+  wordId: string;
+  prompt: string;
+  sentence: string;
+  options: Choice[];
+  answerIds: string[];
   retry?: boolean;
 };
 
@@ -69,7 +81,8 @@ export type PairsExercise = {
   defs: { wordId: string; text: string }[]; // ordre d'affichage à droite
 };
 
-export type Exercise = ChoiceExercise | TypeExercise | PairsExercise;
+export type SingleExercise = ChoiceExercise | MultiExercise | TypeExercise;
+export type Exercise = SingleExercise | PairsExercise;
 
 export type QueueItem = { kind: 'intro'; wordId: string } | { kind: 'ex'; exercise: Exercise };
 

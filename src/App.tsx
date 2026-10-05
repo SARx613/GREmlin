@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import { data } from './lib/data';
 import { buildQueue, createLesson, finishLesson, pickWords, type LessonResult } from './lib/session';
+import { canSpeak } from './lib/speak';
 import { clearLesson, loadLesson, saveLesson } from './lib/storage';
 import { currentStreak, recordLesson } from './lib/srs';
+import { useAccount } from './hooks/useAccount';
 import { useProgress } from './hooks/useProgress';
+import { emptyState } from './lib/storage';
 import Chapter from './screens/Chapter';
 import Home from './screens/Home';
 import Lesson from './screens/Lesson';
@@ -26,6 +29,7 @@ function loadPending(): LessonSnapshot | null {
 
 export default function App() {
   const { progress, update, replace, reset } = useProgress();
+  const account = useAccount(progress, replace);
   const [screen, setScreen] = useState<Screen>({ name: 'home' });
   const [pending, setPending] = useState(loadPending);
 
@@ -39,7 +43,7 @@ export default function App() {
     const snapshot: LessonSnapshot = {
       config,
       applySrs,
-      state: createLesson(ids, buildQueue(ids, data, progress.words)),
+      state: createLesson(ids, buildQueue(ids, data, progress.words, Math.random, progress.sound && canSpeak())),
     };
     saveLesson(snapshot);
     setPending(snapshot);
@@ -61,6 +65,7 @@ export default function App() {
       view = (
         <Home
           progress={progress}
+          account={account}
           hasPending={!!pending}
           onResume={() => pending && setScreen({ name: 'lesson', snapshot: pending })}
           onReview={() => startLesson({ mode: 'review' })}
@@ -69,6 +74,7 @@ export default function App() {
           onImport={replace}
           onReset={() => {
             reset();
+            void account.overwrite(emptyState());
             setPending(null);
           }}
         />
