@@ -46,12 +46,14 @@ afterEach(() => {
 describe('api/account', () => {
   it('me : sans session, expose le client id et l\'état de la synchro', async () => {
     const body = await (await call('me')).json();
-    expect(body).toEqual({ clientId: 'client.apps.googleusercontent.com', sync: true, user: null });
+    expect(body).toEqual({ clientId: 'client.apps.googleusercontent.com', sync: true, user: null, missing: [] });
   });
 
   it('me : non configuré → pas de client id (le bouton Google est masqué)', async () => {
     delete process.env.GOOGLE_CLIENT_ID;
-    expect((await (await call('me')).json()).clientId).toBeNull();
+    const body = await (await call('me')).json();
+    expect(body.clientId).toBeNull();
+    expect(body.missing).toEqual(['GOOGLE_CLIENT_ID']); // dit laquelle manque, sans révéler de valeur
   });
 
   it('me : avec un cookie valide, renvoie l\'utilisateur', async () => {
