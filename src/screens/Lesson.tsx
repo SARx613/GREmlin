@@ -127,7 +127,7 @@ export default function Lesson({ snapshot, progress, onExit, onFinish }: Props) 
       </main>
 
       <footer className="shrink-0 border-t-2 border-line bg-white">
-        <div className="mx-auto max-w-[760px] px-3 sm:px-6 py-4">
+        <div className="mx-auto max-w-[760px] px-3 pt-4 pb-[max(1rem,env(safe-area-inset-bottom))] sm:px-6">
           {introWord ? (
             <Button full onClick={next}>
               Continuer

@@ -9,5 +9,8 @@ body {
   color: #3c3c3c;
   background: #fff;
   -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top);
+  overscroll-behavior-y: none;
 }
 button { font-family: inherit; }

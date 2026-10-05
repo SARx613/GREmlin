@@ -66,8 +66,13 @@ export default function Home({ progress, hasPending, onResume, onReview, onChapt
         </button>
       </header>
 
-      <h1 className="mb-1 text-3xl font-extrabold text-ink">GREmlin</h1>
-      <p className="mb-6 text-muted">Une leçon de 5 minutes par jour suffit.</p>
+      <div className="mb-6 flex items-center gap-3">
+        <img src="/favicon.svg" alt="" width={56} height={56} className="shrink-0" />
+        <div>
+          <h1 className="text-3xl font-extrabold leading-tight text-ink">GREmlin</h1>
+          <p className="text-muted">Une leçon de 5 minutes par jour suffit.</p>
+        </div>
+      </div>
 
       {hasPending && (
         <Button variant="blue" full className="mb-3 flex items-center justify-center gap-2" onClick={onResume}>
