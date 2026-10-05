@@ -1,1 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#58CC02"/><text x="32" y="43" font-family="Nunito,Arial,sans-serif" font-size="40" font-weight="800" text-anchor="middle" fill="#fff">G</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#58CC02"/>
+<g stroke="#2A5A00" stroke-width="9" stroke-linejoin="round" stroke-linecap="round">
+  <!-- oreilles -->
+  <g id="ear"><path d="M152 238 L58 150 L84 300 L160 338 Z" fill="#9BE23E"/>
+  <path d="M142 256 L88 200 L104 292 L152 318 Z" fill="#FF8FA3" stroke="none"/></g>
+  <use href="#ear" transform="translate(512 0) scale(-1 1)"/>
+  <!-- crête -->
+  <path d="M214 178 L222 128 L244 164 L262 116 L280 164 L304 128 L306 182 Z" fill="#9BE23E"/>
+  <!-- tête -->
+  <ellipse cx="256" cy="288" rx="128" ry="118" fill="#9BE23E"/>
+  <!-- yeux -->
+  <circle cx="208" cy="272" r="38" fill="#fff"/><circle cx="304" cy="272" r="38" fill="#fff"/>
+  <circle cx="216" cy="278" r="17" fill="#1b1b1b" stroke="none"/><circle cx="296" cy="278" r="17" fill="#1b1b1b" stroke="none"/>
+  <circle cx="222" cy="271" r="6" fill="#fff" stroke="none"/><circle cx="302" cy="271" r="6" fill="#fff" stroke="none"/>
+  <!-- sourcils -->
+  <path d="M166 226 L236 246" fill="none" stroke-width="13"/><path d="M346 226 L276 246" fill="none" stroke-width="13"/>
+  <!-- nez -->
+  <circle cx="246" cy="312" r="4" fill="#2A5A00" stroke="none"/><circle cx="266" cy="312" r="4" fill="#2A5A00" stroke="none"/>
+  <!-- sourire -->
+  <path d="M186 338 Q256 408 326 338 Q256 360 186 338 Z" fill="#3b1420"/>
+  <path d="M204 345 L216 366 L228 352 L242 372 L256 357 L270 372 L284 352 L296 366 L308 345 Q256 362 204 345 Z" fill="#fff" stroke="none"/>
+</g></svg>
