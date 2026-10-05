@@ -2,7 +2,7 @@ import type { Progress } from '../types';
 import { parseProgress } from './storage';
 
 export type User = { id: string; name: string; picture: string; email: string };
-export type Me = { clientId: string | null; sync: boolean; user: User | null };
+export type Me = { clientId: string | null; sync: boolean; user: User | null; missing?: string[] };
 
 const API = '/api/account';
 

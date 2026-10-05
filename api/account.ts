@@ -127,6 +127,8 @@ export default {
         clientId: env('GOOGLE_CLIENT_ID') && secretKey() ? env('GOOGLE_CLIENT_ID') : null,
         sync: !!redisConfig(),
         user: await sessionUser(req),
+        // diagnostic : quelles variables le serveur voit (jamais leurs valeurs)
+        missing: [!env('GOOGLE_CLIENT_ID') && 'GOOGLE_CLIENT_ID', !env('SESSION_SECRET') && 'SESSION_SECRET'].filter(Boolean),
       });
     }
 
