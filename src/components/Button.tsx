@@ -3,10 +3,10 @@ import type { ButtonHTMLAttributes } from 'react';
 type Variant = 'green' | 'blue' | 'red' | 'white';
 
 const VARIANTS: Record<Variant, string> = {
-  green: 'border-0 border-b-4 bg-green border-green-dark text-white',
-  blue: 'border-0 border-b-4 bg-blue border-blue-dark text-white',
-  red: 'border-0 border-b-4 bg-red border-red-dark text-white',
-  white: 'border-2 border-b-4 bg-white border-line text-blue',
+  green: 'border-0 border-b-4 bg-green border-green-dark text-deep',
+  blue: 'border-0 border-b-4 bg-blue border-blue-dark text-deep',
+  red: 'border-0 border-b-4 bg-red border-red-dark text-deep',
+  white: 'border-2 border-b-4 bg-surface border-line text-blue-ink',
 };
 
 type Props = ButtonHTMLAttributes<HTMLButtonElement> & { variant?: Variant; full?: boolean };
@@ -19,7 +19,7 @@ export default function Button({ variant = 'green', full, className = '', type =
       className={[
         'rounded-xl2 px-5 py-3 text-base font-bold uppercase tracking-wide transition-colors duration-150',
         'active:translate-y-[2px] active:border-b-2',
-        'disabled:cursor-not-allowed disabled:border-[#CFCFCF] disabled:bg-line disabled:text-[#AFAFAF]',
+        'disabled:cursor-not-allowed disabled:border-dborder disabled:bg-line disabled:text-dtext',
         'disabled:active:translate-y-0 disabled:active:border-b-4',
         VARIANTS[variant],
         full ? 'w-full' : '',

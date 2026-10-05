@@ -19,8 +19,8 @@ export default function FeedbackBar({ show, ok, title, children, onContinue }: P
       }`}
     >
       <div className="mx-auto max-w-[760px] px-3 sm:px-6 pb-[max(1.5rem,env(safe-area-inset-bottom))] pt-4">
-        <p className={`mb-2 text-xl font-extrabold ${ok ? 'text-green-dark' : 'text-red-dark'}`}>{title}</p>
-        <div className={`mb-4 space-y-1 text-sm sm:text-base ${ok ? 'text-green-dark' : 'text-red-dark'}`}>{children}</div>
+        <p className={`mb-2 text-xl font-extrabold ${ok ? 'text-green-ink' : 'text-red-ink'}`}>{title}</p>
+        <div className={`mb-4 space-y-1 text-sm sm:text-base ${ok ? 'text-green-ink' : 'text-red-ink'}`}>{children}</div>
         <Button variant={ok ? 'green' : 'red'} full onClick={onContinue} tabIndex={show ? 0 : -1}>
           Continuer
         </Button>

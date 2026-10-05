@@ -21,8 +21,18 @@ describe('mergeProgress', () => {
   });
 
   it('série : le jour le plus récent gagne', () => {
-    expect(mergeProgress(p({}, '2026-10-05', 3), p({}, '2026-10-06', 1)).streak).toEqual({ count: 1, lastDay: '2026-10-06' });
+    expect(mergeProgress(p({}, '2026-10-05', 3), p({}, '2026-10-06', 1)).streak).toMatchObject({ count: 1, lastDay: '2026-10-06' });
     expect(mergeProgress(p({}, null, 0), p({}, '2026-10-06', 2)).streak.count).toBe(2);
+  });
+
+  it('record de série : le meilleur des deux côtés est conservé', () => {
+    expect(mergeProgress(p({}, '2026-10-05', 3), p({}, '2026-10-06', 1)).streak.best).toBe(3);
+  });
+
+  it('historique : union des jours, le plus grand de chaque champ', () => {
+    const a = { ...p({}), days: { '2026-10-05': { lessons: 2, mastered: 4 } } };
+    const b = { ...p({}), days: { '2026-10-05': { lessons: 1, mastered: 7 }, '2026-10-06': { lessons: 1, mastered: 8 } } };
+    expect(mergeProgress(a, b).days).toEqual({ '2026-10-05': { lessons: 2, mastered: 7 }, '2026-10-06': { lessons: 1, mastered: 8 } });
   });
 
   it('est idempotente', () => {

@@ -13,6 +13,7 @@ export type Chapter = {
   id: string;
   title: string;
   group: string;
+  subtitle?: string; // familles de sens du chapitre (synonymes)
   wordIds: string[];
 };
 
@@ -29,12 +30,16 @@ export type WordProgress = {
   known?: boolean; // true = « je connais », false = « je ne connais pas » (prioritaire)
 };
 
-export type Streak = { count: number; lastDay: string | null };
+export type Streak = { count: number; lastDay: string | null; best?: number };
+
+/** Bilan d'une journée : leçons terminées et mots maîtrisés en fin de journée (pour les statistiques). */
+export type DayStat = { lessons: number; mastered: number };
 
 export type Progress = {
   words: Record<string, WordProgress>;
   streak: Streak;
   sound: boolean;
+  days?: Record<string, DayStat>;
 };
 
 export type ChoiceType = 'wordToDef' | 'defToWord' | 'fillBlank' | 'synonym' | 'listen';

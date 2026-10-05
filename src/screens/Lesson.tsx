@@ -116,7 +116,7 @@ export default function Lesson({ snapshot, progress, onExit, onFinish }: Props) 
   }
 
   return (
-    <div className="relative flex h-full flex-col overflow-hidden bg-white">
+    <div className="relative flex h-full flex-col overflow-hidden bg-surface">
       <header className="mx-auto flex w-full max-w-[760px] items-center gap-4 px-3 pt-4 sm:px-6">
         <button type="button" aria-label="Quitter la leçon" onClick={() => setConfirmQuit(true)} className="rounded-xl2 p-1 text-muted hover:bg-line">
           <X size={28} />
@@ -143,7 +143,7 @@ export default function Lesson({ snapshot, progress, onExit, onFinish }: Props) 
         </div>
       </main>
 
-      <footer className="shrink-0 border-t-2 border-line bg-white">
+      <footer className="shrink-0 border-t-2 border-line bg-surface">
         <div className="mx-auto max-w-[760px] px-3 pt-4 pb-[max(1rem,env(safe-area-inset-bottom))] sm:px-6">
           {introWord ? (
             <Button full onClick={next}>

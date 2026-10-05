@@ -1,4 +1,4 @@
-import type { Chapter, Streak, WordProgress } from '../types';
+import type { Chapter, DayStat, Streak, WordProgress } from '../types';
 
 export const DAY = 24 * 60 * 60 * 1000;
 export const MAX_BOX = 6;
@@ -78,7 +78,14 @@ export function recordLesson(streak: Streak, now: number): Streak {
   const today = dayKey(now);
   if (streak.lastDay === today) return streak;
   const yesterday = dayKey(now - DAY);
-  return { count: streak.lastDay === yesterday ? streak.count + 1 : 1, lastDay: today };
+  const count = streak.lastDay === yesterday ? streak.count + 1 : 1;
+  return { count, lastDay: today, best: Math.max(streak.best ?? 0, count) };
+}
+
+/** Ajoute une leçon terminée au bilan du jour. */
+export function recordDay(days: Record<string, DayStat> | undefined, now: number, mastered: number): Record<string, DayStat> {
+  const key = dayKey(now);
+  return { ...days, [key]: { lessons: (days?.[key]?.lessons ?? 0) + 1, mastered } };
 }
 
 /** Valeur à afficher : retombe à 0 si un jour complet a été sauté. */
