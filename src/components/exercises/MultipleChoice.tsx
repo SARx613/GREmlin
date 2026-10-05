@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { speak } from '../../lib/speak';
 import { SpeakButton } from '../WordCard';
 import type { ChoiceExercise } from '../../types';
 
@@ -6,6 +8,7 @@ const INSTRUCTION: Record<ChoiceExercise['type'], string> = {
   defToWord: 'Quel est ce mot ?',
   fillBlank: 'Complète la phrase',
   synonym: 'Choisis le synonyme',
+  listen: 'Écoute et choisis la définition',
 };
 
 type Props = {
@@ -14,16 +17,26 @@ type Props = {
   onChange: (id: string) => void;
   /** Après « Vérifier » : on fige les choix et on colore le résultat. */
   locked: boolean;
+  /** Son activé : l'exercice d'écoute prononce le mot dès son apparition. */
+  autoPlay?: boolean;
 };
 
 /** QCM : mot → définition, définition → mot, phrase à trous, synonyme. */
-export default function MultipleChoice({ ex, value, onChange, locked }: Props) {
+export default function MultipleChoice({ ex, value, onChange, locked, autoPlay }: Props) {
   const showWord = ex.type === 'wordToDef' || ex.type === 'synonym';
+  useEffect(() => {
+    if (ex.type === 'listen' && autoPlay) speak(ex.prompt);
+  }, [ex, autoPlay]);
   return (
     <div>
       <h2 className="mb-6 text-2xl font-extrabold text-ink">{INSTRUCTION[ex.type]}</h2>
       <div className="mb-6 flex items-center gap-2">
-        {showWord ? (
+        {ex.type === 'listen' ? (
+          <>
+            <SpeakButton text={ex.prompt} className="!bg-blue-light !p-4" />
+            {locked && <p className="text-3xl font-extrabold text-ink">{ex.prompt}</p>}
+          </>
+        ) : showWord ? (
           <>
             <p className="text-4xl font-extrabold leading-tight text-ink">{ex.prompt}</p>
             <SpeakButton text={ex.prompt} />

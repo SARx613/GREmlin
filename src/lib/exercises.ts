@@ -4,7 +4,9 @@ import type {
   ChoiceExercise,
   ChoiceType,
   ExerciseType,
+  MultiExercise,
   PairsExercise,
+  SingleExercise,
   TypeExercise,
   Word,
   WordsData,
@@ -20,11 +22,16 @@ const BOX_RANGE: Record<SingleType, [number, number]> = {
   defToWord: [0, 3],
   fillBlank: [2, 6],
   synonym: [2, 6],
+  listen: [2, 6],
+  equivalence: [3, 6],
   typeWord: [3, 6],
 };
 
-export const typesForBox = (box: number): SingleType[] =>
-  (Object.keys(BOX_RANGE) as SingleType[]).filter((t) => box >= BOX_RANGE[t][0] && box <= BOX_RANGE[t][1]);
+/** `listening` = false si le son est coupé ou indisponible : pas d'exercice d'écoute. */
+export const typesForBox = (box: number, listening = false): SingleType[] =>
+  (Object.keys(BOX_RANGE) as SingleType[]).filter(
+    (t) => box >= BOX_RANGE[t][0] && box <= BOX_RANGE[t][1] && (listening || t !== 'listen'),
+  );
 
 export function shuffle<T>(arr: T[], rng: Rng = Math.random): T[] {
   const a = [...arr];
@@ -112,7 +119,7 @@ function choice(
   let answer: Choice;
   const avoid: string[] = [];
 
-  if (type === 'wordToDef') {
+  if (type === 'wordToDef' || type === 'listen') {
     prompt = word.word;
     labelOf = defLabel;
     answer = { id: word.id, label: word.definition };
@@ -142,14 +149,38 @@ function choice(
   return { kind: 'choice', type, wordId: word.id, prompt, sentence, options, answerId: answer.id };
 }
 
+function multi(data: WordsData, word: Word, rng: Rng): MultiExercise | null {
+  const syns = word.synonyms.filter((x) => !x.includes(' '));
+  const usable = word.sentences.filter((x) => blankOut(x, word.word));
+  if (!syns.length || !usable.length) return null;
+  const sentence = pick(usable, rng);
+  const syn = pick(syns, rng);
+  const others = distractors(data, word, 4, (w) => w.word, [...word.synonyms, syn], rng);
+  if (others.length < 4) return null;
+  const answer = [
+    { id: word.id, label: word.word },
+    { id: `syn:${syn}`, label: syn },
+  ];
+  return {
+    kind: 'multi',
+    type: 'equivalence',
+    wordId: word.id,
+    prompt: blankOut(sentence, word.word)!,
+    sentence,
+    options: shuffle([...answer, ...others.map((w) => ({ id: w.id, label: w.word }))], rng),
+    answerIds: answer.map((a) => a.id),
+  };
+}
+
 function typed(word: Word): TypeExercise {
   const letters = word.word.split('').map((c, i) => (c === ' ' ? ' ' : i === 0 ? c : '_'));
   return { kind: 'type', type: 'typeWord', wordId: word.id, prompt: word.definition, hint: letters.join(' ') };
 }
 
-export function makeExercise(data: WordsData, wordId: string, type: SingleType, rng: Rng = Math.random): ChoiceExercise | TypeExercise {
+export function makeExercise(data: WordsData, wordId: string, type: SingleType, rng: Rng = Math.random): SingleExercise {
   const word = data.words[wordId];
   if (type === 'typeWord') return typed(word);
+  if (type === 'equivalence') return multi(data, word, rng) ?? makeExercise(data, wordId, 'fillBlank', rng);
   return choice(data, word, type, rng) ?? choice(data, word, 'wordToDef', rng)!;
 }
 
@@ -157,8 +188,14 @@ export function makeExercise(data: WordsData, wordId: string, type: SingleType, 
  * Choisit un type autorisé pour la boîte, différent du dernier exercice et des types déjà posés pour ce mot ;
  * si ce n'est pas possible, on garde d'abord la variété entre les exercices d'un même mot.
  */
-export function pickType(box: number, last: ExerciseType | undefined, used: ExerciseType[], rng: Rng = Math.random): SingleType {
-  const all = typesForBox(box);
+export function pickType(
+  box: number,
+  last: ExerciseType | undefined,
+  used: ExerciseType[],
+  rng: Rng = Math.random,
+  listening = false,
+): SingleType {
+  const all = typesForBox(box, listening);
   for (const ban of [[last, ...used], used, [last], []]) {
     const ok = all.filter((t) => !ban.includes(t));
     if (ok.length) return pick(ok, rng);
@@ -167,8 +204,14 @@ export function pickType(box: number, last: ExerciseType | undefined, used: Exer
 }
 
 /** Exercice de remplacement après une erreur : autre type si possible. */
-export function alternativeFor(data: WordsData, ex: ChoiceExercise | TypeExercise, box: number, rng: Rng = Math.random): ChoiceExercise | TypeExercise {
-  const types = typesForBox(box).filter((t) => t !== ex.type);
+export function alternativeFor(
+  data: WordsData,
+  ex: SingleExercise,
+  box: number,
+  rng: Rng = Math.random,
+  listening = false,
+): SingleExercise {
+  const types = typesForBox(box, listening).filter((t) => t !== ex.type);
   const type = types.length ? pick(types, rng) : (ex.type as SingleType);
   return { ...makeExercise(data, ex.wordId, type, rng), retry: true };
 }
@@ -205,7 +248,14 @@ export function gradeTyped(answer: string, input: string): Grade {
   return a.length >= 4 && levenshtein(a, i) <= 1 ? 'almost' : 'wrong';
 }
 
-export function grade(ex: ChoiceExercise | TypeExercise, data: WordsData, value: string): Grade {
+/** Valeur d'une réponse à choix multiples : ids séparés par « | ». */
+export const MULTI_SEP = '|';
+
+export function grade(ex: SingleExercise, data: WordsData, value: string): Grade {
   if (ex.kind === 'choice') return value === ex.answerId ? 'correct' : 'wrong';
+  if (ex.kind === 'multi') {
+    const given = value.split(MULTI_SEP).filter(Boolean).sort();
+    return given.join(MULTI_SEP) === [...ex.answerIds].sort().join(MULTI_SEP) ? 'correct' : 'wrong';
+  }
   return gradeTyped(data.words[ex.wordId].word, value);
 }

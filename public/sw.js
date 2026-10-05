@@ -1,7 +1,7 @@
 // Service worker minimal : l'app fonctionne hors ligne après la première visite.
 // - pages : réseau d'abord (pour recevoir les mises à jour), cache en secours
 // - assets (JS/CSS hachés, icônes, polices) : cache d'abord, rempli au fil de l'eau
-const CACHE = 'gremlin-v1';
+const CACHE = 'gremlin-v2';
 const SHELL = ['/', '/manifest.webmanifest', '/favicon.svg', '/icon-192.png'];
 
 self.addEventListener('install', (e) => {
@@ -26,6 +26,7 @@ self.addEventListener('fetch', (e) => {
   const url = new URL(req.url);
   const sameOrigin = url.origin === self.location.origin;
   if (!sameOrigin && !FONT_HOSTS.includes(url.hostname)) return;
+  if (sameOrigin && url.pathname.startsWith('/api/')) return; // jamais d'API en cache
 
   if (req.mode === 'navigate') {
     e.respondWith(

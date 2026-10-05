@@ -2,6 +2,8 @@ import { describe, expect, it } from 'vitest';
 import {
   DAY,
   applyResult,
+  difficultyFactor,
+  isLeech,
   currentStreak,
   dueIds,
   emptyProgress,
@@ -38,6 +40,31 @@ describe('applyResult', () => {
 
   it('intervalles : 1, 2, 4, 8, 16, 35 jours', () => {
     expect([1, 2, 3, 4, 5, 6].map((b) => intervalMs(b) / DAY)).toEqual([1, 2, 4, 8, 16, 35]);
+  });
+});
+
+describe('difficulté personnelle', () => {
+  const seen = (seenN: number, misses: number) => ({ ...emptyProgress(), box: 2, seen: seenN, misses });
+
+  it('neutre tant que le mot a été vu moins de 3 fois', () => {
+    expect(difficultyFactor(seen(2, 2))).toBe(1);
+  });
+
+  it('un mot souvent raté revient plus tôt, un mot toujours réussi plus tard (bornes 0,6 – 1,25)', () => {
+    expect(difficultyFactor(seen(10, 0))).toBe(1.25);
+    expect(difficultyFactor(seen(10, 5))).toBe(1);
+    expect(difficultyFactor(seen(10, 30))).toBe(0.6);
+  });
+
+  it('s\'applique à la date de retour', () => {
+    expect(applyResult(seen(10, 30), false, NOW).dueAt).toBe(NOW + Math.round(4 * DAY * 0.6)); // boîte 3
+    expect(applyResult(seen(10, 0), false, NOW).dueAt).toBe(NOW + 4 * DAY * 1.25);
+  });
+
+  it('détecte les mots difficiles', () => {
+    expect(isLeech(seen(4, 4))).toBe(true);
+    expect(isLeech(seen(3, 5))).toBe(false);
+    expect(isLeech(seen(10, 2))).toBe(false);
   });
 });
 
