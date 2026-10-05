@@ -28,9 +28,9 @@ export default function SentenceEquivalence({ ex, value, onChange, locked }: Pro
           const selected = picked.includes(o.id);
           const right = ex.answerIds.includes(o.id);
           let style = 'border-line text-ink hover:bg-soft';
-          if (selected) style = 'border-blue bg-blue-light text-blue-dark';
-          if (locked && right) style = 'border-green bg-green-light text-green-dark';
-          else if (locked && selected) style = 'border-red bg-red-light text-red-dark';
+          if (selected) style = 'border-blue bg-blue-light text-blue-ink';
+          if (locked && right) style = 'border-green bg-green-light text-green-ink';
+          else if (locked && selected) style = 'border-red bg-red-light text-red-ink';
           return (
             <button
               key={o.id}

@@ -94,6 +94,7 @@
    "id": "ch-04",
    "title": "Synonymes puissants 1",
    "group": "Synonymes puissants",
+   "subtitle": "Apaiser · Calme · Réduire · Entraver",
    "wordIds": [
     "allay",
     "assuage",
@@ -119,16 +120,17 @@
     "impede",
     "mire",
     "stultify",
-    "unwieldy"
+    "unwieldy",
+    "cumbersome",
+    "unencumbered"
    ]
   },
   {
    "id": "ch-05",
    "title": "Synonymes puissants 2",
    "group": "Synonymes puissants",
+   "subtitle": "Empêcher · Réprimander · Dénigrer · Railler · Louer",
    "wordIds": [
-    "cumbersome",
-    "unencumbered",
     "preclude",
     "forestall",
     "preempt",
@@ -151,17 +153,18 @@
     "tarnish",
     "scoff",
     "mock",
-    "lampoon"
+    "lampoon",
+    "extol",
+    "tout",
+    "lionize"
    ]
   },
   {
    "id": "ch-06",
    "title": "Synonymes puissants 3",
    "group": "Synonymes puissants",
+   "subtitle": "Tromper · Rusé · Embrouiller",
    "wordIds": [
-    "extol",
-    "tout",
-    "lionize",
     "hoodwink",
     "dissemble",
     "malinger",
@@ -183,17 +186,18 @@
     "bewilder",
     "befuddle",
     "flummox",
-    "confound"
+    "confound",
+    "nonplussed",
+    "discomfit",
+    "disquiet"
    ]
   },
   {
    "id": "ch-07",
    "title": "Synonymes puissants 4",
    "group": "Synonymes puissants",
+   "subtitle": "Obscur · Clair et franc · Style lourd · Têtu",
    "wordIds": [
-    "nonplussed",
-    "discomfit",
-    "disquiet",
     "recondite",
     "arcane",
     "inscrutable",
@@ -215,19 +219,20 @@
     "stilted",
     "histrionic",
     "garrulous",
-    "discursive"
+    "discursive",
+    "headstrong",
+    "intractable",
+    "hidebound",
+    "balk",
+    "brook"
    ]
   },
   {
    "id": "ch-08",
    "title": "Synonymes puissants 5",
    "group": "Synonymes puissants",
+   "subtitle": "Docile · Mou · Élan · Minutieux · Bâclé",
    "wordIds": [
-    "headstrong",
-    "intractable",
-    "hidebound",
-    "balk",
-    "brook",
     "tractable",
     "amenable",
     "subservient",
@@ -247,21 +252,22 @@
     "steadfast",
     "stalwart",
     "painstaking",
-    "punctilious"
-   ]
-  },
-  {
-   "id": "ch-09",
-   "title": "Synonymes puissants 6",
-   "group": "Synonymes puissants",
-   "wordIds": [
+    "punctilious",
     "exacting",
     "stringent",
     "cursory",
     "perfunctory",
     "haphazard",
     "shoddy",
-    "desultory",
+    "desultory"
+   ]
+  },
+  {
+   "id": "ch-09",
+   "title": "Synonymes puissants 6",
+   "group": "Synonymes puissants",
+   "subtitle": "Abondance · Rareté · Économie",
+   "wordIds": [
     "plentiful",
     "replete",
     "rife",
@@ -279,14 +285,7 @@
     "shortfall",
     "penury",
     "thrifty",
-    "sparing"
-   ]
-  },
-  {
-   "id": "ch-10",
-   "title": "Synonymes puissants 7",
-   "group": "Synonymes puissants",
-   "wordIds": [
+    "sparing",
     "spare",
     "squander",
     "spendthrift",
@@ -294,7 +293,15 @@
     "lavish",
     "acquisitive",
     "embezzle",
-    "parlay",
+    "parlay"
+   ]
+  },
+  {
+   "id": "ch-10",
+   "title": "Synonymes puissants 7",
+   "group": "Synonymes puissants",
+   "subtitle": "Colère · Agacer · Grossier · Désinvolte · Réservé",
+   "wordIds": [
     "ire",
     "animus",
     "enmity",
@@ -311,21 +318,22 @@
     "boorish",
     "crass",
     "brash",
-    "brazen"
-   ]
-  },
-  {
-   "id": "ch-11",
-   "title": "Synonymes puissants 8",
-   "group": "Synonymes puissants",
-   "wordIds": [
+    "brazen",
     "unseemly",
     "impolitic",
     "flippant",
     "facetious",
     "diffident",
     "coy",
-    "reticent",
+    "reticent"
+   ]
+  },
+  {
+   "id": "ch-11",
+   "title": "Synonymes puissants 8",
+   "group": "Synonymes puissants",
+   "subtitle": "Prudence · Imprudence · Sombre · Sentimental · Choc · Ennuyeux",
+   "wordIds": [
     "wary",
     "chary",
     "skittish",
@@ -343,14 +351,7 @@
     "aghast",
     "appall",
     "dismay",
-    "jarring"
-   ]
-  },
-  {
-   "id": "ch-12",
-   "title": "Synonymes puissants 9",
-   "group": "Synonymes puissants",
-   "wordIds": [
+    "jarring",
     "humdrum",
     "tedious",
     "tiresome",
@@ -359,7 +360,15 @@
     "hackneyed",
     "trope",
     "lackluster",
-    "staid",
+    "staid"
+   ]
+  },
+  {
+   "id": "ch-12",
+   "title": "Synonymes puissants 9",
+   "group": "Synonymes puissants",
+   "subtitle": "Fascinant · Plaisir · Éphémère · Pionniers · Annoncer",
+   "wordIds": [
     "riveting",
     "gripping",
     "enthrall",
@@ -375,14 +384,7 @@
     "revel",
     "fleeting",
     "wane",
-    "dwindle"
-   ]
-  },
-  {
-   "id": "ch-13",
-   "title": "Synonymes puissants 10",
-   "group": "Synonymes puissants",
-   "wordIds": [
+    "dwindle",
     "fledgling",
     "tyro",
     "trailblazer",
@@ -392,7 +394,15 @@
     "harbinger",
     "portend",
     "foreseeable",
-    "impending",
+    "impending"
+   ]
+  },
+  {
+   "id": "ch-13",
+   "title": "Synonymes puissants 10",
+   "group": "Synonymes puissants",
+   "subtitle": "Engendrer · Soutenir · Affaiblir · Disculper · Affirmer",
+   "wordIds": [
     "beget",
     "spawn",
     "foster",
@@ -407,14 +417,7 @@
     "uphold",
     "mainstay",
     "credence",
-    "undermine"
-   ]
-  },
-  {
-   "id": "ch-14",
-   "title": "Synonymes puissants 11",
-   "group": "Synonymes puissants",
-   "wordIds": [
+    "undermine",
     "undercut",
     "vitiate",
     "impair",
@@ -424,7 +427,15 @@
     "evince",
     "contend",
     "aver",
-    "purport",
+    "purport"
+   ]
+  },
+  {
+   "id": "ch-14",
+   "title": "Synonymes puissants 11",
+   "group": "Synonymes puissants",
+   "subtitle": "Supposer · Contredire · Confondre · Comprendre · Évident · Étrange",
+   "wordIds": [
     "surmise",
     "deem",
     "ascribe",
@@ -439,14 +450,7 @@
     "elicit",
     "discern",
     "blatant",
-    "glaring"
-   ]
-  },
-  {
-   "id": "ch-15",
-   "title": "Synonymes puissants 12",
-   "group": "Synonymes puissants",
-   "wordIds": [
+    "glaring",
     "conspicuous",
     "overt",
     "stark",
@@ -459,7 +463,15 @@
     "fanciful",
     "quixotic",
     "protean",
-    "modish",
+    "modish"
+   ]
+  },
+  {
+   "id": "ch-15",
+   "title": "Synonymes puissants 12",
+   "group": "Synonymes puissants",
+   "subtitle": "Insignifiant · Perspicace · Aveugle · Pouvoir · Instable · Dépasser",
+   "wordIds": [
     "trifling",
     "extraneous",
     "slight",
@@ -471,14 +483,7 @@
     "polymath",
     "shortsighted",
     "oblivious",
-    "smug"
-   ]
-  },
-  {
-   "id": "ch-16",
-   "title": "Synonymes puissants 13",
-   "group": "Synonymes puissants",
-   "wordIds": [
+    "smug",
     "sanctimonious",
     "haughty",
     "wield",
@@ -491,7 +496,15 @@
     "supersede",
     "overshadow",
     "outstrip",
-    "outpace",
+    "outpace"
+   ]
+  },
+  {
+   "id": "ch-16",
+   "title": "Synonymes puissants 13",
+   "group": "Synonymes puissants",
+   "subtitle": "Éviter · Relations",
+   "wordIds": [
     "shun",
     "eschew",
     "scorn",
@@ -711,7 +724,8 @@
     "prosperous",
     "opulent",
     "rich"
-   ]
+   ],
+   "mnemonic": "Affluent = « qui afflue » : l'argent afflue chez lui. Pas la rivière !"
   },
   "arresting": {
    "id": "arresting",
@@ -2132,7 +2146,8 @@
     "cheerful",
     "nonchalant",
     "heedless"
-   ]
+   ],
+   "mnemonic": "Blithe : léger comme un oiseau, sans un souci (parfois trop insouciant)."
   },
   "aloof": {
    "id": "aloof",
@@ -2257,7 +2272,8 @@
     "obstruct",
     "impede",
     "encumber"
-   ]
+   ],
+   "mnemonic": "Un hamper est un panier d'osier encombrant : il gêne celui qui le porte."
   },
   "hinder": {
    "id": "hinder",
@@ -2310,7 +2326,8 @@
     "bog down",
     "embroil",
     "entrap"
-   ]
+   ],
+   "mnemonic": "La mire (bourbier) : on s'y enlise ; to mire = embourber."
   },
   "stultify": {
    "id": "stultify",
@@ -2345,7 +2362,8 @@
     "awkward",
     "clumsy",
     "bulky"
-   ]
+   ],
+   "mnemonic": "UN-WIELD-y : qu'on ne peut pas manier (wield = manier)."
   },
   "cumbersome": {
    "id": "cumbersome",
@@ -2758,7 +2776,8 @@
     "deride",
     "sneer",
     "mock"
-   ]
+   ],
+   "mnemonic": "Scoff ≈ « s'esclaffer » : on rit avec mépris."
   },
   "mock": {
    "id": "mock",
@@ -2973,7 +2992,8 @@
     "secret",
     "furtive",
     "surreptitious"
-   ]
+   ],
+   "mnemonic": "COVERT ≈ « couvert » : caché sous une couverture, secret."
   },
   "underhanded": {
    "id": "underhanded",
@@ -2990,7 +3010,8 @@
     "sly",
     "dishonest",
     "devious"
-   ]
+   ],
+   "mnemonic": "Under-handed : sous la main, en cachette, pas à la loyale."
   },
   "artful": {
    "id": "artful",
@@ -3007,7 +3028,8 @@
     "crafty",
     "wily",
     "shrewd"
-   ]
+   ],
+   "mnemonic": "Artful : plein d'art… pour tromper, rusé et manipulateur."
   },
   "guile": {
    "id": "guile",
@@ -3060,7 +3082,8 @@
     "wheedle",
     "inveigle",
     "sweet-talk"
-   ]
+   ],
+   "mnemonic": "Cajoler : on caresse dans le sens du poil pour obtenir ce qu'on veut."
   },
   "glib": {
    "id": "glib",
@@ -3077,7 +3100,8 @@
     "smooth-tongued",
     "facile",
     "superficial"
-   ]
+   ],
+   "mnemonic": "GLIB ≈ glisse : ça glisse tout seul, mais sans profondeur."
   },
   "disingenuous": {
    "id": "disingenuous",
@@ -3094,7 +3118,8 @@
     "feigning",
     "dissembling",
     "duplicitous"
-   ]
+   ],
+   "mnemonic": "DIS-ingenuous : le contraire d'ingénu, il fait semblant d'être naïf."
   },
   "spurious": {
    "id": "spurious",
@@ -3111,7 +3136,8 @@
     "false",
     "fallacious",
     "counterfeit"
-   ]
+   ],
+   "mnemonic": "Spurious ≈ « spurieux » (rare en français) : qui n'est pas authentique."
   },
   "bogus": {
    "id": "bogus",
@@ -3128,7 +3154,8 @@
     "sham",
     "counterfeit",
     "phony"
-   ]
+   ],
+   "mnemonic": "Bogus ≈ « bogue » : ça ne marche pas, c'est du faux."
   },
   "mendacity": {
    "id": "mendacity",
@@ -3163,7 +3190,8 @@
     "puzzle",
     "mystify",
     "stump"
-   ]
+   ],
+   "mnemonic": "Baffle ≈ « baffe » : une claque d'étonnement, on reste sans réponse."
   },
   "bewilder": {
    "id": "bewilder",
@@ -3180,7 +3208,8 @@
     "perplex",
     "confuse",
     "puzzle"
-   ]
+   ],
+   "mnemonic": "Be-WILD-er : perdu en pleine nature sauvage (wild), complètement désorienté."
   },
   "befuddle": {
    "id": "befuddle",
@@ -3197,7 +3226,8 @@
     "confuse",
     "bemuse",
     "fog"
-   ]
+   ],
+   "mnemonic": "Befuddle : l'esprit embrumé, comme après un verre de trop."
   },
   "flummox": {
    "id": "flummox",
@@ -3214,7 +3244,8 @@
     "nonplus",
     "stump",
     "bewilder"
-   ]
+   ],
+   "mnemonic": "Flummox sonne comme un choc : on reste coi, sans réaction."
   },
   "confound": {
    "id": "confound",
@@ -3231,7 +3262,8 @@
     "perplex",
     "thwart",
     "bewilder"
-   ]
+   ],
+   "mnemonic": "Con-FOUND : tout est mélangé, on ne retrouve plus rien ; aussi déjouer."
   },
   "nonplussed": {
    "id": "nonplussed",
@@ -3248,7 +3280,8 @@
     "dumbfounded",
     "taken aback",
     "bewildered"
-   ]
+   ],
+   "mnemonic": "Du latin « non plus » : on ne peut aller plus loin, on ne sait plus quoi faire."
   },
   "discomfit": {
    "id": "discomfit",
@@ -3265,7 +3298,8 @@
     "disconcert",
     "unsettle",
     "fluster"
-   ]
+   ],
+   "mnemonic": "DIS-comfit : l'opposé du confort, on est mal à l'aise."
   },
   "disquiet": {
    "id": "disquiet",
@@ -3282,7 +3316,8 @@
     "disturb",
     "unsettle",
     "trouble"
-   ]
+   ],
+   "mnemonic": "DIS-quiet : plus de calme, une inquiétude sourde."
   },
   "recondite": {
    "id": "recondite",
@@ -3299,7 +3334,8 @@
     "esoteric",
     "obscure",
     "arcane"
-   ]
+   ],
+   "mnemonic": "Du latin reconditus = mis à l'écart, caché ; savoir réservé aux spécialistes."
   },
   "arcane": {
    "id": "arcane",
@@ -3316,7 +3352,8 @@
     "mysterious",
     "obscure",
     "cryptic"
-   ]
+   ],
+   "mnemonic": "Les « arcanes » : les secrets que seuls les initiés connaissent."
   },
   "inscrutable": {
    "id": "inscrutable",
@@ -3333,7 +3370,8 @@
     "impenetrable",
     "unfathomable",
     "mysterious"
-   ]
+   ],
+   "mnemonic": "IN-scrutable : impossible à scruter, visage indéchiffrable."
   },
   "elusive": {
    "id": "elusive",
@@ -3350,7 +3388,8 @@
     "slippery",
     "illusive",
     "intangible"
-   ]
+   ],
+   "mnemonic": "Elusive ≈ « éluder » : qui se dérobe, insaisissable."
   },
   "convoluted": {
    "id": "convoluted",
@@ -3367,7 +3406,8 @@
     "labyrinthine",
     "tortuous",
     "complicated"
-   ]
+   ],
+   "mnemonic": "Les convolutions du cerveau : plein de replis, donc alambiqué."
   },
   "circuitous": {
    "id": "circuitous",
@@ -3384,7 +3424,8 @@
     "indirect",
     "meandering",
     "tortuous"
-   ]
+   ],
+   "mnemonic": "CIRCUITous : on fait tout un circuit, un détour."
   },
   "cogent": {
    "id": "cogent",
@@ -3401,7 +3442,8 @@
     "persuasive",
     "convincing",
     "forceful"
-   ]
+   ],
+   "mnemonic": "Du latin cogere = forcer : un argument qui force l'esprit à acquiescer."
   },
   "pithy": {
    "id": "pithy",
@@ -3418,7 +3460,8 @@
     "succinct",
     "terse",
     "laconic"
-   ]
+   ],
+   "mnemonic": "Pith = moelle : on garde l'essentiel, court et percutant."
   },
   "terse": {
    "id": "terse",
@@ -3435,7 +3478,8 @@
     "laconic",
     "brusque",
     "concise"
-   ]
+   ],
+   "mnemonic": "Du latin tersus = net, lisse : style sec et dépouillé."
   },
   "brevity": {
    "id": "brevity",
@@ -3470,7 +3514,8 @@
     "direct",
     "uncomplicated",
     "forthright"
-   ]
+   ],
+   "mnemonic": "Straight + forward : tout droit devant, sans détour."
   },
   "unvarnished": {
    "id": "unvarnished",
@@ -3505,7 +3550,8 @@
     "outspoken",
     "tactless",
     "candid"
-   ]
+   ],
+   "mnemonic": "Blunt = émoussé : une lame qui ne coupe pas finement, un franc-parler brutal."
   },
   "curt": {
    "id": "curt",
@@ -3522,7 +3568,8 @@
     "abrupt",
     "short",
     "gruff"
-   ]
+   ],
+   "mnemonic": "CURT ≈ « court » : phrase écourtée, un peu sèche."
   },
   "bombastic": {
    "id": "bombastic",
@@ -3575,7 +3622,8 @@
     "labored",
     "cumbersome",
     "plodding"
-   ]
+   ],
+   "mnemonic": "Ponderous ≈ « pondéral » (poids) : lourd, pesant, laborieux."
   },
   "overwrought": {
    "id": "overwrought",
@@ -3592,7 +3640,8 @@
     "agitated",
     "frenzied",
     "excessive"
-   ]
+   ],
+   "mnemonic": "Over-wrought : trop travaillé (surchargé), ou les nerfs à vif."
   },
   "stilted": {
    "id": "stilted",
@@ -3609,7 +3658,8 @@
     "wooden",
     "unnatural",
     "affected"
-   ]
+   ],
+   "mnemonic": "Stilted : monté sur des échasses (stilts), guindé et peu naturel."
   },
   "histrionic": {
    "id": "histrionic",
@@ -3644,7 +3694,8 @@
     "loquacious",
     "voluble",
     "chatty"
-   ]
+   ],
+   "mnemonic": "Garrulous ≈ « gargouille » : ça coule sans arrêt, bavard intarissable."
   },
   "discursive": {
    "id": "discursive",
@@ -3661,7 +3712,8 @@
     "digressive",
     "meandering",
     "wandering"
-   ]
+   ],
+   "mnemonic": "Du latin currere = courir : il court dans tous les sens."
   },
   "headstrong": {
    "id": "headstrong",
@@ -3678,7 +3730,8 @@
     "obstinate",
     "stubborn",
     "unruly"
-   ]
+   ],
+   "mnemonic": "Head-strong : tête dure, n'en fait qu'à sa tête."
   },
   "intractable": {
    "id": "intractable",
@@ -3695,7 +3748,8 @@
     "stubborn",
     "obstinate",
     "refractory"
-   ]
+   ],
+   "mnemonic": "IN-tractable : impossible à tirer, à mener (trait = tirer)."
   },
   "hidebound": {
    "id": "hidebound",
@@ -3712,7 +3766,8 @@
     "rigid",
     "narrow-minded",
     "reactionary"
-   ]
+   ],
+   "mnemonic": "Hide-bound : la peau (hide) trop serrée, figé dans ses habitudes."
   },
   "balk": {
    "id": "balk",
@@ -3729,7 +3784,8 @@
     "demur",
     "hesitate",
     "recoil"
-   ]
+   ],
+   "mnemonic": "Balk : le cheval se braque devant l'obstacle et refuse d'avancer."
   },
   "brook": {
    "id": "brook",
@@ -3746,7 +3802,8 @@
     "endure",
     "permit",
     "abide"
-   ]
+   ],
+   "mnemonic": "Brook = ruisseau, mais en verbe : « brook no delay » = ne tolérer aucun retard."
   },
   "tractable": {
    "id": "tractable",
@@ -3763,7 +3820,8 @@
     "compliant",
     "manageable",
     "pliant"
-   ]
+   ],
+   "mnemonic": "TRACTable ≈ tracteur : facile à tirer, docile."
   },
   "amenable": {
    "id": "amenable",
@@ -3780,7 +3838,8 @@
     "receptive",
     "open",
     "compliant"
-   ]
+   ],
+   "mnemonic": "Amenable ≈ « amener » : on peut l'amener à accepter."
   },
   "subservient": {
    "id": "subservient",
@@ -3797,7 +3856,8 @@
     "servile",
     "obsequious",
     "deferential"
-   ]
+   ],
+   "mnemonic": "SUB-servient : sous-serviteur, servile."
   },
   "sycophant": {
    "id": "sycophant",
@@ -3814,7 +3874,8 @@
     "toady",
     "yes-man",
     "bootlicker"
-   ]
+   ],
+   "mnemonic": "En français, « sycophante » = délateur ; en anglais, le lèche-bottes."
   },
   "fawning": {
    "id": "fawning",
@@ -3831,7 +3892,8 @@
     "sycophantic",
     "servile",
     "groveling"
-   ]
+   ],
+   "mnemonic": "Fawn : comme un chien qui fait la fête pour obtenir une faveur."
   },
   "lackadaisical": {
    "id": "lackadaisical",
@@ -3848,7 +3910,8 @@
     "apathetic",
     "indifferent",
     "languid"
-   ]
+   ],
+   "mnemonic": "Lack-a-daisy : il manque d'énergie, nonchalant."
   },
   "sluggish": {
    "id": "sluggish",
@@ -3865,7 +3928,8 @@
     "torpid",
     "slow",
     "languid"
-   ]
+   ],
+   "mnemonic": "SLUG = limace : lent comme une limace."
   },
   "plodding": {
    "id": "plodding",
@@ -3882,7 +3946,8 @@
     "slow",
     "tedious",
     "dogged"
-   ]
+   ],
+   "mnemonic": "Plod = marcher d'un pas lourd, pas à pas, laborieusement."
   },
   "alacrity": {
    "id": "alacrity",
@@ -3935,7 +4000,8 @@
     "prod",
     "motivate",
     "incite"
-   ]
+   ],
+   "mnemonic": "Spur = éperon : on pique le cheval pour qu'il avance."
   },
   "goad": {
    "id": "goad",
@@ -3952,7 +4018,8 @@
     "prod",
     "taunt",
     "incite"
-   ]
+   ],
+   "mnemonic": "Goad = aiguillon : on pique le bœuf pour le faire réagir."
   },
   "invigorate": {
    "id": "invigorate",
@@ -3987,7 +4054,8 @@
     "encourage",
     "uplift",
     "sustain"
-   ]
+   ],
+   "mnemonic": "Buoy = bouée : elle garde le moral à flot."
   },
   "sedulous": {
    "id": "sedulous",
@@ -4004,7 +4072,8 @@
     "assiduous",
     "industrious",
     "persevering"
-   ]
+   ],
+   "mnemonic": "Sedulous ≈ « assidu » : toujours à la tâche."
   },
   "unremitting": {
    "id": "unremitting",
@@ -4021,7 +4090,8 @@
     "incessant",
     "unceasing",
     "persistent"
-   ]
+   ],
+   "mnemonic": "UN-remitting : qui ne se relâche jamais."
   },
   "steadfast": {
    "id": "steadfast",
@@ -4038,7 +4108,8 @@
     "resolute",
     "loyal",
     "constant"
-   ]
+   ],
+   "mnemonic": "Steady + fast (fixe) : bien planté, inébranlable."
   },
   "stalwart": {
    "id": "stalwart",
@@ -4055,7 +4126,8 @@
     "dependable",
     "sturdy",
     "staunch"
-   ]
+   ],
+   "mnemonic": "Stalwart : un poste (stal) solide, fidèle au poste."
   },
   "painstaking": {
    "id": "painstaking",
@@ -4162,7 +4234,8 @@
     "mechanical",
     "cursory",
     "indifferent"
-   ]
+   ],
+   "mnemonic": "Per-functory ≈ « par fonction » : fait pour la forme, machinalement."
   },
   "haphazard": {
    "id": "haphazard",
@@ -4197,7 +4270,8 @@
     "slipshod",
     "substandard",
     "poor"
-   ]
+   ],
+   "mnemonic": "Shoddy : du chiffon recyclé, de mauvaise qualité."
   },
   "desultory": {
    "id": "desultory",
@@ -4232,7 +4306,8 @@
     "copious",
     "ample",
     "bountiful"
-   ]
+   ],
+   "mnemonic": "Plentiful ≈ plenty : plein, en abondance."
   },
   "replete": {
    "id": "replete",
@@ -4267,7 +4342,8 @@
     "widespread",
     "prevalent",
     "teeming"
-   ]
+   ],
+   "mnemonic": "Rife : ça pullule, les rumeurs sont rife."
   },
   "surfeit": {
    "id": "surfeit",
@@ -4320,7 +4396,8 @@
     "host",
     "raft",
     "myriad"
-   ]
+   ],
+   "mnemonic": "A slew of : tout un tas de."
   },
   "swathe": {
    "id": "swathe",
@@ -4337,7 +4414,8 @@
     "band",
     "tract",
     "stretch"
-   ]
+   ],
+   "mnemonic": "Swathe : une large bande (de tissu, de terrain)."
   },
   "burgeon": {
    "id": "burgeon",
@@ -4372,7 +4450,8 @@
     "limited",
     "minimal",
     "skimpy"
-   ]
+   ],
+   "mnemonic": "Scant : à peine suffisant, un peu juste (cousin de scarce)."
   },
   "scarce": {
    "id": "scarce",
@@ -4389,7 +4468,8 @@
     "scanty",
     "deficient",
     "sparse"
-   ]
+   ],
+   "mnemonic": "Scarce ≈ « scarcité » : rare, difficile à trouver."
   },
   "sparse": {
    "id": "sparse",
@@ -4406,7 +4486,8 @@
     "scattered",
     "meager",
     "scanty"
-   ]
+   ],
+   "mnemonic": "Sparse ≈ « épars » : clairsemé."
   },
   "paltry": {
    "id": "paltry",
@@ -4423,7 +4504,8 @@
     "measly",
     "meager",
     "negligible"
-   ]
+   ],
+   "mnemonic": "Paltry : une somme si petite qu'elle en est vexante."
   },
   "dearth": {
    "id": "dearth",
@@ -4476,7 +4558,8 @@
     "deficiency",
     "gap",
     "shortage"
-   ]
+   ],
+   "mnemonic": "Short + fall : tomber court, le manque à gagner."
   },
   "penury": {
    "id": "penury",
@@ -4511,7 +4594,8 @@
     "economical",
     "prudent",
     "provident"
-   ]
+   ],
+   "mnemonic": "Thrifty ≈ « thrive » : on prospère en économisant."
   },
   "sparing": {
    "id": "sparing",
@@ -4528,7 +4612,8 @@
     "economical",
     "restrained",
     "chary"
-   ]
+   ],
+   "mnemonic": "Sparing ≈ « épargner » : économe, mesuré."
   },
   "spare": {
    "id": "spare",
@@ -4545,7 +4630,8 @@
     "plain",
     "minimal",
     "extra"
-   ]
+   ],
+   "mnemonic": "Spare = épargné : dépouillé du superflu, ou en trop (la roue de secours)."
   },
   "squander": {
    "id": "squander",
@@ -4562,7 +4648,8 @@
     "fritter",
     "dissipate",
     "misspend"
-   ]
+   ],
+   "mnemonic": "Squander : jeter l'argent par les fenêtres."
   },
   "spendthrift": {
    "id": "spendthrift",
@@ -4597,7 +4684,8 @@
     "wasteful",
     "dissolute",
     "reckless"
-   ]
+   ],
+   "mnemonic": "Profligate ≈ « prodigue » : dépense sans compter."
   },
   "lavish": {
    "id": "lavish",
@@ -4614,7 +4702,8 @@
     "sumptuous",
     "extravagant",
     "bountiful"
-   ]
+   ],
+   "mnemonic": "Lavish ≈ « lavage » : l'eau coule à flots, on prodigue."
   },
   "acquisitive": {
    "id": "acquisitive",
@@ -4649,7 +4738,8 @@
     "pilfer",
     "peculate",
     "steal"
-   ]
+   ],
+   "mnemonic": "Embezzle : détourner l'argent qu'on vous a confié, comme un comptable infidèle."
   },
   "parlay": {
    "id": "parlay",
@@ -4666,7 +4756,8 @@
     "convert",
     "capitalize",
     "transform"
-   ]
+   ],
+   "mnemonic": "Parlay ≈ « parier » : on remise ses gains pour gagner plus."
   },
   "ire": {
    "id": "ire",
@@ -4701,7 +4792,8 @@
     "antipathy",
     "enmity",
     "rancor"
-   ]
+   ],
+   "mnemonic": "Animus ≈ « animosité » : même racine."
   },
   "enmity": {
    "id": "enmity",
@@ -4754,7 +4846,8 @@
     "discord",
     "contention",
     "friction"
-   ]
+   ],
+   "mnemonic": "Strife : la discorde ouverte (rime avec knife, le couteau est sorti)."
   },
   "inimical": {
    "id": "inimical",
@@ -4789,7 +4882,8 @@
     "vindictive",
     "venomous",
     "petty"
-   ]
+   ],
+   "mnemonic": "Spite = dépit : il agit par dépit, pour nuire."
   },
   "treacherous": {
    "id": "treacherous",
@@ -4806,7 +4900,8 @@
     "disloyal",
     "hazardous",
     "deceitful"
-   ]
+   ],
+   "mnemonic": "Treachery ≈ « tricherie » : trahison, ou terrain traître."
   },
   "irk": {
    "id": "irk",
@@ -4823,7 +4918,8 @@
     "vex",
     "irritate",
     "peeve"
-   ]
+   ],
+   "mnemonic": "Irk ≈ « irriter » : même idée, en plus court."
   },
   "rankle": {
    "id": "rankle",
@@ -4840,7 +4936,8 @@
     "irritate",
     "gall",
     "embitter"
-   ]
+   ],
+   "mnemonic": "Rankle ≈ « rancune » : ça reste en travers, la rancœur."
   },
   "nettlesome": {
    "id": "nettlesome",
@@ -4893,7 +4990,8 @@
     "rude",
     "boorish",
     "uncouth"
-   ]
+   ],
+   "mnemonic": "Churl = rustre : grossier, bourru."
   },
   "boorish": {
    "id": "boorish",
@@ -4910,7 +5008,8 @@
     "oafish",
     "loutish",
     "uncouth"
-   ]
+   ],
+   "mnemonic": "Boor = rustre : mal élevé, sans manières."
   },
   "crass": {
    "id": "crass",
@@ -4945,7 +5044,8 @@
     "cocky",
     "bold",
     "impetuous"
-   ]
+   ],
+   "mnemonic": "Brash ≈ « brusque » : sans filtre, effronté."
   },
   "brazen": {
    "id": "brazen",
@@ -4962,7 +5062,8 @@
     "audacious",
     "barefaced",
     "impudent"
-   ]
+   ],
+   "mnemonic": "Brazen = de bronze (brass) : un front d'airain, sans honte."
   },
   "unseemly": {
    "id": "unseemly",
@@ -4979,7 +5080,8 @@
     "indecorous",
     "inappropriate",
     "indecent"
-   ]
+   ],
+   "mnemonic": "UN-seemly ≈ qui ne sied pas : inconvenant."
   },
   "impolitic": {
    "id": "impolitic",
@@ -5068,7 +5170,8 @@
     "evasive",
     "arch",
     "bashful"
-   ]
+   ],
+   "mnemonic": "Coy ≈ « coi » : faussement timide, qui se tait en minaudant."
   },
   "reticent": {
    "id": "reticent",
@@ -5103,7 +5206,8 @@
     "vigilant",
     "leery",
     "circumspect"
-   ]
+   ],
+   "mnemonic": "Wary ≈ « aware » : sur ses gardes."
   },
   "chary": {
    "id": "chary",
@@ -5120,7 +5224,8 @@
     "cautious",
     "sparing",
     "hesitant"
-   ]
+   ],
+   "mnemonic": "Chary ≈ « chère » (précieux) : on ménage ce qu'on donne."
   },
   "skittish": {
    "id": "skittish",
@@ -5137,7 +5242,8 @@
     "nervous",
     "restive",
     "timorous"
-   ]
+   ],
+   "mnemonic": "Skittish : il part en sursaut comme un cheval ombrageux."
   },
   "craven": {
    "id": "craven",
@@ -5154,7 +5260,8 @@
     "pusillanimous",
     "spineless",
     "timorous"
-   ]
+   ],
+   "mnemonic": "Craven : un lâche qui crève de peur."
   },
   "foolhardy": {
    "id": "foolhardy",
@@ -5171,7 +5278,8 @@
     "rash",
     "imprudent",
     "daredevil"
-   ]
+   ],
+   "mnemonic": "Fool-hardy : un fou (fool) hardi, téméraire."
   },
   "rash": {
    "id": "rash",
@@ -5224,7 +5332,8 @@
     "dreary",
     "grim",
     "hopeless"
-   ]
+   ],
+   "mnemonic": "Bleak ≈ « blême » : un paysage pâle, morne, sans espoir."
   },
   "grim": {
    "id": "grim",
@@ -5241,7 +5350,8 @@
     "stern",
     "forbidding",
     "somber"
-   ]
+   ],
+   "mnemonic": "Grim ≈ « grimace » : un visage sinistre, une situation très grave."
   },
   "sullen": {
    "id": "sullen",
@@ -5276,7 +5386,8 @@
     "elegy",
     "requiem",
     "threnody"
-   ]
+   ],
+   "mnemonic": "Dirge : le chant funèbre (du latin « dirige », début d'un office des morts)."
   },
   "maudlin": {
    "id": "maudlin",
@@ -5311,7 +5422,8 @@
     "sappy",
     "maudlin",
     "schmaltzy"
-   ]
+   ],
+   "mnemonic": "Mawkish : une mièvrerie qui donne la nausée, trop larmoyant."
   },
   "cloying": {
    "id": "cloying",
@@ -5328,7 +5440,8 @@
     "saccharine",
     "syrupy",
     "treacly"
-   ]
+   ],
+   "mnemonic": "Cloying ≈ « clou » : trop de sucre colle et écœure."
   },
   "aghast": {
    "id": "aghast",
@@ -5345,7 +5458,8 @@
     "appalled",
     "shocked",
     "stunned"
-   ]
+   ],
+   "mnemonic": "A-ghast ≈ « ghost » : on a vu un fantôme, frappé d'horreur."
   },
   "appall": {
    "id": "appall",
@@ -5362,7 +5476,8 @@
     "shock",
     "outrage",
     "dismay"
-   ]
+   ],
+   "mnemonic": "Ap-pall ≈ « pâle » (pall) : on pâlit d'horreur."
   },
   "dismay": {
    "id": "dismay",
@@ -5379,7 +5494,8 @@
     "alarm",
     "distress",
     "apprehension"
-   ]
+   ],
+   "mnemonic": "Dis-may ≈ « dis-moi » : consternation mêlée d'inquiétude (esmayer en ancien français)."
   },
   "jarring": {
    "id": "jarring",
@@ -5396,7 +5512,8 @@
     "grating",
     "clashing",
     "harsh"
-   ]
+   ],
+   "mnemonic": "Jar = secouer : un son qui fait sursauter, discordant."
   },
   "humdrum": {
    "id": "humdrum",
@@ -5449,7 +5566,8 @@
     "wearisome",
     "annoying",
     "tedious"
-   ]
+   ],
+   "mnemonic": "Tire-some : qui fatigue (tire), lassant."
   },
   "vapid": {
    "id": "vapid",
@@ -5484,7 +5602,8 @@
     "stale",
     "clichéd",
     "stereotyped"
-   ]
+   ],
+   "mnemonic": "Trite ≈ « trituré » : usé à force d'être répété."
   },
   "hackneyed": {
    "id": "hackneyed",
@@ -5519,7 +5638,8 @@
     "convention",
     "cliché",
     "device"
-   ]
+   ],
+   "mnemonic": "Trope ≈ « trope » (figure de style) : un cliché récurrent."
   },
   "lackluster": {
    "id": "lackluster",
@@ -5554,7 +5674,8 @@
     "prim",
     "conventional",
     "stuffy"
-   ]
+   ],
+   "mnemonic": "Staid ≈ « stay » : qui reste en place, sérieux et vieux jeu."
   },
   "riveting": {
    "id": "riveting",
@@ -5571,7 +5692,8 @@
     "captivating",
     "fascinating",
     "absorbing"
-   ]
+   ],
+   "mnemonic": "Rivet = rivet : l'attention est rivée, clouée."
   },
   "gripping": {
    "id": "gripping",
@@ -5588,7 +5710,8 @@
     "riveting",
     "compelling",
     "exciting"
-   ]
+   ],
+   "mnemonic": "Grip = poigne : le récit vous tient serré."
   },
   "enthrall": {
    "id": "enthrall",
@@ -5623,7 +5746,8 @@
     "occupy",
     "preoccupy",
     "immerse"
-   ]
+   ],
+   "mnemonic": "En-gross : on prend tout (gros) de votre attention."
   },
   "mesmerize": {
    "id": "mesmerize",
@@ -5676,7 +5800,8 @@
     "convincing",
     "gripping",
     "irresistible"
-   ]
+   ],
+   "mnemonic": "Compelling ≈ « compeller » : on ne peut pas résister, il vous pousse."
   },
   "staggering": {
    "id": "staggering",
@@ -5693,7 +5818,8 @@
     "stunning",
     "overwhelming",
     "phenomenal"
-   ]
+   ],
+   "mnemonic": "Stagger = chanceler : tellement énorme qu'on titube."
   },
   "dazzle": {
    "id": "dazzle",
@@ -5710,7 +5836,8 @@
     "blind",
     "overwhelm",
     "impress"
-   ]
+   ],
+   "mnemonic": "Dazzle ≈ « dazed » : ébloui, assommé de lumière."
   },
   "enticing": {
    "id": "enticing",
@@ -5727,7 +5854,8 @@
     "alluring",
     "inviting",
     "seductive"
-   ]
+   ],
+   "mnemonic": "Enticing ≈ « attirer » : tentant."
   },
   "palatable": {
    "id": "palatable",
@@ -5762,7 +5890,8 @@
     "enjoy",
     "delight in",
     "appreciate"
-   ]
+   ],
+   "mnemonic": "Relish = condiment : on savoure avec goût."
   },
   "revel": {
    "id": "revel",
@@ -5779,7 +5908,8 @@
     "bask",
     "luxuriate",
     "carouse"
-   ]
+   ],
+   "mnemonic": "Revel ≈ « réveillon » : on fait la fête."
   },
   "fleeting": {
    "id": "fleeting",
@@ -5796,7 +5926,8 @@
     "ephemeral",
     "brief",
     "momentary"
-   ]
+   ],
+   "mnemonic": "Fleeting ≈ « fuite » : ça fuit, éphémère."
   },
   "wane": {
    "id": "wane",
@@ -5831,7 +5962,8 @@
     "shrink",
     "lessen",
     "taper"
-   ]
+   ],
+   "mnemonic": "Dwindle : diminuer petit à petit, comme une bougie."
   },
   "fledgling": {
    "id": "fledgling",
@@ -5884,7 +6016,8 @@
     "innovator",
     "pathfinder",
     "groundbreaker"
-   ]
+   ],
+   "mnemonic": "Trail + blaze : tracer le sentier en marquant les arbres."
   },
   "groundbreaking": {
    "id": "groundbreaking",
@@ -5901,7 +6034,8 @@
     "innovative",
     "revolutionary",
     "original"
-   ]
+   ],
+   "mnemonic": "Ground-breaking : on casse la terre, on ouvre un chantier inédit."
   },
   "maverick": {
    "id": "maverick",
@@ -5936,7 +6070,8 @@
     "proclaim",
     "usher in",
     "signal"
-   ]
+   ],
+   "mnemonic": "Herald ≈ « héraut » : celui qui annonce."
   },
   "harbinger": {
    "id": "harbinger",
@@ -5953,7 +6088,8 @@
     "omen",
     "precursor",
     "forerunner"
-   ]
+   ],
+   "mnemonic": "À l'origine, celui qui part devant préparer le logement : signe avant-coureur."
   },
   "portend": {
    "id": "portend",
@@ -5970,7 +6106,8 @@
     "presage",
     "augur",
     "foretell"
-   ]
+   ],
+   "mnemonic": "Portend ≈ « porter » : ça porte un présage, souvent mauvais."
   },
   "foreseeable": {
    "id": "foreseeable",
@@ -5987,7 +6124,8 @@
     "expected",
     "anticipated",
     "likely"
-   ]
+   ],
+   "mnemonic": "Fore-see-able : qu'on peut voir avant (fore)."
   },
   "impending": {
    "id": "impending",
@@ -6004,7 +6142,8 @@
     "looming",
     "approaching",
     "forthcoming"
-   ]
+   ],
+   "mnemonic": "Im-pending ≈ « pendant » : suspendu au-dessus de nous."
   },
   "beget": {
    "id": "beget",
@@ -6021,7 +6160,8 @@
     "generate",
     "produce",
     "cause"
-   ]
+   ],
+   "mnemonic": "Beget : l'ancien « engendrer » (« et il engendra… »)."
   },
   "spawn": {
    "id": "spawn",
@@ -6038,7 +6178,8 @@
     "produce",
     "engender",
     "create"
-   ]
+   ],
+   "mnemonic": "Spawn = frai : les poissons pondent en masse, ça en produit à la chaîne."
   },
   "foster": {
    "id": "foster",
@@ -6055,7 +6196,8 @@
     "promote",
     "cultivate",
     "encourage"
-   ]
+   ],
+   "mnemonic": "Foster : famille d'accueil, on aide à grandir."
   },
   "coalesce": {
    "id": "coalesce",
@@ -6090,7 +6232,8 @@
     "infuse",
     "pervade",
     "flood"
-   ]
+   ],
+   "mnemonic": "Suf-fuse ≈ « fuser » : ça se répand doucement partout."
   },
   "imbue": {
    "id": "imbue",
@@ -6107,7 +6250,8 @@
     "instill",
     "permeate",
     "inspire"
-   ]
+   ],
+   "mnemonic": "Imbue ≈ « imbibé » : imprégné de."
   },
   "pervasive": {
    "id": "pervasive",
@@ -6124,7 +6268,8 @@
     "widespread",
     "prevalent",
     "omnipresent"
-   ]
+   ],
+   "mnemonic": "Per-vasive ≈ « envahir » : ça se répand partout."
   },
   "bolster": {
    "id": "bolster",
@@ -6177,7 +6322,8 @@
     "highlight",
     "stress",
     "accentuate"
-   ]
+   ],
+   "mnemonic": "Under + score : on souligne (le tiret bas, c'est l'underscore)."
   },
   "substantiate": {
    "id": "substantiate",
@@ -6194,7 +6340,8 @@
     "corroborate",
     "validate",
     "confirm"
-   ]
+   ],
+   "mnemonic": "Substance : on donne de la substance (des preuves) à l'affirmation."
   },
   "uphold": {
    "id": "uphold",
@@ -6211,7 +6358,8 @@
     "maintain",
     "affirm",
     "endorse"
-   ]
+   ],
+   "mnemonic": "Up-hold : tenir en l'air, maintenir."
   },
   "mainstay": {
    "id": "mainstay",
@@ -6228,7 +6376,8 @@
     "linchpin",
     "cornerstone",
     "pillar"
-   ]
+   ],
+   "mnemonic": "Main + stay : l'étai principal d'un navire, le pilier."
   },
   "credence": {
    "id": "credence",
@@ -6263,7 +6412,8 @@
     "erode",
     "sabotage",
     "weaken"
-   ]
+   ],
+   "mnemonic": "Under + mine : on creuse sous les fondations."
   },
   "undercut": {
    "id": "undercut",
@@ -6280,7 +6430,8 @@
     "underprice",
     "weaken",
     "sabotage"
-   ]
+   ],
+   "mnemonic": "Under + cut : couper en dessous (le prix ou l'effet)."
   },
   "vitiate": {
    "id": "vitiate",
@@ -6315,7 +6466,8 @@
     "diminish",
     "weaken",
     "hamper"
-   ]
+   ],
+   "mnemonic": "Impair ≈ « empirer » : altérer, détériorer."
   },
   "mar": {
    "id": "mar",
@@ -6332,7 +6484,8 @@
     "blemish",
     "tarnish",
     "damage"
-   ]
+   ],
+   "mnemonic": "Mar ≈ « marque » : une marque qui gâche la surface."
   },
   "vindicate": {
    "id": "vindicate",
@@ -6349,7 +6502,8 @@
     "justify",
     "absolve",
     "acquit"
-   ]
+   ],
+   "mnemonic": "Vindicate ≈ « vindicte » : on rend justice, on blanchit."
   },
   "exculpate": {
    "id": "exculpate",
@@ -6366,7 +6520,8 @@
     "absolve",
     "acquit",
     "clear"
-   ]
+   ],
+   "mnemonic": "Ex-culpate : hors de la culpabilité (culpa)."
   },
   "evince": {
    "id": "evince",
@@ -6383,7 +6538,8 @@
     "manifest",
     "exhibit",
     "demonstrate"
-   ]
+   ],
+   "mnemonic": "Evince ≈ « évidence » : on montre clairement."
   },
   "contend": {
    "id": "contend",
@@ -6400,7 +6556,8 @@
     "maintain",
     "argue",
     "claim"
-   ]
+   ],
+   "mnemonic": "Contend ≈ « contention » : soutenir, se battre pour une thèse."
   },
   "aver": {
    "id": "aver",
@@ -6417,7 +6574,8 @@
     "declare",
     "affirm",
     "avow"
-   ]
+   ],
+   "mnemonic": "Aver : le ver- de « vérité » : affirmer que c'est vrai."
   },
   "purport": {
    "id": "purport",
@@ -6434,7 +6592,8 @@
     "profess",
     "pretend",
     "allege"
-   ]
+   ],
+   "mnemonic": "Purport : il se « porte » prétendant, souvent à tort."
   },
   "surmise": {
    "id": "surmise",
@@ -6451,7 +6610,8 @@
     "guess",
     "infer",
     "suppose"
-   ]
+   ],
+   "mnemonic": "Sur-mise : on met une idée au-dessus des faits, une supposition."
   },
   "deem": {
    "id": "deem",
@@ -6468,7 +6628,8 @@
     "judge",
     "regard",
     "hold"
-   ]
+   ],
+   "mnemonic": "Deem ≈ « doom », jugement : juger, tenir pour."
   },
   "ascribe": {
    "id": "ascribe",
@@ -6485,7 +6646,8 @@
     "credit",
     "assign",
     "impute"
-   ]
+   ],
+   "mnemonic": "As-cribe ≈ « inscrire » : on inscrit la faute à quelqu'un, on attribue."
   },
   "discount": {
    "id": "discount",
@@ -6502,7 +6664,8 @@
     "dismiss",
     "ignore",
     "overlook"
-   ]
+   ],
+   "mnemonic": "Dis-count : ne pas compter, écarter."
   },
   "gainsay": {
    "id": "gainsay",
@@ -6519,7 +6682,8 @@
     "contradict",
     "dispute",
     "refute"
-   ]
+   ],
+   "mnemonic": "Gain-say : dire contre (gain- = contre), contredire."
   },
   "belie": {
    "id": "belie",
@@ -6536,7 +6700,8 @@
     "misrepresent",
     "disguise",
     "negate"
-   ]
+   ],
+   "mnemonic": "Be-lie : trahir par le mensonge (lie), donner une fausse image."
   },
   "conflate": {
    "id": "conflate",
@@ -6553,7 +6718,8 @@
     "confuse",
     "blend",
     "fuse"
-   ]
+   ],
+   "mnemonic": "Du latin conflare, souffler ensemble : on fond deux choses en une."
   },
   "misconstrue": {
    "id": "misconstrue",
@@ -6570,7 +6736,8 @@
     "misread",
     "misunderstand",
     "distort"
-   ]
+   ],
+   "mnemonic": "Mis-construe : mal construire le sens."
   },
   "misnomer": {
    "id": "misnomer",
@@ -6586,7 +6753,8 @@
     "misnaming",
     "misapplication",
     "inaccuracy"
-   ]
+   ],
+   "mnemonic": "Mis-nomer : mauvais nom (nomen)."
   },
   "fathom": {
    "id": "fathom",
@@ -6621,7 +6789,8 @@
     "verify",
     "establish",
     "confirm"
-   ]
+   ],
+   "mnemonic": "A-certain : rendre certain, établir."
   },
   "elicit": {
    "id": "elicit",
@@ -6656,7 +6825,8 @@
     "detect",
     "distinguish",
     "recognize"
-   ]
+   ],
+   "mnemonic": "Discern ≈ « discerner » : distinguer."
   },
   "blatant": {
    "id": "blatant",
@@ -6673,7 +6843,8 @@
     "brazen",
     "shameless",
     "glaring"
-   ]
+   ],
+   "mnemonic": "Blatant ≈ « bêlant » : on l'entend à des lieues, flagrant."
   },
   "glaring": {
    "id": "glaring",
@@ -6690,7 +6861,8 @@
     "flagrant",
     "conspicuous",
     "blatant"
-   ]
+   ],
+   "mnemonic": "Glare = éblouissement : une erreur qui saute aux yeux."
   },
   "conspicuous": {
    "id": "conspicuous",
@@ -6707,7 +6879,8 @@
     "obvious",
     "prominent",
     "visible"
-   ]
+   ],
+   "mnemonic": "Con-spic ≈ « spectacle » : on le voit, il se détache."
   },
   "overt": {
    "id": "overt",
@@ -6724,7 +6897,8 @@
     "manifest",
     "public",
     "undisguised"
-   ]
+   ],
+   "mnemonic": "Overt ≈ « ouvert » : fait ouvertement (≠ covert)."
   },
   "stark": {
    "id": "stark",
@@ -6741,7 +6915,8 @@
     "austere",
     "harsh",
     "unmistakable"
-   ]
+   ],
+   "mnemonic": "Stark : nu, brut (stark naked), sans nuance."
   },
   "egregious": {
    "id": "egregious",
@@ -6758,7 +6933,8 @@
     "outrageous",
     "glaring",
     "shocking"
-   ]
+   ],
+   "mnemonic": "E-gregious : hors du troupeau (grex), tellement mauvais qu'on le remarque."
   },
   "uncanny": {
    "id": "uncanny",
@@ -6775,7 +6951,8 @@
     "strange",
     "weird",
     "mysterious"
-   ]
+   ],
+   "mnemonic": "Un-canny : pas naturel, étrangement troublant."
   },
   "quirky": {
    "id": "quirky",
@@ -6792,7 +6969,8 @@
     "idiosyncratic",
     "offbeat",
     "peculiar"
-   ]
+   ],
+   "mnemonic": "Quirk : petite manie excentrique."
   },
   "offbeat": {
    "id": "offbeat",
@@ -6809,7 +6987,8 @@
     "unorthodox",
     "eccentric",
     "unusual"
-   ]
+   ],
+   "mnemonic": "Off-beat : à côté du rythme, décalé."
   },
   "whimsical": {
    "id": "whimsical",
@@ -6826,7 +7005,8 @@
     "fanciful",
     "playful",
     "quaint"
-   ]
+   ],
+   "mnemonic": "Whim = caprice : fantasque."
   },
   "idiosyncrasy": {
    "id": "idiosyncrasy",
@@ -6861,7 +7041,8 @@
     "imaginary",
     "unrealistic",
     "fantastic"
-   ]
+   ],
+   "mnemonic": "Fancy = fantaisie : imaginaire, irréaliste."
   },
   "quixotic": {
    "id": "quixotic",
@@ -6932,7 +7113,8 @@
     "negligible",
     "petty",
     "insignificant"
-   ]
+   ],
+   "mnemonic": "Trifle = bagatelle : dérisoire."
   },
   "extraneous": {
    "id": "extraneous",
@@ -6949,7 +7131,8 @@
     "superfluous",
     "unnecessary",
     "immaterial"
-   ]
+   ],
+   "mnemonic": "Extra-neous ≈ « extérieur » : hors du sujet."
   },
   "slight": {
    "id": "slight",
@@ -6966,7 +7149,8 @@
     "snub",
     "affront",
     "rebuff"
-   ]
+   ],
+   "mnemonic": "Slight : léger… et un affront léger mais blessant (a slight)."
   },
   "shrewd": {
    "id": "shrewd",
@@ -6983,7 +7167,8 @@
     "sharp",
     "clever",
     "canny"
-   ]
+   ],
+   "mnemonic": "Shrewd : fin et vif comme une musaraigne (shrew)."
   },
   "canny": {
    "id": "canny",
@@ -7000,7 +7185,8 @@
     "shrewd",
     "wily",
     "savvy"
-   ]
+   ],
+   "mnemonic": "Canny : celui qui sait y faire, malin."
   },
   "acumen": {
    "id": "acumen",
@@ -7017,7 +7203,8 @@
     "insight",
     "astuteness",
     "sharpness"
-   ]
+   ],
+   "mnemonic": "Acumen ≈ « acuité » : flair affûté."
   },
   "keen": {
    "id": "keen",
@@ -7034,7 +7221,8 @@
     "sharp",
     "perceptive",
     "astute"
-   ]
+   ],
+   "mnemonic": "Keen : tranchant, aiguisé (esprit vif)."
   },
   "sound": {
    "id": "sound",
@@ -7051,7 +7239,8 @@
     "reasonable",
     "well-founded",
     "judicious"
-   ]
+   ],
+   "mnemonic": "Sound : solide (a sound argument, sound sleep)."
   },
   "polymath": {
    "id": "polymath",
@@ -7086,7 +7275,8 @@
     "myopic",
     "unwise",
     "imprudent"
-   ]
+   ],
+   "mnemonic": "Short-sighted : myope, ne voit pas loin dans l'avenir."
   },
   "oblivious": {
    "id": "oblivious",
@@ -7121,7 +7311,8 @@
     "self-satisfied",
     "conceited",
     "superior"
-   ]
+   ],
+   "mnemonic": "Smug : un sourire suffisant qui agace."
   },
   "sanctimonious": {
    "id": "sanctimonious",
@@ -7138,7 +7329,8 @@
     "pious",
     "preachy",
     "hypocritical"
-   ]
+   ],
+   "mnemonic": "Sanctimonious ≈ « saint » : il fait le saint, donneur de leçons."
   },
   "haughty": {
    "id": "haughty",
@@ -7155,7 +7347,8 @@
     "disdainful",
     "supercilious",
     "proud"
-   ]
+   ],
+   "mnemonic": "Haughty ≈ « haut » : il vous regarde de haut."
   },
   "wield": {
    "id": "wield",
@@ -7172,7 +7365,8 @@
     "brandish",
     "exert",
     "handle"
-   ]
+   ],
+   "mnemonic": "Wield : manier (pouvoir, épée)."
   },
   "domineering": {
    "id": "domineering",
@@ -7189,7 +7383,8 @@
     "bossy",
     "tyrannical",
     "authoritarian"
-   ]
+   ],
+   "mnemonic": "Domineering ≈ « dominer » : autoritaire."
   },
   "yoke": {
    "id": "yoke",
@@ -7206,7 +7401,8 @@
     "burden",
     "oppression",
     "servitude"
-   ]
+   ],
+   "mnemonic": "Yoke = joug (ressemble au mot français)."
   },
   "oust": {
    "id": "oust",
@@ -7223,7 +7419,8 @@
     "depose",
     "dislodge",
     "topple"
-   ]
+   ],
+   "mnemonic": "Oust ≈ « ouste ! » : dehors !"
   },
   "fickle": {
    "id": "fickle",
@@ -7240,7 +7437,8 @@
     "inconstant",
     "changeable",
     "mercurial"
-   ]
+   ],
+   "mnemonic": "Fickle : girouette, il change tout le temps."
   },
   "waver": {
    "id": "waver",
@@ -7257,7 +7455,8 @@
     "vacillate",
     "falter",
     "fluctuate"
-   ]
+   ],
+   "mnemonic": "Waver ≈ « wave » : ça ondule, il hésite."
   },
   "quandary": {
    "id": "quandary",
@@ -7274,7 +7473,8 @@
     "predicament",
     "impasse",
     "plight"
-   ]
+   ],
+   "mnemonic": "Quandary : le « quand-ai-je » d'un dilemme."
   },
   "supersede": {
    "id": "supersede",
@@ -7309,7 +7509,8 @@
     "outshine",
     "dwarf",
     "upstage"
-   ]
+   ],
+   "mnemonic": "Over-shadow : mettre à l'ombre, éclipser."
   },
   "outstrip": {
    "id": "outstrip",
@@ -7326,7 +7527,8 @@
     "outdo",
     "exceed",
     "outrun"
-   ]
+   ],
+   "mnemonic": "Out-strip : dépasser en course."
   },
   "outpace": {
    "id": "outpace",
@@ -7343,7 +7545,8 @@
     "outrun",
     "surpass",
     "outdistance"
-   ]
+   ],
+   "mnemonic": "Out-pace : aller plus vite en rythme."
   },
   "shun": {
    "id": "shun",
@@ -7360,7 +7563,8 @@
     "spurn",
     "ostracize",
     "eschew"
-   ]
+   ],
+   "mnemonic": "Shun ≈ « chut / shoo » : on fuit, on évite."
   },
   "eschew": {
    "id": "eschew",
@@ -7377,7 +7581,8 @@
     "forgo",
     "abstain from",
     "shun"
-   ]
+   ],
+   "mnemonic": "Eschew ≈ « esquiver » : s'abstenir."
   },
   "scorn": {
    "id": "scorn",
@@ -7394,7 +7599,8 @@
     "disdain",
     "rebuff",
     "reject"
-   ]
+   ],
+   "mnemonic": "Scorn ≈ « escorner » : le mépris."
   },
   "skirt": {
    "id": "skirt",
@@ -7411,7 +7617,8 @@
     "sidestep",
     "dodge",
     "bypass"
-   ]
+   ],
+   "mnemonic": "Skirt : la jupe qui contourne ; contourner (un sujet)."
   },
   "circumvent": {
    "id": "circumvent",
@@ -7428,7 +7635,8 @@
     "evade",
     "sidestep",
     "elude"
-   ]
+   ],
+   "mnemonic": "Circum-vent : aller autour (circum)."
   },
   "amity": {
    "id": "amity",
@@ -7463,7 +7671,8 @@
     "civility",
     "politeness",
     "harmony"
-   ]
+   ],
+   "mnemonic": "Comity ≈ « comité » : courtoisie entre pairs."
   },
   "congenial": {
    "id": "congenial",
@@ -7480,7 +7689,8 @@
     "pleasant",
     "genial",
     "compatible"
-   ]
+   ],
+   "mnemonic": "Con-genial : du même génie, de même nature, sympathique."
   },
   "estrange": {
    "id": "estrange",
@@ -7515,7 +7725,8 @@
     "trespasser",
     "outsider",
     "meddler"
-   ]
+   ],
+   "mnemonic": "Inter-loper : qui s'interpose, un intrus."
   },
   "dalliance": {
    "id": "dalliance",
@@ -7532,7 +7743,8 @@
     "flirtation",
     "affair",
     "trifling"
-   ]
+   ],
+   "mnemonic": "Dalliance : on s'attarde, on batifole."
   },
   "abet": {
    "id": "abet",
@@ -7549,7 +7761,8 @@
     "assist",
     "encourage",
     "incite"
-   ]
+   ],
+   "mnemonic": "Abet : pousser à la faute (à l'origine, exciter un chien)."
   },
   "adulterate": {
    "id": "adulterate",
@@ -7584,7 +7797,8 @@
     "kindred",
     "related",
     "comparable"
-   ]
+   ],
+   "mnemonic": "A-kin : de la même famille (kin)."
   },
   "apt": {
    "id": "apt",
@@ -7601,7 +7815,8 @@
     "appropriate",
     "inclined",
     "likely"
-   ]
+   ],
+   "mnemonic": "Apt ≈ « apte » : approprié, enclin."
   },
   "artless": {
    "id": "artless",
@@ -7636,7 +7851,8 @@
     "colossus",
     "titan",
     "leviathan"
-   ]
+   ],
+   "mnemonic": "Behemoth ≈ « Béhémoth », monstre biblique."
   },
   "bemoan": {
    "id": "bemoan",
@@ -7653,7 +7869,8 @@
     "deplore",
     "bewail",
     "regret"
-   ]
+   ],
+   "mnemonic": "Be-moan : gémir sur."
   },
   "bemuse": {
    "id": "bemuse",
@@ -7670,7 +7887,8 @@
     "baffle",
     "perplex",
     "confuse"
-   ]
+   ],
+   "mnemonic": "Be-muse : l'esprit dans la lune (muse = rêver)."
   },
   "bequeath": {
    "id": "bequeath",
@@ -7687,7 +7905,8 @@
     "will",
     "bestow",
     "hand down"
-   ]
+   ],
+   "mnemonic": "Bequeath : « je lègue » dans un testament."
   },
   "betray": {
    "id": "betray",
@@ -7704,7 +7923,8 @@
     "expose",
     "disclose",
     "divulge"
-   ]
+   ],
+   "mnemonic": "Betray ≈ « trahir » : trahir, ou laisser paraître malgré soi."
   },
   "blunder": {
    "id": "blunder",
@@ -7721,7 +7941,8 @@
     "error",
     "faux pas",
     "bungle"
-   ]
+   ],
+   "mnemonic": "Blunder ≈ « blunt » : une gaffe lourde."
   },
   "boisterous": {
    "id": "boisterous",
@@ -7738,7 +7959,8 @@
     "raucous",
     "rambunctious",
     "unruly"
-   ]
+   ],
+   "mnemonic": "Boisterous : une bande turbulente qui fait du boucan."
   },
   "boon": {
    "id": "boon",
@@ -7755,7 +7977,8 @@
     "benefit",
     "windfall",
     "advantage"
-   ]
+   ],
+   "mnemonic": "Boon ≈ « bon » : une aubaine."
   },
   "broach": {
    "id": "broach",
@@ -7772,7 +7995,8 @@
     "introduce",
     "mention",
     "approach"
-   ]
+   ],
+   "mnemonic": "Broach ≈ « broche » : on perce un tonneau, on aborde un sujet."
   },
   "buffer": {
    "id": "buffer",
@@ -7789,7 +8013,8 @@
     "shield",
     "safeguard",
     "barrier"
-   ]
+   ],
+   "mnemonic": "Buffer : le tampon qui amortit le choc."
   },
   "bumbling": {
    "id": "bumbling",
@@ -7806,7 +8031,8 @@
     "inept",
     "awkward",
     "maladroit"
-   ]
+   ],
+   "mnemonic": "Bumble : bourdon (bumblebee), maladroit comme lui."
   },
   "cipher": {
    "id": "cipher",
@@ -7823,7 +8049,8 @@
     "cryptogram",
     "secret writing",
     "encryption"
-   ]
+   ],
+   "mnemonic": "Cipher ≈ « chiffre » : code secret."
   },
   "coin": {
    "id": "coin",
@@ -7840,7 +8067,8 @@
     "create",
     "devise",
     "originate"
-   ]
+   ],
+   "mnemonic": "Coin : on « frappe » un mot nouveau comme une monnaie."
   },
   "colloquial": {
    "id": "colloquial",
@@ -7857,7 +8085,8 @@
     "conversational",
     "casual",
     "vernacular"
-   ]
+   ],
+   "mnemonic": "Colloquial ≈ « colloque » : la langue de la conversation."
   },
   "commensurate": {
    "id": "commensurate",
@@ -7874,7 +8103,8 @@
     "equivalent",
     "comparable",
     "corresponding"
-   ]
+   ],
+   "mnemonic": "Com-mensurate : avec la même mesure (mensura)."
   },
   "compendium": {
    "id": "compendium",
@@ -7891,7 +8121,8 @@
     "anthology",
     "compilation",
     "summary"
-   ]
+   ],
+   "mnemonic": "Compendium ≈ « compendieux » : un recueil condensé."
   },
   "compromise": {
    "id": "compromise",
@@ -7908,7 +8139,8 @@
     "undermine",
     "endanger",
     "weaken"
-   ]
+   ],
+   "mnemonic": "Compromise : transiger… ou compromettre (sa réputation)."
   },
   "conducive": {
    "id": "conducive",
@@ -7925,7 +8157,8 @@
     "beneficial",
     "helpful",
     "advantageous"
-   ]
+   ],
+   "mnemonic": "Con-ducive ≈ « conduire » : mène à un résultat, propice."
   },
   "consummate": {
    "id": "consummate",
@@ -7942,7 +8175,8 @@
     "perfect",
     "supreme",
     "masterly"
-   ]
+   ],
+   "mnemonic": "Consummate ≈ « consommé » : accompli, parfait."
   },
   "contempt": {
    "id": "contempt",
@@ -7959,7 +8193,8 @@
     "disdain",
     "disgust",
     "derision"
-   ]
+   ],
+   "mnemonic": "Contempt ≈ « contempteur » : le mépris."
   },
   "conundrum": {
    "id": "conundrum",
@@ -7976,7 +8211,8 @@
     "riddle",
     "dilemma",
     "enigma"
-   ]
+   ],
+   "mnemonic": "Conundrum : mot d'origine incertaine ; retenir : casse-tête."
   },
   "cunning": {
    "id": "cunning",
@@ -7993,7 +8229,8 @@
     "sly",
     "shrewd",
     "wily"
-   ]
+   ],
+   "mnemonic": "Cunning ≈ can (savoir) : il sait comment s'y prendre, rusé."
   },
   "daunting": {
    "id": "daunting",
@@ -8010,7 +8247,8 @@
     "formidable",
     "discouraging",
     "overwhelming"
-   ]
+   ],
+   "mnemonic": "Daunt ≈ « dompter » : intimidant."
   },
   "debunk": {
    "id": "debunk",
@@ -8027,7 +8265,8 @@
     "disprove",
     "expose",
     "discredit"
-   ]
+   ],
+   "mnemonic": "De-bunk : enlever le « bunk » (la baliverne)."
   },
   "deft": {
    "id": "deft",
@@ -8044,7 +8283,8 @@
     "skillful",
     "nimble",
     "dexterous"
-   ]
+   ],
+   "mnemonic": "Deft ≈ « doigté » : habile de ses mains."
   },
   "demise": {
    "id": "demise",
@@ -8061,7 +8301,8 @@
     "end",
     "collapse",
     "death"
-   ]
+   ],
+   "mnemonic": "De-mise : mise à bas, la fin ; ou le décès."
   },
   "despicable": {
    "id": "despicable",
@@ -8078,7 +8319,8 @@
     "vile",
     "loathsome",
     "ignoble"
-   ]
+   ],
+   "mnemonic": "De-spic ≈ « mépris » : digne de mépris."
   },
   "dilatory": {
    "id": "dilatory",
@@ -8095,7 +8337,8 @@
     "tardy",
     "procrastinating",
     "sluggish"
-   ]
+   ],
+   "mnemonic": "Dilatory ≈ « différer » : il traîne, il retarde."
   },
   "din": {
    "id": "din",
@@ -8112,7 +8355,8 @@
     "clamor",
     "uproar",
     "cacophony"
-   ]
+   ],
+   "mnemonic": "Din ≈ « dindon » : un vacarme !"
   },
   "discrepancy": {
    "id": "discrepancy",
@@ -8129,7 +8373,8 @@
     "disparity",
     "difference",
     "divergence"
-   ]
+   ],
+   "mnemonic": "Discrepancy ≈ « discordance » : un écart."
   },
   "discriminating": {
    "id": "discriminating",
@@ -8164,7 +8409,8 @@
     "impartial",
     "detached",
     "unbiased"
-   ]
+   ],
+   "mnemonic": "Dis-passionate : sans passion, objectif."
   },
   "dispel": {
    "id": "dispel",
@@ -8181,7 +8427,8 @@
     "banish",
     "allay",
     "scatter"
-   ]
+   ],
+   "mnemonic": "Dis-pel : chasser (pellere = pousser)."
   },
   "elate": {
    "id": "elate",
@@ -8198,7 +8445,8 @@
     "exhilarate",
     "thrill",
     "gladden"
-   ]
+   ],
+   "mnemonic": "Elate ≈ « élever » : transporté de joie."
   },
   "epitome": {
    "id": "epitome",
@@ -8233,7 +8481,8 @@
     "acquit",
     "vindicate",
     "exculpate"
-   ]
+   ],
+   "mnemonic": "Ex-onerate : sans le fardeau (onus)."
   },
   "extemporaneous": {
    "id": "extemporaneous",
@@ -8250,7 +8499,8 @@
     "improvised",
     "unrehearsed",
     "spontaneous"
-   ]
+   ],
+   "mnemonic": "Ex tempore : hors du temps de préparation, improvisé."
   },
   "fester": {
    "id": "fester",
@@ -8267,7 +8517,8 @@
     "worsen",
     "smolder",
     "rot"
-   ]
+   ],
+   "mnemonic": "Fester : une plaie qui pourrit, une situation qui s'envenime."
   },
   "fodder": {
    "id": "fodder",
@@ -8284,7 +8535,8 @@
     "ammunition",
     "feed",
     "grist"
-   ]
+   ],
+   "mnemonic": "Fodder ≈ « fourrage » : même mot, même racine."
   },
   "foe": {
    "id": "foe",
@@ -8301,7 +8553,8 @@
     "adversary",
     "opponent",
     "rival"
-   ]
+   ],
+   "mnemonic": "Foe ≈ « faux frère » : l'ennemi."
   },
   "garner": {
    "id": "garner",
@@ -8318,7 +8571,8 @@
     "earn",
     "collect",
     "acquire"
-   ]
+   ],
+   "mnemonic": "Garner ≈ « grenier » : on engrange, on récolte."
   },
   "germane": {
    "id": "germane",
@@ -8335,7 +8589,8 @@
     "pertinent",
     "applicable",
     "apropos"
-   ]
+   ],
+   "mnemonic": "Germane ≈ « cousin germain » : étroitement lié au sujet."
   },
   "grapple": {
    "id": "grapple",
@@ -8352,7 +8607,8 @@
     "wrestle",
     "contend",
     "tackle"
-   ]
+   ],
+   "mnemonic": "Grapple ≈ « grappin » : on s'accroche, on se colleter."
   },
   "grudging": {
    "id": "grudging",
@@ -8369,7 +8625,8 @@
     "unwilling",
     "begrudging",
     "hesitant"
-   ]
+   ],
+   "mnemonic": "Grudge = rancune : donné à contrecœur."
   },
   "hallmark": {
    "id": "hallmark",
@@ -8386,7 +8643,8 @@
     "signature",
     "characteristic",
     "earmark"
-   ]
+   ],
+   "mnemonic": "Hallmark : le poinçon d'orfèvre, le signe distinctif."
   },
   "happenstance": {
    "id": "happenstance",
@@ -8403,7 +8661,8 @@
     "coincidence",
     "accident",
     "fluke"
-   ]
+   ],
+   "mnemonic": "Happen + circumstance : une coïncidence."
   },
   "haven": {
    "id": "haven",
@@ -8420,7 +8679,8 @@
     "sanctuary",
     "shelter",
     "retreat"
-   ]
+   ],
+   "mnemonic": "Haven ≈ « havre » : un refuge."
   },
   "heartening": {
    "id": "heartening",
@@ -8437,7 +8697,8 @@
     "cheering",
     "uplifting",
     "reassuring"
-   ]
+   ],
+   "mnemonic": "Heart = cœur : ça redonne du cœur."
   },
   "heed": {
    "id": "heed",
@@ -8454,7 +8715,8 @@
     "obey",
     "regard",
     "follow"
-   ]
+   ],
+   "mnemonic": "Heed : prête l'oreille, tiens compte du conseil."
   },
   "hodgepodge": {
    "id": "hodgepodge",
@@ -8471,7 +8733,8 @@
     "medley",
     "mishmash",
     "farrago"
-   ]
+   ],
+   "mnemonic": "Hodgepodge ≈ « hochepot » : un ragoût de mélanges."
   },
   "impervious": {
    "id": "impervious",
@@ -8488,7 +8751,8 @@
     "resistant",
     "immune",
     "unmoved"
-   ]
+   ],
+   "mnemonic": "Im-pervious : pas de voie (via) à travers, imperméable."
   },
   "indiscriminate": {
    "id": "indiscriminate",
@@ -8505,7 +8769,8 @@
     "unselective",
     "haphazard",
     "promiscuous"
-   ]
+   ],
+   "mnemonic": "In-discriminate : sans faire de distinction."
   },
   "infatuate": {
    "id": "infatuate",
@@ -8540,7 +8805,8 @@
     "entrenched",
     "inveterate",
     "fixed"
-   ]
+   ],
+   "mnemonic": "In-grained : dans le grain, profondément ancré."
   },
   "innocuous": {
    "id": "innocuous",
@@ -8557,7 +8823,8 @@
     "benign",
     "inoffensive",
     "safe"
-   ]
+   ],
+   "mnemonic": "In-nocuous ≈ « nocif » : pas nocif."
   },
   "insular": {
    "id": "insular",
@@ -8592,7 +8859,8 @@
     "interrelation",
     "give-and-take",
     "dynamic"
-   ]
+   ],
+   "mnemonic": "Inter-play : le jeu entre deux choses."
   },
   "intricate": {
    "id": "intricate",
@@ -8609,7 +8877,8 @@
     "elaborate",
     "convoluted",
     "involved"
-   ]
+   ],
+   "mnemonic": "Intricate ≈ « intriquer » : tout enchevêtré."
   },
   "ironclad": {
    "id": "ironclad",
@@ -8644,7 +8913,8 @@
     "belligerent",
     "warmongering",
     "ultranationalist"
-   ]
+   ],
+   "mnemonic": "Jingo (« by jingo ! ») : chauvin et belliqueux."
   },
   "layman": {
    "id": "layman",
@@ -8661,7 +8931,8 @@
     "nonspecialist",
     "outsider",
     "novice"
-   ]
+   ],
+   "mnemonic": "Layman ≈ « laïc » : le profane."
   },
   "levity": {
    "id": "levity",
@@ -8696,7 +8967,8 @@
     "abhor",
     "despise",
     "abominate"
-   ]
+   ],
+   "mnemonic": "Loathe : abhorrer ; à ne pas confondre avec loath (réticent)."
   },
   "lukewarm": {
    "id": "lukewarm",
@@ -8713,7 +8985,8 @@
     "half-hearted",
     "apathetic",
     "indifferent"
-   ]
+   ],
+   "mnemonic": "Luke + warm : tiède (luke = tiède en vieil anglais)."
   },
   "lurid": {
    "id": "lurid",
@@ -8730,7 +9003,8 @@
     "gruesome",
     "shocking",
     "garish"
-   ]
+   ],
+   "mnemonic": "Lurid ≈ « livide » : couleurs choquantes, sordide."
   },
   "lush": {
    "id": "lush",
@@ -8747,7 +9021,8 @@
     "verdant",
     "opulent",
     "abundant"
-   ]
+   ],
+   "mnemonic": "Lush : luxuriant, riche."
   },
   "mellifluous": {
    "id": "mellifluous",
@@ -8782,7 +9057,8 @@
     "conventions",
     "norms",
     "folkways"
-   ]
+   ],
+   "mnemonic": "Mores ≈ « mœurs » (se prononce « mor-ayz »)."
   },
   "mount": {
    "id": "mount",
@@ -8799,7 +9075,8 @@
     "stage",
     "escalate",
     "intensify"
-   ]
+   ],
+   "mnemonic": "Mount : monter ; on lance une offensive, la tension monte."
   },
   "multifarious": {
    "id": "multifarious",
@@ -8816,7 +9093,8 @@
     "manifold",
     "varied",
     "myriad"
-   ]
+   ],
+   "mnemonic": "Multi-farious : de multiples sortes."
   },
   "nexus": {
    "id": "nexus",
@@ -8833,7 +9111,8 @@
     "connection",
     "hub",
     "core"
-   ]
+   ],
+   "mnemonic": "Nexus : un nœud, un lien (≈ « connexion »)."
   },
   "noxious": {
    "id": "noxious",
@@ -8868,7 +9147,8 @@
     "huge",
     "disproportionate",
     "gigantic"
-   ]
+   ],
+   "mnemonic": "Out-size : hors taille."
   },
   "overlook": {
    "id": "overlook",
@@ -8885,7 +9165,8 @@
     "excuse",
     "condone",
     "miss"
-   ]
+   ],
+   "mnemonic": "Over-look : regarder par-dessus : ne pas voir, ou fermer les yeux."
   },
   "overrun": {
    "id": "overrun",
@@ -8902,7 +9183,8 @@
     "infest",
     "swarm",
     "ravage"
-   ]
+   ],
+   "mnemonic": "Over-run : courir par-dessus, envahir."
   },
   "overstate": {
    "id": "overstate",
@@ -8919,7 +9201,8 @@
     "overemphasize",
     "inflate",
     "embellish"
-   ]
+   ],
+   "mnemonic": "Over-state : en dire trop."
   },
   "overwhelm": {
    "id": "overwhelm",
@@ -8936,7 +9219,8 @@
     "swamp",
     "inundate",
     "crush"
-   ]
+   ],
+   "mnemonic": "Over-whelm : submerger comme une vague."
   },
   "parochial": {
    "id": "parochial",
@@ -8989,7 +9273,8 @@
     "tactic",
     "gambit",
     "stratagem"
-   ]
+   ],
+   "mnemonic": "Ploy : une manœuvre pour s'en sortir."
   },
   "plummet": {
    "id": "plummet",
@@ -9024,7 +9309,8 @@
     "abrupt",
     "sheer",
     "sudden"
-   ]
+   ],
+   "mnemonic": "Precipitous ≈ « précipice » : à pic, très rapide."
   },
   "prevailing": {
    "id": "prevailing",
@@ -9041,7 +9327,8 @@
     "current",
     "widespread",
     "dominant"
-   ]
+   ],
+   "mnemonic": "Prevail ≈ « prévaloir » : dominant, en vigueur."
   },
   "pristine": {
    "id": "pristine",
@@ -9058,7 +9345,8 @@
     "immaculate",
     "untouched",
     "pure"
-   ]
+   ],
+   "mnemonic": "Pristine ≈ « primitif » : dans l'état d'origine."
   },
   "proclivity": {
    "id": "proclivity",
@@ -9075,7 +9363,8 @@
     "propensity",
     "predilection",
     "bent"
-   ]
+   ],
+   "mnemonic": "Pro-clivity : une pente (clivus) vers : un penchant."
   },
   "prone": {
    "id": "prone",
@@ -9092,7 +9381,8 @@
     "susceptible",
     "inclined",
     "apt"
-   ]
+   ],
+   "mnemonic": "Prone : couché face contre terre, donc enclin à."
   },
   "proponent": {
    "id": "proponent",
@@ -9127,7 +9417,8 @@
     "baffle",
     "bewilder",
     "confound"
-   ]
+   ],
+   "mnemonic": "Puzzle : un casse-tête qui rend perplexe."
   },
   "remedial": {
    "id": "remedial",
@@ -9162,7 +9453,8 @@
     "remember",
     "recall",
     "look back"
-   ]
+   ],
+   "mnemonic": "Reminisce ≈ « réminiscence » : on évoque ses souvenirs."
   },
   "rendition": {
    "id": "rendition",
@@ -9179,7 +9471,8 @@
     "performance",
     "version",
     "reading"
-   ]
+   ],
+   "mnemonic": "Rendition ≈ « rendre » : rendre une chanson, une interprétation."
   },
   "rescind": {
    "id": "rescind",
@@ -9196,7 +9489,8 @@
     "repeal",
     "annul",
     "retract"
-   ]
+   ],
+   "mnemonic": "Re-scind ≈ « scission » : couper, annuler."
   },
   "revamp": {
    "id": "revamp",
@@ -9213,7 +9507,8 @@
     "overhaul",
     "refurbish",
     "reorganize"
-   ]
+   ],
+   "mnemonic": "Re-vamp : remettre à neuf, rénover."
   },
   "rote": {
    "id": "rote",
@@ -9230,7 +9525,8 @@
     "automatic",
     "perfunctory",
     "habitual"
-   ]
+   ],
+   "mnemonic": "Rote ≈ « routine » : par cœur."
   },
   "ruffle": {
    "id": "ruffle",
@@ -9247,7 +9543,8 @@
     "agitate",
     "rattle",
     "annoy"
-   ]
+   ],
+   "mnemonic": "Ruffle : on froisse les plumes, on perturbe."
   },
   "ruthless": {
    "id": "ruthless",
@@ -9264,7 +9561,8 @@
     "pitiless",
     "callous",
     "cruel"
-   ]
+   ],
+   "mnemonic": "Ruth-less : sans ruth (pitié), impitoyable."
   },
   "salable": {
    "id": "salable",
@@ -9281,7 +9579,8 @@
     "sellable",
     "merchantable",
     "commercial"
-   ]
+   ],
+   "mnemonic": "Sale-able : qu'on peut vendre."
   },
   "salvage": {
    "id": "salvage",
@@ -9316,7 +9615,8 @@
     "infrequently",
     "hardly ever",
     "scarcely"
-   ]
+   ],
+   "mnemonic": "Seldom : rarement."
   },
   "serendipity": {
    "id": "serendipity",
@@ -9351,7 +9651,8 @@
     "severe",
     "austere",
     "harsh"
-   ]
+   ],
+   "mnemonic": "Stern : sévère (et aussi la poupe d'un bateau)."
   },
   "stopgap": {
    "id": "stopgap",
@@ -9386,7 +9687,8 @@
     "become",
     "fit",
     "flatter"
-   ]
+   ],
+   "mnemonic": "Suit : un costume… ou convenir : ça te va."
   },
   "sweeping": {
    "id": "sweeping",
@@ -9403,7 +9705,8 @@
     "comprehensive",
     "far-reaching",
     "wholesale"
-   ]
+   ],
+   "mnemonic": "Sweeping : un coup de balai, radical et de grande ampleur."
   },
   "tawdry": {
    "id": "tawdry",
@@ -9420,7 +9723,8 @@
     "tacky",
     "cheap",
     "flashy"
-   ]
+   ],
+   "mnemonic": "De la dentelle de Sainte Audrey (St Audrey's lace) bon marché : clinquant."
   },
   "tepid": {
    "id": "tepid",
@@ -9437,7 +9741,8 @@
     "unenthusiastic",
     "apathetic",
     "halfhearted"
-   ]
+   ],
+   "mnemonic": "Tepid ≈ « tiède »."
   },
   "trappings": {
    "id": "trappings",
@@ -9454,7 +9759,8 @@
     "paraphernalia",
     "regalia",
     "adornments"
-   ]
+   ],
+   "mnemonic": "Trappings : les harnais d'apparat, les attributs du rang."
   },
   "typify": {
    "id": "typify",
@@ -9471,7 +9777,8 @@
     "embody",
     "represent",
     "epitomize"
-   ]
+   ],
+   "mnemonic": "Typify : être le type même de."
   },
   "understated": {
    "id": "understated",
@@ -9488,7 +9795,8 @@
     "subtle",
     "muted",
     "unobtrusive"
-   ]
+   ],
+   "mnemonic": "Under-stated : dit en dessous, discret."
   },
   "uptick": {
    "id": "uptick",
@@ -9505,7 +9813,8 @@
     "increase",
     "upturn",
     "improvement"
-   ]
+   ],
+   "mnemonic": "Up-tick : un petit cran vers le haut."
   },
   "verisimilitude": {
    "id": "verisimilitude",
@@ -9558,7 +9867,8 @@
     "striking",
     "lifelike",
     "brilliant"
-   ]
+   ],
+   "mnemonic": "Vivid ≈ « vif » : couleurs et images éclatantes."
   }
  }
 }

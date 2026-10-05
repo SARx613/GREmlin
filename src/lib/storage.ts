@@ -3,7 +3,7 @@ import type { LessonSnapshot, Progress } from '../types';
 const PROGRESS_KEY = 'gre-progress-v1';
 const LESSON_KEY = 'gre-lesson-v1';
 
-export const emptyState = (): Progress => ({ words: {}, streak: { count: 0, lastDay: null }, sound: true });
+export const emptyState = (): Progress => ({ words: {}, streak: { count: 0, lastDay: null }, sound: true, days: {} });
 
 /** Vérifie le minimum de forme d'une progression (fichier importé ou localStorage corrompu). */
 export function parseProgress(raw: unknown): Progress | null {
@@ -15,6 +15,7 @@ export function parseProgress(raw: unknown): Progress | null {
     words: p.words,
     streak: p.streak && typeof p.streak.count === 'number' ? p.streak : base.streak,
     sound: typeof p.sound === 'boolean' ? p.sound : base.sound,
+    days: p.days && typeof p.days === 'object' ? p.days : base.days,
   };
 }
 
@@ -27,11 +28,25 @@ function read(key: string): unknown {
   }
 }
 
+/** Événement émis quand le navigateur refuse d'enregistrer (navigation privée, quota, stockage bloqué). */
+export const STORAGE_ERROR_EVENT = 'gre-storage-error';
+
 function write(key: string, value: unknown) {
   try {
     localStorage.setItem(key, JSON.stringify(value));
   } catch {
-    /* quota ou navigation privée : on continue sans sauvegarde */
+    window.dispatchEvent(new Event(STORAGE_ERROR_EVENT));
+  }
+}
+
+/** Vérifie au démarrage que le stockage local fonctionne. */
+export function storageWorks(): boolean {
+  try {
+    localStorage.setItem('gre-probe', '1');
+    localStorage.removeItem('gre-probe');
+    return true;
+  } catch {
+    return false;
   }
 }
 

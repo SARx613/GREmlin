@@ -3,19 +3,25 @@ import { data } from './lib/data';
 import { buildQueue, createLesson, finishLesson, pickWords, type LessonResult } from './lib/session';
 import { canSpeak } from './lib/speak';
 import { clearLesson, loadLesson, saveLesson } from './lib/storage';
-import { currentStreak, recordLesson } from './lib/srs';
+import { currentStreak, masteredCount, recordDay, recordLesson } from './lib/srs';
 import { useAccount } from './hooks/useAccount';
 import { useProgress } from './hooks/useProgress';
+import { useSettings } from './hooks/useSettings';
 import { emptyState } from './lib/storage';
+import Notices from './components/Notices';
 import Chapter from './screens/Chapter';
 import Home from './screens/Home';
 import Lesson from './screens/Lesson';
+import Settings from './screens/Settings';
+import Stats from './screens/Stats';
 import LessonEnd from './screens/LessonEnd';
 import Triage from './screens/Triage';
 import type { LessonConfig, LessonSnapshot, LessonState } from './types';
 
 type Screen =
   | { name: 'home' }
+  | { name: 'stats' }
+  | { name: 'settings' }
   | { name: 'chapter'; chapterId: string }
   | { name: 'triage'; chapterId: string }
   | { name: 'lesson'; snapshot: LessonSnapshot }
@@ -30,6 +36,7 @@ function loadPending(): LessonSnapshot | null {
 export default function App() {
   const { progress, update, replace, reset } = useProgress();
   const account = useAccount(progress, replace);
+  const { settings, update: updateSettings } = useSettings();
   const [screen, setScreen] = useState<Screen>({ name: 'home' });
   const [pending, setPending] = useState(loadPending);
 
@@ -53,7 +60,8 @@ export default function App() {
   function finish(state: LessonState, snapshot: LessonSnapshot) {
     const now = Date.now();
     const result = finishLesson(state, progress.words, now, snapshot.applySrs);
-    update((p) => ({ ...p, words: result.words, streak: recordLesson(p.streak, now) }));
+    const mastered = masteredCount(data.chapters.flatMap((c) => c.wordIds), result.words);
+    update((p) => ({ ...p, words: result.words, streak: recordLesson(p.streak, now), days: recordDay(p.days, now, mastered) }));
     clearLesson();
     setPending(null);
     setScreen({ name: 'end', config: snapshot.config, result });
@@ -65,11 +73,27 @@ export default function App() {
       view = (
         <Home
           progress={progress}
-          account={account}
+          dailyGoal={settings.dailyGoal}
           hasPending={!!pending}
           onResume={() => pending && setScreen({ name: 'lesson', snapshot: pending })}
           onReview={() => startLesson({ mode: 'review' })}
           onChapter={(chapterId) => setScreen({ name: 'chapter', chapterId })}
+          onToggleSound={() => update((p) => ({ ...p, sound: !p.sound }))}
+          onStats={() => setScreen({ name: 'stats' })}
+          onSettings={() => setScreen({ name: 'settings' })}
+        />
+      );
+      break;
+    case 'stats':
+      view = <Stats progress={progress} onBack={home} onStart={startLesson} />;
+      break;
+    case 'settings':
+      view = (
+        <Settings
+          settings={settings}
+          onChange={updateSettings}
+          progress={progress}
+          account={account}
           onToggleSound={() => update((p) => ({ ...p, sound: !p.sound }))}
           onImport={replace}
           onReset={() => {
@@ -77,6 +101,7 @@ export default function App() {
             void account.overwrite(emptyState());
             setPending(null);
           }}
+          onBack={home}
         />
       );
       break;
@@ -130,6 +155,10 @@ export default function App() {
   }
 
   // l'écran de leçon occupe toute la hauteur ; les autres sont dans une colonne centrée
-  if (screen.name === 'lesson') return view;
-  return <div className="mx-auto min-h-full w-full max-w-[760px] px-3 sm:px-6">{view}</div>;
+  return (
+    <>
+      <Notices />
+      {screen.name === 'lesson' ? view : <div className="mx-auto min-h-full w-full max-w-[760px] px-3 sm:px-6">{view}</div>}
+    </>
+  );
 }

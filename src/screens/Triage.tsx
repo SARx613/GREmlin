@@ -127,7 +127,7 @@ export default function Triage({ chapterId, progress, update, onBack }: Props) {
             type="button"
             onClick={undo}
             disabled={history.length === 0}
-            className="mx-auto mt-4 flex items-center gap-1 font-bold text-blue disabled:text-[#AFAFAF]"
+            className="mx-auto mt-4 flex items-center gap-1 font-bold text-blue-ink disabled:text-dtext"
           >
             <Undo2 size={16} /> Annuler
           </button>

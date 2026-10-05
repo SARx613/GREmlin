@@ -56,7 +56,7 @@ export default function GoogleButton({ clientId, onCredential }: Props) {
   return (
     <div>
       <div ref={ref} className="min-h-[44px]" />
-      {denied && <p className="mt-2 text-sm text-red-dark">La connexion a échoué. Réessaie.</p>}
+      {denied && <p className="mt-2 text-sm text-red-ink">La connexion a échoué. Réessaie.</p>}
     </div>
   );
 }

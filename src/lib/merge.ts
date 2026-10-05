@@ -1,4 +1,4 @@
-import type { Progress, Streak, WordProgress } from '../types';
+import type { DayStat, Progress, Streak, WordProgress } from '../types';
 
 /** Entre deux versions d'un même mot : la plus travaillée (seen), puis la boîte la plus haute, puis celle triée. */
 function pickWord(local: WordProgress, remote: WordProgress): WordProgress {
@@ -8,10 +8,18 @@ function pickWord(local: WordProgress, remote: WordProgress): WordProgress {
 }
 
 function pickStreak(a: Streak, b: Streak): Streak {
-  if (!a.lastDay) return b;
-  if (!b.lastDay) return a;
-  if (a.lastDay !== b.lastDay) return a.lastDay > b.lastDay ? a : b;
-  return a.count >= b.count ? a : b;
+  const best = Math.max(a.best ?? 0, b.best ?? 0, a.count, b.count);
+  const win = !a.lastDay ? b : !b.lastDay ? a : a.lastDay !== b.lastDay ? (a.lastDay > b.lastDay ? a : b) : a.count >= b.count ? a : b;
+  return { ...win, best };
+}
+
+function mergeDays(a: Record<string, DayStat> = {}, b: Record<string, DayStat> = {}): Record<string, DayStat> {
+  const out: Record<string, DayStat> = { ...b };
+  for (const [day, s] of Object.entries(a)) {
+    const o = out[day];
+    out[day] = o ? { lessons: Math.max(s.lessons, o.lessons), mastered: Math.max(s.mastered, o.mastered) } : s;
+  }
+  return out;
 }
 
 /** Fusionne la progression locale et celle du cloud sans rien perdre (le son reste un réglage local). */
@@ -20,5 +28,5 @@ export function mergeProgress(local: Progress, remote: Progress): Progress {
   for (const [id, wp] of Object.entries(local.words)) {
     words[id] = remote.words[id] ? pickWord(wp, remote.words[id]) : wp;
   }
-  return { words, streak: pickStreak(local.streak, remote.streak), sound: local.sound };
+  return { words, streak: pickStreak(local.streak, remote.streak), sound: local.sound, days: mergeDays(local.days, remote.days) };
 }

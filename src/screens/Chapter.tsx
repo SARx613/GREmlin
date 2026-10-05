@@ -6,11 +6,20 @@ import ProgressBar from '../components/ProgressBar';
 import WordCard from '../components/WordCard';
 import { data } from '../lib/data';
 import { MAX_SELECTION } from '../lib/session';
-import { dueIds, getWP, isNew, masteredCount, newIds, statusOf } from '../lib/srs';
+import { dueIds, getWP, isLeech, isNew, masteredCount, newIds, statusOf } from '../lib/srs';
 import type { LessonConfig, Progress } from '../types';
 
-const DOT = { new: 'bg-[#CFCFCF]', learning: 'bg-orange', mastered: 'bg-green' };
+const DOT = { new: 'bg-dborder', learning: 'bg-orange', mastered: 'bg-green' };
 const DOT_LABEL = { new: 'nouveau', learning: 'en cours', mastered: 'maîtrisé' };
+
+type Filter = 'all' | 'new' | 'learning' | 'mastered' | 'hard';
+const FILTERS: { id: Filter; text: string }[] = [
+  { id: 'all', text: 'Tous' },
+  { id: 'new', text: 'Nouveaux' },
+  { id: 'learning', text: 'En cours' },
+  { id: 'mastered', text: 'Maîtrisés' },
+  { id: 'hard', text: 'Difficiles' },
+];
 
 type Props = {
   chapterId: string;
@@ -24,6 +33,7 @@ export default function Chapter({ chapterId, progress, onBack, onStart, onTriage
   const chapter = data.chapters.find((c) => c.id === chapterId)!;
   const [selected, setSelected] = useState<string[]>([]);
   const [open, setOpen] = useState<string | null>(null);
+  const [filter, setFilter] = useState<Filter>('all');
   const now = Date.now();
 
   const toStudy = dueIds(chapter.wordIds, progress.words, now).length + newIds(chapter.wordIds, progress.words).length;
@@ -31,6 +41,10 @@ export default function Chapter({ chapterId, progress, onBack, onStart, onTriage
     const wp = getWP(progress.words, id);
     return isNew(wp) && wp.known === undefined;
   }).length;
+  const shown = chapter.wordIds.filter((id) => {
+    const wp = getWP(progress.words, id);
+    return filter === 'all' || (filter === 'hard' ? isLeech(wp) : statusOf(wp) === filter);
+  });
   const toggle = (id: string) => setSelected((s) => (s.includes(id) ? s.filter((x) => x !== id) : [...s, id]));
 
   return (
@@ -42,6 +56,7 @@ export default function Chapter({ chapterId, progress, onBack, onStart, onTriage
         <div className="flex-1">
           <p className="text-xs font-extrabold uppercase tracking-wide text-muted">{chapter.group}</p>
           <h1 className="text-2xl font-extrabold text-ink">{chapter.title}</h1>
+          {chapter.subtitle && <p className="text-sm text-muted">{chapter.subtitle}</p>}
         </div>
       </header>
 
@@ -62,11 +77,30 @@ export default function Chapter({ chapterId, progress, onBack, onStart, onTriage
         {selected.length > MAX_SELECTION && <p className="text-sm text-muted">Une leçon porte sur {MAX_SELECTION} mots maximum : les {MAX_SELECTION} premiers cochés.</p>}
       </div>
 
-      <div className="mb-2 mt-8 flex items-center justify-between">
-        <h2 className="text-sm font-extrabold uppercase tracking-wide text-muted">{chapter.wordIds.length} mots</h2>
+      <div role="radiogroup" aria-label="Filtrer les mots" className="mt-8 flex flex-wrap gap-2">
+        {FILTERS.map((f) => (
+          <button
+            key={f.id}
+            type="button"
+            role="radio"
+            aria-checked={filter === f.id}
+            onClick={() => setFilter(f.id)}
+            className={`rounded-full border-2 px-3 py-1 text-sm font-bold transition-colors duration-150 ${
+              filter === f.id ? 'border-blue bg-blue-light text-blue-ink' : 'border-line text-muted hover:bg-soft'
+            }`}
+          >
+            {f.text}
+          </button>
+        ))}
+      </div>
+
+      <div className="mb-2 mt-4 flex items-center justify-between">
+        <h2 className="text-sm font-extrabold uppercase tracking-wide text-muted">
+          {filter === 'all' ? `${chapter.wordIds.length} mots` : `${shown.length} / ${chapter.wordIds.length} mots`}
+        </h2>
         <button
           type="button"
-          className="text-sm font-bold text-blue"
+          className="text-sm font-bold text-blue-ink"
           onClick={() => setSelected(selected.length ? [] : chapter.wordIds)}
         >
           {selected.length ? 'Tout décocher' : 'Tout cocher'}
@@ -74,7 +108,8 @@ export default function Chapter({ chapterId, progress, onBack, onStart, onTriage
       </div>
 
       <ul className="divide-y-2 divide-line rounded-xl2 border-2 border-line">
-        {chapter.wordIds.map((id) => {
+        {shown.length === 0 && <li className="px-4 py-3 text-muted">Aucun mot dans cette catégorie.</li>}
+        {shown.map((id) => {
           const w = data.words[id];
           const st = statusOf(getWP(progress.words, id));
           return (

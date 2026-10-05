@@ -15,7 +15,7 @@ export default function Modal({ onClose, children }: { onClose: () => void; chil
       role="dialog"
       aria-modal="true"
     >
-      <div className="max-h-full w-full max-w-[560px] overflow-y-auto rounded-xl2 bg-white p-5 sm:p-6" onClick={(e) => e.stopPropagation()}>
+      <div className="max-h-full w-full max-w-[560px] overflow-y-auto rounded-xl2 bg-surface p-5 sm:p-6" onClick={(e) => e.stopPropagation()}>
         {children}
       </div>
     </div>

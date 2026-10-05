@@ -27,7 +27,7 @@ export function SpeakButton({ text, className = '' }: { text: string; className?
       type="button"
       onClick={() => speak(text)}
       aria-label={`Écouter « ${text} »`}
-      className={`rounded-xl2 p-2 text-blue transition-colors duration-150 hover:bg-blue-light ${className}`}
+      className={`rounded-xl2 p-2 text-blue-ink transition-colors duration-150 hover:bg-blue-light ${className}`}
     >
       <Volume2 size={26} />
     </button>
@@ -45,7 +45,7 @@ export default function WordCard({ word, full }: { word: Word; full?: boolean })
       </div>
       <p className="mb-4 text-sm font-bold italic text-muted">{word.pos}</p>
       <p className="text-lg font-bold text-ink">{word.definition}</p>
-      <p className="mb-4 text-lg text-blue-dark">{word.definitionFr}</p>
+      <p className="mb-4 text-lg text-blue-ink">{word.definitionFr}</p>
       {sentences.map((s) => (
         <Sentence key={s} text={s} word={word.word} className="mb-2 border-l-4 border-line pl-3 text-base text-muted" />
       ))}
@@ -57,8 +57,8 @@ export default function WordCard({ word, full }: { word: Word; full?: boolean })
         ))}
       </div>
       {word.mnemonic && (
-        <p className="mt-4 flex gap-2 rounded-xl2 bg-[#FFF4D6] p-3 text-sm text-ink">
-          <Lightbulb size={18} className="mt-0.5 shrink-0 text-orange" />
+        <p className="mt-4 flex gap-2 rounded-xl2 bg-tip p-3 text-sm text-ink">
+          <Lightbulb size={18} className="mt-0.5 shrink-0 text-orange-ink" />
           {word.mnemonic}
         </p>
       )}

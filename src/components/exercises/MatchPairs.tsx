@@ -48,10 +48,10 @@ export default function MatchPairs({ ex, data, onComplete }: Props) {
   }
 
   const cls = (id: string, side: 'l' | 'r', selected: boolean) => {
-    if (matched.includes(id)) return 'border-green bg-green-light text-green-dark opacity-60';
-    if (flash && (side === 'l' ? flash.l : flash.r) === id) return 'border-red bg-red-light text-red-dark';
-    if (selected) return 'border-blue bg-blue-light text-blue-dark';
-    return 'border-line text-ink hover:bg-[#F7F7F7]';
+    if (matched.includes(id)) return 'border-green bg-green-light text-green-ink opacity-60';
+    if (flash && (side === 'l' ? flash.l : flash.r) === id) return 'border-red bg-red-light text-red-ink';
+    if (selected) return 'border-blue bg-blue-light text-blue-ink';
+    return 'border-line text-ink hover:bg-soft';
   };
   const base = 'rounded-xl2 border-2 border-b-4 px-3 py-3 text-left font-bold transition-colors duration-150';
 

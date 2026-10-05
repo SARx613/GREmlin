@@ -7,9 +7,9 @@ type Account = ReturnType<typeof useAccount>;
 
 const STATUS = {
   idle: { icon: Cloud, text: 'Connecté', color: 'text-muted' },
-  syncing: { icon: RefreshCw, text: 'Synchronisation…', color: 'text-blue' },
-  ok: { icon: Cloud, text: 'Progression synchronisée', color: 'text-green-dark' },
-  error: { icon: CloudOff, text: 'Synchro impossible pour le moment', color: 'text-red-dark' },
+  syncing: { icon: RefreshCw, text: 'Synchronisation…', color: 'text-blue-ink' },
+  ok: { icon: Cloud, text: 'Progression synchronisée', color: 'text-green-ink' },
+  error: { icon: CloudOff, text: 'Synchro impossible pour le moment', color: 'text-red-ink' },
 } as const;
 
 /** Carte « Compte » : bouton Google si déconnecté, sinon profil + état de la synchro. Masquée si l'API n'est pas configurée. */

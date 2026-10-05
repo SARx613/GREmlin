@@ -48,10 +48,10 @@ export default function MultipleChoice({ ex, value, onChange, locked, autoPlay }
       <div className="grid gap-3">
         {ex.options.map((o, i) => {
           const selected = value === o.id;
-          let style = 'border-line text-ink hover:bg-[#F7F7F7]';
-          if (selected) style = 'border-blue bg-blue-light text-blue-dark';
-          if (locked && o.id === ex.answerId) style = 'border-green bg-green-light text-green-dark';
-          else if (locked && selected) style = 'border-red bg-red-light text-red-dark';
+          let style = 'border-line text-ink hover:bg-soft';
+          if (selected) style = 'border-blue bg-blue-light text-blue-ink';
+          if (locked && o.id === ex.answerId) style = 'border-green bg-green-light text-green-ink';
+          else if (locked && selected) style = 'border-red bg-red-light text-red-ink';
           return (
             <button
               key={o.id}

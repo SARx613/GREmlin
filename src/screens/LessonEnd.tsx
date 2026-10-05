@@ -23,20 +23,20 @@ export default function LessonEnd({ result, streak, canRepeat, onAgain, onBack }
 
   return (
     <div className="pb-16 pt-10 text-center">
-      <p className="text-5xl font-extrabold text-green">{pct} %</p>
+      <p className="text-5xl font-extrabold text-green-ink">{pct} %</p>
       <h1 className="mb-1 mt-2 text-2xl font-extrabold text-ink">Leçon terminée !</h1>
       <p className="mb-2 text-muted">de bonnes réponses du premier coup</p>
       {streak > 0 && (
-        <p className="mb-6 flex items-center justify-center gap-1 font-extrabold text-orange">
+        <p className="mb-6 flex items-center justify-center gap-1 font-extrabold text-orange-ink">
           <Flame size={20} fill="currentColor" /> {streak} {streak > 1 ? 'jours' : 'jour'} de suite
         </p>
       )}
 
       <div className="mt-6 space-y-6 text-left">
         {result.ups.length > 0 && (
-          <WordList title="Ils progressent" color="text-green-dark" ids={result.ups} />
+          <WordList title="Ils progressent" color="text-green-ink" ids={result.ups} />
         )}
-        {result.rework.length > 0 && <WordList title="À retravailler" color="text-red-dark" ids={result.rework} />}
+        {result.rework.length > 0 && <WordList title="À retravailler" color="text-red-ink" ids={result.rework} />}
       </div>
 
       <div className="mt-10 grid gap-3">
