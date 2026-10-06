@@ -4,7 +4,7 @@ import ProgressBar from '../components/ProgressBar';
 import WordOfTheDay from '../components/WordOfTheDay';
 import WordSearch from '../components/WordSearch';
 import { data } from '../lib/data';
-import { chapterDueCount, currentStreak, dueIds, masteredCount } from '../lib/srs';
+import { chapterDueCount, chapterProgress, currentStreak, dueIds, masteredCount } from '../lib/srs';
 import { lessonsToday } from '../lib/stats';
 import type { LessonConfig, Progress } from '../types';
 
@@ -132,6 +132,7 @@ export default function Home({ progress, dailyGoal, hasPending, openWordId, onRe
               .filter((c) => c.group === g)
               .map((c) => {
                 const due = chapterDueCount(c, progress.words, now);
+                const cp = chapterProgress(c.wordIds, progress.words);
                 return (
                   <button
                     key={c.id}
@@ -142,15 +143,19 @@ export default function Home({ progress, dailyGoal, hasPending, openWordId, onRe
                   >
                     <div className="mb-1 flex items-center justify-between gap-2">
                       <span className="text-lg font-bold text-ink">{c.title}</span>
-                      <span className="flex items-center gap-2 text-sm font-bold text-muted">
-                        {due > 0 && <span className="rounded-full bg-orange px-2 py-0.5 text-deep">{due} à réviser</span>}
-                        {c.wordIds.length} mots
+                      {due > 0 && <span className="rounded-full bg-orange px-2 py-0.5 text-sm font-bold text-deep">{due} à réviser</span>}
+                    </div>
+                    {c.subtitle && <p className="mb-2 text-sm text-muted">{c.subtitle}</p>}
+                    <div className="mb-1 mt-2 flex items-baseline justify-between text-sm font-bold">
+                      <span className="text-ink">
+                        {cp.discovered === cp.total ? 'Tous les mots découverts' : `Leçon ${cp.lessonsDone}/${cp.lessonsTotal}`}
                       </span>
+                      <span className="text-green-ink">{cp.percent} %</span>
                     </div>
-                    {c.subtitle && <p className="mb-3 text-sm text-muted">{c.subtitle}</p>}
-                    <div className={c.subtitle ? '' : 'mt-3'}>
-                      <ProgressBar thin value={masteredCount(c.wordIds, progress.words) / c.wordIds.length} />
-                    </div>
+                    <ProgressBar thin value={cp.mastered / cp.total} secondary={cp.discovered / cp.total} />
+                    <p className="mt-1 text-xs text-muted">
+                      {cp.discovered}/{cp.total} mots découverts · {cp.mastered} maîtrisé{cp.mastered > 1 ? 's' : ''}
+                    </p>
                   </button>
                 );
               })}

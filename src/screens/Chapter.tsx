@@ -6,7 +6,7 @@ import ProgressBar from '../components/ProgressBar';
 import WordCard from '../components/WordCard';
 import { data } from '../lib/data';
 import { MAX_SELECTION } from '../lib/session';
-import { dueIds, getWP, isLeech, isNew, masteredCount, newIds, statusOf } from '../lib/srs';
+import { chapterProgress, dueIds, getWP, isLeech, isNew, newIds, statusOf } from '../lib/srs';
 import type { LessonConfig, Progress } from '../types';
 
 const DOT = { new: 'bg-dborder', learning: 'bg-orange', mastered: 'bg-green' };
@@ -37,6 +37,7 @@ export default function Chapter({ chapterId, progress, onBack, onStart, onTriage
   const [open, setOpen] = useState<string | null>(null);
   const [filter, setFilter] = useState<Filter>('all');
   const now = Date.now();
+  const cp = chapterProgress(chapter.wordIds, progress.words);
 
   const toStudy = dueIds(chapter.wordIds, progress.words, now).length + newIds(chapter.wordIds, progress.words).length;
   const untriaged = chapter.wordIds.filter((id) => {
@@ -63,7 +64,15 @@ export default function Chapter({ chapterId, progress, onBack, onStart, onTriage
         </div>
       </header>
 
-      <ProgressBar thin value={masteredCount(chapter.wordIds, progress.words) / chapter.wordIds.length} />
+      <div className="mb-1 flex items-baseline justify-between font-bold">
+        <span className="text-ink">{cp.discovered === cp.total ? 'Tous les mots découverts' : `Leçon ${cp.lessonsDone}/${cp.lessonsTotal}`}</span>
+        <span className="text-green-ink">{cp.percent} %</span>
+      </div>
+      <ProgressBar thin value={cp.mastered / cp.total} secondary={cp.discovered / cp.total} />
+      <p className="mt-1 text-sm text-muted">
+        {cp.discovered}/{cp.total} mots découverts · {cp.mastered} maîtrisé{cp.mastered > 1 ? 's' : ''}
+        {cp.discovered < cp.total && ` · encore ${cp.lessonsTotal - cp.lessonsDone} leçon${cp.lessonsTotal - cp.lessonsDone > 1 ? 's' : ''} pour tout découvrir`}
+      </p>
 
       <div className="mt-6 grid gap-3">
         <Button full onClick={() => onStart({ mode: 'chapter', chapterId })}>

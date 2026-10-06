@@ -8,10 +8,10 @@ import type {
   WordsData,
 } from '../types';
 import { makeExercise, makePairs, pickType, shuffle, type Rng } from './exercises';
-import { applyResult, dueIds, getWP, newIds } from './srs';
+import { NEW_PER_LESSON, applyResult, dueIds, getWP, newIds } from './srs';
 
 export const MAX_WORDS = 8;
-export const MAX_NEW = 4;
+export const MAX_NEW = NEW_PER_LESSON;
 export const MAX_SELECTION = 10;
 const REINSERT_GAP = 3;
 

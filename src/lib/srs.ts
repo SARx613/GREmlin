@@ -3,6 +3,8 @@ import type { Chapter, DayStat, Streak, WordProgress } from '../types';
 export const DAY = 24 * 60 * 60 * 1000;
 export const MAX_BOX = 6;
 export const MASTERED_BOX = 4;
+/** Nombre maximum de mots nouveaux dans une leçon. */
+export const NEW_PER_LESSON = 4;
 
 const INTERVAL_DAYS: Record<number, number> = { 1: 1, 2: 2, 3: 4, 4: 8, 5: 16, 6: 35 };
 
@@ -49,6 +51,31 @@ export function difficultyFactor(wp: WordProgress): number {
 
 /** Mot « difficile » : raté au moins aussi souvent que vu (après 4 rencontres). */
 export const isLeech = (wp: WordProgress) => wp.seen >= 4 && wp.misses >= wp.seen;
+
+export type ChapterProgress = {
+  total: number;
+  discovered: number; // mots déjà rencontrés (boîte ≥ 1, y compris triés « je connais »)
+  mastered: number;
+  lessonsTotal: number; // leçons de découverte nécessaires pour tout voir, au rythme de NEW_PER_LESSON mots nouveaux
+  lessonsDone: number;
+  percent: number; // part découverte, en %
+};
+
+/** Avancement d'un chapitre : mots découverts, leçons faites sur le total, mots maîtrisés. */
+export function chapterProgress(ids: string[], words: Record<string, WordProgress>): ChapterProgress {
+  const total = ids.length;
+  const discovered = ids.filter((id) => getWP(words, id).box > 0).length;
+  const lessonsTotal = Math.ceil(total / NEW_PER_LESSON);
+  const lessonsLeft = Math.ceil((total - discovered) / NEW_PER_LESSON);
+  return {
+    total,
+    discovered,
+    mastered: masteredCount(ids, words),
+    lessonsTotal,
+    lessonsDone: lessonsTotal - lessonsLeft,
+    percent: total ? Math.round((discovered / total) * 100) : 0,
+  };
+}
 
 /** Mise à jour d'un mot en fin de leçon. */
 export function applyResult(wp: WordProgress, hadError: boolean, now: number): WordProgress {
