@@ -2,7 +2,7 @@ import type { Progress } from '../types';
 import { parseProgress } from './storage';
 
 export type User = { id: string; name: string; picture: string; email: string };
-export type Me = { clientId: string | null; sync: boolean; push: string | null; user: User | null; missing?: string[] };
+export type Me = { clientId: string | null; sync: boolean; push: string | null; user: User | null; missing?: string[]; missingPush?: string[] };
 
 export type PushPrefs = { reminder: boolean; reminderTime: string; surprise: number; from: string; to: string };
 export const DEFAULT_PUSH_PREFS: PushPrefs = { reminder: true, reminderTime: '19:00', surprise: 3, from: '09:00', to: '21:00' };

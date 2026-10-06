@@ -243,6 +243,7 @@ export default {
         user: await sessionUser(req),
         // diagnostic : quelles variables le serveur voit (jamais leurs valeurs)
         missing: [!env('GOOGLE_CLIENT_ID') && 'GOOGLE_CLIENT_ID', !env('SESSION_SECRET') && 'SESSION_SECRET'].filter(Boolean),
+        missingPush: ['VAPID_PUBLIC_KEY', 'VAPID_PRIVATE_KEY', 'CRON_SECRET'].filter((k) => !env(k)),
       });
     }
 
