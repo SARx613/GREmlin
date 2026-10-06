@@ -52,9 +52,11 @@ describe('rappels : abonnement', () => {
     expect(text).not.toContain('priv-key');
   });
 
-  it('me : push = null si les clés VAPID manquent', async () => {
+  it('me : push = null et la variable manquante est nommée (sans valeur) si une clé VAPID manque', async () => {
     delete process.env.VAPID_PRIVATE_KEY;
-    expect((await (await handler.fetch(new Request('https://gremlin.test/api/account?op=me'))).json()).push).toBeNull();
+    const body = await (await handler.fetch(new Request('https://gremlin.test/api/account?op=me'))).json();
+    expect(body.push).toBeNull();
+    expect(body.missingPush).toEqual(['VAPID_PRIVATE_KEY', 'CRON_SECRET']);
   });
 
   it('exige un compte connecté', async () => {
