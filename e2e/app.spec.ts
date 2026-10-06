@@ -68,6 +68,11 @@ test('leçon complète : une erreur revient, la progression est enregistrée, la
   await page.getByText('Commencer une leçon').click();
   await playLesson(page);
   await expect(page.getByText('de bonnes réponses du premier coup')).toBeVisible();
+  // la barre du chapitre avance dès la première leçon : 4 mots découverts sur 23, soit 1 leçon sur 6 (17 %)
+  await page.getByRole('button', { name: 'Retour' }).click();
+  await expect(page.getByText('Leçon 1/6')).toBeVisible();
+  await expect(page.getByText('17 %')).toBeVisible();
+  await expect(page.getByText('4/23 mots découverts')).toBeVisible();
   const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('gre-progress-v1')!));
   expect(Object.keys(saved.words).length).toBeGreaterThanOrEqual(4);
   expect(saved.streak.count).toBe(1);
