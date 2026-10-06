@@ -25,12 +25,16 @@ const BOX_RANGE: Record<SingleType, [number, number]> = {
   listen: [2, 6],
   equivalence: [3, 6],
   typeWord: [3, 6],
+  dictation: [4, 6],
 };
 
-/** `listening` = false si le son est coupé ou indisponible : pas d'exercice d'écoute. */
+/** Exercices qui demandent le son (écoute et dictée). */
+const NEEDS_SOUND: SingleType[] = ['listen', 'dictation'];
+
+/** `listening` = false si le son est coupé ou indisponible : ni exercice d'écoute ni dictée. */
 export const typesForBox = (box: number, listening = false): SingleType[] =>
   (Object.keys(BOX_RANGE) as SingleType[]).filter(
-    (t) => box >= BOX_RANGE[t][0] && box <= BOX_RANGE[t][1] && (listening || t !== 'listen'),
+    (t) => box >= BOX_RANGE[t][0] && box <= BOX_RANGE[t][1] && (listening || !NEEDS_SOUND.includes(t)),
   );
 
 export function shuffle<T>(arr: T[], rng: Rng = Math.random): T[] {
@@ -172,14 +176,14 @@ function multi(data: WordsData, word: Word, rng: Rng): MultiExercise | null {
   };
 }
 
-function typed(word: Word): TypeExercise {
+function typed(word: Word, type: TypeExercise['type'] = 'typeWord'): TypeExercise {
   const letters = word.word.split('').map((c, i) => (c === ' ' ? ' ' : i === 0 ? c : '_'));
-  return { kind: 'type', type: 'typeWord', wordId: word.id, prompt: word.definition, hint: letters.join(' ') };
+  return { kind: 'type', type, wordId: word.id, prompt: word.definition, hint: letters.join(' ') };
 }
 
 export function makeExercise(data: WordsData, wordId: string, type: SingleType, rng: Rng = Math.random): SingleExercise {
   const word = data.words[wordId];
-  if (type === 'typeWord') return typed(word);
+  if (type === 'typeWord' || type === 'dictation') return typed(word, type);
   if (type === 'equivalence') return multi(data, word, rng) ?? makeExercise(data, wordId, 'fillBlank', rng);
   return choice(data, word, type, rng) ?? choice(data, word, 'wordToDef', rng)!;
 }

@@ -12,7 +12,9 @@ const DOT = { new: 'bg-dborder', learning: 'bg-orange', mastered: 'bg-green' };
 const strip = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
 
 /** Recherche dans les 511 mots : mot, définition anglaise ou traduction française. */
-export default function WordSearch({ progress, openId }: { progress: Progress; openId?: string | null }) {
+type Props = { progress: Progress; openId?: string | null; onToggleStar: (id: string) => void };
+
+export default function WordSearch({ progress, openId, onToggleStar }: Props) {
   const [q, setQ] = useState('');
   const [open, setOpen] = useState<Word | null>(openId ? (data.words[openId] ?? null) : null);
 
@@ -65,7 +67,7 @@ export default function WordSearch({ progress, openId }: { progress: Progress; o
 
       {open && (
         <Modal onClose={() => setOpen(null)}>
-          <WordCard word={open} full />
+          <WordCard word={open} full starred={progress.starred?.includes(open.id)} onToggleStar={() => onToggleStar(open.id)} />
           <Button full variant="white" className="mt-6" onClick={() => setOpen(null)}>
             Fermer
           </Button>

@@ -35,6 +35,16 @@ describe('mergeProgress', () => {
     expect(mergeProgress(a, b).days).toEqual({ '2026-10-05': { lessons: 2, mastered: 7 }, '2026-10-06': { lessons: 1, mastered: 8 } });
   });
 
+  it('favoris : union des deux côtés, sans doublon', () => {
+    const m = mergeProgress({ ...p({}), starred: ['a', 'b'] }, { ...p({}), starred: ['b', 'c'] });
+    expect([...m.starred!].sort()).toEqual(['a', 'b', 'c']);
+  });
+
+  it('Blitz : meilleur score et nombre de parties = le plus grand des deux', () => {
+    const m = mergeProgress({ ...p({}), blitz: { best: 12, plays: 3 } }, { ...p({}), blitz: { best: 20, plays: 2 } });
+    expect(m.blitz).toEqual({ best: 20, plays: 3 });
+  });
+
   it('est idempotente', () => {
     const a = p({ a: w(2, 3) }, '2026-10-06', 2);
     const b = p({ a: w(1, 1), b: w(3, 4) }, '2026-10-05', 1);

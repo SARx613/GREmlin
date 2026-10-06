@@ -1,6 +1,8 @@
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Lock, Trophy } from 'lucide-react';
 import { BarChart, LineChart } from '../components/Charts';
+import ProgressBar from '../components/ProgressBar';
 import Button from '../components/Button';
+import { achievements } from '../lib/achievements';
 import { data } from '../lib/data';
 import { currentStreak, getWP, masteredCount, statusOf } from '../lib/srs';
 import { lastDays, leechIds, lessonsSeries, masteredSeries } from '../lib/stats';
@@ -32,6 +34,7 @@ export default function Stats({ progress, onBack, onStart }: Props) {
   const d14 = lastDays(now, 14).map(fmt);
   const leeches = leechIds(all, progress.words);
   const streak = currentStreak(progress.streak, now);
+  const badges = achievements(progress, all);
 
   return (
     <div className="pb-16">
@@ -57,6 +60,36 @@ export default function Stats({ progress, onBack, onStart }: Props) {
       <section className="mt-8">
         <h2 className="mb-2 text-sm font-extrabold uppercase tracking-wide text-muted">Leçons terminées · 14 jours</h2>
         <BarChart values={l14} labels={d14} label={`Leçons par jour sur 14 jours : ${l14.reduce((a, b) => a + b, 0)} au total`} />
+      </section>
+
+      <section className="mt-8">
+        <h2 className="mb-2 text-sm font-extrabold uppercase tracking-wide text-muted">
+          Succès · {badges.filter((b) => b.unlocked).length} / {badges.length}
+        </h2>
+        <ul className="grid gap-3 sm:grid-cols-2">
+          {badges.map((b) => (
+            <li
+              key={b.id}
+              className={`rounded-xl2 border-2 p-3 ${b.unlocked ? 'border-green bg-green-light' : 'border-line'}`}
+              aria-label={`${b.label} : ${b.unlocked ? 'débloqué' : `${b.value} sur ${b.target}`}`}
+            >
+              <div className="flex items-center gap-2">
+                {b.unlocked ? <Trophy size={20} className="shrink-0 text-green-ink" /> : <Lock size={18} className="shrink-0 text-muted" />}
+                <p className={`font-bold ${b.unlocked ? 'text-green-ink' : 'text-ink'}`}>{b.label}</p>
+              </div>
+              {!b.unlocked && (
+                <div className="mt-2 flex items-center gap-2">
+                  <div className="flex-1">
+                    <ProgressBar thin value={b.value / b.target} />
+                  </div>
+                  <span className="text-xs font-bold text-muted">
+                    {b.value}/{b.target}
+                  </span>
+                </div>
+              )}
+            </li>
+          ))}
+        </ul>
       </section>
 
       <section className="mt-8">

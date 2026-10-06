@@ -15,6 +15,10 @@ npm run build      # typage + build de production
 
 Pour tester le compte Google en local, utiliser `vercel dev` (sert aussi `api/account.ts`) avec les variables ci-dessous dans `.env.local`.
 
+## Fonctionnalités
+
+Leçons de 5 minutes (QCM, phrases à trous, synonymes, Sentence Equivalence, paires, écriture, écoute, dictée) · répétition espacée adaptative · tri « je connais » · mot du jour · favoris ★ · Blitz 60 s · statistiques et succès · recherche et filtres · mode sombre · voix américaine réglable · rappels et mots surprise par notification · compte Google avec synchronisation · installable et utilisable hors ligne.
+
 ## Données
 
 `data/batches/*.json` (définitions, phrases, synonymes) + `data/mnemonics.json` + `data/families.json` (familles de sens des synonymes) → `npm run build-words` → `data/words.json` → `npm run validate`.

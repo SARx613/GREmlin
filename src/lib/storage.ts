@@ -3,7 +3,7 @@ import type { LessonSnapshot, Progress } from '../types';
 const PROGRESS_KEY = 'gre-progress-v1';
 const LESSON_KEY = 'gre-lesson-v1';
 
-export const emptyState = (): Progress => ({ words: {}, streak: { count: 0, lastDay: null }, sound: true, days: {} });
+export const emptyState = (): Progress => ({ words: {}, streak: { count: 0, lastDay: null }, sound: true, days: {}, starred: [] });
 
 /** Vérifie le minimum de forme d'une progression (fichier importé ou localStorage corrompu). */
 export function parseProgress(raw: unknown): Progress | null {
@@ -16,6 +16,8 @@ export function parseProgress(raw: unknown): Progress | null {
     streak: p.streak && typeof p.streak.count === 'number' ? p.streak : base.streak,
     sound: typeof p.sound === 'boolean' ? p.sound : base.sound,
     days: p.days && typeof p.days === 'object' ? p.days : base.days,
+    starred: Array.isArray(p.starred) ? p.starred.filter((x): x is string => typeof x === 'string') : base.starred,
+    ...(p.blitz && typeof p.blitz.best === 'number' ? { blitz: { best: p.blitz.best, plays: Number(p.blitz.plays) || 0 } } : {}),
   };
 }
 
