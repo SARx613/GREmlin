@@ -33,12 +33,20 @@ function loadPending(): LessonSnapshot | null {
   return s && s.state.wordIds.every((id) => data.words[id]) ? s : null;
 }
 
+/** Mot à ouvrir à l'arrivée (clic sur une notification « mot surprise » : /?word=abate), puis on nettoie l'adresse. */
+function takeWordParam(): string | null {
+  const id = new URLSearchParams(window.location.search).get('word');
+  if (id) window.history.replaceState(null, '', window.location.pathname);
+  return id && data.words[id] ? id : null;
+}
+
 export default function App() {
   const { progress, update, replace, reset } = useProgress();
   const account = useAccount(progress, replace);
   const { settings, update: updateSettings } = useSettings();
   const [screen, setScreen] = useState<Screen>({ name: 'home' });
   const [pending, setPending] = useState(loadPending);
+  const [openWordId] = useState(takeWordParam);
 
   const home = () => setScreen({ name: 'home' });
   const backFrom = (config: LessonConfig) =>
@@ -75,6 +83,7 @@ export default function App() {
           progress={progress}
           dailyGoal={settings.dailyGoal}
           hasPending={!!pending}
+          openWordId={openWordId}
           onResume={() => pending && setScreen({ name: 'lesson', snapshot: pending })}
           onReview={() => startLesson({ mode: 'review' })}
           onChapter={(chapterId) => setScreen({ name: 'chapter', chapterId })}

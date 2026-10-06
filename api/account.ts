@@ -5,11 +5,15 @@
 //   POST ?op=logout  → efface le cookie
 //   GET  ?op=load    → { progress }  (connecté)
 //   PUT  ?op=save    → { progress }  (connecté)
+//   POST ?op=push-get | push-remove | push-test, PUT ?op=push-save → rappels (notifications push, par appareil)
 //
 // Variables d'environnement (Vercel) :
 //   GOOGLE_CLIENT_ID, SESSION_SECRET,
 //   KV_REST_API_URL + KV_REST_API_TOKEN   (ou UPSTASH_REDIS_REST_URL + UPSTASH_REDIS_REST_TOKEN)
+//   VAPID_PUBLIC_KEY, VAPID_PRIVATE_KEY   (notifications ; l'envoi se fait dans api/notify.ts)
+import { createHash } from 'node:crypto';
 import { SignJWT, createRemoteJWKSet, jwtVerify } from 'jose';
+import webpush from 'web-push';
 
 const COOKIE = 'gremlin_session';
 const SESSION_SECONDS = 60 * 60 * 24 * 30;
@@ -85,6 +89,115 @@ function validProgress(p: unknown): boolean {
   });
 }
 
+// --- Rappels (Web Push) -------------------------------------------------------
+
+type PushPrefs = { reminder: boolean; reminderTime: string; surprise: number; from: string; to: string };
+type Subscription = { endpoint: string; keys: { p256dh: string; auth: string } };
+
+const HHMM = /^([01]\d|2[0-3]):[0-5]\d$/;
+const MAX_DEVICES = 5;
+
+const pushConfigured = () => !!(env('VAPID_PUBLIC_KEY') && env('VAPID_PRIVATE_KEY') && redisConfig());
+const deviceId = (endpoint: string) => createHash('sha256').update(endpoint).digest('base64url').slice(0, 22);
+
+function validSubscription(s: unknown): s is Subscription {
+  const x = s as Partial<Subscription> | null;
+  return (
+    !!x &&
+    typeof x.endpoint === 'string' &&
+    x.endpoint.startsWith('https://') &&
+    x.endpoint.length < 1000 &&
+    typeof x.keys?.p256dh === 'string' &&
+    typeof x.keys?.auth === 'string'
+  );
+}
+
+function validPrefs(p: unknown): p is PushPrefs {
+  const x = p as Partial<PushPrefs> | null;
+  return (
+    !!x &&
+    typeof x.reminder === 'boolean' &&
+    HHMM.test(String(x.reminderTime)) &&
+    Number.isInteger(x.surprise) &&
+    x.surprise! >= 0 &&
+    x.surprise! <= 5 &&
+    HHMM.test(String(x.from)) &&
+    HHMM.test(String(x.to))
+  );
+}
+
+function validTimeZone(tz: unknown): tz is string {
+  if (typeof tz !== 'string' || tz.length > 64) return false;
+  try {
+    new Intl.DateTimeFormat('en', { timeZone: tz });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+async function pushOps(op: string, req: Request, user: User): Promise<Response> {
+  if (!pushConfigured()) return json({ error: 'not_configured' }, 503);
+  const body = (await req.json().catch(() => null)) as {
+    endpoint?: string;
+    subscription?: unknown;
+    prefs?: unknown;
+    tz?: unknown;
+  } | null;
+  if (!body) return json({ error: 'invalid' }, 400);
+  const hash = `push:${user.id}`;
+
+  try {
+    if (op === 'push-save' && req.method === 'PUT') {
+      if (!validSubscription(body.subscription) || !validPrefs(body.prefs) || !validTimeZone(body.tz)) return json({ error: 'invalid' }, 400);
+      const id = deviceId(body.subscription.endpoint);
+      const existing = (await redis(['HGETALL', hash])) as string[] | null;
+      const count = existing ? existing.length / 2 : 0;
+      const known = existing?.some((v, i) => i % 2 === 0 && v === id);
+      if (!known && count >= MAX_DEVICES) return json({ error: 'too_many_devices' }, 409);
+      const prev = known ? JSON.parse((await redis(['HGET', hash, id])) as string) : null;
+      const record = { sub: body.subscription, prefs: body.prefs, tz: body.tz, state: prev?.state ?? { day: '', sent: [], recent: [] } };
+      await redis(['HSET', hash, id, JSON.stringify(record)]);
+      await redis(['SADD', 'push:users', user.id]);
+      return json({ ok: true });
+    }
+
+    if (typeof body.endpoint !== 'string') return json({ error: 'invalid' }, 400);
+    const id = deviceId(body.endpoint);
+
+    if (op === 'push-get' && req.method === 'POST') {
+      const raw = (await redis(['HGET', hash, id])) as string | null;
+      return json({ prefs: raw ? JSON.parse(raw).prefs : null });
+    }
+
+    if (op === 'push-remove' && req.method === 'POST') {
+      await redis(['HDEL', hash, id]);
+      return json({ ok: true });
+    }
+
+    if (op === 'push-test' && req.method === 'POST') {
+      const raw = (await redis(['HGET', hash, id])) as string | null;
+      if (!raw) return json({ error: 'unknown_device' }, 404);
+      webpush.setVapidDetails(env('VAPID_SUBJECT') ?? new URL(req.url).origin, env('VAPID_PUBLIC_KEY')!, env('VAPID_PRIVATE_KEY')!);
+      try {
+        await webpush.sendNotification(
+          JSON.parse(raw).sub,
+          JSON.stringify({ title: 'GREmlin', body: 'Les rappels fonctionnent ✓', url: '/', tag: 'test' }),
+          { TTL: 60 },
+        );
+        return json({ ok: true });
+      } catch (e) {
+        const status = (e as { statusCode?: number }).statusCode;
+        if (status === 404 || status === 410) await redis(['HDEL', hash, id]); // abonnement expiré
+        return json({ error: 'push_failed', status }, status === 404 || status === 410 ? 410 : 502);
+      }
+    }
+  } catch {
+    return json({ error: 'storage' }, 502);
+  }
+  return json({ error: 'not_found' }, 404);
+}
+
 async function login(req: Request): Promise<Response> {
   const clientId = env('GOOGLE_CLIENT_ID');
   const key = secretKey();
@@ -126,6 +239,7 @@ export default {
       return json({
         clientId: env('GOOGLE_CLIENT_ID') && secretKey() ? env('GOOGLE_CLIENT_ID') : null,
         sync: !!redisConfig(),
+        push: pushConfigured() ? env('VAPID_PUBLIC_KEY') : null, // clé publique : sert à s'abonner
         user: await sessionUser(req),
         // diagnostic : quelles variables le serveur voit (jamais leurs valeurs)
         missing: [!env('GOOGLE_CLIENT_ID') && 'GOOGLE_CLIENT_ID', !env('SESSION_SECRET') && 'SESSION_SECRET'].filter(Boolean),
@@ -140,6 +254,12 @@ export default {
 
     if (op === 'logout' && req.method === 'POST') {
       return json({ ok: true }, 200, { 'Set-Cookie': cookie('', 0, url.protocol === 'https:') });
+    }
+
+    if (op?.startsWith('push-')) {
+      const user = await sessionUser(req);
+      if (!user) return json({ error: 'unauthorized' }, 401);
+      return pushOps(op, req, user);
     }
 
     if (op === 'load' || op === 'save') {

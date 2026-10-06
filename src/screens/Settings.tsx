@@ -2,7 +2,9 @@ import { ArrowLeft, Download, Trash2, Upload } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import AccountCard from '../components/AccountCard';
 import Button from '../components/Button';
+import Reminders from '../components/Reminders';
 import type { useAccount } from '../hooks/useAccount';
+import { usePush } from '../hooks/usePush';
 import { canSpeak, listVoices, speak, voiceScore } from '../lib/speak';
 import { parseProgress } from '../lib/storage';
 import type { Settings as SettingsType } from '../lib/settings';
@@ -59,6 +61,7 @@ const Section = ({ title, children }: { title: string; children: React.ReactNode
 
 export default function Settings({ settings, onChange, progress, account, onToggleSound, onImport, onReset, onBack }: Props) {
   const fileRef = useRef<HTMLInputElement>(null);
+  const push = usePush(account.user, account.pushKey);
   // les voix se chargent de façon asynchrone dans certains navigateurs
   const [voices, setVoices] = useState(() => listVoices(settings.accent));
   useEffect(() => {
@@ -182,6 +185,10 @@ export default function Settings({ settings, onChange, progress, account, onTogg
             <p className="text-muted">Ce navigateur ne propose pas de synthèse vocale.</p>
           )}
         </div>
+      </Section>
+
+      <Section title="Rappels">
+        <Reminders push={push} />
       </Section>
 
       <Section title="Compte et progression">

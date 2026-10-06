@@ -2,7 +2,10 @@ import type { Progress } from '../types';
 import { parseProgress } from './storage';
 
 export type User = { id: string; name: string; picture: string; email: string };
-export type Me = { clientId: string | null; sync: boolean; user: User | null; missing?: string[] };
+export type Me = { clientId: string | null; sync: boolean; push: string | null; user: User | null; missing?: string[] };
+
+export type PushPrefs = { reminder: boolean; reminderTime: string; surprise: number; from: string; to: string };
+export const DEFAULT_PUSH_PREFS: PushPrefs = { reminder: true, reminderTime: '19:00', surprise: 3, from: '09:00', to: '21:00' };
 
 const API = '/api/account';
 
@@ -52,4 +55,15 @@ export async function loadRemote(): Promise<Loaded> {
 export async function saveRemote(progress: Progress): Promise<boolean> {
   const res = await call('save', { method: 'PUT', body: JSON.stringify({ progress }) });
   return !!res?.ok;
+}
+
+// --- Rappels (notifications push) -------------------------------------------------
+
+export type PushResult = { ok: boolean; status: number; data: { prefs?: PushPrefs | null; error?: string } };
+
+/** Appel d'une opération « push-… » ; ok = false avec le statut HTTP en cas d'échec (0 = hors ligne). */
+export async function pushCall(op: string, body: unknown, method: 'POST' | 'PUT' = 'POST'): Promise<PushResult> {
+  const res = await call(op, { method, body: JSON.stringify(body) });
+  if (!res) return { ok: false, status: 0, data: {} };
+  return { ok: res.ok, status: res.status, data: await res.json().catch(() => ({})) };
 }

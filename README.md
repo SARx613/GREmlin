@@ -33,4 +33,17 @@ Google Cloud Console → APIs & Services → Credentials → Create credentials 
 
 Fonctionnement : le bouton Google renvoie un jeton vérifié côté serveur (`api/account.ts`), qui pose un cookie de session HttpOnly de 30 jours. La progression est sauvegardée dans Redis sous l'identifiant Google ; au premier login, la progression locale et celle du cloud sont fusionnées sans rien perdre.
 
+## Notifications (rappel quotidien + mots surprise)
+
+Chaque appareil s'abonne dans Réglages → Rappels (compte Google requis) et choisit l'heure du rappel, le nombre de mots surprise par jour (0 à 4) et la plage horaire. Le serveur envoie ensuite :
+
+- **un rappel** à l'heure choisie (avec le nombre de mots à réviser ; « garde ta série » si elle est en danger ; rien si la leçon du jour est déjà faite) ;
+- **des mots surprise** : un mot pas encore maîtrisé avec sa définition en anglais et en français, à des heures un peu différentes chaque jour. Toucher la notification ouvre la fiche du mot.
+
+Variables Vercel supplémentaires : `VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY` (`npx web-push generate-vapid-keys`) et `CRON_SECRET` (`openssl rand -hex 32`).
+
+L'envoi est déclenché toutes les 10 minutes par `.github/workflows/notify.yml` (GitHub Actions, gratuit) : ajouter dans le dépôt GitHub → Settings → Secrets and variables → Actions un secret `CRON_SECRET` avec **la même valeur** que dans Vercel. GitHub peut retarder une exécution de quelques minutes ; un créneau manqué de moins de 3 h est rattrapé. Alternative : cron-job.org (appel toutes les 5 min de `https://<site>/api/notify` avec l'en-tête `Authorization: Bearer <CRON_SECRET>`).
+
+Sur iPhone/iPad, les notifications ne fonctionnent que si l'app est installée sur l'écran d'accueil (iOS 16.4 ou plus).
+
 Voir [DECISIONS.md](DECISIONS.md) pour les choix de conception.

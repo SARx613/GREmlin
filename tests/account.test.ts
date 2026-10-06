@@ -46,7 +46,7 @@ afterEach(() => {
 describe('api/account', () => {
   it('me : sans session, expose le client id et l\'état de la synchro', async () => {
     const body = await (await call('me')).json();
-    expect(body).toEqual({ clientId: 'client.apps.googleusercontent.com', sync: true, user: null, missing: [] });
+    expect(body).toEqual({ clientId: 'client.apps.googleusercontent.com', sync: true, push: null, user: null, missing: [] });
   });
 
   it('me : non configuré → pas de client id (le bouton Google est masqué)', async () => {

@@ -11,6 +11,7 @@ type Props = {
   progress: Progress;
   dailyGoal: number;
   hasPending: boolean;
+  openWordId?: string | null;
   onResume: () => void;
   onReview: () => void;
   onChapter: (id: string) => void;
@@ -21,7 +22,7 @@ type Props = {
 
 const iconBtn = 'rounded-xl2 p-2 text-blue-ink transition-colors duration-150 hover:bg-blue-light';
 
-export default function Home({ progress, dailyGoal, hasPending, onResume, onReview, onChapter, onToggleSound, onStats, onSettings }: Props) {
+export default function Home({ progress, dailyGoal, hasPending, openWordId, onResume, onReview, onChapter, onToggleSound, onStats, onSettings }: Props) {
   const now = Date.now();
   const allIds = data.chapters.flatMap((c) => c.wordIds);
   const dueCount = dueIds(allIds, progress.words, now).length;
@@ -88,7 +89,7 @@ export default function Home({ progress, dailyGoal, hasPending, onResume, onRevi
       </Button>
       {dueCount === 0 && <p className="mt-2 text-center text-sm text-muted">Rien à réviser, reviens demain</p>}
 
-      <WordSearch progress={progress} />
+      <WordSearch progress={progress} openId={openWordId} />
 
       {groups.map((g) => (
         <section key={g} className="mt-8">
