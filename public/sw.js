@@ -1,7 +1,7 @@
 // Service worker minimal : l'app fonctionne hors ligne après la première visite.
 // - pages : réseau d'abord (pour recevoir les mises à jour), cache en secours
 // - assets (JS/CSS hachés, icônes, polices) : cache d'abord, rempli au fil de l'eau
-const CACHE = 'gremlin-v2';
+const CACHE = 'gremlin-v3';
 const SHELL = ['/', '/manifest.webmanifest', '/favicon.svg', '/icon-192.png'];
 
 self.addEventListener('install', (e) => {
@@ -53,5 +53,36 @@ self.addEventListener('fetch', (e) => {
           return res;
         }),
     ),
+  );
+});
+
+// --- Notifications (rappel quotidien, mots surprise) ---------------------------------
+self.addEventListener('push', (e) => {
+  let data = { title: 'GREmlin', body: '', url: '/', tag: 'gremlin' };
+  try {
+    data = { ...data, ...e.data.json() };
+  } catch {
+    /* message sans JSON : on garde les valeurs par défaut */
+  }
+  e.waitUntil(
+    self.registration.showNotification(data.title, {
+      body: data.body,
+      icon: '/icon-192.png',
+      badge: '/icon-192.png',
+      tag: data.tag,
+      data: { url: data.url },
+    }),
+  );
+});
+
+self.addEventListener('notificationclick', (e) => {
+  e.notification.close();
+  const url = (e.notification.data && e.notification.data.url) || '/';
+  e.waitUntil(
+    self.clients.matchAll({ type: 'window', includeUncontrolled: true }).then((wins) => {
+      const open = wins[0];
+      if (open) return open.focus().then(() => open.navigate(url));
+      return self.clients.openWindow(url);
+    }),
   );
 });

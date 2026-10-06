@@ -12,9 +12,9 @@ const DOT = { new: 'bg-dborder', learning: 'bg-orange', mastered: 'bg-green' };
 const strip = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
 
 /** Recherche dans les 511 mots : mot, définition anglaise ou traduction française. */
-export default function WordSearch({ progress }: { progress: Progress }) {
+export default function WordSearch({ progress, openId }: { progress: Progress; openId?: string | null }) {
   const [q, setQ] = useState('');
-  const [open, setOpen] = useState<Word | null>(null);
+  const [open, setOpen] = useState<Word | null>(openId ? (data.words[openId] ?? null) : null);
 
   const results = useMemo(() => {
     const needle = strip(q.trim());

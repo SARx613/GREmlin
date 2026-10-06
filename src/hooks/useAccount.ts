@@ -12,6 +12,7 @@ export type SyncStatus = 'idle' | 'syncing' | 'ok' | 'error';
  */
 export function useAccount(progress: Progress, replace: (p: Progress) => void) {
   const [clientId, setClientId] = useState<string | null>(null);
+  const [pushKey, setPushKey] = useState<string | null>(null);
   const [user, setUser] = useState<User | null>(null);
   const [status, setStatus] = useState<SyncStatus>('idle');
 
@@ -53,6 +54,7 @@ export function useAccount(progress: Progress, replace: (p: Progress) => void) {
     void fetchMe().then((me) => {
       if (!me) return;
       setClientId(me.clientId);
+      setPushKey(me.push);
       if (me.user && me.sync) setUser(me.user);
     });
   }, []);
@@ -101,5 +103,5 @@ export function useAccount(progress: Progress, replace: (p: Progress) => void) {
     [user, push],
   );
 
-  return { clientId, user, status, signIn, signOut, overwrite };
+  return { clientId, pushKey, user, status, signIn, signOut, overwrite };
 }
