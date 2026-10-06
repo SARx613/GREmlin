@@ -34,8 +34,11 @@ async function playLesson(page: Page) {
       await page.keyboard.press('Enter');
       await page.locator('[aria-live] button[tabindex="0"]').waitFor({ state: 'detached' });
     } else if (await page.locator('main input').count()) {
-      const definition = (await page.locator('main p').first().innerText()).trim();
-      const entry = Object.values(words.words as Record<string, { word: string; definition: string }>).find((w) => w.definition === definition);
+      // écrire le mot : la définition anglaise est affichée ; dictée : seule la traduction française l'est
+      const shown = (await page.locator('main p').first().innerText()).trim();
+      const entry = Object.values(words.words as Record<string, { word: string; definition: string; definitionFr: string }>).find(
+        (w) => w.definition === shown || w.definitionFr === shown,
+      );
       await page.fill('main input', entry?.word ?? 'zzz');
       await checkThenContinue(page);
     } else if (text.includes('choisis 2 mots')) {
@@ -55,13 +58,13 @@ test('accueil : 21 chapitres, aucun défilement horizontal à 360 px', async ({ 
   await page.setViewportSize({ width: 360, height: 740 });
   await page.goto('/');
   await expect(page.getByRole('heading', { name: 'GREmlin' })).toBeVisible();
-  await expect(page.locator('section button')).toHaveCount(21);
+  await expect(page.locator('[data-chapter]')).toHaveCount(21);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth)).toBe(true);
 });
 
 test('leçon complète : une erreur revient, la progression est enregistrée, la série démarre', async ({ page }) => {
   await page.goto('/');
-  await page.locator('section button').first().click();
+  await page.locator('[data-chapter]').first().click();
   await page.getByText('Commencer une leçon').click();
   await playLesson(page);
   await expect(page.getByText('de bonnes réponses du premier coup')).toBeVisible();
@@ -73,7 +76,7 @@ test('leçon complète : une erreur revient, la progression est enregistrée, la
 
 test('tri : « je connais » passe le mot en boîte 4, annuler le remet à zéro', async ({ page }) => {
   await page.goto('/');
-  await page.locator('section button').first().click();
+  await page.locator('[data-chapter]').first().click();
   await page.getByText('Trier les mots').click();
   await page.keyboard.press('ArrowRight');
   let saved = await page.evaluate(() => JSON.parse(localStorage.getItem('gre-progress-v1')!));
@@ -85,7 +88,7 @@ test('tri : « je connais » passe le mot en boîte 4, annuler le remet à zéro
 
 test('reprise : recharger en pleine leçon propose de la reprendre', async ({ page }) => {
   await page.goto('/');
-  await page.locator('section button').first().click();
+  await page.locator('[data-chapter]').first().click();
   await page.getByText('Commencer une leçon').click();
   await page.getByText('Nouveau mot').waitFor();
   await page.keyboard.press('Enter');
@@ -144,4 +147,66 @@ test('révision de mots avancés : écriture, équivalence à 2 réponses, écou
   expect(errors).toEqual([]);
   const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('gre-progress-v1')!));
   expect(saved.words.adept.seen).toBe(4);
+});
+
+test('mot du jour : affiché sur l\'accueil, ouvre sa fiche', async ({ page }) => {
+  await page.goto('/');
+  const card = page.getByRole('region', { name: 'Mot du jour' });
+  await expect(card).toBeVisible();
+  await card.getByRole('button', { name: 'Voir la fiche' }).click();
+  await expect(page.getByRole('dialog').getByRole('button', { name: 'Ajouter aux favoris' })).toBeVisible();
+});
+
+test('favoris : étoile sur une fiche, rubrique sur l\'accueil, filtre dans le chapitre, enregistré', async ({ page }) => {
+  await page.goto('/');
+  await page.getByLabel('Rechercher un mot').fill('abate');
+  await page.getByRole('button', { name: /^abate/ }).first().click();
+  await page.getByRole('button', { name: 'Ajouter aux favoris' }).click();
+  await expect(page.getByRole('button', { name: 'Retirer des favoris' })).toBeVisible();
+  await page.keyboard.press('Escape');
+  await expect(page.getByText('Mes favoris · 1 mot')).toBeVisible();
+  const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('gre-progress-v1')!));
+  expect(saved.starred).toEqual(['abate']);
+  // abate est dans « Synonymes puissants 1 » : le filtre ★ ne montre que lui
+  await page.locator('[data-chapter="ch-04"]').click();
+  await page.getByRole('radio', { name: '★ Favoris' }).click();
+  await expect(page.locator('ul li').filter({ hasText: 'abate' })).toHaveCount(1);
+  await expect(page.getByText('1 / 27 mots')).toBeVisible();
+});
+
+test('lien de notification : /?word=… ouvre la fiche du mot puis nettoie l\'adresse', async ({ page }) => {
+  await page.goto('/?word=happenstance');
+  await expect(page.getByRole('dialog')).toContainText('happenstance');
+  await expect(page.getByRole('dialog')).toContainText('a chance circumstance');
+  expect(new URL(page.url()).search).toBe('');
+});
+
+test('Blitz : 60 s chrono, score et record enregistrés', async ({ page }) => {
+  await page.clock.install();
+  await page.goto('/');
+  await page.getByRole('button', { name: /Blitz · 60 secondes/ }).click();
+  await page.getByRole('button', { name: 'Commencer' }).click();
+  for (let i = 0; i < 4; i++) {
+    await page.keyboard.press('1');
+    await page.clock.runFor(800);
+  }
+  await page.clock.runFor(70_000);
+  await expect(page.getByText('Temps écoulé')).toBeVisible();
+  const saved = await page.evaluate(() => JSON.parse(localStorage.getItem('gre-progress-v1')!));
+  expect(saved.blitz.plays).toBe(1);
+  expect(saved.blitz.best).toBeGreaterThanOrEqual(0);
+});
+
+test('rappels : sans compte, la section explique comment les activer', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Réglages' }).click();
+  await expect(page.getByRole('heading', { name: 'Rappels' })).toBeVisible();
+  await expect(page.getByText(/Connecte-toi avec Google/)).toBeVisible();
+});
+
+test('succès : la liste s\'affiche sur l\'écran de statistiques', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Statistiques' }).click();
+  await expect(page.getByText('Succès · 0 / 14')).toBeVisible();
+  await expect(page.getByText('Première leçon')).toBeVisible();
 });

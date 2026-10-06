@@ -1,11 +1,12 @@
-import { BarChart3, Check, Flame, Play, Settings, Volume2, VolumeX } from 'lucide-react';
+import { BarChart3, Check, Flame, Play, Settings, Star, Volume2, VolumeX, Zap } from 'lucide-react';
 import Button from '../components/Button';
 import ProgressBar from '../components/ProgressBar';
+import WordOfTheDay from '../components/WordOfTheDay';
 import WordSearch from '../components/WordSearch';
 import { data } from '../lib/data';
 import { chapterDueCount, currentStreak, dueIds, masteredCount } from '../lib/srs';
 import { lessonsToday } from '../lib/stats';
-import type { Progress } from '../types';
+import type { LessonConfig, Progress } from '../types';
 
 type Props = {
   progress: Progress;
@@ -16,13 +17,16 @@ type Props = {
   onReview: () => void;
   onChapter: (id: string) => void;
   onToggleSound: () => void;
+  onBlitz: () => void;
   onStats: () => void;
   onSettings: () => void;
+  onToggleStar: (id: string) => void;
+  onStart: (config: LessonConfig) => void;
 };
 
 const iconBtn = 'rounded-xl2 p-2 text-blue-ink transition-colors duration-150 hover:bg-blue-light';
 
-export default function Home({ progress, dailyGoal, hasPending, openWordId, onResume, onReview, onChapter, onToggleSound, onStats, onSettings }: Props) {
+export default function Home({ progress, dailyGoal, hasPending, openWordId, onResume, onReview, onChapter, onToggleSound, onBlitz, onStats, onSettings, onToggleStar, onStart }: Props) {
   const now = Date.now();
   const allIds = data.chapters.flatMap((c) => c.wordIds);
   const dueCount = dueIds(allIds, progress.words, now).length;
@@ -30,6 +34,7 @@ export default function Home({ progress, dailyGoal, hasPending, openWordId, onRe
   const groups = [...new Set(data.chapters.map((c) => c.group))];
   const today = lessonsToday(progress.days, now);
   const goalDone = today >= dailyGoal;
+  const starred = (progress.starred ?? []).filter((id) => data.words[id]);
 
   return (
     <div className="pb-16">
@@ -89,7 +94,35 @@ export default function Home({ progress, dailyGoal, hasPending, openWordId, onRe
       </Button>
       {dueCount === 0 && <p className="mt-2 text-center text-sm text-muted">Rien à réviser, reviens demain</p>}
 
-      <WordSearch progress={progress} openId={openWordId} />
+      <button
+        type="button"
+        onClick={onBlitz}
+        className="mt-3 flex w-full items-center justify-between gap-3 rounded-xl2 border-2 border-b-4 border-line bg-surface p-4 text-left transition-colors duration-150 hover:bg-soft"
+      >
+        <span className="flex items-center gap-3">
+          <Zap size={26} className="text-orange-ink" fill="currentColor" />
+          <span>
+            <span className="block text-lg font-bold text-ink">Blitz · 60 secondes</span>
+            <span className="block text-sm text-muted">Un maximum de mots, le plus vite possible</span>
+          </span>
+        </span>
+        <span className="shrink-0 text-sm font-bold text-orange-ink">{progress.blitz?.best ? `Record ${progress.blitz.best}` : 'Jouer'}</span>
+      </button>
+
+      <WordOfTheDay progress={progress} onToggleStar={onToggleStar} />
+
+      {starred.length > 0 && (
+        <div className="mt-4 flex items-center justify-between gap-3 rounded-xl2 border-2 border-line p-4">
+          <p className="flex items-center gap-2 font-bold text-ink">
+            <Star size={20} fill="currentColor" className="text-orange-ink" /> Mes favoris · {starred.length} mot{starred.length > 1 ? 's' : ''}
+          </p>
+          <Button variant="white" className="!py-2 !text-sm" onClick={() => onStart({ mode: 'selection', wordIds: starred })}>
+            Réviser
+          </Button>
+        </div>
+      )}
+
+      <WordSearch progress={progress} openId={openWordId} onToggleStar={onToggleStar} />
 
       {groups.map((g) => (
         <section key={g} className="mt-8">
@@ -103,6 +136,7 @@ export default function Home({ progress, dailyGoal, hasPending, openWordId, onRe
                   <button
                     key={c.id}
                     type="button"
+                    data-chapter={c.id}
                     onClick={() => onChapter(c.id)}
                     className="rounded-xl2 border-2 border-b-4 border-line bg-surface p-4 text-left transition-colors duration-150 hover:bg-soft"
                   >

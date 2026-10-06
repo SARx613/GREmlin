@@ -1,4 +1,4 @@
-import { Lightbulb, Volume2 } from 'lucide-react';
+import { Lightbulb, Star, Volume2 } from 'lucide-react';
 import { splitAround } from '../lib/match';
 import { speak } from '../lib/speak';
 import type { Word } from '../types';
@@ -34,14 +34,31 @@ export function SpeakButton({ text, className = '' }: { text: string; className?
   );
 }
 
-/** Carte d'un mot : intro (1 phrase) ou fiche complète (2 phrases). */
-export default function WordCard({ word, full }: { word: Word; full?: boolean }) {
+export function StarButton({ starred, onToggle }: { starred: boolean; onToggle: () => void }) {
+  return (
+    <button
+      type="button"
+      onClick={onToggle}
+      aria-pressed={starred}
+      aria-label={starred ? 'Retirer des favoris' : 'Ajouter aux favoris'}
+      className="ml-auto rounded-xl2 p-2 text-orange-ink transition-colors duration-150 hover:bg-soft"
+    >
+      <Star size={26} fill={starred ? 'currentColor' : 'none'} />
+    </button>
+  );
+}
+
+type CardProps = { word: Word; full?: boolean; starred?: boolean; onToggleStar?: () => void };
+
+/** Carte d'un mot : intro (1 phrase) ou fiche complète (2 phrases), avec étoile « favori » si fournie. */
+export default function WordCard({ word, full, starred, onToggleStar }: CardProps) {
   const sentences = full ? word.sentences : word.sentences.slice(0, 1);
   return (
     <div>
       <div className="flex items-center gap-2">
         <h2 className="text-[32px] font-extrabold leading-tight text-ink">{word.word}</h2>
         <SpeakButton text={word.word} />
+        {onToggleStar && <StarButton starred={!!starred} onToggle={onToggleStar} />}
       </div>
       <p className="mb-4 text-sm font-bold italic text-muted">{word.pos}</p>
       <p className="text-lg font-bold text-ink">{word.definition}</p>

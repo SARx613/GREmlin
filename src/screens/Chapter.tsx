@@ -1,4 +1,4 @@
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Star } from 'lucide-react';
 import { useState } from 'react';
 import Button from '../components/Button';
 import Modal from '../components/Modal';
@@ -12,13 +12,14 @@ import type { LessonConfig, Progress } from '../types';
 const DOT = { new: 'bg-dborder', learning: 'bg-orange', mastered: 'bg-green' };
 const DOT_LABEL = { new: 'nouveau', learning: 'en cours', mastered: 'maîtrisé' };
 
-type Filter = 'all' | 'new' | 'learning' | 'mastered' | 'hard';
+type Filter = 'all' | 'new' | 'learning' | 'mastered' | 'hard' | 'fav';
 const FILTERS: { id: Filter; text: string }[] = [
   { id: 'all', text: 'Tous' },
   { id: 'new', text: 'Nouveaux' },
   { id: 'learning', text: 'En cours' },
   { id: 'mastered', text: 'Maîtrisés' },
   { id: 'hard', text: 'Difficiles' },
+  { id: 'fav', text: '★ Favoris' },
 ];
 
 type Props = {
@@ -27,9 +28,10 @@ type Props = {
   onBack: () => void;
   onStart: (config: LessonConfig) => void;
   onTriage: () => void;
+  onToggleStar: (id: string) => void;
 };
 
-export default function Chapter({ chapterId, progress, onBack, onStart, onTriage }: Props) {
+export default function Chapter({ chapterId, progress, onBack, onStart, onTriage, onToggleStar }: Props) {
   const chapter = data.chapters.find((c) => c.id === chapterId)!;
   const [selected, setSelected] = useState<string[]>([]);
   const [open, setOpen] = useState<string | null>(null);
@@ -43,6 +45,7 @@ export default function Chapter({ chapterId, progress, onBack, onStart, onTriage
   }).length;
   const shown = chapter.wordIds.filter((id) => {
     const wp = getWP(progress.words, id);
+    if (filter === 'fav') return !!progress.starred?.includes(id);
     return filter === 'all' || (filter === 'hard' ? isLeech(wp) : statusOf(wp) === filter);
   });
   const toggle = (id: string) => setSelected((s) => (s.includes(id) ? s.filter((x) => x !== id) : [...s, id]));
@@ -127,6 +130,7 @@ export default function Chapter({ chapterId, progress, onBack, onStart, onTriage
                   <span className="block font-bold text-ink">{w.word}</span>
                   <span className="block truncate text-sm text-muted">{w.definitionFr}</span>
                 </span>
+                {progress.starred?.includes(id) && <Star size={16} fill="currentColor" className="ml-auto shrink-0 text-orange-ink" aria-label="Favori" />}
               </button>
             </li>
           );
@@ -135,7 +139,7 @@ export default function Chapter({ chapterId, progress, onBack, onStart, onTriage
 
       {open && (
         <Modal onClose={() => setOpen(null)}>
-          <WordCard word={data.words[open]} full />
+          <WordCard word={data.words[open]} full starred={progress.starred?.includes(open)} onToggleStar={() => onToggleStar(open)} />
           <Button full variant="white" className="mt-6" onClick={() => setOpen(null)}>
             Fermer
           </Button>

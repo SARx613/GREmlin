@@ -40,10 +40,12 @@ export type Progress = {
   streak: Streak;
   sound: boolean;
   days?: Record<string, DayStat>;
+  starred?: string[]; // mots favoris
+  blitz?: { best: number; plays: number };
 };
 
 export type ChoiceType = 'wordToDef' | 'defToWord' | 'fillBlank' | 'synonym' | 'listen';
-export type ExerciseType = ChoiceType | 'equivalence' | 'typeWord' | 'pairs';
+export type ExerciseType = ChoiceType | 'equivalence' | 'typeWord' | 'dictation' | 'pairs';
 
 export type Choice = { id: string; label: string };
 
@@ -70,9 +72,10 @@ export type MultiExercise = {
   retry?: boolean;
 };
 
+/** Écrire le mot : à partir de sa définition (typeWord) ou en l'entendant (dictation). */
 export type TypeExercise = {
   kind: 'type';
-  type: 'typeWord';
+  type: 'typeWord' | 'dictation';
   wordId: string;
   prompt: string;
   hint: string;

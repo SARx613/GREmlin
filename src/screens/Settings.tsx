@@ -1,9 +1,10 @@
-import { ArrowLeft, Download, Trash2, Upload } from 'lucide-react';
+import { ArrowLeft, Download, Smartphone, Trash2, Upload } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import AccountCard from '../components/AccountCard';
 import Button from '../components/Button';
 import Reminders from '../components/Reminders';
 import type { useAccount } from '../hooks/useAccount';
+import { useInstall } from '../hooks/useInstall';
 import { usePush } from '../hooks/usePush';
 import { canSpeak, listVoices, speak, voiceScore } from '../lib/speak';
 import { parseProgress } from '../lib/storage';
@@ -62,6 +63,7 @@ const Section = ({ title, children }: { title: string; children: React.ReactNode
 export default function Settings({ settings, onChange, progress, account, onToggleSound, onImport, onReset, onBack }: Props) {
   const fileRef = useRef<HTMLInputElement>(null);
   const push = usePush(account.user, account.pushKey);
+  const app = useInstall();
   // les voix se chargent de façon asynchrone dans certains navigateurs
   const [voices, setVoices] = useState(() => listVoices(settings.accent));
   useEffect(() => {
@@ -99,6 +101,20 @@ export default function Settings({ settings, onChange, progress, account, onTogg
         </button>
         <h1 className="text-2xl font-extrabold text-ink">Réglages</h1>
       </header>
+
+      {(app.canInstall || app.showIosHint || app.installed) && (
+        <Section title="Application">
+          {app.installed ? (
+            <p className="text-muted">✓ GREmlin est installée sur cet appareil.</p>
+          ) : app.canInstall ? (
+            <Button className="flex items-center gap-2" onClick={() => void app.install()}>
+              <Smartphone size={18} /> Installer l'application
+            </Button>
+          ) : (
+            <p className="text-muted">Pour installer GREmlin : touche Partager puis « Sur l'écran d'accueil ».</p>
+          )}
+        </Section>
+      )}
 
       <Section title="Apparence">
         <Choice

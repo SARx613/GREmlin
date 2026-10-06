@@ -28,5 +28,14 @@ export function mergeProgress(local: Progress, remote: Progress): Progress {
   for (const [id, wp] of Object.entries(local.words)) {
     words[id] = remote.words[id] ? pickWord(wp, remote.words[id]) : wp;
   }
-  return { words, streak: pickStreak(local.streak, remote.streak), sound: local.sound, days: mergeDays(local.days, remote.days) };
+  const starred = [...new Set([...(remote.starred ?? []), ...(local.starred ?? [])])];
+  const blitz = local.blitz || remote.blitz ? { best: Math.max(local.blitz?.best ?? 0, remote.blitz?.best ?? 0), plays: Math.max(local.blitz?.plays ?? 0, remote.blitz?.plays ?? 0) } : undefined;
+  return {
+    words,
+    streak: pickStreak(local.streak, remote.streak),
+    sound: local.sound,
+    days: mergeDays(local.days, remote.days),
+    starred,
+    ...(blitz ? { blitz } : {}),
+  };
 }

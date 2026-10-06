@@ -131,7 +131,7 @@ export default function Lesson({ snapshot, progress, onExit, onFinish }: Props) 
             <MultipleChoice ex={exercise} value={value} onChange={setValue} locked={!!checked} autoPlay={progress.sound} />
           )}
           {exercise?.kind === 'multi' && <SentenceEquivalence ex={exercise} value={value} onChange={setValue} locked={!!checked} />}
-          {exercise?.kind === 'type' && word && <TypeWord ex={exercise} word={word} value={value} onChange={setValue} locked={!!checked} />}
+          {exercise?.kind === 'type' && word && <TypeWord ex={exercise} word={word} value={value} onChange={setValue} locked={!!checked} autoPlay={progress.sound} />}
           {exercise?.kind === 'pairs' && (
             <MatchPairs
               key={exercise.wordIds.join()}

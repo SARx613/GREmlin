@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { data } from './lib/data';
 import { buildQueue, createLesson, finishLesson, pickWords, type LessonResult } from './lib/session';
+import { toggleStar } from './lib/daily';
 import { canSpeak } from './lib/speak';
 import { clearLesson, loadLesson, saveLesson } from './lib/storage';
 import { currentStreak, masteredCount, recordDay, recordLesson } from './lib/srs';
@@ -9,6 +10,7 @@ import { useProgress } from './hooks/useProgress';
 import { useSettings } from './hooks/useSettings';
 import { emptyState } from './lib/storage';
 import Notices from './components/Notices';
+import Blitz from './screens/Blitz';
 import Chapter from './screens/Chapter';
 import Home from './screens/Home';
 import Lesson from './screens/Lesson';
@@ -20,6 +22,7 @@ import type { LessonConfig, LessonSnapshot, LessonState } from './types';
 
 type Screen =
   | { name: 'home' }
+  | { name: 'blitz' }
   | { name: 'stats' }
   | { name: 'settings' }
   | { name: 'chapter'; chapterId: string }
@@ -51,6 +54,8 @@ export default function App() {
   const home = () => setScreen({ name: 'home' });
   const backFrom = (config: LessonConfig) =>
     config.chapterId ? setScreen({ name: 'chapter', chapterId: config.chapterId }) : home();
+
+  const onToggleStar = (id: string) => update((p) => ({ ...p, starred: toggleStar(p.starred, id) }));
 
   function startLesson(config: LessonConfig) {
     const { ids, applySrs } = pickWords(config, data, progress.words, Date.now());
@@ -88,8 +93,23 @@ export default function App() {
           onReview={() => startLesson({ mode: 'review' })}
           onChapter={(chapterId) => setScreen({ name: 'chapter', chapterId })}
           onToggleSound={() => update((p) => ({ ...p, sound: !p.sound }))}
+          onBlitz={() => setScreen({ name: 'blitz' })}
           onStats={() => setScreen({ name: 'stats' })}
           onSettings={() => setScreen({ name: 'settings' })}
+          onToggleStar={onToggleStar}
+          onStart={startLesson}
+        />
+      );
+      break;
+    case 'blitz':
+      view = (
+        <Blitz
+          progress={progress}
+          onBack={home}
+          onStart={startLesson}
+          onFinish={(score) =>
+            update((p) => ({ ...p, blitz: { best: Math.max(p.blitz?.best ?? 0, score), plays: (p.blitz?.plays ?? 0) + 1 } }))
+          }
         />
       );
       break;
@@ -122,6 +142,7 @@ export default function App() {
           onBack={home}
           onStart={startLesson}
           onTriage={() => setScreen({ name: 'triage', chapterId: screen.chapterId })}
+          onToggleStar={onToggleStar}
         />
       );
       break;

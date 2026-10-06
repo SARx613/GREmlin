@@ -266,6 +266,15 @@ describe('exercices', () => {
     expect(ex.options).toHaveLength(4);
   });
 
+  it('dictée : seulement avec le son, à partir de la boîte 4, la bonne réponse est le mot', () => {
+    expect(typesForBox(4, false)).not.toContain('dictation');
+    expect(typesForBox(3, true)).not.toContain('dictation');
+    expect(typesForBox(4, true)).toContain('dictation');
+    const ex = makeExercise(data, c1[0], 'dictation');
+    expect(ex).toMatchObject({ kind: 'type', type: 'dictation', wordId: c1[0] });
+    expect(grade(ex, data, ` ${c1[0].toUpperCase()} `)).toBe('correct');
+  });
+
   it('écrire le mot : faute de frappe tolérée (« Presque ! »)', () => {
     expect(gradeTyped('abate', ' Abate ')).toBe('correct');
     expect(gradeTyped('abate', 'abbate')).toBe('almost');

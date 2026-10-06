@@ -26,3 +26,14 @@
 - **Mode sombre** (auto / clair / sombre) via variables CSS ; texte foncé sur les boutons vifs pour le contraste ; couleurs de texte dédiées (`*-ink`).
 - **Rappels quotidiens (notifications push)** : non faits. Ils demandent des clés VAPID, un abonnement stocké côté serveur et une tâche planifiée : à ajouter si vous le souhaitez.
 - **Découpage de `words.json`** : non fait. Le fichier (162 Ko compressé avec le reste du JS) est nécessaire dès l'accueil ; le charger à part n'accélère rien.
+
+## Notifications et nouvelles fonctionnalités
+
+- **Notifications = Web Push** (VAPID, bibliothèque `web-push`). Abonnement **par appareil** (jusqu'à 5 par compte), enregistré dans Redis avec le fuseau horaire du navigateur ; compte Google obligatoire pour éviter les abonnements anonymes.
+- **Planification** : un seul endpoint `api/notify.ts`, appelé toutes les 10 min par GitHub Actions (le cron gratuit de Vercel est trop espacé). Chaque appel envoie au plus un message par appareil : le créneau du jour échu le plus ancien, rattrapable pendant 3 h. L'état d'envoi du jour est stocké par appareil, donc pas de doublon même si la tâche est appelée plusieurs fois.
+- **Rappel** : à l'heure choisie ; ignoré si la leçon du jour est faite ; annonce le nombre de mots dus ; « garde ta série » si elle est en danger.
+- **Mots surprise** : 0 à 4 par jour, répartis dans la plage choisie avec un décalage déterministe de ±20 min (change chaque jour, sans état). Le mot est tiré parmi les non-maîtrisés et jamais parmi les 60 derniers envoyés ; la notification affiche la définition en anglais et en français, un clic ouvre la fiche (`/?word=…`).
+- **Mot du jour** : calculé à partir de la date (stable dans la journée, rien à stocker).
+- **Favoris ★** : synchronisés avec le compte (union des deux côtés lors de la fusion) ; révision en un clic (10 mots max par leçon).
+- **Blitz** : 60 s de QCM éclair sur les mots déjà travaillés (tout le vocabulaire si moins de 12). +1 point, ×2 dès 5 bonnes réponses d'affilée, −2 s par erreur. N'altère pas les boîtes de répétition ; le record est synchronisé.
+- **Dictée** : le mot est prononcé, on l'écrit (boîte 4+, seulement si le son est actif). **Succès** : calculés à partir de la progression, rien de plus à stocker. **Installation** : bouton dans les réglages (événement `beforeinstallprompt`, consigne pour iPhone).

@@ -1,4 +1,6 @@
 import { useEffect, useRef } from 'react';
+import { speak } from '../../lib/speak';
+import { SpeakButton } from '../WordCard';
 import type { TypeExercise, Word } from '../../types';
 
 type Props = {
@@ -7,21 +9,35 @@ type Props = {
   value: string;
   onChange: (v: string) => void;
   locked: boolean;
+  autoPlay?: boolean;
 };
 
 /** Saisie du mot à partir de sa définition et de sa première lettre. */
-export default function TypeWord({ ex, word, value, onChange, locked }: Props) {
+export default function TypeWord({ ex, word, value, onChange, locked, autoPlay }: Props) {
+  const dictation = ex.type === 'dictation';
   const ref = useRef<HTMLInputElement>(null);
   useEffect(() => ref.current?.focus(), [ex]);
+  useEffect(() => {
+    if (dictation && autoPlay) speak(word.word);
+  }, [ex, dictation, autoPlay, word.word]);
 
   return (
     <div>
-      <h2 className="mb-6 text-2xl font-extrabold text-ink">Écris le mot</h2>
-      <p className="text-xl font-bold text-ink">{ex.prompt}</p>
-      <p className="mb-6 text-lg text-blue-ink">{word.definitionFr}</p>
-      <p className="mb-3 font-mono text-2xl tracking-widest text-muted" aria-label="Indice">
-        {ex.hint}
-      </p>
+      <h2 className="mb-6 text-2xl font-extrabold text-ink">{dictation ? 'Écoute et écris le mot' : 'Écris le mot'}</h2>
+      {dictation ? (
+        <div className="mb-6 flex items-center gap-3">
+          <SpeakButton text={word.word} className="!bg-blue-light !p-4" />
+          <p className="text-lg text-blue-ink">{word.definitionFr}</p>
+        </div>
+      ) : (
+        <>
+          <p className="text-xl font-bold text-ink">{ex.prompt}</p>
+          <p className="mb-6 text-lg text-blue-ink">{word.definitionFr}</p>
+          <p className="mb-3 font-mono text-2xl tracking-widest text-muted" aria-label="Indice">
+            {ex.hint}
+          </p>
+        </>
+      )}
       <input
         ref={ref}
         value={value}
