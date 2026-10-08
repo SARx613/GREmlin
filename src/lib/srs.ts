@@ -3,8 +3,8 @@ import type { Chapter, DayStat, Streak, WordProgress } from '../types';
 export const DAY = 24 * 60 * 60 * 1000;
 export const MAX_BOX = 6;
 export const MASTERED_BOX = 4;
-/** Nombre maximum de mots nouveaux dans une leçon. */
-export const NEW_PER_LESSON = 4;
+/** Nombre de mots nouveaux découverts par leçon (~8 à 10 mots comme Duolingo). */
+export const NEW_PER_LESSON = 8;
 
 const INTERVAL_DAYS: Record<number, number> = { 1: 1, 2: 2, 3: 4, 4: 8, 5: 16, 6: 35 };
 

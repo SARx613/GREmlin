@@ -156,13 +156,13 @@ describe('fin de leçon', () => {
 });
 
 describe('choix des mots et file', () => {
-  it('chapitre : mots dus d\'abord, puis ≤ 4 nouveaux, ≤ 8 au total', () => {
+  it('chapitre : mots dus d\'abord, puis ≤ 8 nouveaux, ≤ 10 au total', () => {
     const due = Object.fromEntries(c1.slice(0, 3).map((id) => [id, { ...emptyProgress(), box: 2, dueAt: NOW - DAY }]));
     const { ids, applySrs } = pickWords({ mode: 'chapter', chapterId: 'c1' }, data, due, NOW);
     expect(ids.slice(0, 3)).toEqual(c1.slice(0, 3));
-    expect(ids.length).toBe(3 + MAX_NEW);
+    expect(ids.length).toBe(Math.min(MAX_WORDS, 3 + MAX_NEW));
     expect(applySrs).toBe(true);
-    expect(pickWords({ mode: 'chapter', chapterId: 'c1' }, data, {}, NOW).ids.length).toBe(MAX_NEW);
+    expect(pickWords({ mode: 'chapter', chapterId: 'c1' }, data, {}, NOW).ids.length).toBe(Math.min(MAX_WORDS, MAX_NEW));
   });
 
   it('chapitre sans rien de dû ni de nouveau : entraînement libre', () => {

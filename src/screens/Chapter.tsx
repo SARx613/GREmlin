@@ -6,7 +6,7 @@ import ProgressBar from '../components/ProgressBar';
 import WordCard from '../components/WordCard';
 import { data } from '../lib/data';
 import { MAX_SELECTION } from '../lib/session';
-import { chapterProgress, dueIds, getWP, isLeech, isNew, newIds, statusOf } from '../lib/srs';
+import { chapterProgress, getWP, isLeech, isNew, statusOf } from '../lib/srs';
 import type { LessonConfig, Progress } from '../types';
 
 const DOT = { new: 'bg-dborder', learning: 'bg-orange', mastered: 'bg-green' };
@@ -36,10 +36,8 @@ export default function Chapter({ chapterId, progress, onBack, onStart, onTriage
   const [selected, setSelected] = useState<string[]>([]);
   const [open, setOpen] = useState<string | null>(null);
   const [filter, setFilter] = useState<Filter>('all');
-  const now = Date.now();
   const cp = chapterProgress(chapter.wordIds, progress.words);
 
-  const toStudy = dueIds(chapter.wordIds, progress.words, now).length + newIds(chapter.wordIds, progress.words).length;
   const untriaged = chapter.wordIds.filter((id) => {
     const wp = getWP(progress.words, id);
     return isNew(wp) && wp.known === undefined;
@@ -65,18 +63,32 @@ export default function Chapter({ chapterId, progress, onBack, onStart, onTriage
       </header>
 
       <div className="mb-1 flex items-baseline justify-between font-bold">
-        <span className="text-ink">{cp.discovered === cp.total ? 'Tous les mots découverts' : `Leçon ${cp.lessonsDone}/${cp.lessonsTotal}`}</span>
-        <span className="text-green-ink">{cp.percent} %</span>
+        <span className="text-ink">
+          {cp.mastered === cp.total
+            ? '🎉 Chapitre 100 % maîtrisé !'
+            : cp.discovered === cp.total
+            ? `${cp.mastered}/${cp.total} mots maîtrisés`
+            : `Leçon ${cp.lessonsDone + 1}/${cp.lessonsTotal}`}
+        </span>
+        <span className="text-green-ink">{cp.percent} % découverts</span>
       </div>
       <ProgressBar thin value={cp.mastered / cp.total} secondary={cp.discovered / cp.total} />
       <p className="mt-1 text-sm text-muted">
-        {cp.discovered}/{cp.total} mots découverts · {cp.mastered} maîtrisé{cp.mastered > 1 ? 's' : ''}
-        {cp.discovered < cp.total && ` · encore ${cp.lessonsTotal - cp.lessonsDone} leçon${cp.lessonsTotal - cp.lessonsDone > 1 ? 's' : ''} pour tout découvrir`}
+        {cp.discovered}/{cp.total} mots découverts · <span className="font-bold text-green-ink">{cp.mastered} maîtrisé{cp.mastered > 1 ? 's' : ''}</span>
+        {cp.discovered < cp.total
+          ? ` · encore ${cp.lessonsTotal - cp.lessonsDone} leçon${cp.lessonsTotal - cp.lessonsDone > 1 ? 's' : ''} pour tout découvrir`
+          : cp.mastered < cp.total
+          ? ' · répète les leçons pour faire passer tous les mots au vert !'
+          : ' · félicitations, tous les mots sont au vert !'}
       </p>
 
       <div className="mt-6 grid gap-3">
         <Button full onClick={() => onStart({ mode: 'chapter', chapterId })}>
-          {toStudy ? 'Commencer une leçon' : 'Entraînement libre'}
+          {cp.discovered < cp.total
+            ? (cp.discovered === 0 ? 'Commencer le chapitre' : `Découvrir la suite (Leçon ${cp.lessonsDone + 1}/${cp.lessonsTotal})`)
+            : cp.mastered < cp.total
+            ? `S'entraîner & Maîtriser (${cp.mastered}/${cp.total} au vert)`
+            : 'Réviser le chapitre (Perfectionnement)'}
         </Button>
         <div className="grid grid-cols-2 gap-3">
           <Button variant="white" className="!px-3 !text-sm" disabled={untriaged === 0} onClick={onTriage}>

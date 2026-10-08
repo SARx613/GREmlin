@@ -8,16 +8,16 @@ import type {
   WordsData,
 } from '../types';
 import { makeExercise, makePairs, pickType, shuffle, type Rng } from './exercises';
-import { NEW_PER_LESSON, applyResult, dueIds, getWP, newIds } from './srs';
+import { MASTERED_BOX, NEW_PER_LESSON, applyResult, dueIds, getWP, newIds } from './srs';
 
-export const MAX_WORDS = 8;
+export const MAX_WORDS = 10;
 export const MAX_NEW = NEW_PER_LESSON;
 export const MAX_SELECTION = 10;
 const REINSERT_GAP = 3;
 
 // --- Choix des mots -----------------------------------------------------------
 
-/** Mots d'une leçon ; `applySrs` = false pour l'entraînement libre (pas de pénalité de boîte). */
+/** Mots d'une leçon ; `applySrs` reste actif pour permettre la progression et la maîtrise des mots. */
 export function pickWords(
   config: LessonConfig,
   data: WordsData,
@@ -39,9 +39,17 @@ export function pickWords(
     const fresh = newIds(chapterIds, words).slice(0, Math.min(MAX_NEW, MAX_WORDS - due.length));
     const ids = [...due, ...fresh];
     if (ids.length) return { ids, applySrs: true };
+
+    // Tous les mots du chapitre ont été découverts et aucun n'est encore dû selon le chrono SRS :
+    // S'il reste des mots non maîtrisés (box < 4), on les sélectionne pour permettre de monter en boîte
+    const unmastered = chapterIds.filter((id) => getWP(words, id).box < MASTERED_BOX);
+    if (unmastered.length > 0) {
+      const sorted = [...unmastered].sort((a, b) => getWP(words, a).box - getWP(words, b).box);
+      return { ids: sorted.slice(0, MAX_WORDS), applySrs: true };
+    }
   }
 
-  // entraînement libre (ou chapitre sans rien de dû ni de nouveau)
+  // entraînement libre (chapitre où tout est déjà maîtrisé) : pas de pénalité de boîte
   return { ids: shuffle(chapterIds, rng).slice(0, MAX_WORDS), applySrs: false };
 }
 
