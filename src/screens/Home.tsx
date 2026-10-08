@@ -183,13 +183,17 @@ export default function Home({ progress, dailyGoal, hasPending, openWordId, onRe
                     {c.subtitle && <p className="mb-2 text-sm text-muted">{c.subtitle}</p>}
                     <div className="mb-1 mt-2 flex items-baseline justify-between text-sm font-bold">
                       <span className="text-ink">
-                        {cp.discovered === cp.total ? 'Tous les mots découverts' : `Leçon ${cp.lessonsDone}/${cp.lessonsTotal}`}
+                        {cp.mastered === cp.total
+                          ? '✓ Chapitre 100 % maîtrisé'
+                          : cp.discovered === cp.total
+                          ? `${cp.mastered}/${cp.total} maîtrisés`
+                          : `Leçon ${cp.lessonsDone + 1}/${cp.lessonsTotal}`}
                       </span>
                       <span className="text-green-ink">{cp.percent} %</span>
                     </div>
                     <ProgressBar thin value={cp.mastered / cp.total} secondary={cp.discovered / cp.total} />
                     <p className="mt-1 text-xs text-muted">
-                      {cp.discovered}/{cp.total} mots découverts · {cp.mastered} maîtrisé{cp.mastered > 1 ? 's' : ''}
+                      {cp.discovered}/{cp.total} découverts · <span className="font-semibold text-green-ink">{cp.mastered} maîtrisé{cp.mastered > 1 ? 's' : ''}</span>
                     </p>
                   </button>
                 );

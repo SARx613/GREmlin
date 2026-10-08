@@ -5,7 +5,6 @@ import Button from '../components/Button';
 import Reminders from '../components/Reminders';
 import type { useAccount } from '../hooks/useAccount';
 import { useInstall } from '../hooks/useInstall';
-import { usePush } from '../hooks/usePush';
 import { canSpeak, listVoices, speak, voiceScore } from '../lib/speak';
 import { parseProgress } from '../lib/storage';
 import type { Settings as SettingsType } from '../lib/settings';
@@ -62,7 +61,6 @@ const Section = ({ title, children }: { title: string; children: React.ReactNode
 
 export default function Settings({ settings, onChange, progress, account, onToggleSound, onImport, onReset, onBack }: Props) {
   const fileRef = useRef<HTMLInputElement>(null);
-  const push = usePush(account.user, account.pushKey);
   const app = useInstall();
   // les voix se chargent de façon asynchrone dans certains navigateurs
   const [voices, setVoices] = useState(() => listVoices(settings.accent));
@@ -204,7 +202,7 @@ export default function Settings({ settings, onChange, progress, account, onTogg
       </Section>
 
       <Section title="Rappels">
-        <Reminders push={push} />
+        <Reminders />
       </Section>
 
       <Section title="Compte et progression">

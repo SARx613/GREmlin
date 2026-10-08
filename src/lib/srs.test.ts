@@ -95,22 +95,22 @@ describe('avancement d\'un chapitre', () => {
   const ids = Array.from({ length: 23 }, (_, i) => `w${i}`);
   const learned = (n: number, box = 1) => Object.fromEntries(ids.slice(0, n).map((id) => [id, wp(box)]));
 
-  it('chapitre neuf : 0 leçon sur ceil(23/4) = 6, 0 %', () => {
-    expect(chapterProgress(ids, {})).toMatchObject({ discovered: 0, lessonsTotal: 6, lessonsDone: 0, percent: 0, mastered: 0 });
+  it('chapitre neuf : 0 leçon sur ceil(23/8) = 3, 0 %', () => {
+    expect(chapterProgress(ids, {})).toMatchObject({ discovered: 0, lessonsTotal: 3, lessonsDone: 0, percent: 0, mastered: 0 });
   });
 
-  it('après une leçon de 4 mots nouveaux : 1 leçon sur 6, 17 % (et plus 0 %)', () => {
-    expect(chapterProgress(ids, learned(4))).toMatchObject({ discovered: 4, lessonsDone: 1, lessonsTotal: 6, percent: 17, mastered: 0 });
+  it('après une leçon de 8 mots nouveaux : 1 leçon sur 3, 35 %', () => {
+    expect(chapterProgress(ids, learned(8))).toMatchObject({ discovered: 8, lessonsDone: 1, lessonsTotal: 3, percent: 35, mastered: 0 });
   });
 
-  it('une leçon ne compte que quand elle est complète : 5 mots = 1 leçon, 8 mots = 2 leçons', () => {
-    expect(chapterProgress(ids, learned(5)).lessonsDone).toBe(1);
-    expect(chapterProgress(ids, learned(8)).lessonsDone).toBe(2);
+  it('une leçon ne compte que quand elle est complète : 9 mots = 1 leçon, 16 mots = 2 leçons', () => {
+    expect(chapterProgress(ids, learned(9)).lessonsDone).toBe(1);
+    expect(chapterProgress(ids, learned(16)).lessonsDone).toBe(2);
   });
 
-  it('tous découverts : 6 leçons sur 6, 100 % ; les mots triés « je connais » (boîte 4) comptent comme découverts et maîtrisés', () => {
-    expect(chapterProgress(ids, learned(23))).toMatchObject({ lessonsDone: 6, lessonsTotal: 6, percent: 100 });
-    expect(chapterProgress(ids, learned(8, 4))).toMatchObject({ discovered: 8, mastered: 8, lessonsDone: 2 });
+  it('tous découverts : 3 leçons sur 3, 100 % ; les mots triés « je connais » (boîte 4) comptent comme découverts et maîtrisés', () => {
+    expect(chapterProgress(ids, learned(23))).toMatchObject({ lessonsDone: 3, lessonsTotal: 3, percent: 100 });
+    expect(chapterProgress(ids, learned(16, 4))).toMatchObject({ discovered: 16, mastered: 16, lessonsDone: 2 });
   });
 });
 

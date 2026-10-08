@@ -1,22 +1,27 @@
-import { Bell, BellOff } from 'lucide-react';
-import type { usePush } from '../hooks/usePush';
+import { Bell, BellOff, CheckCircle, Sparkles } from 'lucide-react';
+import { useState } from 'react';
 import Button from './Button';
+import {
+  getPwaNotificationPermission,
+  isPwaNotificationSupported,
+  loadPwaNotificationPrefs,
+  requestPwaNotificationPermission,
+  savePwaNotificationPrefs,
+  sendTestPwaNotification,
+  type PwaNotificationPrefs,
+} from '../lib/pwaNotifications';
 
-type Push = ReturnType<typeof usePush>;
-
-const HELP: Partial<Record<Push['status'], string>> = {
-  unsupported: "Ce navigateur ne gère pas les notifications (ou l'app n'est pas la version installée/déployée).",
-  'ios-install': "Sur iPhone et iPad, les notifications ne marchent que si l'app est installée : Partager → « Sur l'écran d'accueil », puis rouvre-la depuis l'icône.",
-  login: 'Connecte-toi avec Google (juste au-dessus) pour activer les rappels : ils sont liés à ton compte.',
-  unavailable: "Les rappels ne sont pas encore configurés sur le serveur.",
-  denied: 'Les notifications sont bloquées pour ce site : autorise-les dans les réglages de ton navigateur, puis recharge la page.',
-};
-
-const timeInput = 'rounded-xl2 border-2 border-line bg-soft px-3 py-2 font-bold text-ink';
-
-function Choice({ value, onPick, options }: { value: number; onPick: (n: number) => void; options: number[] }) {
+function Choice({
+  value,
+  onPick,
+  options,
+}: {
+  value: number;
+  onPick: (n: number) => void;
+  options: number[];
+}) {
   return (
-    <div role="radiogroup" aria-label="Mots surprise par jour" className="flex flex-wrap gap-2">
+    <div role="radiogroup" aria-label="Notifications par jour" className="flex flex-wrap gap-2">
       {options.map((n) => (
         <button
           key={n}
@@ -28,87 +33,122 @@ function Choice({ value, onPick, options }: { value: number; onPick: (n: number)
             n === value ? 'border-blue bg-blue-light text-blue-ink' : 'border-line text-ink hover:bg-soft'
           }`}
         >
-          {n === 0 ? 'Aucun' : n}
+          {n} par jour
         </button>
       ))}
     </div>
   );
 }
 
-/** Réglages des rappels : un rappel quotidien + quelques mots surprise avec leur définition. */
-export default function Reminders({ push }: { push: Push }) {
-  const { status, prefs } = push;
+export default function Reminders() {
+  const supported = isPwaNotificationSupported();
+  const [permission, setPermission] = useState<NotificationPermission>(() => getPwaNotificationPermission());
+  const [prefs, setPrefs] = useState<PwaNotificationPrefs>(() => loadPwaNotificationPrefs());
+  const [testSent, setTestSent] = useState(false);
+  const [message, setMessage] = useState<string | null>(null);
 
-  if (status !== 'on' && status !== 'off') {
+  if (!supported) {
     return (
-      <p className="flex gap-2 rounded-xl2 border-2 border-line p-4 text-muted">
-        <BellOff size={20} className="mt-0.5 shrink-0" />
-        {HELP[status]}
-      </p>
+      <div className="flex gap-3 rounded-xl2 border-2 border-line p-4 text-muted">
+        <BellOff size={22} className="mt-0.5 shrink-0 text-muted" />
+        <div>
+          <p className="font-bold text-ink">Notifications non disponibles sur ce navigateur.</p>
+          <p className="text-sm">Sur iPhone et iPad, installe d'abord l'application sur l'écran d'accueil (Partager → Sur l'écran d'accueil) pour activer les notifications PWA.</p>
+        </div>
+      </div>
     );
   }
 
-  if (status === 'off' || !prefs) {
+  if (permission === 'denied') {
+    return (
+      <div className="flex gap-3 rounded-xl2 border-2 border-orange/40 bg-orange/10 p-4">
+        <BellOff size={22} className="mt-0.5 shrink-0 text-orange" />
+        <div>
+          <p className="font-bold text-ink">Notifications bloquées</p>
+          <p className="text-sm text-muted">
+            Les notifications sont actuellement refusées par ton navigateur. Réactive-les dans les réglages du site ou de ton appareil pour recevoir les mots du jour.
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  const isEnabled = permission === 'granted' && prefs.enabled;
+
+  const handleEnable = async () => {
+    setMessage(null);
+    const granted = await requestPwaNotificationPermission();
+    setPermission(getPwaNotificationPermission());
+    if (granted) {
+      const next = { ...prefs, enabled: true };
+      setPrefs(next);
+      savePwaNotificationPrefs(next);
+      setMessage('Notifications activées avec succès !');
+    } else {
+      setMessage("Autorisation refusée par l'appareil.");
+    }
+  };
+
+  const handleDisable = () => {
+    const next = { ...prefs, enabled: false };
+    setPrefs(next);
+    savePwaNotificationPrefs(next);
+    setMessage('Notifications désactivées.');
+  };
+
+  const handleCountChange = (countPerDay: number) => {
+    const next = { ...prefs, countPerDay };
+    setPrefs(next);
+    savePwaNotificationPrefs(next);
+  };
+
+  const handleTest = async () => {
+    setTestSent(true);
+    await sendTestPwaNotification();
+    setTimeout(() => setTestSent(false), 3000);
+  };
+
+  if (!isEnabled) {
     return (
       <div className="rounded-xl2 border-2 border-line p-4">
-        <p className="mb-3 font-bold text-ink">Un rappel par jour, et des mots surprise avec leur définition : tu apprends sans t'en rendre compte.</p>
-        <Button className="flex items-center gap-2" disabled={push.busy} onClick={() => void push.enable()}>
+        <p className="mb-2 font-bold text-ink">
+          Reçois 2 à 3 mots et rappels par jour directement sur ton appareil.
+        </p>
+        <p className="mb-4 text-sm text-muted">
+          100% interne à la PWA : mot du jour, mots surprise avec leur traduction, et rappel pour garder ta série. Aucun email ni inscription requis.
+        </p>
+        <Button className="flex items-center gap-2" onClick={() => void handleEnable()}>
           <Bell size={18} /> Activer sur cet appareil
         </Button>
-        {push.message && <p className="mt-3 text-sm text-red-ink">{push.message}</p>}
+        {message && <p className="mt-3 text-sm text-muted">{message}</p>}
       </div>
     );
   }
 
   return (
     <div className="space-y-5 rounded-xl2 border-2 border-line p-4">
-      <div>
-        <label className="flex items-center gap-3 font-bold text-ink">
-          <input
-            type="checkbox"
-            checked={prefs.reminder}
-            onChange={(e) => void push.update({ reminder: e.target.checked })}
-            className="h-5 w-5 accent-[#1CB0F6]"
-          />
-          Rappel quotidien d'apprendre
-        </label>
-        {prefs.reminder && (
-          <div className="mt-2 flex items-center gap-2 pl-8">
-            <label htmlFor="reminder-time" className="text-muted">
-              à
-            </label>
-            <input id="reminder-time" type="time" value={prefs.reminderTime} onChange={(e) => e.target.value && void push.update({ reminderTime: e.target.value })} className={timeInput} />
-          </div>
-        )}
+      <div className="flex items-center gap-2 text-green-ink font-bold">
+        <CheckCircle size={20} />
+        <span>Notifications PWA actives sur cet appareil</span>
       </div>
 
       <div>
-        <p className="mb-2 font-bold text-ink">Mots surprise par jour</p>
-        <Choice value={prefs.surprise} onPick={(n) => void push.update({ surprise: n })} options={[0, 1, 2, 3, 4]} />
-        {prefs.surprise > 0 && (
-          <div className="mt-3 flex flex-wrap items-center gap-2">
-            <label htmlFor="from" className="text-muted">
-              entre
-            </label>
-            <input id="from" type="time" value={prefs.from} onChange={(e) => e.target.value && void push.update({ from: e.target.value })} className={timeInput} />
-            <label htmlFor="to" className="text-muted">
-              et
-            </label>
-            <input id="to" type="time" value={prefs.to} onChange={(e) => e.target.value && void push.update({ to: e.target.value })} className={timeInput} />
-          </div>
-        )}
-        <p className="mt-2 text-sm text-muted">Chaque mot arrive à une heure un peu différente chaque jour, avec sa définition en anglais et en français.</p>
+        <p className="mb-2 font-bold text-ink">Fréquence quotidienne</p>
+        <Choice value={prefs.countPerDay} onPick={handleCountChange} options={[1, 2, 3]} />
+        <p className="mt-2 text-sm text-muted">
+          Envoyées à des moments aléatoires de la journée (matin, après-midi, soir) avec le mot du jour, des surprises et ta série.
+        </p>
       </div>
 
-      <div className="flex flex-wrap gap-3">
-        <Button variant="white" className="!py-2 !text-sm" disabled={push.busy} onClick={() => void push.test()}>
-          Envoyer un test
+      <div className="flex flex-wrap gap-3 pt-2">
+        <Button variant="white" className="flex items-center gap-2 !py-2 !text-sm" onClick={() => void handleTest()}>
+          <Sparkles size={16} /> {testSent ? 'Notification envoyée !' : 'Tester une notification'}
         </Button>
-        <Button variant="white" className="!py-2 !text-sm !text-red-ink" disabled={push.busy} onClick={() => void push.disable()}>
+        <Button variant="white" className="!py-2 !text-sm !text-red-ink" onClick={handleDisable}>
           Désactiver ici
         </Button>
       </div>
-      {push.message && <p className="text-sm text-muted">{push.message}</p>}
+      {message && <p className="text-sm text-muted">{message}</p>}
     </div>
   );
 }

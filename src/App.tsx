@@ -9,6 +9,7 @@ import { useAccount } from './hooks/useAccount';
 import { useProgress } from './hooks/useProgress';
 import { useSettings } from './hooks/useSettings';
 import { emptyState } from './lib/storage';
+import { checkAndSchedulePwaNotifications } from './lib/pwaNotifications';
 import Notices from './components/Notices';
 import Blitz from './screens/Blitz';
 import Sprint from './screens/Sprint';
@@ -95,6 +96,17 @@ export default function App() {
       window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }
   }, [screen.name]);
+
+  useEffect(() => {
+    checkAndSchedulePwaNotifications(progress.streak);
+    const onVisChange = () => {
+      if (document.visibilityState === 'visible') {
+        checkAndSchedulePwaNotifications(progress.streak);
+      }
+    };
+    document.addEventListener('visibilitychange', onVisChange);
+    return () => document.removeEventListener('visibilitychange', onVisChange);
+  }, [progress.streak]);
 
   const onToggleStar = (id: string) => update((p) => ({ ...p, starred: toggleStar(p.starred, id) }));
 
