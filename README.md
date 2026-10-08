@@ -1,6 +1,6 @@
 # GREmlin
 
-Apprendre le vocabulaire du GRE par petites leçons façon Duolingo : 511 mots, répétition espacée, exercices variés, PWA installable et compte Google facultatif pour synchroniser la progression.
+Apprendre le vocabulaire du GRE par petites leçons façon Duolingo : 1 134 mots essentiels (issus du GRE Vocabulaire complet), répétition espacée, 46 chapitres en 5 séries, nouveaux modes de jeu (Sprint Traduction 5 min, Speed Match 90 s, Blitz 60 s), PWA installable et compte Google facultatif pour synchroniser la progression.
 
 ## Développement
 
@@ -17,7 +17,7 @@ Pour tester le compte Google en local, utiliser `vercel dev` (sert aussi `api/ac
 
 ## Fonctionnalités
 
-Leçons de 5 minutes (QCM, phrases à trous, synonymes, Sentence Equivalence, paires, écriture, écoute, dictée) · répétition espacée adaptative · tri « je connais » · mot du jour · favoris ★ · Blitz 60 s · statistiques et succès · recherche et filtres · mode sombre · voix américaine réglable · rappels et mots surprise par notification · compte Google avec synchronisation · installable et utilisable hors ligne.
+Leçons thématiques (QCM, phrases à trous, synonymes, Sentence Equivalence, paires, écriture, écoute, dictée) · répétition espacée adaptative · tri « je connais » · mot du jour · favoris ★ · Sprint Traduction (chrono 5 min avec combo et tolérance de frappe) · Speed Match (90 s de paires effrénées) · Blitz 60 s · 46 chapitres équilibrés en 5 séries thématiques · statistiques et succès · recherche et filtres · mode sombre · voix américaine réglable · rappels et mots surprise par notification · compte Google avec synchronisation · installable et utilisable hors ligne.
 
 ## Données
 

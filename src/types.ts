@@ -42,6 +42,8 @@ export type Progress = {
   days?: Record<string, DayStat>;
   starred?: string[]; // mots favoris
   blitz?: { best: number; plays: number };
+  sprint?: { best: number; plays: number };
+  speedMatch?: { best: number; plays: number };
 };
 
 export type ChoiceType = 'wordToDef' | 'defToWord' | 'fillBlank' | 'synonym' | 'listen';
