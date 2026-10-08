@@ -355,3 +355,4 @@ export const SYNONYM_FAMILIES: SynonymFamily[] = [
     wordIds: f.words.filter((id) => data.words[id]),
   }))
   .filter((f) => f.wordIds.length >= 2);
+
