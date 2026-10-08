@@ -1,6 +1,8 @@
-import { BarChart3, Check, Flame, Play, Settings, Shuffle, Star, Timer, Volume2, VolumeX, Zap } from 'lucide-react';
+import { useState } from 'react';
+import { ArrowRightLeft, BarChart3, BookOpen, Check, Flame, Play, Settings, Shuffle, Star, Timer, Volume2, VolumeX, Zap } from 'lucide-react';
 import Button from '../components/Button';
 import ProgressBar from '../components/ProgressBar';
+import ThemeExplorer from '../components/ThemeExplorer';
 import WordOfTheDay from '../components/WordOfTheDay';
 import WordSearch from '../components/WordSearch';
 import { data } from '../lib/data';
@@ -37,6 +39,7 @@ export default function Home({ progress, dailyGoal, hasPending, openWordId, onRe
   const today = lessonsToday(progress.days, now);
   const goalDone = today >= dailyGoal;
   const starred = (progress.starred ?? []).filter((id) => data.words[id]);
+  const [mainTab, setMainTab] = useState<'chapters' | 'themes'>('chapters');
 
   return (
     <div className="pb-16">
@@ -159,48 +162,84 @@ export default function Home({ progress, dailyGoal, hasPending, openWordId, onRe
 
       <WordSearch progress={progress} openId={openWordId} onToggleStar={onToggleStar} />
 
-      {groups.map((g) => (
-        <section key={g} className="mt-8">
-          <h2 className="mb-3 text-sm font-extrabold uppercase tracking-wide text-muted">{g}</h2>
-          <div className="grid gap-3">
-            {data.chapters
-              .filter((c) => c.group === g)
-              .map((c) => {
-                const due = chapterDueCount(c, progress.words, now);
-                const cp = chapterProgress(c.wordIds, progress.words);
-                return (
-                  <button
-                    key={c.id}
-                    type="button"
-                    data-chapter={c.id}
-                    onClick={() => onChapter(c.id)}
-                    className="rounded-xl2 border-2 border-b-4 border-line bg-surface p-4 text-left transition-colors duration-150 hover:bg-soft"
-                  >
-                    <div className="mb-1 flex items-center justify-between gap-2">
-                      <span className="text-lg font-bold text-ink">{c.title}</span>
-                      {due > 0 && <span className="rounded-full bg-orange px-2 py-0.5 text-sm font-bold text-deep">{due} à réviser</span>}
-                    </div>
-                    {c.subtitle && <p className="mb-2 text-sm text-muted">{c.subtitle}</p>}
-                    <div className="mb-1 mt-2 flex items-baseline justify-between text-sm font-bold">
-                      <span className="text-ink">
-                        {cp.mastered === cp.total
-                          ? '✓ Chapitre 100 % maîtrisé'
-                          : cp.discovered === cp.total
-                          ? `${cp.mastered}/${cp.total} maîtrisés`
-                          : `Leçon ${cp.lessonsDone + 1}/${cp.lessonsTotal}`}
-                      </span>
-                      <span className="text-green-ink">{cp.percent} %</span>
-                    </div>
-                    <ProgressBar thin value={cp.mastered / cp.total} secondary={cp.discovered / cp.total} />
-                    <p className="mt-1 text-xs text-muted">
-                      {cp.discovered}/{cp.total} découverts · <span className="font-semibold text-green-ink">{cp.mastered} maîtrisé{cp.mastered > 1 ? 's' : ''}</span>
-                    </p>
-                  </button>
-                );
-              })}
-          </div>
-        </section>
-      ))}
+      {/* Sélecteur des 2 Modes Principaux : Chapitres ou Thèmes & Contrastes */}
+      <div className="mt-8 flex gap-2 rounded-xl2 border-2 border-line bg-soft p-1">
+        <button
+          type="button"
+          onClick={() => setMainTab('chapters')}
+          className={`flex flex-1 items-center justify-center gap-2 rounded-xl py-2.5 text-center text-sm font-extrabold transition-all duration-150 ${
+            mainTab === 'chapters'
+              ? 'border border-line/40 bg-surface text-ink shadow-xs'
+              : 'text-muted hover:text-ink'
+          }`}
+        >
+          <BookOpen size={18} />
+          <span>Parcours Chapitres ({data.chapters.length})</span>
+        </button>
+        <button
+          type="button"
+          onClick={() => setMainTab('themes')}
+          className={`flex flex-1 items-center justify-center gap-2 rounded-xl py-2.5 text-center text-sm font-extrabold transition-all duration-150 ${
+            mainTab === 'themes'
+              ? 'border border-line/40 bg-surface text-ink shadow-xs'
+              : 'text-muted hover:text-ink'
+          }`}
+        >
+          <ArrowRightLeft size={18} className="text-orange" />
+          <span>Synonymes & Contraires</span>
+        </button>
+      </div>
+
+      {mainTab === 'themes' ? (
+        <ThemeExplorer
+          progress={progress}
+          onStart={onStart}
+          onToggleStar={onToggleStar}
+        />
+      ) : (
+        groups.map((g) => (
+          <section key={g} className="mt-8">
+            <h2 className="mb-3 text-sm font-extrabold uppercase tracking-wide text-muted">{g}</h2>
+            <div className="grid gap-3">
+              {data.chapters
+                .filter((c) => c.group === g)
+                .map((c) => {
+                  const due = chapterDueCount(c, progress.words, now);
+                  const cp = chapterProgress(c.wordIds, progress.words);
+                  return (
+                    <button
+                      key={c.id}
+                      type="button"
+                      data-chapter={c.id}
+                      onClick={() => onChapter(c.id)}
+                      className="rounded-xl2 border-2 border-b-4 border-line bg-surface p-4 text-left transition-colors duration-150 hover:bg-soft"
+                    >
+                      <div className="mb-1 flex items-center justify-between gap-2">
+                        <span className="text-lg font-bold text-ink">{c.title}</span>
+                        {due > 0 && <span className="rounded-full bg-orange px-2 py-0.5 text-sm font-bold text-deep">{due} à réviser</span>}
+                      </div>
+                      {c.subtitle && <p className="mb-2 text-sm text-muted">{c.subtitle}</p>}
+                      <div className="mb-1 mt-2 flex items-baseline justify-between text-sm font-bold">
+                        <span className="text-ink">
+                          {cp.mastered === cp.total
+                            ? '✓ Chapitre 100 % maîtrisé'
+                            : cp.discovered === cp.total
+                            ? `${cp.mastered}/${cp.total} maîtrisés`
+                            : `Leçon ${cp.lessonsDone + 1}/${cp.lessonsTotal}`}
+                        </span>
+                        <span className="text-green-ink">{cp.percent} %</span>
+                      </div>
+                      <ProgressBar thin value={cp.mastered / cp.total} secondary={cp.discovered / cp.total} />
+                      <p className="mt-1 text-xs text-muted">
+                        {cp.discovered}/{cp.total} découverts · <span className="font-semibold text-green-ink">{cp.mastered} maîtrisé{cp.mastered > 1 ? 's' : ''}</span>
+                      </p>
+                    </button>
+                  );
+                })}
+            </div>
+          </section>
+        ))
+      )}
     </div>
   );
 }
