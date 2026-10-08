@@ -1,4 +1,4 @@
-import { BarChart3, Check, Flame, Play, Settings, Star, Volume2, VolumeX, Zap } from 'lucide-react';
+import { BarChart3, Check, Flame, Play, Settings, Shuffle, Star, Timer, Volume2, VolumeX, Zap } from 'lucide-react';
 import Button from '../components/Button';
 import ProgressBar from '../components/ProgressBar';
 import WordOfTheDay from '../components/WordOfTheDay';
@@ -18,6 +18,8 @@ type Props = {
   onChapter: (id: string) => void;
   onToggleSound: () => void;
   onBlitz: () => void;
+  onSprint: () => void;
+  onSpeedMatch: () => void;
   onStats: () => void;
   onSettings: () => void;
   onToggleStar: (id: string) => void;
@@ -26,7 +28,7 @@ type Props = {
 
 const iconBtn = 'rounded-xl2 p-2 text-blue-ink transition-colors duration-150 hover:bg-blue-light';
 
-export default function Home({ progress, dailyGoal, hasPending, openWordId, onResume, onReview, onChapter, onToggleSound, onBlitz, onStats, onSettings, onToggleStar, onStart }: Props) {
+export default function Home({ progress, dailyGoal, hasPending, openWordId, onResume, onReview, onChapter, onToggleSound, onBlitz, onSprint, onSpeedMatch, onStats, onSettings, onToggleStar, onStart }: Props) {
   const now = Date.now();
   const allIds = data.chapters.flatMap((c) => c.wordIds);
   const dueCount = dueIds(allIds, progress.words, now).length;
@@ -94,20 +96,53 @@ export default function Home({ progress, dailyGoal, hasPending, openWordId, onRe
       </Button>
       {dueCount === 0 && <p className="mt-2 text-center text-sm text-muted">Rien à réviser, reviens demain</p>}
 
-      <button
-        type="button"
-        onClick={onBlitz}
-        className="mt-3 flex w-full items-center justify-between gap-3 rounded-xl2 border-2 border-b-4 border-line bg-surface p-4 text-left transition-colors duration-150 hover:bg-soft"
-      >
-        <span className="flex items-center gap-3">
-          <Zap size={26} className="text-orange-ink" fill="currentColor" />
-          <span>
-            <span className="block text-lg font-bold text-ink">Blitz · 60 secondes</span>
-            <span className="block text-sm text-muted">Un maximum de mots, le plus vite possible</span>
+      {/* Entraînement rapide et jeux */}
+      <div className="mt-4 grid gap-2.5">
+        <button
+          type="button"
+          onClick={onSprint}
+          className="flex w-full items-center justify-between gap-3 rounded-xl2 border-2 border-b-4 border-line bg-surface p-3.5 text-left transition-colors duration-150 hover:bg-soft"
+        >
+          <span className="flex items-center gap-3">
+            <Timer size={24} className="text-blue" />
+            <span>
+              <span className="block text-base font-bold text-ink">Sprint Traduction · 5 min</span>
+              <span className="block text-xs text-muted">Tape le mot anglais depuis la traduction</span>
+            </span>
           </span>
-        </span>
-        <span className="shrink-0 text-sm font-bold text-orange-ink">{progress.blitz?.best ? `Record ${progress.blitz.best}` : 'Jouer'}</span>
-      </button>
+          <span className="shrink-0 text-sm font-bold text-blue">{progress.sprint?.best ? `Record ${progress.sprint.best}` : 'Jouer'}</span>
+        </button>
+
+        <button
+          type="button"
+          onClick={onSpeedMatch}
+          className="flex w-full items-center justify-between gap-3 rounded-xl2 border-2 border-b-4 border-line bg-surface p-3.5 text-left transition-colors duration-150 hover:bg-soft"
+        >
+          <span className="flex items-center gap-3">
+            <Shuffle size={24} className="text-green-ink" />
+            <span>
+              <span className="block text-base font-bold text-ink">Speed Match · 90 s</span>
+              <span className="block text-xs text-muted">Associe un maximum de paires express</span>
+            </span>
+          </span>
+          <span className="shrink-0 text-sm font-bold text-green-ink">{progress.speedMatch?.best ? `Record ${progress.speedMatch.best}` : 'Jouer'}</span>
+        </button>
+
+        <button
+          type="button"
+          onClick={onBlitz}
+          className="flex w-full items-center justify-between gap-3 rounded-xl2 border-2 border-b-4 border-line bg-surface p-3.5 text-left transition-colors duration-150 hover:bg-soft"
+        >
+          <span className="flex items-center gap-3">
+            <Zap size={24} className="text-orange-ink" fill="currentColor" />
+            <span>
+              <span className="block text-base font-bold text-ink">Blitz QCM · 60 s</span>
+              <span className="block text-xs text-muted">Choisis la bonne réponse le plus vite possible</span>
+            </span>
+          </span>
+          <span className="shrink-0 text-sm font-bold text-orange-ink">{progress.blitz?.best ? `Record ${progress.blitz.best}` : 'Jouer'}</span>
+        </button>
+      </div>
 
       <WordOfTheDay progress={progress} onToggleStar={onToggleStar} />
 

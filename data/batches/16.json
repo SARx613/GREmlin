@@ -1,0 +1,1234 @@
+{
+  "impetuous": {
+    "pos": "adj.",
+    "definition": "acting or done quickly and without thought or care; rash",
+    "definitionFr": "impétueux, impulsif",
+    "sentences": [
+      "His impetuous decision to quit his job without another offer surprised his colleagues, who knew how much he valued steady financial security.",
+      "The impetuous commander ordered a full charge into the canyon without scouting ahead, walking straight into the enemy's well-prepared ambush."
+    ],
+    "synonyms": [
+      "impulsive",
+      "rash",
+      "reckless",
+      "hasty"
+    ],
+    "mnemonic": "Impétueux en français : qui agit sous l'impulsion du moment sans réfléchir."
+  },
+  "implacable": {
+    "pos": "adj.",
+    "definition": "unable to be appeased, calmed, or placated; relentless",
+    "definitionFr": "implacable, inflexible",
+    "sentences": [
+      "Despite the governor's repeated apologies, the implacable protesters refused to disperse until all criminal charges against the activists were dropped.",
+      "The detective pursued the elusive fugitive with implacable determination, working through freezing rain and sleepless nights across three remote provinces."
+    ],
+    "synonyms": [
+      "relentless",
+      "unyielding",
+      "unappeasable",
+      "inexorable"
+    ],
+    "mnemonic": "Im-placable : qu'on ne peut pas apaiser ou calmer (du latin placare)."
+  },
+  "incontrovertible": {
+    "pos": "adj.",
+    "definition": "not able to be denied or disputed; completely certain",
+    "definitionFr": "incontestable, irréfutable",
+    "sentences": [
+      "The prosecutor presented incontrovertible video footage of the robbery, leaving the defense team with no plausible way to claim their client's innocence.",
+      "Decades of geological data offered incontrovertible evidence that the ancient tectonic plates had shifted gradually over millions of tumultuous years."
+    ],
+    "synonyms": [
+      "indisputable",
+      "undeniable",
+      "irrefutable",
+      "unquestionable"
+    ],
+    "mnemonic": "In-controvertible : contre lequel on ne peut soulever aucune controverse."
+  },
+  "indemnify": {
+    "pos": "verb",
+    "definition": "to compensate for harm or loss; secure against legal responsibility",
+    "definitionFr": "indemniser, dédommager",
+    "sentences": [
+      "The insurance policy promised to indemnify the homeowner against any flood damage caused by severe hurricanes during the autumn season.",
+      "The construction contract required the developer to indemnify the city against potential lawsuits resulting from workplace accidents on site."
+    ],
+    "synonyms": [
+      "compensate",
+      "reimburse",
+      "recompense",
+      "insure"
+    ],
+    "mnemonic": "Indemniser en français : dédommager une personne pour une perte subie."
+  },
+  "intelligible": {
+    "pos": "adj.",
+    "definition": "able to be understood; clear and comprehensible",
+    "definitionFr": "intelligible, compréhensible",
+    "sentences": [
+      "The professor managed to make quantum mechanics intelligible to undergraduate students by using simple analogies drawn from everyday life.",
+      "Although the radio transmission was filled with static, the pilot's distress call remained intelligible enough for air traffic control to respond."
+    ],
+    "synonyms": [
+      "comprehensible",
+      "understandable",
+      "lucid",
+      "coherent"
+    ],
+    "mnemonic": "Intelligible : qui peut être compris par l'intellect sans difficulté."
+  },
+  "inveterate": {
+    "pos": "adj.",
+    "definition": "having a long-established habit or interest that is unlikely to change",
+    "definitionFr": "invétéré, incorrigible",
+    "sentences": [
+      "An inveterate gambler, he spent every Friday evening at the downtown poker tables, ignoring the sensible warnings of his worried family.",
+      "Even after retiring from journalism, the inveterate writer continued waking up at dawn to draft opinion columns about national political developments."
+    ],
+    "synonyms": [
+      "chronic",
+      "habitual",
+      "ingrained",
+      "hardened"
+    ],
+    "mnemonic": "Invétéré : enraciné avec l'âge (du latin vetus, vieux)."
+  },
+  "irascible": {
+    "pos": "adj.",
+    "definition": "having a tendency to be easily angered; irritable",
+    "definitionFr": "irascible, colérique",
+    "sentences": [
+      "The irascible chef threw a copper pot across the kitchen whenever an assistant made even the slightest mistake with a sauce.",
+      "Exhausted by the noisy construction outside his window, the elderly tenant became increasingly irascible, shouting at anyone who knocked on his door."
+    ],
+    "synonyms": [
+      "irritable",
+      "short-tempered",
+      "petulant",
+      "choleric"
+    ],
+    "mnemonic": "Irascible : qui cède facilement à l'ire (la colère)."
+  },
+  "irony": {
+    "pos": "noun",
+    "definition": "a state of affairs or event contrary to what was expected",
+    "definitionFr": "ironie",
+    "sentences": [
+      "The tragic irony of the inventor's life was that the safety device he created ultimately caused the fatal carriage accident that killed him.",
+      "Nobody missed the irony when the climate conference delegates arrived at the summit aboard hundreds of private, carbon-spewing corporate jets."
+    ],
+    "synonyms": [
+      "paradox",
+      "incongruity",
+      "sarcasm",
+      "mockery"
+    ],
+    "mnemonic": "L'ironie d'une situation où le résultat contredit l'intention initiale."
+  },
+  "kinetic": {
+    "pos": "adj.",
+    "definition": "relating to or resulting from motion; active and dynamic",
+    "definitionFr": "cinétique, dynamique",
+    "sentences": [
+      "The roller coaster converts kinetic energy into potential energy as the heavy cars climb steeply up the towering wooden track.",
+      "Critics praised the kinetic choreography of the modern dance troupe, whose relentless leaping captivated the audience throughout the two-hour performance."
+    ],
+    "synonyms": [
+      "active",
+      "dynamic",
+      "moving",
+      "energetic"
+    ],
+    "mnemonic": "Cinétique en physique : lié au mouvement (du grec kinēsis)."
+  },
+  "laconic": {
+    "pos": "adj.",
+    "definition": "using very few words; concise and terse",
+    "definitionFr": "laconique, concis",
+    "sentences": [
+      "The general was famous for his laconic dispatches from the front lines, often summarizing complex battles in just two brief sentences.",
+      "When asked if he intended to seek another term in office, the mayor offered only a laconic reply of no comment."
+    ],
+    "synonyms": [
+      "terse",
+      "concise",
+      "succinct",
+      "brief"
+    ],
+    "mnemonic": "Comme les Spartiates de Laconie, réputés pour parler en très peu de mots."
+  },
+  "languid": {
+    "pos": "adj.",
+    "definition": "lacking energy or vitality; pleasantly slow and relaxed",
+    "definitionFr": "languissant, apathique",
+    "sentences": [
+      "The oppressive summer heat made the tourists feel languid, so they spent the afternoon sipping iced tea beneath swaying palm trees.",
+      "With a languid wave of her hand, the aristocrat dismissed the servant and drifted off to sleep on the plush sofa."
+    ],
+    "synonyms": [
+      "lethargic",
+      "sluggish",
+      "listless",
+      "relaxed"
+    ],
+    "mnemonic": "Languide : sans force ni entrain, qui se laisse aller à l'inaction."
+  },
+  "languorous": {
+    "pos": "adj.",
+    "definition": "characterized by pleasant tiredness, dreamy languor, or relaxation",
+    "definitionFr": "langoureux, alangui",
+    "sentences": [
+      "The couple enjoyed a languorous afternoon floating on the sunlit Mediterranean waters, completely unconcerned with schedules or mundane obligations.",
+      "Warm breezes and fragrant blossoms induced a languorous mood that kept the vacationers lounging by the pool for hours on end."
+    ],
+    "synonyms": [
+      "dreamy",
+      "relaxed",
+      "sensuous",
+      "lethargic"
+    ],
+    "mnemonic": "Langoureux : une paresse douce, sensuelle et pleine de volupté."
+  },
+  "libertine": {
+    "pos": "noun",
+    "definition": "a person who behaves without moral principles, especially sexually",
+    "definitionFr": "libertin, débauché",
+    "sentences": [
+      "The young libertine squandered his vast family fortune on lavish parties, heavy gambling, and endless affairs across the capitals of Europe.",
+      "In the satirical play, the charming libertine seduces several wealthy heiresses before his deceitful schemes are finally exposed in the final act."
+    ],
+    "synonyms": [
+      "debauchee",
+      "profligate",
+      "hedonist",
+      "rake"
+    ],
+    "mnemonic": "Un libertin s'affranchit des règles morales pour jouir des plaisirs."
+  },
+  "limpid": {
+    "pos": "adj.",
+    "definition": "completely clear and transparent; easily intelligible and lucid",
+    "definitionFr": "limpide, transparent",
+    "sentences": [
+      "The mountain stream was so limpid that hikers could clearly see smooth pebbles resting on the riverbed ten feet below.",
+      "Scholars praised the philosopher's limpid prose, which explained complex metaphysical concepts without resorting to obscure terminology or tangled syntax."
+    ],
+    "synonyms": [
+      "clear",
+      "transparent",
+      "pellucid",
+      "lucid"
+    ],
+    "mnemonic": "Limpide : clair et pur comme une eau de source cristalline."
+  },
+  "loquacious": {
+    "pos": "adj.",
+    "definition": "tending to talk a great deal; extremely talkative",
+    "definitionFr": "loquace, bavard",
+    "sentences": [
+      "The loquacious barber kept chatting enthusiastically about neighborhood politics throughout the haircut, barely pausing to let his customer speak.",
+      "Dinner with the loquacious diplomat was always entertaining, though guests rarely managed to utter a word during his lengthy anecdotes."
+    ],
+    "synonyms": [
+      "talkative",
+      "garrulous",
+      "voluble",
+      "chatty"
+    ],
+    "mnemonic": "Loquace vient du latin loqui (parler) : qui parle avec abondance."
+  },
+  "lugubrious": {
+    "pos": "adj.",
+    "definition": "looking or sounding mournful, dismal, or excessively gloomy",
+    "definitionFr": "lugubre, sombre",
+    "sentences": [
+      "The cellist played a lugubrious melody that echoed through the quiet stone chapel, bringing several mourners in the pews to tears.",
+      "His lugubrious expression at the wedding reception made people wonder whether he was actually celebrating or mourning a profound personal tragedy."
+    ],
+    "synonyms": [
+      "mournful",
+      "gloomy",
+      "dismal",
+      "melancholy"
+    ],
+    "mnemonic": "Lugubre : d'une tristesse sombre et funèbre qui glace l'atmosphère."
+  },
+  "machination": {
+    "pos": "noun",
+    "definition": "a crafty scheme or plot designed to achieve an evil end",
+    "definitionFr": "machination, manigance",
+    "sentences": [
+      "The ruthless advisor used every political machination at his disposal to undermine the prime minister and seize control of the cabinet.",
+      "Fortunately, the vigilant royal guards uncovered the conspirators' secret machination before they could carry out their treasonous plan against the king."
+    ],
+    "synonyms": [
+      "plot",
+      "scheme",
+      "intrigue",
+      "conspiracy"
+    ],
+    "mnemonic": "Une machination : un complot ourdi dans l'ombre avec ruse."
+  },
+  "mercenary": {
+    "pos": "adj.",
+    "definition": "primarily motivated by money or material gain; venal",
+    "definitionFr": "vénal, mercenaire",
+    "sentences": [
+      "The critic condemned the director's mercenary motives, arguing that the sequel was made solely to cash in on holiday merchandise sales.",
+      "Her mercenary suitors showed intense interest only after discovering she stood to inherit a massive real estate empire from her grandfather."
+    ],
+    "synonyms": [
+      "greedy",
+      "venal",
+      "acquisitive",
+      "avaricious"
+    ],
+    "mnemonic": "Mercenaire : qui n'agit que pour l'appât du gain financier."
+  },
+  "misanthrope": {
+    "pos": "noun",
+    "definition": "a person who dislikes humankind and avoids human society",
+    "definitionFr": "misanthrope",
+    "sentences": [
+      "Living alone in a remote mountain cabin, the aging misanthrope posted trespass warnings to keep curious hikers far away from his doorstep.",
+      "Disillusioned by corporate corruption and political greed, he gradually turned into a bitter misanthrope who preferred the companionship of stray dogs."
+    ],
+    "synonyms": [
+      "cynic",
+      "recluse",
+      "skeptic",
+      "doubter"
+    ],
+    "mnemonic": "Misanthrope : misos (haine) + anthropos (humain) = ennemi du genre humain."
+  },
+  "mordant": {
+    "pos": "adj.",
+    "definition": "sharply or bitingly sarcastic; caustic in tone",
+    "definitionFr": "mordant, caustique",
+    "sentences": [
+      "The satirist was famous for her mordant humor, which regularly mocked pompous politicians and exposed the absurdities of modern consumer culture.",
+      "His mordant review of the new restaurant criticized the soggy pasta and dismissed the dessert menu as culinary malpractice in print."
+    ],
+    "synonyms": [
+      "caustic",
+      "biting",
+      "sardonic",
+      "acerbic"
+    ],
+    "mnemonic": "Mordant : un humour si acéré qu'il semble mordre la victime."
+  },
+  "myopic": {
+    "pos": "adj.",
+    "definition": "lacking foresight or intellectual insight; narrow-minded and shortsighted",
+    "definitionFr": "myope, borné",
+    "sentences": [
+      "Environmentalists criticized the government's myopic policy of draining wetlands for shopping malls, which caused severe flooding in later years.",
+      "The executive's myopic focus on immediate quarterly profits led him to cut research spending, ultimately crippling the company's long-term innovation."
+    ],
+    "synonyms": [
+      "shortsighted",
+      "narrow-minded",
+      "unimaginative",
+      "parochial"
+    ],
+    "mnemonic": "Myope au figuré : incapable de regarder au-delà du court terme."
+  },
+  "nadir": {
+    "pos": "noun",
+    "definition": "the lowest or most unsuccessful point in a situation",
+    "definitionFr": "nadir, point le plus bas",
+    "sentences": [
+      "The economic depression marked the nadir of the manufacturer's fortunes, as sales plunged and factories were forced to shut down nationwide.",
+      "After losing his job and his apartment in the same week, he felt he had reached the emotional nadir of his life."
+    ],
+    "synonyms": [
+      "depths",
+      "rock bottom",
+      "abyss",
+      "base"
+    ],
+    "mnemonic": "Le nadir est à l'opposé du zénith : le point le plus bas possible."
+  },
+  "nebulous": {
+    "pos": "adj.",
+    "definition": "vague, indistinct, or ill-defined; cloudy in shape",
+    "definitionFr": "nébuleux, flou",
+    "sentences": [
+      "The candidate offered only nebulous promises about improving healthcare, failing to explain how her costly proposals would actually be funded.",
+      "Before the invention of telescopes, astronomers held nebulous ideas about distant galaxies, assuming they were merely glowing clouds of interstellar dust."
+    ],
+    "synonyms": [
+      "vague",
+      "indistinct",
+      "hazy",
+      "amorphous"
+    ],
+    "mnemonic": "Nébuleux vient de nebula (nuage) : flou et difficile à cerner."
+  },
+  "neophyte": {
+    "pos": "noun",
+    "definition": "a person who is new to a subject or activity; novice",
+    "definitionFr": "néophyte, débutant",
+    "sentences": [
+      "Although she was a neophyte in computer programming, her rapid grasp of algorithms astonished the senior software engineers at the startup.",
+      "The experienced climbing instructor patiently guided the terrified neophyte through the basic knot-tying exercises before tackling the sheer rock face."
+    ],
+    "synonyms": [
+      "novice",
+      "beginner",
+      "tyro",
+      "apprentice"
+    ],
+    "mnemonic": "Néo (nouveau) + phyte (planté) : nouveau venu dans un groupe ou domaine."
+  },
+  "nutritive": {
+    "pos": "adj.",
+    "definition": "providing nourishment; nutritious and sustaining to life",
+    "definitionFr": "nutritif, nourrissant",
+    "sentences": [
+      "Dietitians recommend legumes because their high nutritive value provides essential proteins, dietary fibers, and minerals needed for a healthy lifestyle.",
+      "The remote islanders relied on coconut palms as their primary nutritive source, harvesting the fruits for both food and fresh drinking water."
+    ],
+    "synonyms": [
+      "nutritious",
+      "nourishing",
+      "wholesome",
+      "sustaining"
+    ],
+    "mnemonic": "Nutritif : qui apporte à l'organisme tous les nutriments nécessaires."
+  },
+  "obsequious": {
+    "pos": "adj.",
+    "definition": "obedient or attentive to an excessive or servile degree",
+    "definitionFr": "obséquieux, servile",
+    "sentences": [
+      "The obsequious assistant flattered the CEO constantly and laughed loudly at his dullest jokes in hopes of securing a quick promotion.",
+      "Waiters at the exclusive club were trained to be attentive without appearing obsequious, balancing refined professionalism with polite customer discretion."
+    ],
+    "synonyms": [
+      "servile",
+      "sycophantic",
+      "fawning",
+      "subservient"
+    ],
+    "mnemonic": "Obséquieux : politesse exagérée et rampante pour s'attirer des faveurs."
+  },
+  "oeuvre": {
+    "pos": "noun",
+    "definition": "the complete body of work of an artist, writer, or composer",
+    "definitionFr": "œuvre (complète)",
+    "sentences": [
+      "The retrospective exhibition celebrated the entire oeuvre of the sculptor, tracing her evolution from classical marble statues to modern abstract installations.",
+      "Literary historians consider the tragic trilogy the crowning achievement of the playwright's oeuvre, cementing his reputation as an enduring master."
+    ],
+    "synonyms": [
+      "body of work",
+      "canon",
+      "output",
+      "creations"
+    ],
+    "mnemonic": "L'œuvre complète d'un artiste, emprunté tel quel au français en anglais."
+  },
+  "opprobrium": {
+    "pos": "noun",
+    "definition": "harsh criticism or censure; public disgrace from shameful conduct",
+    "definitionFr": "opprobre, honte publique",
+    "sentences": [
+      "The disgraced politician faced widespread public opprobrium after leaked audio recordings exposed his secret involvement in the bribery scandal.",
+      "Athletes caught using performance-enhancing drugs suffer lasting opprobrium, losing lucrative sponsorships and seeing their past championship titles permanently revoked."
+    ],
+    "synonyms": [
+      "disgrace",
+      "shame",
+      "censure",
+      "infamy"
+    ],
+    "mnemonic": "Jeter l'opprobre sur quelqu'un : le couvrir d'une honte méritée."
+  },
+  "ostentatious": {
+    "pos": "adj.",
+    "definition": "characterized by vulgar or pretentious display designed to impress",
+    "definitionFr": "ostentatoire, tape-à-l'œil",
+    "sentences": [
+      "The billionaire built an ostentatious mansion with gold-plated fountains and marble columns that drew disdainful sneers from his more modest neighbors.",
+      "Rather than wearing an ostentatious diamond necklace to the charity gala, she chose an elegant silver bracelet that complemented her dress."
+    ],
+    "synonyms": [
+      "showy",
+      "flamboyant",
+      "pretentious",
+      "flashy"
+    ],
+    "mnemonic": "Ostentatoire : qui fait étalage de son luxe de façon tapageuse."
+  },
+  "panacea": {
+    "pos": "noun",
+    "definition": "a solution or remedy for all difficulties or diseases",
+    "definitionFr": "panacée, remède universel",
+    "sentences": [
+      "The economist warned that deregulation was not a panacea for the nation's financial crisis, as structural poverty required multifaceted government intervention.",
+      "Early patent medicine vendors hawked tonic bottles as a magical panacea capable of curing everything from common colds to chronic arthritis."
+    ],
+    "synonyms": [
+      "cure-all",
+      "universal remedy",
+      "elixir",
+      "magic bullet"
+    ],
+    "mnemonic": "Panacée : pan (tout) + akos (remède), le remède universel illusoire."
+  },
+  "panache": {
+    "pos": "noun",
+    "definition": "flamboyant confidence of style or manner; stylish flair",
+    "definitionFr": "panache, brio",
+    "sentences": [
+      "The maestro conducted the final movement with extraordinary panache, sweeping his baton through the air with dazzling dramatic flourishes.",
+      "Even while facing intense questioning from reporters, the diplomat handled every hostile inquiry with enviable panache and disarming wit."
+    ],
+    "synonyms": [
+      "flair",
+      "style",
+      "dash",
+      "verve"
+    ],
+    "mnemonic": "Avoir du panache : fierté éclatante et allure brillante (comme Cyrano)."
+  },
+  "paradigm": {
+    "pos": "noun",
+    "definition": "a typical example, pattern, or framework of something",
+    "definitionFr": "paradigme, modèle",
+    "sentences": [
+      "The introduction of the internet created a new paradigm for business, forcing traditional retail stores to adapt to digital commerce rapidly.",
+      "In scientific revolutions, an established paradigm often resists replacement until mounting contradictory evidence makes its core assumptions completely untenable."
+    ],
+    "synonyms": [
+      "model",
+      "framework",
+      "pattern",
+      "archetype"
+    ],
+    "mnemonic": "Un paradigme : le cadre théorique ou modèle de référence dominant."
+  },
+  "paragon": {
+    "pos": "noun",
+    "definition": "a person or thing regarded as a model of excellence",
+    "definitionFr": "parangon, modèle parfait",
+    "sentences": [
+      "Revered as a paragon of journalistic integrity, the veteran editor refused to publish sensational rumors without verifying every supporting document.",
+      "The academy held up the young scholar as a paragon of intellectual discipline, praising her tireless research and brilliant philosophical treatises."
+    ],
+    "synonyms": [
+      "epitome",
+      "archetype",
+      "model",
+      "exemplar"
+    ],
+    "mnemonic": "Un parangon de vertu : modèle idéal réunissant toutes les qualités."
+  },
+  "parsimonious": {
+    "pos": "adj.",
+    "definition": "unwilling to spend money or use resources; excessively frugal",
+    "definitionFr": "parcimonieux, pingre",
+    "sentences": [
+      "The parsimonious landlord refused to replace the broken furnace during winter, forcing freezing tenants to buy their own electric space heaters.",
+      "Despite his immense personal fortune, the parsimonious billionaire drove a rusted compact car and always reused old paper tea bags."
+    ],
+    "synonyms": [
+      "stingy",
+      "miserly",
+      "frugal",
+      "penurious"
+    ],
+    "mnemonic": "Parcimonieux : qui donne au compte-gouttes par avarice."
+  },
+  "pastiche": {
+    "pos": "noun",
+    "definition": "an artistic work in a style that imitates another artist",
+    "definitionFr": "pastiche, imitation",
+    "sentences": [
+      "The author's latest detective novel is a clever pastiche of Victorian mystery fiction, complete with foggy London alleys and eccentric inspectors.",
+      "Critics dismissed the director's new movie as an uninspired pastiche of classic film noir tropes rather than an original cinematic vision."
+    ],
+    "synonyms": [
+      "imitation",
+      "hodgepodge",
+      "collage",
+      "homage"
+    ],
+    "mnemonic": "Un pastiche : œuvre d'art qui reproduit délibérément le style d'un maître."
+  },
+  "patronage": {
+    "pos": "noun",
+    "definition": "financial support or sponsorship given by a patron to artists",
+    "definitionFr": "mécénat, patronage",
+    "sentences": [
+      "During the Renaissance, generous royal patronage enabled painters and architects to produce timeless masterpieces that transformed European cultural heritage.",
+      "Without the continuous patronage of wealthy benefactors, the struggling regional opera company would have been forced to cancel its winter season."
+    ],
+    "synonyms": [
+      "sponsorship",
+      "support",
+      "backing",
+      "funding"
+    ],
+    "mnemonic": "Le mécénat ou patronage assure aux créateurs les ressources pour travailler."
+  },
+  "peccadillo": {
+    "pos": "noun",
+    "definition": "a small, relatively unimportant offense, sin, or fault",
+    "definitionFr": "peccadille, faute vénielle",
+    "sentences": [
+      "The candidate hoped voters would forgive his youthful peccadillo, arguing that stealing a campus street sign was merely an immature college prank.",
+      "While a forgotten anniversary might seem like a minor peccadillo, it ignited a week of bitter arguments between the stressed spouses."
+    ],
+    "synonyms": [
+      "misdemeanor",
+      "infraction",
+      "fault",
+      "lapse"
+    ],
+    "mnemonic": "Une peccadille : péché véniel (peccatum), péché mignon sans gravité."
+  },
+  "perfidious": {
+    "pos": "adj.",
+    "definition": "deceitful and untrustworthy; treacherous in violation of trust",
+    "definitionFr": "perfide, déloyal",
+    "sentences": [
+      "The perfidious ally secretly negotiated a peace treaty with the enemy while our soldiers were still fighting in the distant trenches.",
+      "Historians condemned the general's perfidious conduct, noting that he accepted bribes from foreign emissaries to surrender the fortified citadel without resistance."
+    ],
+    "synonyms": [
+      "treacherous",
+      "deceitful",
+      "disloyal",
+      "traitorous"
+    ],
+    "mnemonic": "Perfide : per + fides (foi), qui trahit sa parole et rompt la confiance."
+  },
+  "pernicious": {
+    "pos": "adj.",
+    "definition": "having a harmful effect, especially in a gradual or insidious way",
+    "definitionFr": "pernicieux, insidieux",
+    "sentences": [
+      "Unchecked misinformation on social media has a pernicious influence on public health, convincing thousands of vulnerable people to reject proven vaccines.",
+      "The doctor warned that stress causes pernicious damage to the cardiovascular system over time, often progressing silently before symptoms suddenly emerge."
+    ],
+    "synonyms": [
+      "harmful",
+      "destructive",
+      "detrimental",
+      "insidious"
+    ],
+    "mnemonic": "Pernicieux : un mal discret et pervers qui ruine tout de l'intérieur."
+  },
+  "philistine": {
+    "pos": "noun",
+    "definition": "a person who is hostile or indifferent to culture and arts",
+    "definitionFr": "philistin, béotien",
+    "sentences": [
+      "The philistine complained loudly throughout the museum tour, declaring that modern abstract sculptures looked like heaps of twisted scrap metal.",
+      "When the council slashed funding for the local library, angry residents accused the mayor of being a philistine who despised literature."
+    ],
+    "synonyms": [
+      "boor",
+      "materialist",
+      "lowbrow",
+      "anti-intellectual"
+    ],
+    "mnemonic": "Philistin : insensible aux arts et aux raffinements de l'esprit."
+  },
+  "phlegmatic": {
+    "pos": "adj.",
+    "definition": "having an unemotional, calm, and stolid disposition",
+    "definitionFr": "flegmatique, impassible",
+    "sentences": [
+      "The phlegmatic pilot remained completely calm when the plane's starboard engine failed, safely landing the aircraft without causing any passenger panic.",
+      "Even during fierce political debates, her phlegmatic demeanor never cracked, allowing her to deliver rational rebuttals while her opponents lost control."
+    ],
+    "synonyms": [
+      "calm",
+      "impassive",
+      "unflappable",
+      "stoic"
+    ],
+    "mnemonic": "Flegmatique : sang-froid imperturbable en toute circonstance."
+  },
+  "polemic": {
+    "pos": "noun",
+    "definition": "a strong verbal or written attack on someone or something",
+    "definitionFr": "pamphlet, texte polémique",
+    "sentences": [
+      "The philosopher published a fiery polemic against modern consumer capitalism, condemning the mindless obsession with wealth that alienated urban workers.",
+      "Rather than offering a balanced historical review, the book read like an angry polemic aimed at destroying the former premier's legacy."
+    ],
+    "synonyms": [
+      "diatribe",
+      "tirade",
+      "critique",
+      "harangue"
+    ],
+    "mnemonic": "Polémique : polémos (guerre), combat d'idées véhément et passionné."
+  },
+  "prescient": {
+    "pos": "adj.",
+    "definition": "having or showing knowledge of events before they take place",
+    "definitionFr": "prescient, clairvoyant",
+    "sentences": [
+      "The economist's prescient warnings about the housing bubble were initially dismissed by bank executives who later faced catastrophic financial collapses.",
+      "Reading the author's prescient novel fifty years after its publication is chilling, as it accurately predicted artificial intelligence and pervasive surveillance."
+    ],
+    "synonyms": [
+      "clairvoyant",
+      "farsighted",
+      "prophetic",
+      "perceptive"
+    ],
+    "mnemonic": "Pré-scient : prae (avant) + scire (savoir), qui prévoit l'avenir."
+  },
+  "probity": {
+    "pos": "noun",
+    "definition": "the quality of having strong moral principles; honesty and integrity",
+    "definitionFr": "probité, intégrité",
+    "sentences": [
+      "The judge was renowned for her unwavering probity, strictly refusing campaign donations and recusing herself whenever personal interests were involved.",
+      "Financial regulators commended the bank's strict probity, noting that its audits consistently complied with the highest ethical standards of accounting."
+    ],
+    "synonyms": [
+      "integrity",
+      "honesty",
+      "uprightness",
+      "rectitude"
+    ],
+    "mnemonic": "La probité : l'intégrité morale irréprochable et incorruptible."
+  },
+  "progenitor": {
+    "pos": "noun",
+    "definition": "an ancestor, parent, or originator of an artistic movement",
+    "definitionFr": "ancêtre, précurseur",
+    "sentences": [
+      "Geneticists traced the rare hereditary mutation back to a single progenitor who lived in northern Scandinavia during the fourteenth century.",
+      "Critics regard Edgar Allan Poe as the progenitor of modern detective fiction, noting that his Dupin stories inspired Arthur Conan Doyle."
+    ],
+    "synonyms": [
+      "ancestor",
+      "forefather",
+      "precursor",
+      "originator"
+    ],
+    "mnemonic": "Pro-géniteur : l'ancêtre fondateur qui engendre une lignée ou école."
+  },
+  "prognostication": {
+    "pos": "noun",
+    "definition": "the action of prophesying future events; a forecast",
+    "definitionFr": "pronostic, prédiction",
+    "sentences": [
+      "Despite the gloomy prognostication of weather forecasters, the dark storm clouds dispersed by noon, allowing the outdoor festival to proceed.",
+      "Market analysts issued a dire prognostication regarding tech stocks, anticipating a severe market correction before the end of the fiscal quarter."
+    ],
+    "synonyms": [
+      "prediction",
+      "forecast",
+      "prophecy",
+      "projection"
+    ],
+    "mnemonic": "Prognostication / pronostic : prévision établie d'après des signes."
+  },
+  "prolix": {
+    "pos": "adj.",
+    "definition": "using or containing too many words; tediously wordy and long-winded",
+    "definitionFr": "prolixe, verbeux",
+    "sentences": [
+      "The lawyer's prolix brief annoyed the busy judge, who demanded a concise summary instead of fifty pages of repetitive legal jargon.",
+      "His prolix speech dragged on for nearly three hours, causing tired audience members to check their watches and quietly leave the auditorium."
+    ],
+    "synonyms": [
+      "wordy",
+      "verbose",
+      "long-winded",
+      "rambling"
+    ],
+    "mnemonic": "Prolixe : qui se perd dans un déluge de mots inutiles."
+  },
+  "promulgate": {
+    "pos": "verb",
+    "definition": "to promote or make widely known; put a law into effect",
+    "definitionFr": "promulguer, proclamer",
+    "sentences": [
+      "The emperor issued a royal decree to promulgate religious tolerance throughout his vast domains, forbidding local magistrates from persecuting minorities.",
+      "Health agencies worked together to promulgate essential hygiene guidelines, using radio and television to reach rural villages during the epidemic."
+    ],
+    "synonyms": [
+      "proclaim",
+      "announce",
+      "broadcast",
+      "disseminate"
+    ],
+    "mnemonic": "Promulguer : proclamer officiellement une loi pour qu'elle prenne effet."
+  },
+  "propitious": {
+    "pos": "adj.",
+    "definition": "giving or indicating a good chance of success; favorable and auspicious",
+    "definitionFr": "propice, favorable",
+    "sentences": [
+      "The calm sea and steady morning breeze created propitious conditions for the sailing crew to set out on their transoceanic voyage.",
+      "Economists agreed that low interest rates and booming consumer confidence made this a propitious moment for entrepreneurs to launch new businesses."
+    ],
+    "synonyms": [
+      "favorable",
+      "auspicious",
+      "promising",
+      "advantageous"
+    ],
+    "mnemonic": "Propice : qui offre des conditions favorables à la réussite."
+  },
+  "prosaic": {
+    "pos": "adj.",
+    "definition": "having the style of prose; lacking poetic beauty; ordinary and commonplace",
+    "definitionFr": "prosaïque, banal",
+    "sentences": [
+      "While she dreamed of exciting adventures in exotic lands, her daily life consisted of prosaic chores like filing invoices and answering emails.",
+      "The architect transformed what could have been a prosaic concrete office building into an inspiring work of art with soaring glass atriums."
+    ],
+    "synonyms": [
+      "ordinary",
+      "mundane",
+      "commonplace",
+      "pedestrian"
+    ],
+    "mnemonic": "Prosaïque : terre à terre comme de la simple prose, sans poésie."
+  },
+  "proscribe": {
+    "pos": "verb",
+    "definition": "to forbid, especially by law; denounce or outlaw formally",
+    "definitionFr": "proscrire, interdire",
+    "sentences": [
+      "The new environmental regulations proscribe the dumping of industrial toxic chemicals into public waterways, imposing hefty fines on violating factories.",
+      "Authoritarian regimes routinely proscribe independent newspapers and arrest dissenting reporters to maintain tight control over the flow of public information."
+    ],
+    "synonyms": [
+      "prohibit",
+      "forbid",
+      "ban",
+      "outlaw"
+    ],
+    "mnemonic": "Proscrire : interdire formellement (attention : prescrire = ordonner)."
+  },
+  "provident": {
+    "pos": "adj.",
+    "definition": "making or indicating timely preparation for the future; prudent and thrifty",
+    "definitionFr": "prévoyant, économe",
+    "sentences": [
+      "Thanks to her provident habits of saving half her paycheck every month, she weathered the unexpected job loss without accumulating debt.",
+      "The provident farmers stored surplus wheat in dry silos during bountiful years to ensure their village would survive potential future droughts."
+    ],
+    "synonyms": [
+      "prudent",
+      "frugal",
+      "foresighted",
+      "thrifty"
+    ],
+    "mnemonic": "Prévoyant : qui pourvoit d'avance (provide) aux besoins à venir."
+  },
+  "puerile": {
+    "pos": "adj.",
+    "definition": "childishly silly and trivial; immature and foolish",
+    "definitionFr": "puéril, gamin",
+    "sentences": [
+      "The CEO was infuriated by the puerile pranks played by the interns, warning them that hiding office chairs was completely unprofessional.",
+      "Rather than presenting mature policy arguments, the debate deteriorated into puerile name-calling that embarrassed both political parties on national television."
+    ],
+    "synonyms": [
+      "childish",
+      "immature",
+      "juvenile",
+      "infantile"
+    ],
+    "mnemonic": "Puéril vient du latin puer (enfant) : comportement bêtement gamin."
+  },
+  "pugnacious": {
+    "pos": "adj.",
+    "definition": "eager or quick to argue, quarrel, or fight; combative",
+    "definitionFr": "pugnace, belliqueux",
+    "sentences": [
+      "The pugnacious hockey player spent half the championship game inside the penalty box for picking fights with the opposing team's defenseman.",
+      "Known for his pugnacious interview style, the aggressive journalist constantly interrupted politicians whenever they attempted to dodge difficult budgetary questions."
+    ],
+    "synonyms": [
+      "combative",
+      "belligerent",
+      "quarrelsome",
+      "truculent"
+    ],
+    "mnemonic": "Pugnace vient de pugnus (poing) : toujours prêt à en découdre."
+  },
+  "quotidian": {
+    "pos": "adj.",
+    "definition": "of or occurring every day; daily and ordinary",
+    "definitionFr": "quotidien, banal",
+    "sentences": [
+      "The painter found profound beauty in the quotidian routines of domestic life, depicting scenes of women baking bread and sweeping sunlit porches.",
+      "Escaping from the quotidian grind of commuting and desk work, the backpackers spent two glorious weeks hiking in the Canadian wilderness."
+    ],
+    "synonyms": [
+      "daily",
+      "routine",
+      "ordinary",
+      "everyday"
+    ],
+    "mnemonic": "Quotidien : ce qui revient chaque jour et fait la banalité ordinaire."
+  },
+  "raconteur": {
+    "pos": "noun",
+    "definition": "a person who tells anecdotes in a skillful and amusing way",
+    "definitionFr": "conteur (brillant)",
+    "sentences": [
+      "A gifted raconteur, my grandfather held the dinner guests spellbound with humorous stories about his youthful adventures across South America.",
+      "The beloved tavern owner was a natural raconteur whose captivating ghost legends drew curious tourists from neighboring towns every autumn evening."
+    ],
+    "synonyms": [
+      "storyteller",
+      "narrator",
+      "conversationalist",
+      "chronicler"
+    ],
+    "mnemonic": "Raconteur : emprunt direct au français pour désigner un as de la narration."
+  },
+  "rapacious": {
+    "pos": "adj.",
+    "definition": "aggressively greedy or grasping; predatory in taking what belongs to others",
+    "definitionFr": "rapace, cupide",
+    "sentences": [
+      "The rapacious corporation bought out struggling family farms and drastically slashed worker pensions to maximize returns for aggressive private equity investors.",
+      "Local fishermen condemned the rapacious trawlers that swept the seabed with giant nets, destroying delicate coral reefs and depleting regional fish stocks."
+    ],
+    "synonyms": [
+      "greedy",
+      "predatory",
+      "grasping",
+      "insatiable"
+    ],
+    "mnemonic": "Rapace : avide de butin comme un oiseau de proie affamé."
+  },
+  "recalcitrant": {
+    "pos": "adj.",
+    "definition": "having an obstinately uncooperative attitude toward authority or discipline",
+    "definitionFr": "récalcitrant, rétif",
+    "sentences": [
+      "The recalcitrant teenager refused to complete his homework assignments, defiantly crossing his arms whenever the teacher asked for his notebook.",
+      "Ranchers struggled for hours to guide the recalcitrant bull into the wooden trailer, as the stubborn animal refused to budge an inch."
+    ],
+    "synonyms": [
+      "defiant",
+      "unruly",
+      "insubordinate",
+      "refractory"
+    ],
+    "mnemonic": "Récalcitrant : qui donne des ruades (recalcitrare), rebelle à l'autorité."
+  },
+  "rectitude": {
+    "pos": "noun",
+    "definition": "morally correct behavior or thinking; righteousness and probity",
+    "definitionFr": "rectitude, droiture morale",
+    "sentences": [
+      "The public admired the former president for his impeccable moral rectitude, contrasting his honest leadership with the rampant corruption of successors.",
+      "Known for her intellectual rectitude, the research scientist withdrew her paper immediately upon discovering a flaw in her statistical calculations."
+    ],
+    "synonyms": [
+      "righteousness",
+      "integrity",
+      "probity",
+      "virtue"
+    ],
+    "mnemonic": "Rectitude : marcher tout droit (rectus) sur le chemin du devoir."
+  },
+  "relegate": {
+    "pos": "verb",
+    "definition": "to assign an inferior rank, position, or status to someone",
+    "definitionFr": "reléguer, rétrograder",
+    "sentences": [
+      "After losing five matches in a row, the famous football club was relegated to the second division for the next season.",
+      "The autocratic director tended to relegate dissenting board members to obscure committees where their critical opinions could exert no practical influence."
+    ],
+    "synonyms": [
+      "demote",
+      "downgrade",
+      "banish",
+      "subordinate"
+    ],
+    "mnemonic": "Reléguer : renvoyer à une position subalterne ou dans l'ombre."
+  },
+  "repudiate": {
+    "pos": "verb",
+    "definition": "to refuse to accept, recognize, or be associated with; reject",
+    "definitionFr": "répudier, rejeter catégoriquement",
+    "sentences": [
+      "The prime minister felt compelled to repudiate the radical statements made by his defense minister, issuing a formal retraction to Parliament.",
+      "When new genetic evidence proved the prisoner's innocence, the appellate court moved swiftly to repudiate the flawed guilty verdict from years earlier."
+    ],
+    "synonyms": [
+      "reject",
+      "renounce",
+      "disown",
+      "deny"
+    ],
+    "mnemonic": "Répudier : rejeter formellement ce qu'on approuvait ou possédait jadis."
+  },
+  "sage": {
+    "pos": "noun",
+    "definition": "a profoundly wise person, especially one famed for sound judgment",
+    "definitionFr": "sage, grand érudit",
+    "sentences": [
+      "Pilgrims traveled hundreds of miles across rugged mountain passes to seek advice from the ancient sage who dwelled in the quiet monastery.",
+      "Regarded as a political sage, the retired diplomat frequently advised world leaders on navigating complex multilateral treaties during international disputes."
+    ],
+    "synonyms": [
+      "philosopher",
+      "thinker",
+      "guru",
+      "mentor"
+    ],
+    "mnemonic": "Un sage : homme vénérable dont l'expérience et la raison éclairent autrui."
+  },
+  "salutary": {
+    "pos": "adj.",
+    "definition": "producing good effects; beneficial, especially despite being unwelcome",
+    "definitionFr": "salutaire, bénéfique",
+    "sentences": [
+      "The painful audit served as a salutary lesson for the company, forcing executives to adopt far more rigorous accounting controls going forward.",
+      "Taking a brisk morning walk through the pine forest had a salutary effect on her health, relieving both physical stress and anxiety."
+    ],
+    "synonyms": [
+      "beneficial",
+      "advantageous",
+      "salubrious",
+      "wholesome"
+    ],
+    "mnemonic": "Salutaire : qui apporte un bénéfice ou un enseignement salvateur."
+  },
+  "savant": {
+    "pos": "noun",
+    "definition": "a learned person, especially a distinguished scientist or eminent scholar",
+    "definitionFr": "savant, grand érudit",
+    "sentences": [
+      "The visiting savant delivered an extraordinary lecture on astrophysics, answering complex questions from university professors with effortless mastery and profound clarity.",
+      "Although socially awkward in large crowds, the mathematical savant could calculate prime numbers into the millions entirely within his head."
+    ],
+    "synonyms": [
+      "scholar",
+      "intellectual",
+      "polymath",
+      "sage"
+    ],
+    "mnemonic": "Un savant : personne possédant une érudition profonde et reconnue."
+  },
+  "seismic": {
+    "pos": "adj.",
+    "definition": "of enormous proportions or impact; relating to earthquakes",
+    "definitionFr": "sismique, d'une ampleur colossale",
+    "sentences": [
+      "The fall of the Berlin Wall caused a seismic geopolitical shift across Eastern Europe, dismantling Soviet control within a few dramatic months.",
+      "The sudden merger of the two banking titans sent seismic shockwaves through financial markets, wiping out smaller brokerage firms within days."
+    ],
+    "synonyms": [
+      "monumental",
+      "momentous",
+      "earth-shattering",
+      "colossal"
+    ],
+    "mnemonic": "Sismique : séisme en grec, qui ébranle les fondations mêmes de la société."
+  },
+  "sententious": {
+    "pos": "adj.",
+    "definition": "given to moralizing in a pompous or affected manner",
+    "definitionFr": "sentencieux, moralisateur",
+    "sentences": [
+      "His sententious speech about the virtues of hard work fell flat on employees who had not received a pay raise in years.",
+      "Annoyed by her uncle's sententious sermons during Sunday dinners, the young student made an excuse to leave the dining table early."
+    ],
+    "synonyms": [
+      "moralizing",
+      "preachy",
+      "pompous",
+      "didactic"
+    ],
+    "mnemonic": "Sentencieux : qui assène des sentences morales avec gravité prétentieuse."
+  },
+  "serpentine": {
+    "pos": "adj.",
+    "definition": "winding and twisting like a snake; complex and cunning",
+    "definitionFr": "serpentin, sinueux",
+    "sentences": [
+      "The bus crawled carefully along the serpentine mountain road, where each sharp hairpin turn revealed a dizzying view of the gorge below.",
+      "Investigators spent months untangling the firm's serpentine corporate structure, which hid offshore bank accounts behind dozens of fraudulent dummy companies."
+    ],
+    "synonyms": [
+      "winding",
+      "twisting",
+      "meandering",
+      "tortuous"
+    ],
+    "mnemonic": "Serpentin : qui ondule en courbes sinueuses à la façon d'un serpent."
+  },
+  "sophistic": {
+    "pos": "adj.",
+    "definition": "plausible but fallacious; based on deceptive or specious reasoning",
+    "definitionFr": "sophistique, spécieux",
+    "sentences": [
+      "The debater relied on sophistic arguments to mislead the audience, twisting statistical definitions while ignoring the overwhelming scientific consensus on the topic.",
+      "The judge rejected the lawyer's sophistic reasoning, emphasizing that clever wordplay could not justify violating the explicit constitutional text of the statute."
+    ],
+    "synonyms": [
+      "specious",
+      "fallacious",
+      "deceptive",
+      "misleading"
+    ],
+    "mnemonic": "Sophistique : digne des sophistes, raisonnement faux sous des dehors séduisants."
+  },
+  "soporific": {
+    "pos": "adj.",
+    "definition": "tending to induce drowsiness or sleep; tediously monotonous",
+    "definitionFr": "soporifique, assoupissant",
+    "sentences": [
+      "The monotone voice of the substitute lecturer had a soporific effect on the crowded lecture hall, sending half the students to sleep.",
+      "Sipping warm chamomile tea while listening to gentle rain proved wonderfully soporific, helping the insomniac drift off after hours of restless tossing."
+    ],
+    "synonyms": [
+      "sleep-inducing",
+      "sedative",
+      "monotonous",
+      "somnolent"
+    ],
+    "mnemonic": "Soporifique vient de sopor (sommeil lourd) : qui donne irrésistiblement envie de dormir."
+  },
+  "taciturn": {
+    "pos": "adj.",
+    "definition": "reserved or uncommunicative in speech; saying very little",
+    "definitionFr": "taciturne, taiseux",
+    "sentences": [
+      "The taciturn blacksmith rarely spoke more than three words to customers, preferring to let the rhythmic clanging of his hammer do the talking.",
+      "Although her husband was quite taciturn at social gatherings, he was remarkably warm and talkative when relaxing at home with his children."
+    ],
+    "synonyms": [
+      "reserved",
+      "uncommunicative",
+      "reticent",
+      "silent"
+    ],
+    "mnemonic": "Taciturne : du latin tacere (taire), naturellement avare de paroles."
+  },
+  "tendentious": {
+    "pos": "adj.",
+    "definition": "expressing or promoting a particular controversial point of view; biased",
+    "definitionFr": "tendancieux, partial",
+    "sentences": [
+      "The editorial was criticized for its tendentious coverage of the election, as it highlighted the incumbent's minor achievements while ignoring corruption scandals.",
+      "Historians questioned the documentary's tendentious narrative, arguing that the filmmaker cherry-picked archival letters to support a predetermined conspiracy theory."
+    ],
+    "synonyms": [
+      "biased",
+      "partisan",
+      "prejudiced",
+      "one-sided"
+    ],
+    "mnemonic": "Tendancieux : qui manifeste une intention partisane et déforme la vérité."
+  },
+  "timorous": {
+    "pos": "adj.",
+    "definition": "showing or suffering from nervousness, fear, or lack of confidence",
+    "definitionFr": "timoré, craintif",
+    "sentences": [
+      "The timorous fawn stood frozen at the forest edge, darting back into the thick bushes at the slightest snap of a twig.",
+      "Because he was inherently timorous in confrontations, the junior associate avoided raising objections when the aggressive partner misstated key contractual clauses."
+    ],
+    "synonyms": [
+      "timid",
+      "fearful",
+      "apprehensive",
+      "cautious"
+    ],
+    "mnemonic": "Timoré vient du latin timor (la peur) : trop craintif pour oser agir."
+  },
+  "torpor": {
+    "pos": "noun",
+    "definition": "a state of physical or mental inactivity; lethargy",
+    "definitionFr": "torpeur, engourdissement",
+    "sentences": [
+      "After eating a heavy Thanksgiving dinner, the entire family sank into a pleasant torpor, dozing peacefully in front of the flickering television.",
+      "During the coldest weeks of winter, the hibernating bear remains in a deep torpor, conserving energy until warmer temperatures return in spring."
+    ],
+    "synonyms": [
+      "lethargy",
+      "sluggishness",
+      "inertia",
+      "inactivity"
+    ],
+    "mnemonic": "La torpeur : état d'engourdissement physique ou d'inertie mentale totale."
+  },
+  "ubiquitous": {
+    "pos": "adj.",
+    "definition": "present, appearing, or found everywhere; omnipresent",
+    "definitionFr": "omniprésent, partout",
+    "sentences": [
+      "Smartphones have become so ubiquitous in modern society that it is nearly impossible to spot a pedestrian walking without a screen in hand.",
+      "Once a rare luxury found only in high-end bakeries, artisanal coffee shops are now ubiquitous across almost every urban neighborhood in the country."
+    ],
+    "synonyms": [
+      "omnipresent",
+      "pervasive",
+      "universal",
+      "everywhere"
+    ],
+    "mnemonic": "L'ubiquité est la capacité d'être partout à la fois."
+  },
+  "venal": {
+    "pos": "adj.",
+    "definition": "motivated by susceptibility to bribery; corrupt and open to bribery",
+    "definitionFr": "vénal, corrompu",
+    "sentences": [
+      "The venal border inspector regularly accepted cash bribes from smugglers, looking the other way as contraband trucks crossed the checkpoint every night.",
+      "Outraged citizens demanded the resignation of the venal mayor after prosecutors revealed that municipal building contracts were routinely awarded to political donors."
+    ],
+    "synonyms": [
+      "corrupt",
+      "bribable",
+      "mercenary",
+      "dishonest"
+    ],
+    "mnemonic": "Vénal : qui se vend (du latin venire, être vendu) pour de l'argent."
+  },
+  "verve": {
+    "pos": "noun",
+    "definition": "vigor, spirit, or enthusiasm in artistic work or performance",
+    "definitionFr": "verve, entrain, brio",
+    "sentences": [
+      "The young violinist tackled the demanding concerto with astonishing verve, earning a standing ovation from the usually reserved subscription audience.",
+      "Readers admired the verve of the young novelist's debut, praising its lively dialogue and relentless narrative momentum from the very first chapter."
+    ],
+    "synonyms": [
+      "vigor",
+      "enthusiasm",
+      "energy",
+      "vitality"
+    ],
+    "mnemonic": "Avoir de la verve : éclat, vivacité et brio dans l'expression artistique."
+  },
+  "vituperation": {
+    "pos": "noun",
+    "definition": "bitter and abusive language or condemnation; vitriol",
+    "definitionFr": "invectives, vitupération",
+    "sentences": [
+      "The controversial referee was subjected to relentless vituperation from furious soccer fans after disallowing what appeared to be a perfectly valid goal.",
+      "Exhausted by the bitter vituperation exchanged on social media, the journalist decided to delete her account and focus entirely on print reporting."
+    ],
+    "synonyms": [
+      "invective",
+      "abuse",
+      "condemnation",
+      "vilification"
+    ],
+    "mnemonic": "Vitupérer / vitupération : accabler d'invectives violentes et méprisantes."
+  }
+}

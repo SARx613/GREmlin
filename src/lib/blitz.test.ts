@@ -25,7 +25,7 @@ describe('blitz : questions', () => {
   const all = data.chapters.flatMap((c) => c.wordIds);
 
   it('mots travaillés s\'il y en a assez, sinon tout le vocabulaire', () => {
-    expect(blitzPool(data, {})).toHaveLength(511);
+    expect(blitzPool(data, {})).toHaveLength(all.length);
     const seen = Object.fromEntries(all.slice(0, 15).map((id) => [id, { box: 2, dueAt: 0, seen: 1, misses: 0 }]));
     expect(blitzPool(data, seen)).toEqual(all.slice(0, 15));
   });

@@ -1,0 +1,1250 @@
+{
+  "correlation": {
+    "pos": "noun",
+    "definition": "A mutual relationship or connection between two or more things",
+    "definitionFr": "corrélation, lien réciproque",
+    "sentences": [
+      "The epidemiologist found a strong statistical correlation between smoking habits and heart disease, though establishing direct causation required further clinical studies.",
+      "Economists noticed an unexpected correlation between rising interest rates and consumer spending, which contradicted several traditional financial models of market behavior."
+    ],
+    "synonyms": [
+      "connection",
+      "link",
+      "association",
+      "relationship"
+    ],
+    "mnemonic": "Co-relation : deux variables reliées qui évoluent ensemble."
+  },
+  "corroborate": {
+    "pos": "verb",
+    "definition": "To confirm or give support to a statement, theory, or finding",
+    "definitionFr": "corroborer, confirmer avec des preuves",
+    "sentences": [
+      "Multiple eyewitness accounts helped corroborate the journalist's report, proving beyond any reasonable doubt that the local factory had illegally dumped hazardous waste.",
+      "The defense attorney produced hotel receipts and security footage to corroborate her client's alibi during the exact hours when the burglary occurred."
+    ],
+    "synonyms": [
+      "confirm",
+      "substantiate",
+      "verify",
+      "validate"
+    ],
+    "mnemonic": "Corroborer = rendre robuste (du latin robur, chêne/force) : apporter des preuves solides."
+  },
+  "cosmopolitan": {
+    "pos": "adj.",
+    "definition": "Familiar with and at ease in many different countries and cultures",
+    "definitionFr": "cosmopolite, ouvert sur le monde",
+    "sentences": [
+      "With its multilingual residents, global culinary scene, and international art galleries, London remains one of the most vibrant cosmopolitan capitals on earth.",
+      "Having spent his childhood across three continents, the diplomat developed an effortlessly cosmopolitan worldview that helped him ease diplomatic tensions worldwide."
+    ],
+    "synonyms": [
+      "worldly",
+      "multicultural",
+      "sophisticated",
+      "international"
+    ],
+    "mnemonic": "Cosmos (monde) + polites (citoyen) : citoyen du monde entier."
+  },
+  "credible": {
+    "pos": "adj.",
+    "definition": "Able to be believed; convincing and trustworthy",
+    "definitionFr": "crédible, digne de confiance",
+    "sentences": [
+      "Because the whistleblower provided authentic internal emails and financial ledgers, investigators treated his accusations against the pharmaceutical giant as highly credible.",
+      "Without credible scientific data to back up their ambitious marketing claims, the startup failed to convince skeptical investors during the funding pitch."
+    ],
+    "synonyms": [
+      "believable",
+      "plausible",
+      "trustworthy",
+      "reliable"
+    ],
+    "mnemonic": "Credo en latin = croire ; ce qui est crédible mérite notre confiance."
+  },
+  "crescendo": {
+    "pos": "noun",
+    "definition": "A gradual increase in loudness, intensity, or force; a climax",
+    "definitionFr": "crescendo, montée en puissance, apogée",
+    "sentences": [
+      "Public outrage reached a furious crescendo when leaked documents revealed that cabinet ministers had lied about public spending during the national crisis.",
+      "The symphony built toward an exhilarating crescendo of brass and percussion, bringing the spellbound audience instantly to its feet in roaring applause."
+    ],
+    "synonyms": [
+      "climax",
+      "culmination",
+      "peak",
+      "upsurge"
+    ],
+    "mnemonic": "Terme musical italien : du latin crescere (croître), une montée progressive en intensité."
+  },
+  "culmination": {
+    "pos": "noun",
+    "definition": "The highest or climatic point of something, reached after long effort",
+    "definitionFr": "point culminant, aboutissement, apogée",
+    "sentences": [
+      "Winning the Nobel Prize in physics marked the proud culmination of thirty years of tireless laboratory research into quantum computing architectures.",
+      "The signing of the peace treaty was the historic culmination of marathon diplomatic sessions that lasted through several sleepless nights in Geneva."
+    ],
+    "synonyms": [
+      "pinnacle",
+      "zenith",
+      "climax",
+      "apex"
+    ],
+    "mnemonic": "Culmination = point où l'on culmine ; le sommet atteint après de longs efforts."
+  },
+  "cynical": {
+    "pos": "adj.",
+    "definition": "Believing that people are motivated solely by self-interest; distrustful of sincerity",
+    "definitionFr": "cynique, désabusé sur la nature humaine",
+    "sentences": [
+      "Years of political scandals had made the veteran reporter cynical, leading him to doubt every grand promise made by campaigning candidates.",
+      "Dismissing the billionaire's charitable donation as a cynical public relations maneuver, activists questioned why he paid so little in corporate taxes."
+    ],
+    "synonyms": [
+      "skeptical",
+      "distrustful",
+      "pessimistic",
+      "jaded"
+    ],
+    "mnemonic": "Cynique ≠ insensible : celui qui pense que tout le monde n'agit que par intérêt personnel."
+  },
+  "debacle": {
+    "pos": "noun",
+    "definition": "A sudden and disastrous failure or collapse; a complete fiasco",
+    "definitionFr": "débâcle, fiasco total, désastre",
+    "sentences": [
+      "The product launch turned into a public relations debacle when the new smartphone software crashed repeatedly during the televised live demonstration.",
+      "Following the humiliating military debacle at the frontier, several high-ranking generals were forced to resign their commands in utter disgrace."
+    ],
+    "synonyms": [
+      "fiasco",
+      "catastrophe",
+      "disaster",
+      "ruin"
+    ],
+    "mnemonic": "En français comme en anglais : la rupture brutale qui emporte tout."
+  },
+  "decadent": {
+    "pos": "adj.",
+    "definition": "Characterized by or reflecting moral decay, self-indulgence, or excessive luxury",
+    "definitionFr": "décadent, dissolu, excessivement complaisant",
+    "sentences": [
+      "Critics condemned the lavish royal banquet as an offensively decadent display of wealth while ordinary citizens were struggling to afford basic groceries.",
+      "The empire entered a decadent era of corrupt governance and extravagant pleasures, neglecting the military defenses that had once guaranteed its survival."
+    ],
+    "synonyms": [
+      "depraved",
+      "degenerate",
+      "self-indulgent",
+      "dissolute"
+    ],
+    "mnemonic": "Décadence = déclin moral sous le poids du luxe et des plaisirs excessifs."
+  },
+  "decipher": {
+    "pos": "verb",
+    "definition": "To convert code into normal text; to succeed in understanding something obscure",
+    "definitionFr": "déchiffrer, élucider, percer le sens",
+    "sentences": [
+      "Historians worked for decades to decipher the ancient inscriptions carved on the stone tablet, finally revealing details about an extinct civilization.",
+      "The pharmacist took several minutes to decipher the doctor's messy handwriting before safely dispensing the critical prescription to the elderly patient."
+    ],
+    "synonyms": [
+      "decode",
+      "interpret",
+      "unravel",
+      "solve"
+    ],
+    "mnemonic": "Dé-chiffrer : transformer un code chiffré en texte clair et compréhensible."
+  },
+  "decisive": {
+    "pos": "adj.",
+    "definition": "Settling an issue convincingly; having the power to make quick, firm decisions",
+    "definitionFr": "décisif, tranchant, résolu",
+    "sentences": [
+      "Her decisive intervention during the board meeting resolved the stalemate, allowing the company to finalize its merger before the regulatory deadline.",
+      "The general launched a decisive counterattack that broke enemy lines and brought a swift conclusion to the prolonged border conflict."
+    ],
+    "synonyms": [
+      "conclusive",
+      "definitive",
+      "resolute",
+      "pivotal"
+    ],
+    "mnemonic": "Décisif : qui tranche (comme une décision nette) et met fin au doute."
+  },
+  "decorum": {
+    "pos": "noun",
+    "definition": "Behavior in keeping with good taste, propriety, and social etiquette",
+    "definitionFr": "bienséance, convenance, étiquette",
+    "sentences": [
+      "The strict judge demanded strict decorum in his courtroom, promptly threatening to hold anyone who shouted or interrupted in contempt.",
+      "Even during heated diplomatic disagreements, ambassadorial decorum required both envoys to maintain an unfailingly polite and formal demeanor toward each other."
+    ],
+    "synonyms": [
+      "propriety",
+      "etiquette",
+      "decency",
+      "politeness"
+    ],
+    "mnemonic": "Decorum = décorum / décence : respect des formes et des convenances sociales."
+  },
+  "decree": {
+    "pos": "noun",
+    "definition": "An official order or decision issued by a legal authority",
+    "definitionFr": "décret, arrêté, ordonnance officielle",
+    "sentences": [
+      "The king issued an emergency decree that imposed heavy taxes on foreign luxury goods to finance his ambitious naval construction program.",
+      "Human rights organizations protested the presidential decree, warning that banning peaceful public protests violated the nation's democratic constitution."
+    ],
+    "synonyms": [
+      "edict",
+      "mandate",
+      "ruling",
+      "proclamation"
+    ],
+    "mnemonic": "Un décret impose une loi ou une règle par autorité souveraine."
+  },
+  "deference": {
+    "pos": "noun",
+    "definition": "Humble submission and respect shown toward someone or their authority",
+    "definitionFr": "déférence, profond respect, soumission polie",
+    "sentences": [
+      "Out of deference to the visiting scholar's profound expertise, the junior researchers listened in absolute silence to his lengthy opening remarks.",
+      "The village council showed immense deference to tribal elders, refusing to pass any community ordinance without their formal prior blessing."
+    ],
+    "synonyms": [
+      "respect",
+      "reverence",
+      "esteem",
+      "compliance"
+    ],
+    "mnemonic": "Avoir de la déférence = déférer à l'autorité de quelqu'un par profond respect."
+  },
+  "defy": {
+    "pos": "verb",
+    "definition": "To openly resist or refuse to obey; to challenge boldly",
+    "definitionFr": "défier, braver, s'opposer ouvertement",
+    "sentences": [
+      "Brave civil rights activists chose to defy unjust segregation laws, staging peaceful sit-ins despite facing verbal abuse and threats of arrest.",
+      "The mountaineers continued to defy the blizzard and steep icy slopes, determined to reach the summit before their oxygen supplies expired."
+    ],
+    "synonyms": [
+      "resist",
+      "flout",
+      "challenge",
+      "confront"
+    ],
+    "mnemonic": "Défier l'autorité ou braver un danger : refuser ouvertement d'obéir."
+  },
+  "deleterious": {
+    "pos": "adj.",
+    "definition": "Causing harm, damage, or injury, often in a subtle way",
+    "definitionFr": "délétère, néfaste, nuisible",
+    "sentences": [
+      "Chronic sleep deprivation has a deleterious impact on cognitive performance, severely impairing memory retention, reaction time, and emotional stability.",
+      "Environmental scientists warned that the factory's untreated chemical runoff would have deleterious consequences for the surrounding freshwater ecosystem."
+    ],
+    "synonyms": [
+      "harmful",
+      "detrimental",
+      "damaging",
+      "pernicious"
+    ],
+    "mnemonic": "Délétère = comme un gaz toxique qui détruit la santé lentement et silencieusement."
+  },
+  "deplorable": {
+    "pos": "adj.",
+    "definition": "Deserving strong condemnation; shockingly bad in quality or condition",
+    "definitionFr": "déplorable, lamentable, indigne",
+    "sentences": [
+      "Inspectors discovered deplorable living conditions inside the neglected orphanage, where children lacked clean drinking water and warm winter clothing.",
+      "The prime minister described the mob's violent attack on peaceful protesters as a deplorable assault against the core tenets of democracy."
+    ],
+    "synonyms": [
+      "appalling",
+      "lamentable",
+      "disgraceful",
+      "shameful"
+    ],
+    "mnemonic": "Déplorable : tellement lamentable que l'on ne peut que le déplorer et le condamner."
+  },
+  "derive": {
+    "pos": "verb",
+    "definition": "To obtain or receive something from a specific source or origin",
+    "definitionFr": "tirer de, puiser, dériver de",
+    "sentences": [
+      "Many modern pharmaceuticals derive from active compounds originally found in rare tropical plants that indigenous healers had used for centuries.",
+      "She seemed to derive immense satisfaction from mentoring underprivileged students, dedicating her weekend mornings to tutoring them in advanced calculus."
+    ],
+    "synonyms": [
+      "obtain",
+      "extract",
+      "originate",
+      "stem"
+    ],
+    "mnemonic": "Dériver : prendre sa source dans quelque chose, comme une rivière qui s'écoule."
+  },
+  "detrimental": {
+    "pos": "adj.",
+    "definition": "Tending to cause harm, injury, or disadvantage",
+    "definitionFr": "préjudiciable, nuisible, néfaste",
+    "sentences": [
+      "Skipping breakfast on exam days can be highly detrimental to academic performance, as low blood sugar undermines concentration and mental stamina.",
+      "The sudden departure of senior software architects proved detrimental to the tech startup, delaying the product release by nearly six months."
+    ],
+    "synonyms": [
+      "harmful",
+      "damaging",
+      "injurious",
+      "adverse"
+    ],
+    "mnemonic": "Au détriment de : ce qui cause du tort et pénalise autrui."
+  },
+  "dictator": {
+    "pos": "noun",
+    "definition": "A ruler with total power over a country, typically obtained by force",
+    "definitionFr": "dictateur, dirigeant autoritaire absolu",
+    "sentences": [
+      "The ruthless dictator suppressed all independent newspapers and imprisoned political dissidents in a desperate bid to maintain his grip on power.",
+      "After decades of suffering under an oppressive dictator, the citizens celebrated in the streets when the military regime was finally overthrown."
+    ],
+    "synonyms": [
+      "tyrant",
+      "autocrat",
+      "despot",
+      "oppressor"
+    ],
+    "mnemonic": "Celui qui dicte sa loi sans partage ni contre-pouvoir."
+  },
+  "digression": {
+    "pos": "noun",
+    "definition": "A temporary departure from the main subject in speech or writing",
+    "definitionFr": "digression, écart par rapport au sujet",
+    "sentences": [
+      "The professor entertained the lecture hall with an amusing digression about his graduate school days before returning to quantum mechanics.",
+      "While the author's philosophical digression was elegantly written, it slowed down the pace of the mystery novel and confused many readers."
+    ],
+    "synonyms": [
+      "aside",
+      "divergence",
+      "deviation",
+      "detour"
+    ],
+    "mnemonic": "Di-gresser = s'éloigner du chemin principal (du latin gradi, marcher)."
+  },
+  "diligent": {
+    "pos": "adj.",
+    "definition": "Showing persistent care and conscientious effort in one's work or duties",
+    "definitionFr": "diligent, appliqué, travailleur assidu",
+    "sentences": [
+      "Thanks to her diligent research and meticulous fact-checking, the investigative reporter uncovered financial fraud that had eluded regulators for years.",
+      "Only through diligent study and countless practice exams did he manage to improve his standardized test score by over twenty percentile points."
+    ],
+    "synonyms": [
+      "industrious",
+      "meticulous",
+      "conscientious",
+      "assiduous"
+    ],
+    "mnemonic": "Diligent : plein de zèle et d'assiduité dans son travail."
+  },
+  "diminish": {
+    "pos": "verb",
+    "definition": "To make or become smaller, less, or less important",
+    "definitionFr": "diminuer, réduire, amoindrir",
+    "sentences": [
+      "The candidate's refusal to release his tax returns did not diminish public curiosity; instead, it fueled further skepticism among undecided voters.",
+      "Years of neglect did little to diminish the architectural beauty of the historic palace, whose intricate stone facade still commanded admiration."
+    ],
+    "synonyms": [
+      "decrease",
+      "lessen",
+      "reduce",
+      "dwindle"
+    ],
+    "mnemonic": "Diminuer : rendre plus mince, plus petit, amoindrir."
+  },
+  "diplomacy": {
+    "pos": "noun",
+    "definition": "The profession of managing international relations; skill in dealing with people tactfully",
+    "definitionFr": "diplomatie, tact dans les négociations",
+    "sentences": [
+      "Through patient diplomacy and multilateral negotiations, the seasoned ambassador averted what could have easily escalated into an armed border clash.",
+      "Handling sensitive boardroom rivalries required exceptional diplomacy, as the chief executive had to reconcile conflicting egos without alienating key founders."
+    ],
+    "synonyms": [
+      "tact",
+      "negotiation",
+      "discretion",
+      "statesmanship"
+    ],
+    "mnemonic": "Diplomate : négocier avec tact pour éviter les conflits."
+  },
+  "discerning": {
+    "pos": "adj.",
+    "definition": "Having or showing good judgment and acute perception",
+    "definitionFr": "perspicace, avisé, fin connaisseur",
+    "sentences": [
+      "A discerning art critic can immediately distinguish between an authentic masterpiece and a clever forgery by examining subtle brushstroke techniques.",
+      "The boutique winery caters to discerning consumers who appreciate organic farming methods and are willing to pay for exceptional vintage bottles."
+    ],
+    "synonyms": [
+      "perceptive",
+      "astute",
+      "discriminating",
+      "insightful"
+    ],
+    "mnemonic": "Discerner = séparer le bon grain de l'ivraie avec clairvoyance."
+  },
+  "discredit": {
+    "pos": "verb",
+    "definition": "To harm the good reputation of; to cause to seem untrue",
+    "definitionFr": "discréditer, décrédibiliser, démentir",
+    "sentences": [
+      "Opponents launched a coordinated smear campaign to discredit the reformer, fabricating sensational allegations about her private financial transactions.",
+      "Rigorous laboratory testing quickly served to discredit the pseudoscientific theory, proving that the miracle supplement provided zero medical benefits."
+    ],
+    "synonyms": [
+      "disprove",
+      "tarnish",
+      "undermine",
+      "debunk"
+    ],
+    "mnemonic": "Dis-créditer : enlever le crédit ou la confiance accordée à quelqu'un."
+  },
+  "disdain": {
+    "pos": "noun",
+    "definition": "The feeling that someone or something is unworthy of consideration or respect",
+    "definitionFr": "dédain, mépris hautain",
+    "sentences": [
+      "The aristocratic snob treated service staff with open disdain, never bothering to thank the waiters who poured his expensive wine.",
+      "She felt utter disdain for politicians who abandoned their stated principles simply to secure campaign funding from corporate interest groups."
+    ],
+    "synonyms": [
+      "contempt",
+      "scorn",
+      "condescension",
+      "derision"
+    ],
+    "mnemonic": "Dédain = dédaigner : regarder de haut avec mépris."
+  },
+  "disenchant": {
+    "pos": "verb",
+    "definition": "To free from an illusion or false belief; to disappoint",
+    "definitionFr": "désenchanter, décevoir, rompre l'illusion",
+    "sentences": [
+      "Widespread bureaucratic corruption helped disenchant young voters, convincing them that traditional political parties could never deliver meaningful social reforms.",
+      "Working behind the scenes at the luxury fashion house quickly disenchanted the intern, shattering all her glamorous romantic illusions about haute couture."
+    ],
+    "synonyms": [
+      "disillusion",
+      "disappoint",
+      "undeceive",
+      "disabuse"
+    ],
+    "mnemonic": "Dés-enchanter : rompre le charme ou l'enchantement trompeur."
+  },
+  "disillusion": {
+    "pos": "verb",
+    "definition": "To disappoint someone by breaking their naive or false illusions",
+    "definitionFr": "désillusionner, détromper, dégriser",
+    "sentences": [
+      "The reality of grueling eighteen-hour shifts will quickly disillusion any medical student who entered residency expecting an easy, prestigious lifestyle.",
+      "Witnessing the brutal commercial exploitation of the music industry disillusioned the idealistic singer, pushing him toward releasing albums independently."
+    ],
+    "synonyms": [
+      "disenchant",
+      "disabuse",
+      "undeceive",
+      "demystify"
+    ],
+    "mnemonic": "Dés-illusion : enlever les illusions et ramener à la dure réalité."
+  },
+  "disparate": {
+    "pos": "adj.",
+    "definition": "Fundamentally distinct or different in kind; not allowing comparison",
+    "definitionFr": "disparate, hétérogène, fondamentalement distinct",
+    "sentences": [
+      "The researcher synthesized insights from disparate disciplines like psychology and evolutionary biology to formulate a novel model of human decision-making.",
+      "Although the coalition members held disparate political convictions on economic policy, they stood united against the authoritarian dictator's constitutional revisions."
+    ],
+    "synonyms": [
+      "divergent",
+      "heterogeneous",
+      "dissimilar",
+      "contrasting"
+    ],
+    "mnemonic": "Disparate : éléments si différents qu'on ne peut pas les amalgamer."
+  },
+  "disseminate": {
+    "pos": "verb",
+    "definition": "To spread information, knowledge, or ideas widely",
+    "definitionFr": "disséminer, diffuser largement, propager",
+    "sentences": [
+      "Public health agencies used social media platforms to disseminate accurate information about vaccine safety during the height of the epidemic.",
+      "The university library made digital archives publicly available to disseminate rare historical manuscripts to scholars across the entire globe."
+    ],
+    "synonyms": [
+      "spread",
+      "circulate",
+      "distribute",
+      "broadcast"
+    ],
+    "mnemonic": "Semer (du latin semen, graine) : disperser des graines ou des idées partout."
+  },
+  "distill": {
+    "pos": "verb",
+    "definition": "To extract the essential meaning or most important aspects of something",
+    "definitionFr": "distiller, condenser, extraire l'essence",
+    "sentences": [
+      "The veteran editor managed to distill a dense six-hundred-page manuscript into a concise, punchy handbook that anyone could easily understand.",
+      "Great poets can distill complex human heartbreak into a single poignant stanza, expressing emotions that ordinary prose struggles to convey."
+    ],
+    "synonyms": [
+      "condense",
+      "extract",
+      "purify",
+      "concentrate"
+    ],
+    "mnemonic": "Distiller : séparer l'essentiel du superflu, comme pour faire un élixir pur."
+  },
+  "divergent": {
+    "pos": "adj.",
+    "definition": "Tending to be different or develop in different directions",
+    "definitionFr": "divergent, qui s'écarte, opposé",
+    "sentences": [
+      "The twin sisters developed strikingly divergent career ambitions, with one pursuing corporate finance in New York while the other taught literature abroad.",
+      "Negotiators struggled to reconcile divergent viewpoints regarding climate policy, as developing countries prioritized economic growth over strict emissions caps."
+    ],
+    "synonyms": [
+      "differing",
+      "contrasting",
+      "deviating",
+      "conflicting"
+    ],
+    "mnemonic": "Diverger : prendre des directions opposées au lieu de converger."
+  },
+  "diverse": {
+    "pos": "adj.",
+    "definition": "Showing a great deal of variety; very different",
+    "definitionFr": "diversifié, varié, hétéroclite",
+    "sentences": [
+      "The national park boasts a diverse array of ecosystems, ranging from windswept alpine tundra to humid old-growth temperate rainforests.",
+      "Hiring candidates from diverse educational backgrounds helped the technology firm solve complex engineering challenges from multiple fresh perspectives."
+    ],
+    "synonyms": [
+      "varied",
+      "assorted",
+      "heterogeneous",
+      "multifaceted"
+    ],
+    "mnemonic": "Diversité : richesse de la variété et des différences."
+  },
+  "divert": {
+    "pos": "verb",
+    "definition": "To cause someone or something to change course or turn aside",
+    "definitionFr": "détourner, faire dévier, distraire",
+    "sentences": [
+      "Civil engineers built a concrete channel to divert floodwaters away from residential neighborhoods toward an uninhabited marshland basin.",
+      "The magician used flashy hand gestures to divert the audience's attention while secretly slipping the marked coin into his sleeve."
+    ],
+    "synonyms": [
+      "redirect",
+      "deflect",
+      "reroute",
+      "distract"
+    ],
+    "mnemonic": "Détourner de sa trajectoire ou distraire l'attention."
+  },
+  "divisive": {
+    "pos": "adj.",
+    "definition": "Tending to cause disagreement or hostility between people",
+    "definitionFr": "clivant, source de discorde, diviseur",
+    "sentences": [
+      "The politician's divisive campaign rhetoric deepened cultural hostility across the country, turning neighbors against one another over immigration policy.",
+      "School board meetings grew chaotic after parents began arguing over a divisive proposal to eliminate honors classes from high schools."
+    ],
+    "synonyms": [
+      "polarizing",
+      "discordant",
+      "contentious",
+      "alienating"
+    ],
+    "mnemonic": "Divisif / clivant : qui coupe en deux et divise au lieu d'unir."
+  },
+  "doctrine": {
+    "pos": "noun",
+    "definition": "A belief or set of beliefs held and taught by a group",
+    "definitionFr": "doctrine, dogme, principe fondamental",
+    "sentences": [
+      "The military adopted a new tactical doctrine that prioritized drone reconnaissance and cyber warfare over traditional armored tank battalions.",
+      "Religious scholars debated the centuries-old theological doctrine, searching ancient scriptures to determine how historical councils had formulated the dogma."
+    ],
+    "synonyms": [
+      "creed",
+      "tenet",
+      "dogma",
+      "precept"
+    ],
+    "mnemonic": "Une doctrine définit la ligne officielle d'une école de pensée ou d'une institution."
+  },
+  "dubious": {
+    "pos": "adj.",
+    "definition": "Hesitating or doubting; not to be relied upon; suspect",
+    "definitionFr": "douteux, suspect, hésitant",
+    "sentences": [
+      "Financial regulators grew suspicious of the bank's dubious accounting practices, suspecting that executives had concealed billions in bad loans.",
+      "Given the witness's long criminal history, jurors remained dubious about his testimony and demanded corroborating physical evidence before convicting."
+    ],
+    "synonyms": [
+      "doubtful",
+      "questionable",
+      "suspicious",
+      "skeptical"
+    ],
+    "mnemonic": "Dubitatif / dubious : qui suscite le doute ou qui doute lui-même."
+  },
+  "eccentric": {
+    "pos": "adj.",
+    "definition": "Unconventional and slightly strange in behavior or appearance",
+    "definitionFr": "excentrique, singulier, extravagant",
+    "sentences": [
+      "The eccentric inventor lived in a Victorian mansion cluttered with bizarre gadgets, refusing all telephone calls and communicating only via telegram.",
+      "While colleagues found her wardrobe eccentric, nobody questioned her brilliant mathematical intuition, which had solved several famous unsolved conjectures."
+    ],
+    "synonyms": [
+      "unconventional",
+      "quirky",
+      "peculiar",
+      "idiosyncratic"
+    ],
+    "mnemonic": "Ex-centrique : qui s'écarte du centre de la norme."
+  },
+  "eclipse": {
+    "pos": "verb",
+    "definition": "To obscure the light from; to surpass or overshadow in importance",
+    "definitionFr": "éclipser, surpasser, reléguer au second plan",
+    "sentences": [
+      "The young athlete's world record managed to eclipse the historic achievements of her legendary predecessor, stunning track fans worldwide.",
+      "Economic anxieties threatened to eclipse all other political issues during the election, dominating every debate and opinion editorial."
+    ],
+    "synonyms": [
+      "overshadow",
+      "outshine",
+      "surpass",
+      "obscure"
+    ],
+    "mnemonic": "Éclipser : faire de l'ombre à quelqu'un au point de le masquer complètement."
+  },
+  "economical": {
+    "pos": "adj.",
+    "definition": "Giving good value or return in relation to the resources used",
+    "definitionFr": "économe, sobre, avantageux financièrement",
+    "sentences": [
+      "Commuting by bicycle proved far more economical than maintaining a car, saving the student thousands of dollars in gas and parking.",
+      "The novelist was famously economical with words, crafting spare prose that conveyed powerful emotional resonance through minimal description."
+    ],
+    "synonyms": [
+      "thrifty",
+      "frugal",
+      "cost-effective",
+      "sparing"
+    ],
+    "mnemonic": "Économe : qui gère sagement ses ressources (argent, mots, temps)."
+  },
+  "efficacious": {
+    "pos": "adj.",
+    "definition": "Successful in producing a desired or intended result; effective",
+    "definitionFr": "efficace, qui produit l'effet escompté",
+    "sentences": [
+      "Clinical trials demonstrated that the new antiviral therapy was remarkably efficacious in lowering hospitalization rates among high-risk patients.",
+      "Educators found that daily interactive reading exercises were far more efficacious than rote memorization for teaching vocabulary to young children."
+    ],
+    "synonyms": [
+      "effective",
+      "productive",
+      "potent",
+      "successful"
+    ],
+    "mnemonic": "Efficace = efficacious : terme formel pour désigner une efficacité prouvée."
+  },
+  "egoistic": {
+    "pos": "adj.",
+    "definition": "Excessively self-centered and preoccupied with one's own desires",
+    "definitionFr": "égoïste, égocentrique",
+    "sentences": [
+      "His egoistic refusal to share project credit alienated fellow researchers, who eventually refused to collaborate on future grant proposals.",
+      "Psychologists described the executive as dangerously egoistic, noting that he treated corporate subordinates merely as instruments for his personal ambition."
+    ],
+    "synonyms": [
+      "selfish",
+      "egocentric",
+      "narcissistic",
+      "self-centered"
+    ],
+    "mnemonic": "Ego = le moi : tourné exclusivement vers sa propre personne."
+  },
+  "elaborate": {
+    "pos": "adj.",
+    "definition": "Involving many carefully arranged parts or details; complicated in design",
+    "definitionFr": "élaboré, complexe, minutieusement conçu",
+    "sentences": [
+      "The museum unveiled an elaborate mechanical clock from the seventeenth century that simulated the planetary orbits through dozens of interlocking gears.",
+      "Con artists devised an elaborate investment scheme to defraud wealthy retirees, fabricating convincing brochures and fake auditing reports."
+    ],
+    "synonyms": [
+      "intricate",
+      "detailed",
+      "complex",
+      "sophisticated"
+    ],
+    "mnemonic": "Élaboré : qui a nécessité un long travail de précision et de détail."
+  },
+  "elitist": {
+    "pos": "adj.",
+    "definition": "Demonstrating snobbish superiority toward ordinary people; favoring an elite",
+    "definitionFr": "élitiste, snob, condescendant",
+    "sentences": [
+      "Critics accused the private tennis club of holding elitist attitudes, pointing to its exorbitant membership fees and restrictive dress codes.",
+      "The professor rejected elitist arguments that classical literature was too difficult for working-class readers, establishing free public book clubs instead."
+    ],
+    "synonyms": [
+      "snobbish",
+      "arrogant",
+      "exclusive",
+      "aristocratic"
+    ],
+    "mnemonic": "Élitiste : qui réserve l'accès à une petite caste privilégiée."
+  },
+  "eloquent": {
+    "pos": "adj.",
+    "definition": "Fluent or persuasive in speaking or writing; clearly expressive",
+    "definitionFr": "éloquent, persuasif, brillant orateur",
+    "sentences": [
+      "Her eloquent keynote address moved the diplomatic assembly to tears, making an impassioned case for immediate global climate cooperation.",
+      "The civil rights leader delivered an eloquent defense of human dignity that reverberated through newspapers and radio broadcasts across the globe."
+    ],
+    "synonyms": [
+      "articulate",
+      "persuasive",
+      "expressive",
+      "fluent"
+    ],
+    "mnemonic": "Éloquent : qui sait parler avec art, clarté et conviction."
+  },
+  "embellish": {
+    "pos": "verb",
+    "definition": "To make something more attractive by decoration, or more interesting by exaggeration",
+    "definitionFr": "embellir, enjoliver, orner",
+    "sentences": [
+      "Grandpa loved to embellish his fishing tales, turning a tiny trout into a thrashing river monster that nearly sank his wooden canoe.",
+      "Medieval monks used gold leaf and vivid ink pigments to embellish the margins of illuminated biblical manuscripts with intricate floral patterns."
+    ],
+    "synonyms": [
+      "adorn",
+      "decorate",
+      "exaggerate",
+      "embroider"
+    ],
+    "mnemonic": "Embellir la vérité = enjoliver, broder des détails imaginaires."
+  },
+  "emphatic": {
+    "pos": "adj.",
+    "definition": "Expressing something forcibly and clearly; striking or definite",
+    "definitionFr": "catégorique, ferme, sans équivoque",
+    "sentences": [
+      "The governor issued an emphatic denial regarding bribery rumors, swearing on television that he had never accepted improper campaign gifts.",
+      "With an emphatic victory in the championship finals, the underdog basketball team proved that disciplined teamwork could defeat celebrity talent."
+    ],
+    "synonyms": [
+      "forceful",
+      "assertive",
+      "unambiguous",
+      "categorical"
+    ],
+    "mnemonic": "Emphatique en anglais = catégorique / énergique (affirmé avec force et certitude)."
+  },
+  "empirical": {
+    "pos": "adj.",
+    "definition": "Based on, concerned with, or verifiable by observation or experience",
+    "definitionFr": "empirique, fondé sur l'expérience et l'observation",
+    "sentences": [
+      "Rather than relying on abstract economic theories, the researchers gathered empirical evidence from fifty developing nations over three consecutive decades.",
+      "The scientific community rejected the miraculous health claim because its vocal proponents failed to provide any reproducible empirical test results."
+    ],
+    "synonyms": [
+      "observational",
+      "experimental",
+      "evidence-based",
+      "factual"
+    ],
+    "mnemonic": "Empirique : tiré du terrain et des faits réels, pas de pures théories."
+  },
+  "enchant": {
+    "pos": "verb",
+    "definition": "To fill someone with great delight; to put under a spell",
+    "definitionFr": "enchanter, captiver, ensorceler",
+    "sentences": [
+      "The violinist's delicate performance managed to enchant the packed concert auditorium, leaving the audience breathless until the final chord faded.",
+      "Ancient folktales warned travelers that the singing forest nymphs could enchant unsuspecting wandering sailors and lure them into dangerous bogs."
+    ],
+    "synonyms": [
+      "captivate",
+      "charm",
+      "beguile",
+      "fascinate"
+    ],
+    "mnemonic": "Enchanter : charmer au point de donner l'impression d'un sortilège."
+  },
+  "equitable": {
+    "pos": "adj.",
+    "definition": "Fair and impartial; treating all parties equally",
+    "definitionFr": "équitable, juste, impartial",
+    "sentences": [
+      "Labor union representatives demanded an equitable distribution of company profits, arguing that workers deserved a fair share of the annual bonus pool.",
+      "The mediator helped the divorcing couple negotiate an equitable division of their marital assets without undergoing a bitter public trial."
+    ],
+    "synonyms": [
+      "fair",
+      "impartial",
+      "just",
+      "unbiased"
+    ],
+    "mnemonic": "Équitable = juste envers chacun selon ses mérites ou besoins."
+  },
+  "erode": {
+    "pos": "verb",
+    "definition": "To gradually wear away or deteriorate over time",
+    "definitionFr": "éroder, user lentement, ronger",
+    "sentences": [
+      "Violent winter storms along the Atlantic coastline continue to erode sandy bluffs, threatening historic lighthouses built on the cliff edge.",
+      "Unchecked executive scandals and constant broken campaign promises began to erode ordinary citizens' trust in their nation's longstanding democratic institutions."
+    ],
+    "synonyms": [
+      "wear down",
+      "deteriorate",
+      "corrode",
+      "undermine"
+    ],
+    "mnemonic": "Éroder : user petit à petit la roche ou la confiance."
+  },
+  "erratic": {
+    "pos": "adj.",
+    "definition": "Not even or regular in pattern or movement; unpredictable",
+    "definitionFr": "erratique, imprévisible, irrégulier",
+    "sentences": [
+      "Because of erratic rainfall patterns caused by climate fluctuations, regional farmers struggled to determine the optimal planting date for their crops.",
+      "The police pulled over the driver after noticing his erratic swerving between highway lanes in the middle of torrential evening rain."
+    ],
+    "synonyms": [
+      "unpredictable",
+      "inconsistent",
+      "irregular",
+      "capricious"
+    ],
+    "mnemonic": "Erratique : qui erre sans trajectoire fixe ni régularité."
+  },
+  "erroneous": {
+    "pos": "adj.",
+    "definition": "Wrong or incorrect; based on a mistaken assumption",
+    "definitionFr": "erroné, inexact, faux",
+    "sentences": [
+      "Early astronomers based their planetary calculations on the erroneous assumption that the sun and stars revolved around a stationary earth.",
+      "The newspaper issued a prominent front-page correction after publishing erroneous financial figures that had unfairly damaged the candidate's public reputation."
+    ],
+    "synonyms": [
+      "incorrect",
+      "mistaken",
+      "flawed",
+      "fallacious"
+    ],
+    "mnemonic": "Erroné : plein d'erreurs (du latin errare, s'égarer)."
+  },
+  "escalate": {
+    "pos": "verb",
+    "definition": "To increase rapidly in intensity, severity, or extent",
+    "definitionFr": "s'intensifier, s'envenimer, monter d'un cran",
+    "sentences": [
+      "Diplomats worked through the night to prevent the border skirmish from escalating into a full-scale regional war between the rival neighbors.",
+      "Failure to pay overdue utility bills will quickly escalate collection fees and could ultimately result in the permanent disconnection of service."
+    ],
+    "synonyms": [
+      "intensify",
+      "heighten",
+      "amplify",
+      "aggravate"
+    ],
+    "mnemonic": "Escalade : monter les échelons vers un niveau de crise supérieur."
+  },
+  "esteemed": {
+    "pos": "adj.",
+    "definition": "Held in great respect and admiration",
+    "definitionFr": "estimé, réputé, hautement respecté",
+    "sentences": [
+      "The esteemed historian received a prestigious national award for his groundbreaking scholarship on civil rights struggles in the American South.",
+      "Medical students felt privileged to attend clinical rounds led by the esteemed neurosurgeon, whose innovative surgical techniques had saved countless lives."
+    ],
+    "synonyms": [
+      "respected",
+      "revered",
+      "distinguished",
+      "honored"
+    ],
+    "mnemonic": "Estimé : jouissant d'une haute estime et d'une grande considération."
+  },
+  "evasive": {
+    "pos": "adj.",
+    "definition": "Tending to avoid commitment or self-revelation, especially by responding indirectly",
+    "definitionFr": "évasif, fuyant, qui élude la question",
+    "sentences": [
+      "The corporate spokesperson gave evasive answers when pressed by reporters about upcoming factory layoffs, repeatedly deflecting to vague company talking points.",
+      "Detectives grew suspicious when the prime suspect gave evasive explanations regarding his whereabouts on the evening of the jewelry robbery."
+    ],
+    "synonyms": [
+      "elusive",
+      "cagey",
+      "ambiguous",
+      "noncommittal"
+    ],
+    "mnemonic": "Évasif : qui cherche à s'évader d'une réponse claire et directe."
+  },
+  "evident": {
+    "pos": "adj.",
+    "definition": "Plain or obvious to the eye or mind; clearly apparent",
+    "definitionFr": "évident, manifeste, patent",
+    "sentences": [
+      "Her deep fatigue was evident in the dark circles beneath her eyes and her slow, halting responses during the afternoon seminar.",
+      "It became immediately evident that the startup was struggling when several founding engineers announced their abrupt resignations on the same morning."
+    ],
+    "synonyms": [
+      "obvious",
+      "apparent",
+      "manifest",
+      "unmistakable"
+    ],
+    "mnemonic": "Évident : qui saute aux yeux et ne requiert aucune démonstration."
+  },
+  "evocative": {
+    "pos": "adj.",
+    "definition": "Bringing strong images, memories, or feelings to mind",
+    "definitionFr": "évocateur, chargé d'émotion ou de souvenirs",
+    "sentences": [
+      "The author's evocative descriptions of the seaside village filled readers with nostalgia for summers spent walking barefoot along windswept coastal dunes.",
+      "Hearing the evocative melody of the vintage waltz brought back vivid memories of her grandparents dancing in their candlelit living room."
+    ],
+    "synonyms": [
+      "reminiscent",
+      "suggestive",
+      "expressive",
+      "poignant"
+    ],
+    "mnemonic": "Évocateur : qui réveille et évoque des souvenirs enfouis."
+  },
+  "exacerbate": {
+    "pos": "verb",
+    "definition": "To make a problem, bad situation, or negative feeling worse",
+    "definitionFr": "exacerber, aggraver, envenimer",
+    "sentences": [
+      "Cutting funding for public transportation will only exacerbate traffic congestion and worsen smog levels throughout the bustling metropolitan center.",
+      "Pouring salty water onto an open wound will only exacerbate the burning pain, making the injury far more agonizing to endure."
+    ],
+    "synonyms": [
+      "worsen",
+      "aggravate",
+      "intensify",
+      "inflame"
+    ],
+    "mnemonic": "Ex-acerber = rendre acerbe ou acide : aggraver une situation déjà pénible."
+  },
+  "exemplify": {
+    "pos": "verb",
+    "definition": "To be a typical example of; to illustrate by giving an example",
+    "definitionFr": "exemplifier, illustrer parfaitement, incarner",
+    "sentences": [
+      "The humble physician seemed to exemplify genuine dedication, treating impoverished patients for free and working long past normal clinic hours.",
+      "Gothic cathedrals across northern France exemplify medieval engineering mastery, featuring soaring ribbed vaults and luminous stained glass rosette windows."
+    ],
+    "synonyms": [
+      "typify",
+      "illustrate",
+      "embody",
+      "epitomize"
+    ],
+    "mnemonic": "Exemplifier : servir d'exemple parfait illustrant un principe."
+  },
+  "exhaustive": {
+    "pos": "adj.",
+    "definition": "Examining, including, or considering all elements or aspects fully; comprehensive",
+    "definitionFr": "exhaustif, complet, approfondi",
+    "sentences": [
+      "After conducting an exhaustive investigation that spanned twelve months, detectives finally assembled enough forensic evidence to indict the corporate conspirators.",
+      "The doctoral dissertation presented an exhaustive review of published literature on renewable energy storage, citing more than six hundred academic journals."
+    ],
+    "synonyms": [
+      "comprehensive",
+      "thorough",
+      "encyclopedic",
+      "meticulous"
+    ],
+    "mnemonic": "Exhaustif : qui va jusqu'à épuiser le sujet sans rien omettre."
+  },
+  "exotic": {
+    "pos": "adj.",
+    "definition": "Originating in or characteristic of a distant foreign country; striking or unusual",
+    "definitionFr": "exotique, d'origine lointaine, singulier",
+    "sentences": [
+      "The botanic greenhouse housed exotic orchids collected from remote Indonesian rainforests, stunning weekend visitors with their vivid purple and scarlet petals.",
+      "Food lovers flocked to the neighborhood market to sample exotic spices and tropical fruits rarely found on traditional domestic supermarket shelves."
+    ],
+    "synonyms": [
+      "foreign",
+      "alien",
+      "unusual",
+      "outlandish"
+    ],
+    "mnemonic": "Exotique : qui vient du dehors (du grec exo, à l'extérieur)."
+  },
+  "expansive": {
+    "pos": "adj.",
+    "definition": "Covering a wide area in scope or size; friendly and open",
+    "definitionFr": "vaste, étendu, large ; communicatif",
+    "sentences": [
+      "From the mountain peak, hikers enjoyed an expansive panoramic view that stretched across pine forests to the distant snow-capped horizon.",
+      "After drinking several glasses of vintage champagne, the normally reserved CEO grew remarkably expansive, happily sharing anecdotes about his college pranks."
+    ],
+    "synonyms": [
+      "vast",
+      "broad",
+      "comprehensive",
+      "outgoing"
+    ],
+    "mnemonic": "Expansif : qui s'étend largement dans l'espace ou qui exprime ses sentiments ouvertement."
+  },
+  "explicit": {
+    "pos": "adj.",
+    "definition": "Stated clearly and in detail, leaving no room for confusion or doubt",
+    "definitionFr": "explicite, clair, sans ambiguïté",
+    "sentences": [
+      "The laboratory manual provided explicit instructions on handling volatile chemicals, warning students to wear safety goggles and rubber gloves at all times.",
+      "Contract negotiations broke down because the agreement lacked explicit definitions regarding which company would bear the financial costs of future shipping delays."
+    ],
+    "synonyms": [
+      "clear",
+      "unambiguous",
+      "direct",
+      "specific"
+    ],
+    "mnemonic": "Explicite ≠ implicite : énoncé noir sur blanc sans sous-entendu."
+  },
+  "exploit": {
+    "pos": "verb",
+    "definition": "To make use of a situation or person, often unfairly or selfishly",
+    "definitionFr": "exploiter, tirer profit de, abuser de",
+    "sentences": [
+      "Sweatshop owners frequently exploit vulnerable immigrant laborers by paying below minimum wage and forcing them to endure hazardous working conditions.",
+      "The clever chess grandmaster was quick to exploit her opponent's tactical blunder, launching a devastating king-side offensive that forced immediate surrender."
+    ],
+    "synonyms": [
+      "utilize",
+      "manipulate",
+      "abuse",
+      "capitalize on"
+    ],
+    "mnemonic": "Exploiter : tirer un avantage (parfois abusif) d'une opportunité ou d'une faiblesse."
+  },
+  "fabricate": {
+    "pos": "verb",
+    "definition": "To invent or concoct something, typically with deceitful intent; to construct",
+    "definitionFr": "fabriquer, forger de toutes pièces, inventer un mensonge",
+    "sentences": [
+      "Desperate to cover up his gambling debts, the corrupt accountant began to fabricate invoices from fictitious consulting firms to siphon company funds.",
+      "Engineers used high-grade carbon fiber to fabricate lightweight aircraft components that could withstand extreme atmospheric pressures during supersonic flight."
+    ],
+    "synonyms": [
+      "invent",
+      "concoct",
+      "forge",
+      "manufacture"
+    ],
+    "mnemonic": "Fabriquer : construire du matériel, ou fabriquer un mensonge de toutes pièces."
+  },
+  "feasible": {
+    "pos": "adj.",
+    "definition": "Possible to do easily or conveniently; plausible and practical",
+    "definitionFr": "faisable, réalisable, viable",
+    "sentences": [
+      "Urban planners determined that building an underground subway line was economically feasible, provided that national infrastructure grants covered half the construction costs.",
+      "Without adequate electrical grid capacity, relying entirely on solar power in northern winter climates is currently not a feasible technical solution."
+    ],
+    "synonyms": [
+      "practicable",
+      "viable",
+      "workable",
+      "achievable"
+    ],
+    "mnemonic": "Faisable = feasible : ce qui peut être facilement fait et réalisé dans la pratique."
+  },
+  "feeble": {
+    "pos": "adj.",
+    "definition": "Lacking physical strength, especially as a result of age or illness; weak",
+    "definitionFr": "faible, frêle, sans force",
+    "sentences": [
+      "After weeks of battling severe pneumonia in the hospital ward, the elderly patient was too feeble to walk without a nurse's support.",
+      "Critics mocked the politician's feeble excuse for missing the emergency climate debate, dismissing his claim of car trouble as childish nonsense."
+    ],
+    "synonyms": [
+      "weak",
+      "frail",
+      "flimsy",
+      "powerless"
+    ],
+    "mnemonic": "Feeble = faible : sans vigueur physique ou argumentative."
+  },
+  "feign": {
+    "pos": "verb",
+    "definition": "To pretend to be affected by a feeling, state, or injury",
+    "definitionFr": "feindre, simuler, faire semblant",
+    "sentences": [
+      "Hoping to avoid Saturday morning football practice, the lazy boy decided to feign a severe stomachache until his sympathetic mother agreed.",
+      "Diplomats had to feign optimism during the televised peace conference, even though private communications revealed that peace negotiations had completely collapsed."
+    ],
+    "synonyms": [
+      "simulate",
+      "fake",
+      "pretend",
+      "dissemble"
+    ],
+    "mnemonic": "Feindre : faire semblant, simuler une émotion ou un symptôme."
+  },
+  "finite": {
+    "pos": "adj.",
+    "definition": "Having limits or bounds; not infinite",
+    "definitionFr": "fini, limité, borné",
+    "sentences": [
+      "Environmental scientists remind us that fossil fuels are a finite resource, meaning that modern societies must rapidly transition toward renewable energy.",
+      "Because emergency medical supplies were finite, humanitarian doctors were forced to prioritize treating the most critically wounded earthquake survivors first."
+    ],
+    "synonyms": [
+      "limited",
+      "bounded",
+      "restricted",
+      "fixed"
+    ],
+    "mnemonic": "Fini : le contraire d'infini, qui a des bornes et des limites précises."
+  },
+  "flamboyant": {
+    "pos": "adj.",
+    "definition": "Tending to attract attention because of exuberance, confidence, and stylishness",
+    "definitionFr": "flamboyant, exubérant, tape-à-l'œil",
+    "sentences": [
+      "The rock star was legendary for his flamboyant stage outfits, which featured shimmering sequined capes, oversized sunglasses, and towering neon platform boots.",
+      "While the chef had a flamboyant personality on television, his traditional French bistro recipes adhered strictly to humble, classical culinary techniques."
+    ],
+    "synonyms": [
+      "extravagant",
+      "ostentatious",
+      "exuberant",
+      "showy"
+    ],
+    "mnemonic": "Flamboyant : qui brille comme une flamme et attire tous les regards."
+  },
+  "flourish": {
+    "pos": "verb",
+    "definition": "To grow or develop in a healthy or vigorous way; to thrive",
+    "definitionFr": "fleurir, prospérer, s'épanouir",
+    "sentences": [
+      "Under the patronage of enlightened merchant families, Renaissance art and philosophy began to flourish throughout Florence and across northern Italian city-states.",
+      "Desert cacti flourish in arid environments because their thick waxy stems store rainwater and minimize moisture loss during scorching summer months."
+    ],
+    "synonyms": [
+      "thrive",
+      "prosper",
+      "burgeon",
+      "bloom"
+    ],
+    "mnemonic": "Fleurir / flourish : se développer vigoureusement et avec éclat."
+  },
+  "fraudulent": {
+    "pos": "adj.",
+    "definition": "Obtained, done by, or involving deception or criminal fraud",
+    "definitionFr": "frauduleux, malhonnête, trompeur",
+    "sentences": [
+      "Federal prosecutors charged the corrupt financier with orchestrating fraudulent investment schemes that robbed unsuspecting retirees of their hard-earned life savings.",
+      "The bank's cybersecurity software instantly flagged the transaction as fraudulent, freezing the account before overseas hackers could withdraw any stolen funds."
+    ],
+    "synonyms": [
+      "deceitful",
+      "dishonest",
+      "corrupt",
+      "bogus"
+    ],
+    "mnemonic": "Frauduleux : qui relève de la fraude et de la tromperie délibérée."
+  },
+  "frivolous": {
+    "pos": "adj.",
+    "definition": "Not having any serious purpose or value; carefree and superficial",
+    "definitionFr": "frivole, superficiel, futile",
+    "sentences": [
+      "The judge dismissed the lawsuit as completely frivolous, admonishing the plaintiff for wasting the court's valuable time on petty personal squabbles.",
+      "Instead of saving for his children's university tuition, the reckless lottery winner squandered his sudden fortune on frivolous luxury purchases."
+    ],
+    "synonyms": [
+      "trivial",
+      "flippant",
+      "superficial",
+      "inane"
+    ],
+    "mnemonic": "Frivole : léger, sans substance ni utilité sérieuse."
+  },
+  "frugal": {
+    "pos": "adj.",
+    "definition": "Sparing or economical with regard to money or food; simple and plain",
+    "definitionFr": "frugal, économe, sobre",
+    "sentences": [
+      "Through a frugal lifestyle of packing homemade lunches and buying second-hand furniture, she managed to pay off her student loans early.",
+      "The monastery monks ate a frugal dinner consisting only of coarse brown bread, vegetable broth, and fresh water from the courtyard well."
+    ],
+    "synonyms": [
+      "thrifty",
+      "economical",
+      "sparing",
+      "parsimonious"
+    ],
+    "mnemonic": "Frugal : sobre et modeste, ne dépensant que le strict nécessaire."
+  },
+  "furtive": {
+    "pos": "adj.",
+    "definition": "Attempting to avoid notice or attention, typically because of guilt; stealthy",
+    "definitionFr": "furtif, discret, en cachette",
+    "sentences": [
+      "The student cast a furtive glance toward his classmate's examination paper, hoping the vigilant proctor would not notice his dishonest behavior.",
+      "The stray cat made a series of furtive movements along the dark alleyway, darting between garbage cans to evade the barking dog."
+    ],
+    "synonyms": [
+      "stealthy",
+      "surreptitious",
+      "sneaky",
+      "clandestine"
+    ],
+    "mnemonic": "Furtif : qui passe comme une ombre sans se faire remarquer."
+  },
+  "fusion": {
+    "pos": "noun",
+    "definition": "The process or result of joining two or more things together into one",
+    "definitionFr": "fusion, alliance, combinaison de plusieurs éléments",
+    "sentences": [
+      "The restaurant earned international acclaim for its innovative fusion of Japanese sushi techniques with bold, spicy Mexican street food flavors.",
+      "Physicists around the world are working to harness nuclear fusion, hoping to generate clean, abundant energy without producing dangerous radioactive waste."
+    ],
+    "synonyms": [
+      "combination",
+      "blend",
+      "amalgamation",
+      "merger"
+    ],
+    "mnemonic": "Fusion : réunion et mélange indissociable de plusieurs éléments."
+  }
+}

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { data } from './lib/data';
 import { buildQueue, createLesson, finishLesson, pickWords, type LessonResult } from './lib/session';
 import { toggleStar } from './lib/daily';
@@ -11,6 +11,8 @@ import { useSettings } from './hooks/useSettings';
 import { emptyState } from './lib/storage';
 import Notices from './components/Notices';
 import Blitz from './screens/Blitz';
+import Sprint from './screens/Sprint';
+import SpeedMatch from './screens/SpeedMatch';
 import Chapter from './screens/Chapter';
 import Home from './screens/Home';
 import Lesson from './screens/Lesson';
@@ -23,6 +25,8 @@ import type { LessonConfig, LessonSnapshot, LessonState } from './types';
 type Screen =
   | { name: 'home' }
   | { name: 'blitz' }
+  | { name: 'sprint' }
+  | { name: 'speedMatch' }
   | { name: 'stats' }
   | { name: 'settings' }
   | { name: 'chapter'; chapterId: string }
@@ -51,13 +55,54 @@ export default function App() {
   const [pending, setPending] = useState(loadPending);
   const [openWordId] = useState(takeWordParam);
 
+  const homeScrollY = useRef(0);
+  const targetChapterId = useRef<string | null>(null);
+
   const home = () => setScreen({ name: 'home' });
   const backFrom = (config: LessonConfig) =>
     config.chapterId ? setScreen({ name: 'chapter', chapterId: config.chapterId }) : home();
 
+  const openChapter = (chapterId: string) => {
+    homeScrollY.current = window.scrollY;
+    targetChapterId.current = chapterId;
+    setScreen({ name: 'chapter', chapterId });
+  };
+
+  const openOtherScreen = (s: Screen) => {
+    if (screen.name === 'home') {
+      homeScrollY.current = window.scrollY;
+      targetChapterId.current = null;
+    }
+    setScreen(s);
+  };
+
+  useEffect(() => {
+    if (screen.name === 'home') {
+      requestAnimationFrame(() => {
+        if (targetChapterId.current) {
+          const el = document.querySelector(`[data-chapter="${targetChapterId.current}"]`);
+          if (el) {
+            el.scrollIntoView({ block: 'center', behavior: 'instant' });
+            targetChapterId.current = null;
+            return;
+          }
+        }
+        if (homeScrollY.current > 0) {
+          window.scrollTo({ top: homeScrollY.current, left: 0, behavior: 'instant' });
+        }
+      });
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }
+  }, [screen.name]);
+
   const onToggleStar = (id: string) => update((p) => ({ ...p, starred: toggleStar(p.starred, id) }));
 
   function startLesson(config: LessonConfig) {
+    if (screen.name === 'home') {
+      homeScrollY.current = window.scrollY;
+      targetChapterId.current = config.chapterId ?? null;
+    }
     const { ids, applySrs } = pickWords(config, data, progress.words, Date.now());
     if (!ids.length) return;
     const snapshot: LessonSnapshot = {
@@ -91,13 +136,39 @@ export default function App() {
           openWordId={openWordId}
           onResume={() => pending && setScreen({ name: 'lesson', snapshot: pending })}
           onReview={() => startLesson({ mode: 'review' })}
-          onChapter={(chapterId) => setScreen({ name: 'chapter', chapterId })}
+          onChapter={openChapter}
           onToggleSound={() => update((p) => ({ ...p, sound: !p.sound }))}
-          onBlitz={() => setScreen({ name: 'blitz' })}
-          onStats={() => setScreen({ name: 'stats' })}
-          onSettings={() => setScreen({ name: 'settings' })}
+          onBlitz={() => openOtherScreen({ name: 'blitz' })}
+          onSprint={() => openOtherScreen({ name: 'sprint' })}
+          onSpeedMatch={() => openOtherScreen({ name: 'speedMatch' })}
+          onStats={() => openOtherScreen({ name: 'stats' })}
+          onSettings={() => openOtherScreen({ name: 'settings' })}
           onToggleStar={onToggleStar}
           onStart={startLesson}
+        />
+      );
+      break;
+    case 'sprint':
+      view = (
+        <Sprint
+          progress={progress}
+          onBack={home}
+          onStart={startLesson}
+          onFinish={(score) =>
+            update((p) => ({ ...p, sprint: { best: Math.max(p.sprint?.best ?? 0, score), plays: (p.sprint?.plays ?? 0) + 1 } }))
+          }
+        />
+      );
+      break;
+    case 'speedMatch':
+      view = (
+        <SpeedMatch
+          progress={progress}
+          onBack={home}
+          onStart={startLesson}
+          onFinish={(score) =>
+            update((p) => ({ ...p, speedMatch: { best: Math.max(p.speedMatch?.best ?? 0, score), plays: (p.speedMatch?.plays ?? 0) + 1 } }))
+          }
         />
       );
       break;

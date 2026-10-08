@@ -1,4 +1,4 @@
-// Assemble data/batches/*.json (rédigés par lots) en data/words.json avec les chapitres.
+// Assemble data/batches/*.json (01.json à 16.json) en data/words.json avec découpage en chapitres équilibrés.
 // Usage : npm run build-words
 import fs from 'node:fs';
 import path from 'node:path';
@@ -16,30 +16,52 @@ type Raw = {
   mnemonic?: string;
 };
 
-// Moyens mnémotechniques ajoutés après coup (utilisés si le lot n'en a pas)
-const extraMnemonics: Record<string, string> = JSON.parse(
-  fs.readFileSync(path.join(root, 'data', 'mnemonics.json'), 'utf8'),
-);
+// Moyens mnémotechniques optionnels ajoutés
+let extraMnemonics: Record<string, string> = {};
+const mnemonicsPath = path.join(root, 'data', 'mnemonics.json');
+if (fs.existsSync(mnemonicsPath)) {
+  try {
+    extraMnemonics = JSON.parse(fs.readFileSync(mnemonicsPath, 'utf8'));
+  } catch {
+    /* ignore */
+  }
+}
+
+const POS: Record<string, string> = {
+  verb: 'v.',
+  v: 'v.',
+  noun: 'n.',
+  n: 'n.',
+  adjective: 'adj.',
+  adj: 'adj.',
+  adverb: 'adv.',
+  adv: 'adv.',
+};
+
+const slug = (s: string) => s.toLowerCase().replace(/['’]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
 const raw: Record<string, Raw> = {};
 for (const f of fs.readdirSync(batchDir).filter((f) => f.endsWith('.json')).sort()) {
-  Object.assign(raw, JSON.parse(fs.readFileSync(path.join(batchDir, f), 'utf8')));
+  const content = JSON.parse(fs.readFileSync(path.join(batchDir, f), 'utf8'));
+  Object.assign(raw, content);
 }
 
-const POS: Record<string, string> = { verb: 'v.', noun: 'n.', adjective: 'adj.', adverb: 'adv.' };
-const slug = (s: string) => s.toLowerCase().replace(/\s+/g, '-');
-
 const words: Record<string, unknown> = {};
-const order: string[] = [];
+const allSlugs: string[] = [];
+
 for (const [key, r] of Object.entries(raw)) {
   const id = slug(key);
-  if (words[id]) continue; // dédoublonnage : première occurrence gardée
-  order.push(id);
+  if (words[id]) continue; // dédoublonnage strict
+
+  const normPos = POS[r.pos.replace('.', '')] ?? r.pos;
+  const def = r.definition ? r.definition.charAt(0).toLowerCase() + r.definition.slice(1) : '';
+
+  allSlugs.push(id);
   words[id] = {
     id,
     word: key,
-    pos: POS[r.pos] ?? r.pos,
-    definition: r.definition.charAt(0).toLowerCase() + r.definition.slice(1),
+    pos: normPos,
+    definition: def,
     definitionFr: r.definitionFr,
     sentences: r.sentences,
     synonyms: r.synonyms,
@@ -47,72 +69,62 @@ for (const [key, r] of Object.entries(raw)) {
   };
 }
 
-// Le fichier source a 3 sections.
-// - Faux amis et Mots isolés : découpés en chapitres d'environ 25 mots, dans l'ordre.
-// - Synonymes puissants : familles de sens (data/families.json) regroupées sans jamais couper une famille.
-const sections = [
-  { group: 'Faux amis', start: 'adept' },
-  { group: 'Synonymes puissants', start: 'allay' },
-  { group: 'Mots isolés', start: 'abet' },
-];
+// Mélange pseudo-aléatoire déterministe (Mulberry32 PRNG avec graine fixe) pour un mix équilibré et reproductible
+function seededRandom(seed: number) {
+  let s = seed | 0;
+  return () => {
+    s = (s + 0x6d2b79f5) | 0;
+    let t = Math.imul(s ^ (s >>> 15), 1 | s);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+const rng = seededRandom(42);
+const shuffled = [...allSlugs];
+for (let i = shuffled.length - 1; i > 0; i--) {
+  const j = Math.floor(rng() * (i + 1));
+  [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+}
+
+// Découpage en chapitres d'environ 25 mots (1134 mots -> 45 chapitres)
+const WORDS_PER_CHAPTER = 25;
+const numChapters = Math.ceil(shuffled.length / WORDS_PER_CHAPTER);
 
 type Chapter = { id: string; title: string; group: string; subtitle?: string; wordIds: string[] };
 const chapters: Chapter[] = [];
-const push = (group: string, n: number, wordIds: string[], subtitle?: string) =>
+
+const SERIES_NAMES = [
+  'Série 1 · Fondations & Essentiels',
+  'Série 2 · Précision & Nuances',
+  'Série 3 · Vocabulaire académique',
+  'Série 4 · Maîtrise GRE',
+  'Série 5 · Perfectionnement & Élite',
+];
+
+const chaptersPerSeries = Math.ceil(numChapters / SERIES_NAMES.length);
+
+for (let c = 0; c < numChapters; c++) {
+  const chNum = c + 1;
+  const start = c * WORDS_PER_CHAPTER;
+  const end = Math.min(shuffled.length, (c + 1) * WORDS_PER_CHAPTER);
+  const wordIds = shuffled.slice(start, end);
+
+  const seriesIndex = Math.min(SERIES_NAMES.length - 1, Math.floor(c / chaptersPerSeries));
+  const group = SERIES_NAMES[seriesIndex];
+
   chapters.push({
-    id: `ch-${String(chapters.length + 1).padStart(2, '0')}`,
-    title: `${group} ${n}`,
+    id: `ch-${String(chNum).padStart(2, '0')}`,
+    title: `Chapitre ${chNum}`,
     group,
-    ...(subtitle ? { subtitle } : {}),
+    subtitle: `${wordIds.length} mots`,
     wordIds,
   });
+}
 
-const families: { label: string; words: string[] }[] = JSON.parse(
-  fs.readFileSync(path.join(root, 'data', 'families.json'), 'utf8'),
-);
+const outPath = path.join(root, 'data', 'words.json');
+fs.writeFileSync(outPath, JSON.stringify({ chapters, words }, null, 2) + '\n');
 
-sections.forEach((s, i) => {
-  const from = order.indexOf(s.start);
-  const to = i + 1 < sections.length ? order.indexOf(sections[i + 1].start) : order.length;
-  if (from < 0 || to < 0) throw new Error(`Début de section introuvable : ${s.start}`);
-  const ids = order.slice(from, to);
-
-  if (s.group === 'Synonymes puissants') {
-    // les familles doivent reprendre exactement les mots de la section, dans l'ordre
-    const flat = families.flatMap((f) => f.words.map(slug));
-    if (JSON.stringify(flat) !== JSON.stringify(ids)) {
-      const bad = ids.find((id, k) => flat[k] !== id);
-      throw new Error(`families.json ne correspond pas à la section (premier écart : ${bad})`);
-    }
-    let group: typeof families = [];
-    let size = 0;
-    let n = 0;
-    const flush = () => {
-      if (!group.length) return;
-      push(s.group, ++n, group.flatMap((f) => f.words.map(slug)), group.map((f) => f.label).join(' · '));
-      group = [];
-      size = 0;
-    };
-    for (const f of families) {
-      if (size > 0 && size + f.words.length > 30) flush();
-      group.push(f);
-      size += f.words.length;
-      if (size >= 24) flush();
-    }
-    flush();
-    return;
-  }
-
-  const n = Math.max(1, Math.round(ids.length / 25));
-  const base = Math.floor(ids.length / n);
-  const extra = ids.length % n;
-  let pos = 0;
-  for (let c = 0; c < n; c++) {
-    const size = base + (c < extra ? 1 : 0);
-    push(s.group, c + 1, ids.slice(pos, pos + size));
-    pos += size;
-  }
-});
-
-fs.writeFileSync(path.join(root, 'data', 'words.json'), JSON.stringify({ chapters, words }, null, 1) + '\n');
-console.log(`words.json : ${order.length} mots, ${chapters.length} chapitres`);
+console.log(`✓ words.json généré avec succès :`);
+console.log(`  - ${Object.keys(words).length} mots uniques`);
+console.log(`  - ${chapters.length} chapitres répartis en ${SERIES_NAMES.length} séries`);

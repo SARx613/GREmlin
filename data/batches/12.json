@@ -1,0 +1,1250 @@
+{
+  "predecessor": {
+    "pos": "noun",
+    "definition": "a person who held a job or office before the current holder",
+    "definitionFr": "prédécesseur, personne ayant précédé une autre dans une fonction",
+    "sentences": [
+      "The newly elected mayor struggled to overturn the controversial zoning policies that her conservative predecessor had enacted during his contentious final term.",
+      "Although the modern computer system was faster, many veteran employees still preferred the reliable predecessor that had served the firm for a decade."
+    ],
+    "synonyms": [
+      "ancestor",
+      "forebear",
+      "antecedent",
+      "forerunner"
+    ],
+    "mnemonic": "Pre (avant) + decessor (qui s'en va) : celui qui occupait la place avant."
+  },
+  "predispose": {
+    "pos": "verb",
+    "definition": "to make someone inclined to a specific attitude, action, or condition",
+    "definitionFr": "prédisposer, incliner d'avance à un état ou comportement",
+    "sentences": [
+      "A strong genetic risk can predispose individuals to cardiovascular disease, but adopting a healthy diet significantly mitigates that inherited vulnerability over time.",
+      "Growing up in a family of dedicated musicians predisposed the young girl to pursue classical piano despite the demanding practice schedule required."
+    ],
+    "synonyms": [
+      "incline",
+      "bias",
+      "predetermine",
+      "prompt"
+    ],
+    "mnemonic": "Pré-disposer : disposer à l'avance favorablement ou défavorablement."
+  },
+  "predominant": {
+    "pos": "adj.",
+    "definition": "present as the strongest, main, or most common element",
+    "definitionFr": "prédominant, prépondérant, largement majoritaire",
+    "sentences": [
+      "Although several distinct ethnic groups inhabited the coastal valley, agriculture remained the predominant occupation that sustained the region's overall economy.",
+      "In modern retail banking, digital transactions have become the predominant method of payment, steadily replacing paper checks and physical currency."
+    ],
+    "synonyms": [
+      "dominant",
+      "prevailing",
+      "paramount",
+      "preeminent"
+    ],
+    "mnemonic": "Pré-dominer : qui domine avant tout le reste."
+  },
+  "preeminent": {
+    "pos": "adj.",
+    "definition": "surpassing all others; outstanding or supreme in a field",
+    "definitionFr": "éminent, hors pair, supérieur à tous les autres",
+    "sentences": [
+      "Having published groundbreaking papers on quantum mechanics, the scholar was universally recognized as the preeminent physicist of his generation.",
+      "The university hired the world's preeminent expert on constitutional law to lead its newly established human rights research institute."
+    ],
+    "synonyms": [
+      "distinguished",
+      "foremost",
+      "paramount",
+      "renowned"
+    ],
+    "mnemonic": "Prééminent : au-dessus de tous (eminent = élevé)."
+  },
+  "preponderance": {
+    "pos": "noun",
+    "definition": "superiority in weight, power, importance, or numbers",
+    "definitionFr": "prépondérance, supériorité numérique ou d'influence",
+    "sentences": [
+      "Because of a clear preponderance of evidence linking the corporation to environmental dumping, the jury swiftly returned a unanimous guilty verdict.",
+      "A vast preponderance of medical studies confirms that regular aerobic exercise reduces cognitive decline among aging populations across the globe."
+    ],
+    "synonyms": [
+      "majority",
+      "predominance",
+      "bulk",
+      "prevalence"
+    ],
+    "mnemonic": "Pondérer (poids) : ce qui pèse le plus lourd dans la balance."
+  },
+  "presumptuous": {
+    "pos": "adj.",
+    "definition": "failing to observe the limits of what is permitted or appropriate",
+    "definitionFr": "présomptueux, audacieux jusqu'à l'irrespect ou l'outrecuidance",
+    "sentences": [
+      "It was remarkably presumptuous of the intern to interrupt the chief executive during the board meeting and criticize the firm's strategic expansion.",
+      "Assuming that every voter would automatically endorse his radical platform was a presumptuous mistake that cost the young candidate the election."
+    ],
+    "synonyms": [
+      "brazen",
+      "arrogant",
+      "insolent",
+      "audacious"
+    ],
+    "mnemonic": "Présumer de ses forces ou de ses droits : trop présomptueux."
+  },
+  "pretentious": {
+    "pos": "adj.",
+    "definition": "attempting to impress by affecting greater importance than is actually possessed",
+    "definitionFr": "prétentieux, pompeux, affecté",
+    "sentences": [
+      "Critics dismissed the lavish novel as pretentious fluff because the author used obscure vocabulary solely to project an illusion of profound intellect.",
+      "The pretentious restaurant served microscopic portions on gilded plates, charging exorbitant prices for dishes that lacked genuine culinary substance."
+    ],
+    "synonyms": [
+      "ostentatious",
+      "pompous",
+      "affected",
+      "grandiose"
+    ],
+    "mnemonic": "Prétendre être plus que ce que l'on est."
+  },
+  "pretext": {
+    "pos": "noun",
+    "definition": "a false reason given to justify an action or hide reality",
+    "definitionFr": "prétexte, faux motif invoqué pour masquer la réalité",
+    "sentences": [
+      "The authoritarian regime used the minor border skirmish as a pretext to launch a full-scale military invasion of its peaceful neighbor.",
+      "He fabricated a dental appointment as a flimsy pretext to leave the dull committee meeting early and join his friends downtown."
+    ],
+    "synonyms": [
+      "guise",
+      "excuse",
+      "ploy",
+      "subterfuge"
+    ],
+    "mnemonic": "Un prétexte est un texte inventé avant coup pour se dédouaner."
+  },
+  "prevalent": {
+    "pos": "adj.",
+    "definition": "widespread or commonly occurring in a particular place or time",
+    "definitionFr": "répandu, courant, prédominant dans un milieu donné",
+    "sentences": [
+      "Respiratory illnesses became increasingly prevalent across the industrial city during the winter months, largely due to severe airborne pollution from coal factories.",
+      "The prevalent belief among Victorian scientists was that ether filled the cosmos, a theory later completely dismantled by modern physics experiments."
+    ],
+    "synonyms": [
+      "widespread",
+      "pervasive",
+      "rampant",
+      "ubiquitous"
+    ],
+    "mnemonic": "Prevalent = prévaloir, ce qui l'emporte et qu'on retrouve partout."
+  },
+  "profound": {
+    "pos": "adj.",
+    "definition": "very deep, intense, or having great intellectual insight",
+    "definitionFr": "profond, d'une grande portée ou perspicacité",
+    "sentences": [
+      "Reading the philosopher's masterwork had a profound influence on the idealistic student, fundamentally altering her perspective on ethics and public service.",
+      "The sudden death of the beloved teacher caused profound sorrow throughout the tight-knit rural school community for many weeks."
+    ],
+    "synonyms": [
+      "deep",
+      "insightful",
+      "intense",
+      "fathomless"
+    ],
+    "mnemonic": "Profound = profond, au sens physique comme intellectuel."
+  },
+  "proliferation": {
+    "pos": "noun",
+    "definition": "rapid increase in number or rapid reproduction of parts",
+    "definitionFr": "prolifération, multiplication rapide",
+    "sentences": [
+      "The alarming proliferation of nuclear weapons during the mid-twentieth century prompted international diplomats to negotiate strict nonproliferation treaties to safeguard peace.",
+      "With the proliferation of cheap smartphones worldwide, billions of people gained unprecedented access to digital educational resources and financial services."
+    ],
+    "synonyms": [
+      "expansion",
+      "multiplication",
+      "burgeoning",
+      "escalation"
+    ],
+    "mnemonic": "Proliférer : pulluler, se multiplier très vite."
+  },
+  "propagate": {
+    "pos": "verb",
+    "definition": "to spread widely ideas, beliefs, or to breed specimens",
+    "definitionFr": "propager, diffuser des idées ou multiplier des organismes",
+    "sentences": [
+      "Extremist groups often use social media algorithms to propagate misleading propaganda and sow political discord among gullible online communities.",
+      "Horticulturalists routinely propagate rare orchids by taking careful stem cuttings and cultivating them under strictly controlled greenhouse conditions."
+    ],
+    "synonyms": [
+      "disseminate",
+      "spread",
+      "broadcast",
+      "circulate"
+    ],
+    "mnemonic": "Propager une idée comme on propage une plante."
+  },
+  "propensity": {
+    "pos": "noun",
+    "definition": "a natural inclination or tendency to behave in a particular way",
+    "definitionFr": "propension, penchant naturel ou tendance",
+    "sentences": [
+      "Despite numerous warnings from his accountant, the lottery winner displayed an unfortunate propensity for reckless gambling and extravagant luxury purchases.",
+      "Researchers noted that toddlers who exhibited an innate propensity for sharing toys tended to develop superior collaborative social skills later."
+    ],
+    "synonyms": [
+      "tendency",
+      "inclination",
+      "proclivity",
+      "predisposition"
+    ],
+    "mnemonic": "Propension : penchant vers l'avant (pro-pendre)."
+  },
+  "prophetic": {
+    "pos": "adj.",
+    "definition": "accurately predicting what will happen in the future",
+    "definitionFr": "prophétique, qui prédit avec justesse l'avenir",
+    "sentences": [
+      "His warning about the imminent housing bubble proved eerily prophetic when the national real estate market collapsed two years later.",
+      "The novelist's prophetic vision of automated surveillance societies seemed impossible in the nineteen-thirties but accurately mirrored twenty-first-century realities."
+    ],
+    "synonyms": [
+      "prescient",
+      "predictive",
+      "divinatory",
+      "foreseeing"
+    ],
+    "mnemonic": "Comme un prophète qui annonce l'avenir avec exactitude."
+  },
+  "prosper": {
+    "pos": "verb",
+    "definition": "to succeed, flourish, or thrive especially financially",
+    "definitionFr": "prospérer, se développer avec succès, fleurir",
+    "sentences": [
+      "Thanks to fertile agricultural soil and advantageous trading agreements, the small border town began to prosper as never before.",
+      "Entrepreneurs who adapted swiftly to technological disruptions continued to prosper while stubborn competitors who clung to obsolete methods went bankrupt."
+    ],
+    "synonyms": [
+      "thrive",
+      "flourish",
+      "burgeon",
+      "succeed"
+    ],
+    "mnemonic": "Prospère : qui connaît le progrès et l'abondance."
+  },
+  "prudent": {
+    "pos": "adj.",
+    "definition": "acting with or showing care and thought for the future",
+    "definitionFr": "prudent, prévoyant, avisé",
+    "sentences": [
+      "A prudent investor always diversifies her portfolio across several different asset classes to insulate her savings against unpredictable market volatility.",
+      "Given the severe storm warnings broadcast across the radio, the mountain hikers made the prudent decision to turn back immediately."
+    ],
+    "synonyms": [
+      "cautious",
+      "judicious",
+      "circumspect",
+      "shrewd"
+    ],
+    "mnemonic": "Prudent et prévoyant : regarder avant d'agir."
+  },
+  "pseudonym": {
+    "pos": "noun",
+    "definition": "a fictitious name, especially one used by an author",
+    "definitionFr": "pseudonyme, nom d'emprunt (notamment littéraire)",
+    "sentences": [
+      "To avoid the gender bias prevalent in Victorian publishing, Mary Ann Evans wrote her acclaimed novels under the male pseudonym George Eliot.",
+      "The investigative journalist published sensitive revelations regarding government corruption under a pseudonym to shield his family from dangerous retaliation."
+    ],
+    "synonyms": [
+      "alias",
+      "pen name",
+      "moniker",
+      "anonym"
+    ],
+    "mnemonic": "Pseudo (faux) + nym (nom) : faux nom."
+  },
+  "radical": {
+    "pos": "adj.",
+    "definition": "advocating thorough or extreme political or social change",
+    "definitionFr": "radical, fondamental ou extrême",
+    "sentences": [
+      "The newly elected reformist administration introduced radical tax restructuring that shifted the fiscal burden away from struggling working families.",
+      "Implementing such radical changes to the software architecture required months of meticulous code refactoring and extensive automated testing."
+    ],
+    "synonyms": [
+      "drastic",
+      "revolutionary",
+      "fundamental",
+      "extreme"
+    ],
+    "mnemonic": "Radix (racine) : qui s'attaque à la racine des choses."
+  },
+  "ravage": {
+    "pos": "verb",
+    "definition": "to cause severe and extensive damage or devastation to",
+    "definitionFr": "ravager, dévaster, ruiner",
+    "sentences": [
+      "Fierce coastal hurricanes ravage seaside villages every autumn, tearing roofs from houses and washing away precarious boardwalk structures.",
+      "Tuberculosis and starvation continued to ravage the besieged population throughout the bitter winter months until humanitarian aid convoys finally arrived."
+    ],
+    "synonyms": [
+      "devastate",
+      "ruin",
+      "destroy",
+      "decimate"
+    ],
+    "mnemonic": "Ravager : infliger d'immenses ravages."
+  },
+  "reconcile": {
+    "pos": "verb",
+    "definition": "to restore friendly relations or make mutually consistent",
+    "definitionFr": "réconcilier, concilier des éléments opposés",
+    "sentences": [
+      "The mediator worked tirelessly for three days to reconcile the estranged business partners before their public quarrel destroyed the enterprise.",
+      "Theoretical physicists have long struggled to reconcile the principles of general relativity with the bizarre probabilistic laws of quantum mechanics."
+    ],
+    "synonyms": [
+      "harmonize",
+      "resolve",
+      "accommodate",
+      "pacify"
+    ],
+    "mnemonic": "Réconcilier des amis ou concilier deux théories."
+  },
+  "refined": {
+    "pos": "adj.",
+    "definition": "cultured, polished, or free from impurities and roughness",
+    "definitionFr": "raffiné, élégant, épuré",
+    "sentences": [
+      "Her refined manners and eloquent conversational style quickly earned her admiration among the aristocratic guests at the formal diplomatic banquet.",
+      "Through centuries of practice, the artisans developed a refined technique for blowing delicate crystal glassware of unmatched clarity and beauty."
+    ],
+    "synonyms": [
+      "cultivated",
+      "polished",
+      "sophisticated",
+      "urbane"
+    ],
+    "mnemonic": "Raffiné : débarrassé de toute impureté ou rusticité."
+  },
+  "refuge": {
+    "pos": "noun",
+    "definition": "a condition of being safe or a shelter from danger",
+    "definitionFr": "refuge, abri contre le danger ou la détresse",
+    "sentences": [
+      "Exhausted travelers found a welcoming refuge in the remote monastery, where the monks provided warm soup and secure dry quarters.",
+      "The secluded nature sanctuary serves as a vital refuge for endangered migratory birds escaping urban sprawl and hazardous agricultural pesticides."
+    ],
+    "synonyms": [
+      "sanctuary",
+      "haven",
+      "shelter",
+      "asylum"
+    ],
+    "mnemonic": "Refuge : lieu où l'on se réfugie."
+  },
+  "refute": {
+    "pos": "verb",
+    "definition": "to prove a statement, theory, or claim to be false",
+    "definitionFr": "réfuter, prouver la fausseté d'un argument",
+    "sentences": [
+      "The defense attorney presented incontrovertible video evidence to refute the prosecutor's claim that her client was at the crime scene.",
+      "Subsequent laboratory experiments conclusively refuted the controversial hypothesis that room-temperature nuclear fusion had been achieved by the researchers."
+    ],
+    "synonyms": [
+      "disprove",
+      "debunk",
+      "rebut",
+      "confute"
+    ],
+    "mnemonic": "Réfuter avec des preuves irréfutables."
+  },
+  "renowned": {
+    "pos": "adj.",
+    "definition": "known or talked about by many people; famous and celebrated",
+    "definitionFr": "renommé, célèbre, illustre",
+    "sentences": [
+      "Students from across the world applied to study under the renowned pianist, hoping to refine their classical concert repertoire.",
+      "The coastal town is renowned for its culinary excellence, boasting three family-owned restaurants that hold prestigious international dining awards."
+    ],
+    "synonyms": [
+      "famous",
+      "celebrated",
+      "illustrious",
+      "distinguished"
+    ],
+    "mnemonic": "Renommé : qui a une grande renommée."
+  },
+  "repercussion": {
+    "pos": "noun",
+    "definition": "an unintended, usually unwelcome consequence of an event or action",
+    "definitionFr": "répercussion, conséquence indirecte ou fâcheuse",
+    "sentences": [
+      "The unexpected collapse of the major investment bank had a catastrophic repercussion that rippled across global financial markets for months.",
+      "Politicians frequently pass short-sighted economic legislation without considering the severe long-term repercussions on future generations of working taxpayers."
+    ],
+    "synonyms": [
+      "consequence",
+      "aftermath",
+      "ramification",
+      "fallout"
+    ],
+    "mnemonic": "Le contre-coup qui se répercute en chaîne."
+  },
+  "reprimand": {
+    "pos": "verb",
+    "definition": "to scold or rebuke someone officially or severely",
+    "definitionFr": "réprimander, blâmer sévèrement",
+    "sentences": [
+      "The hospital director was forced to reprimand the careless surgeon after multiple nurses reported repeated violations of standard sterile protocols.",
+      "Rather than publicly reprimand the struggling employee in front of colleagues, the manager scheduled a private constructive coaching session."
+    ],
+    "synonyms": [
+      "rebuke",
+      "chide",
+      "admonish",
+      "censure"
+    ],
+    "mnemonic": "Donner une réprimande, blâmer fermement."
+  },
+  "resolute": {
+    "pos": "adj.",
+    "definition": "admirably purposeful, determined, and unwavering",
+    "definitionFr": "résolu, déterminé, inébranlable",
+    "sentences": [
+      "Despite facing overwhelming political pressure and fierce media scrutiny, the resolute judge refused to alter her principled constitutional ruling.",
+      "The mountaineer remained resolute in her ambition to summit the treacherous peak even after severe blizzards forced two previous retreats."
+    ],
+    "synonyms": [
+      "steadfast",
+      "determined",
+      "unwavering",
+      "tenacious"
+    ],
+    "mnemonic": "Résolu : qui a pris une ferme résolution."
+  },
+  "revoke": {
+    "pos": "verb",
+    "definition": "to put an end to the validity or operation of a decree",
+    "definitionFr": "révoquer, annuler un décret, permis ou privilège",
+    "sentences": [
+      "The municipal transport agency decided to revoke the driver's license following his third reckless speeding violation in two months.",
+      "The university threatened to revoke the student's scholarship if he failed to maintain a satisfactory academic average throughout the semester."
+    ],
+    "synonyms": [
+      "repeal",
+      "rescind",
+      "cancel",
+      "annul"
+    ],
+    "mnemonic": "Re-voquer : rappeler sa parole, annuler un droit."
+  },
+  "revolutionize": {
+    "pos": "verb",
+    "definition": "to change something completely, fundamentally, or dramatically",
+    "definitionFr": "révolutionner, transformer radicalement",
+    "sentences": [
+      "The invention of mRNA vaccines helped revolutionize modern immunology, allowing pharmaceutical researchers to develop targeted therapies in record time.",
+      "Cheap electric vehicles have begun to revolutionize urban transportation, significantly lowering toxic exhaust emissions in heavily populated metropolitan centers."
+    ],
+    "synonyms": [
+      "transform",
+      "overhaul",
+      "modernize",
+      "metamorphose"
+    ],
+    "mnemonic": "Faire une révolution dans un domaine."
+  },
+  "ridicule": {
+    "pos": "verb",
+    "definition": "to subject someone or something to contemptuous and dismissive language",
+    "definitionFr": "ridiculiser, tourner en dérision de manière cruelle",
+    "sentences": [
+      "Narrow-minded colleagues chose to ridicule his radical theories on plate tectonics, yet subsequent geological expeditions proved him entirely correct.",
+      "It is cruel to ridicule a nervous speaker when they stumble over vocabulary during a demanding public presentation before peers."
+    ],
+    "synonyms": [
+      "mock",
+      "deride",
+      "taunt",
+      "scoff"
+    ],
+    "mnemonic": "Rendre ridicule aux yeux de tous."
+  },
+  "rigorous": {
+    "pos": "adj.",
+    "definition": "extremely thorough, exhaustive, or strictly accurate",
+    "definitionFr": "rigoureux, strict, minutieux",
+    "sentences": [
+      "Before the experimental medication could be approved for public distribution, it had to undergo rigorous clinical trials involving thousands of volunteers.",
+      "The aerospace engineers conducted a rigorous safety inspection of every mechanical component before authorizing the space shuttle launch."
+    ],
+    "synonyms": [
+      "meticulous",
+      "stringent",
+      "demanding",
+      "exacting"
+    ],
+    "mnemonic": "Fait avec une grande rigueur scientifique."
+  },
+  "robust": {
+    "pos": "adj.",
+    "definition": "strong and healthy; vigorous; sturdy in construction",
+    "definitionFr": "robuste, solide, vigoureux",
+    "sentences": [
+      "The engineering team designed a robust cybersecurity infrastructure capable of withstanding sophisticated malicious attacks launched by hostile international hackers.",
+      "Thanks to robust physical conditioning and disciplined nutritional habits, the veteran athlete competed vigorously against players half his age."
+    ],
+    "synonyms": [
+      "sturdy",
+      "resilient",
+      "vigorous",
+      "hardy"
+    ],
+    "mnemonic": "Robuste comme un chêne."
+  },
+  "rudimentary": {
+    "pos": "adj.",
+    "definition": "involving or limited to basic principles; undeveloped",
+    "definitionFr": "rudimentaire, élémentaire, basique",
+    "sentences": [
+      "Because she possessed only a rudimentary understanding of conversational French, she relied heavily on translation applications during her trip.",
+      "Early hominids crafted rudimentary stone tools to butcher animal carcasses long before the development of advanced metallurgical smelting techniques."
+    ],
+    "synonyms": [
+      "basic",
+      "elementary",
+      "primitive",
+      "vestigial"
+    ],
+    "mnemonic": "Qui n'en est qu'aux rudiments."
+  },
+  "rural": {
+    "pos": "adj.",
+    "definition": "in, relating to, or characteristic of the countryside rather than town",
+    "definitionFr": "rural, de la campagne",
+    "sentences": [
+      "Many young doctors are reluctant to practice in rural communities where medical facilities are sparse and professional isolation is high.",
+      "The government launched an ambitious broadband infrastructure program to provide reliable high-speed internet to neglected rural households across the province."
+    ],
+    "synonyms": [
+      "rustic",
+      "pastoral",
+      "country",
+      "provincial"
+    ],
+    "mnemonic": "Rural = de la campagne (opposé à urbain)."
+  },
+  "rustic": {
+    "pos": "adj.",
+    "definition": "having a simplicity and charm typical of the countryside",
+    "definitionFr": "rustique, champêtre, simple et sans apprêt",
+    "sentences": [
+      "The mountain cabin featured rustic pine furniture and exposed wooden beams, creating a cozy atmosphere away from the bustling city.",
+      "Despite his rustic upbringing on a remote sheep farm, the young diplomat displayed remarkable poise in sophisticated European drawing rooms."
+    ],
+    "synonyms": [
+      "pastoral",
+      "bucolic",
+      "unrefined",
+      "simple"
+    ],
+    "mnemonic": "Rustique : lié à la terre et à la simplicité campagnarde."
+  },
+  "safeguard": {
+    "pos": "verb",
+    "definition": "to protect from harm, damage, or danger",
+    "definitionFr": "sauvegarder, protéger, préserver",
+    "sentences": [
+      "The international treaty established strict fishing quotas to safeguard declining bluefin tuna populations from commercial overharvesting in the Atlantic.",
+      "Digital encryption standards were updated to safeguard sensitive user information against increasingly sophisticated cyber espionage campaigns launched by criminals."
+    ],
+    "synonyms": [
+      "protect",
+      "shield",
+      "defend",
+      "preserve"
+    ],
+    "mnemonic": "Safe (sûr) + guard (garder) : mettre à l'abri."
+  },
+  "scrupulous": {
+    "pos": "adj.",
+    "definition": "diligent, thorough, and extremely attentive to details or ethics",
+    "definitionFr": "scrupuleux, méticuleux, d'une grande intégrité morale",
+    "sentences": [
+      "The forensic accountant was scrupulous in verifying every financial transaction, ensuring that no fraudulent bookkeeping entries went undetected.",
+      "Renowned for his scrupulous honesty, the arbitrator refused to accept any gifts that might even suggest a conflict of interest."
+    ],
+    "synonyms": [
+      "meticulous",
+      "conscientious",
+      "punctilious",
+      "principled"
+    ],
+    "mnemonic": "Avoir des scrupules éthiques et le souci du détail."
+  },
+  "scrutinize": {
+    "pos": "verb",
+    "definition": "to examine or inspect closely and thoroughly",
+    "definitionFr": "scruter, examiner de très près et avec minutie",
+    "sentences": [
+      "Tax investigators began to scrutinize the tycoon's offshore bank accounts after whistleblowers alleged widespread deliberate underreporting of corporate profits.",
+      "Art historians used infrared reflectography to scrutinize the Renaissance portrait and discovered an entirely different composition hidden underneath."
+    ],
+    "synonyms": [
+      "inspect",
+      "examine",
+      "dissect",
+      "survey"
+    ],
+    "mnemonic": "Scruter : regarder à la loupe."
+  },
+  "sensationalize": {
+    "pos": "verb",
+    "definition": "to present information in a way intended to provoke excitement",
+    "definitionFr": "sensationnaliser, monter en épingle pour faire sensation",
+    "sentences": [
+      "Tabloid newspapers frequently sensationalize minor celebrity scandals with exaggerated headlines to boost kiosk sales and online click rates.",
+      "Rather than report nuanced scientific facts about the virus, television producers chose to sensationalize the outbreak to terrify viewers."
+    ],
+    "synonyms": [
+      "exaggerate",
+      "dramatize",
+      "overstate",
+      "inflate"
+    ],
+    "mnemonic": "Faire du sensationnel au détriment de la vérité."
+  },
+  "sentimental": {
+    "pos": "adj.",
+    "definition": "prompted by or exhibiting feelings of tenderness, sadness, or nostalgia",
+    "definitionFr": "sentimental, nostalgique, guidé par les émotions",
+    "sentences": [
+      "Although the old pocket watch was financially worthless, the grandfather kept it in his pocket for purely sentimental reasons.",
+      "Her sentimental attachment to her childhood home made it agonizingly difficult to sign the final property sale paperwork with developers."
+    ],
+    "synonyms": [
+      "nostalgic",
+      "mawkish",
+      "wistful",
+      "emotional"
+    ],
+    "mnemonic": "Lié aux souvenirs et aux sentiments plus qu'à la logique."
+  },
+  "skeptical": {
+    "pos": "adj.",
+    "definition": "not easily convinced; having doubts or reservations",
+    "definitionFr": "sceptique, incrédule, qui doute",
+    "sentences": [
+      "Environmental scientists remained deeply skeptical of the petroleum company's promises to attain net-zero carbon emissions within the next five years.",
+      "Consumers are understandably skeptical when charismatic television commercials claim that a single dietary pill can cure chronic joint pain."
+    ],
+    "synonyms": [
+      "doubtful",
+      "dubious",
+      "incredulous",
+      "cynical"
+    ],
+    "mnemonic": "Le sceptique refuse de croire sans preuve solide."
+  },
+  "solicit": {
+    "pos": "verb",
+    "definition": "to ask for or try to obtain something from someone",
+    "definitionFr": "solliciter, demander formellement de l'aide ou des avis",
+    "sentences": [
+      "The charity organization sent thousands of personalized letters to solicit donations from wealthy benefactors for its new pediatric hospital wing.",
+      "Before making a final investment decision, the startup founder arranged consultations to solicit advice from seasoned technology venture capitalists."
+    ],
+    "synonyms": [
+      "request",
+      "petition",
+      "entreat",
+      "implore"
+    ],
+    "mnemonic": "Solliciter : s'adresser à quelqu'un pour obtenir quelque chose."
+  },
+  "somber": {
+    "pos": "adj.",
+    "definition": "dark, dull, gloomy, or gravely serious in mood",
+    "definitionFr": "sombre, lugubre, grave et mélancolique",
+    "sentences": [
+      "The memorial service was conducted in a somber atmosphere, with attendees weeping quietly as sorrowful chamber music played softly.",
+      "Dressed in somber black attire, the cabinet ministers gathered at midnight to discuss the catastrophic military defeat along the frontier."
+    ],
+    "synonyms": [
+      "gloomy",
+      "morose",
+      "solemn",
+      "funereal"
+    ],
+    "mnemonic": "Sombre d'aspect et grave d'esprit."
+  },
+  "sophisticated": {
+    "pos": "adj.",
+    "definition": "having refined worldly knowledge, culture, or advanced complexity",
+    "definitionFr": "sophistiqué, raffiné, ou de haute technologie",
+    "sentences": [
+      "Modern meteorological agencies employ sophisticated computer simulation models to forecast the trajectories of violent oceanic storms with impressive accuracy.",
+      "Her sophisticated grasp of international trade law made her an invaluable asset during bilateral treaty negotiations between trading partners."
+    ],
+    "synonyms": [
+      "refined",
+      "cultivated",
+      "advanced",
+      "complex"
+    ],
+    "mnemonic": "Sophistiqué : élaboré, qui dénote du raffinement ou de la complexité."
+  },
+  "spartan": {
+    "pos": "adj.",
+    "definition": "showing indifference to comfort or luxury; austere and simple",
+    "definitionFr": "spartiate, austère, d'un dépouillement rigoureux",
+    "sentences": [
+      "The monastery monks lived a spartan lifestyle, sleeping on hard wooden cots and eating simple porridge three times a day.",
+      "His spartan dorm room contained only a single desk, a metal bed frame, and bookshelves stacked with dense philosophy treatises."
+    ],
+    "synonyms": [
+      "austere",
+      "ascetic",
+      "frugal",
+      "severe"
+    ],
+    "mnemonic": "Comme les guerriers de Sparte, sans luxe ni confort superflu."
+  },
+  "specious": {
+    "pos": "adj.",
+    "definition": "superficially plausible, but actually wrong or misleading",
+    "definitionFr": "spécieux, séduisant en apparence mais faux au fond",
+    "sentences": [
+      "The prosecutor quickly dismantled the defendant's specious argument, revealing that the purported alibi relied entirely on forged airline tickets.",
+      "Although the politician's economic proposal sounded appealing to voters, economic analysts warned that its underlying premises were entirely specious."
+    ],
+    "synonyms": [
+      "fallacious",
+      "deceptive",
+      "spurious",
+      "plausible"
+    ],
+    "mnemonic": "Spécieux : belle espèce au dehors, poison au dedans."
+  },
+  "speculation": {
+    "pos": "noun",
+    "definition": "forming of a theory or conjecture without firm evidence",
+    "definitionFr": "spéculation, conjecture sans preuve tangible",
+    "sentences": [
+      "Intense media speculation concerning the prime minister's health mounted after she abruptly cancelled three consecutive diplomatic appearances without explanation.",
+      "Uncontrolled financial speculation in cryptocurrency markets caused dramatic price fluctuations that wiped out millions of dollars of individual savings."
+    ],
+    "synonyms": [
+      "conjecture",
+      "hypothesis",
+      "surmise",
+      "supposition"
+    ],
+    "mnemonic": "Spéculer : bâtir des hypothèses sur du vent."
+  },
+  "sporadic": {
+    "pos": "adj.",
+    "definition": "occurring at irregular intervals or only in a few places",
+    "definitionFr": "sporadique, intermittent, irrégulier",
+    "sentences": [
+      "Despite heavy security patrols across the province, sporadic outbreaks of guerrilla fighting continued to unsettle rural villages throughout the summer.",
+      "Her attendance at early morning lectures was sporadic at best, resulting in abysmal exam scores when final semester evaluations arrived."
+    ],
+    "synonyms": [
+      "intermittent",
+      "occasional",
+      "fitful",
+      "infrequent"
+    ],
+    "mnemonic": "Sporadique comme des spores dispersées çà et là."
+  },
+  "stagnant": {
+    "pos": "adj.",
+    "definition": "showing no activity, movement, or progress; stale",
+    "definitionFr": "stagnant, inerte, sans mouvement ni progrès",
+    "sentences": [
+      "Mosquitoes bred rapidly in the stagnant puddle behind the abandoned warehouse, creating a health hazard for nearby neighborhood residents.",
+      "Economists expressed deep concern over the stagnant wages that had failed to keep pace with rising inflation for three decades."
+    ],
+    "synonyms": [
+      "inactive",
+      "dormant",
+      "sluggish",
+      "static"
+    ],
+    "mnemonic": "Qui stagne, comme de l'eau croupie."
+  },
+  "static": {
+    "pos": "adj.",
+    "definition": "lacking in movement, action, change, or development",
+    "definitionFr": "statique, immobile, sans changement",
+    "sentences": [
+      "While mobile technology evolved at a breathless pace, home landline telephone design remained largely static throughout the late twentieth century.",
+      "The teacher noticed that the student's test scores remained static despite hours of supplementary tutoring in advanced algebra concepts."
+    ],
+    "synonyms": [
+      "unchanging",
+      "stationary",
+      "motionless",
+      "immutable"
+    ],
+    "mnemonic": "Statique : qui reste figé au même état."
+  },
+  "stigma": {
+    "pos": "noun",
+    "definition": "a mark of disgrace associated with a particular circumstance or quality",
+    "definitionFr": "stigmate, opprobre, marque d'infamie sociale",
+    "sentences": [
+      "Advocates have worked hard to eradicate the social stigma associated with mental health therapy, encouraging open dialogue across communities.",
+      "In ancient times, a criminal often carried a physical stigma burned into the skin to signify guilt and warn strangers."
+    ],
+    "synonyms": [
+      "disgrace",
+      "shame",
+      "ignominy",
+      "blemish"
+    ],
+    "mnemonic": "Stigmate : blessure ou marque infamante."
+  },
+  "subjective": {
+    "pos": "adj.",
+    "definition": "based on or influenced by personal feelings, tastes, or opinions",
+    "definitionFr": "subjectif, fondé sur des impressions personnelles",
+    "sentences": [
+      "Because literary beauty is inherently subjective, critics frequently disagree passionately on which contemporary novel deserves the prestigious national award.",
+      "The judge emphasized that sentencing should rely on objective statutory guidelines rather than the subjective personal biases of individual magistrates."
+    ],
+    "synonyms": [
+      "personal",
+      "biased",
+      "individual",
+      "prejudiced"
+    ],
+    "mnemonic": "Subjectif = propre au sujet, opposé à objectif."
+  },
+  "sublime": {
+    "pos": "adj.",
+    "definition": "of such excellence, grandeur, or beauty as to inspire great awe",
+    "definitionFr": "sublime, grandiose, qui inspire une profonde admiration",
+    "sentences": [
+      "Standing on the summit at sunrise, the climbers gazed upon a sublime panorama of snow-covered Himalayan peaks stretching infinitely onward.",
+      "The orchestra delivered a sublime performance of the ninth symphony that brought the spellbound audience to their feet in tears."
+    ],
+    "synonyms": [
+      "transcendent",
+      "magnificent",
+      "majestic",
+      "exalted"
+    ],
+    "mnemonic": "Sublime : si élevé qu'il touche au divin."
+  },
+  "subsidize": {
+    "pos": "verb",
+    "definition": "to support financially by paying part of the cost",
+    "definitionFr": "subventionner, soutenir financièrement",
+    "sentences": [
+      "The national government chose to subsidize solar panel installations to encourage homeowners to transition rapidly to clean renewable energy sources.",
+      "Many European municipalities heavily subsidize public transit tickets, keeping train fares remarkably affordable for working-class commuters and students."
+    ],
+    "synonyms": [
+      "fund",
+      "finance",
+      "underwrite",
+      "sponsor"
+    ],
+    "mnemonic": "Accorder un subside, une subvention."
+  },
+  "substantive": {
+    "pos": "adj.",
+    "definition": "having a firm basis in reality; meaningful, important, or considerable",
+    "definitionFr": "substantiel, fondamental, qui a une réelle consistance",
+    "sentences": [
+      "Despite marathon negotiations lasting through the night, the diplomats failed to achieve any substantive progress toward resolving the territorial dispute.",
+      "The defense attorney argued that the prosecution lacked substantive evidence and was relying solely on unreliable rumors and circumstantial guesswork."
+    ],
+    "synonyms": [
+      "meaningful",
+      "tangible",
+      "significant",
+      "essential"
+    ],
+    "mnemonic": "Qui touche à la substance même du problème."
+  },
+  "subtle": {
+    "pos": "adj.",
+    "definition": "so delicate or precise as to be difficult to perceive or describe",
+    "definitionFr": "subtil, délicat, difficile à percevoir ou analyser",
+    "sentences": [
+      "The sommelier identified subtle notes of toasted oak and blackberry in the vintage wine that untrained palates completely failed to detect.",
+      "There was a subtle change in his vocal tone that signaled suppressed irritation, though his facial expression remained entirely courteous."
+    ],
+    "synonyms": [
+      "understated",
+      "nuanced",
+      "delicate",
+      "fine"
+    ],
+    "mnemonic": "Subtil : tout en finesse, presque imperceptible."
+  },
+  "superficial": {
+    "pos": "adj.",
+    "definition": "existing or occurring at the surface; lacking depth or serious thought",
+    "definitionFr": "superficiel, peu profond, qui reste à la surface",
+    "sentences": [
+      "Fortunately, the physician confirmed that the car accident had caused only superficial cuts and bruises rather than any internal injuries.",
+      "His superficial understanding of economic theory became embarrassingly obvious when the professor asked him to explain the concept of liquidity."
+    ],
+    "synonyms": [
+      "shallow",
+      "cursory",
+      "trivial",
+      "skin-deep"
+    ],
+    "mnemonic": "Superficie : qui ne va pas plus loin que la surface."
+  },
+  "superfluous": {
+    "pos": "adj.",
+    "definition": "unnecessary, especially through being more than enough",
+    "definitionFr": "superflu, inutile car en surplus",
+    "sentences": [
+      "The editor trimmed hundreds of superfluous words from the bloated manuscript, transforming the rambling essay into a concise and compelling argument.",
+      "Having already installed three heavy-duty deadbolts on the reinforced steel door, adding another chain lock seemed entirely superfluous."
+    ],
+    "synonyms": [
+      "excessive",
+      "redundant",
+      "gratuitous",
+      "surplus"
+    ],
+    "mnemonic": "Super-fluer : qui coule par-dessus le bord, en trop."
+  },
+  "surpass": {
+    "pos": "verb",
+    "definition": "to exceed, be greater than, or do better than someone or something",
+    "definitionFr": "surpasser, dépasser en qualité ou en quantité",
+    "sentences": [
+      "The young athlete managed to surpass the existing Olympic record by two full seconds, earning widespread praise from track commentators.",
+      "Quarterly sales figures will easily surpass initial corporate forecasts thanks to massive demand for the company's newly unveiled electric vehicles."
+    ],
+    "synonyms": [
+      "exceed",
+      "outdo",
+      "excel",
+      "transcend"
+    ],
+    "mnemonic": "Passer par-dessus, faire mieux que les autres."
+  },
+  "synthesize": {
+    "pos": "verb",
+    "definition": "to combine different ideas, styles, or substances into a coherent whole",
+    "definitionFr": "synthétiser, combiner plusieurs éléments en un tout cohérent",
+    "sentences": [
+      "In her doctoral dissertation, the historian managed to synthesize archival records from three different continents into a coherent narrative of trade.",
+      "Pharmaceutical chemists worked diligently to synthesize the complex natural compound in the laboratory without destroying its delicate medicinal properties."
+    ],
+    "synonyms": [
+      "integrate",
+      "amalgamate",
+      "unify",
+      "blend"
+    ],
+    "mnemonic": "Faire la synthèse d'éléments épars."
+  },
+  "tirade": {
+    "pos": "noun",
+    "definition": "a long, angry speech of criticism, accusation, or complaint",
+    "definitionFr": "tirade, diatribe violente et prolongée",
+    "sentences": [
+      "After discovering the ruined prototype, the furious manager launched into an angry tirade that left the entire engineering department terrified.",
+      "Instead of engaging in polite political discourse, the talk show host delivered a bitter tirade denouncing every policy of his opponents."
+    ],
+    "synonyms": [
+      "diatribe",
+      "harangue",
+      "screed",
+      "rant"
+    ],
+    "mnemonic": "Tirer à boulets rouges dans un long discours furieux."
+  },
+  "tranquil": {
+    "pos": "adj.",
+    "definition": "free from disturbance; calm, peaceful, and quiet",
+    "definitionFr": "tranquille, serein, paisible",
+    "sentences": [
+      "Early in the morning, the tranquil mountain lake reflected the misty pines and snowy peaks like a polished silver mirror.",
+      "Seeking a tranquil environment to complete her novel, the author rented an isolated stone cottage on the windswept Scottish coast."
+    ],
+    "synonyms": [
+      "serene",
+      "placid",
+      "peaceful",
+      "calm"
+    ],
+    "mnemonic": "Tranquille : paix et sérénité absolues."
+  },
+  "transcend": {
+    "pos": "verb",
+    "definition": "to be or go beyond the range or limits of something",
+    "definitionFr": "transcender, dépasser les limites habituelles",
+    "sentences": [
+      "Great works of art often transcend national and linguistic boundaries, speaking directly to universal human emotions across multiple centuries.",
+      "The humanitarian leader urged citizens to transcend petty partisan differences and unite to help flood victims rebuild their shattered homes."
+    ],
+    "synonyms": [
+      "surpass",
+      "exceed",
+      "outstrip",
+      "eclipse"
+    ],
+    "mnemonic": "Transcender : franchir un seuil vers le haut."
+  },
+  "trivial": {
+    "pos": "adj.",
+    "definition": "of little value or importance; ordinary and commonplace",
+    "definitionFr": "insignifiant, futile, sans grande importance",
+    "sentences": [
+      "The two siblings frequently engaged in loud arguments over trivial matters such as who was responsible for taking out the trash.",
+      "Compared to the monumental challenges of global climate change, minor disputes over local parking regulations appear almost entirely trivial."
+    ],
+    "synonyms": [
+      "petty",
+      "insignificant",
+      "trifling",
+      "minor"
+    ],
+    "mnemonic": "Trivialité : chose futile sans conséquence."
+  },
+  "tyrant": {
+    "pos": "noun",
+    "definition": "a cruel and oppressive ruler who exercises power without restraint",
+    "definitionFr": "tyran, dirigeant cruel et absolu",
+    "sentences": [
+      "The ruthless tyrant suppressed all political dissent by imprisoning critical journalists and banning independent civic organizations across the conquered country.",
+      "History records that the paranoid tyrant executed his closest military advisers out of fear that they were plotting a secret rebellion."
+    ],
+    "synonyms": [
+      "despot",
+      "autocrat",
+      "dictator",
+      "oppressor"
+    ],
+    "mnemonic": "Un tyran tyrannise son peuple sans pitié."
+  },
+  "uniform": {
+    "pos": "adj.",
+    "definition": "remaining the same in all cases and at all times; unvarying",
+    "definitionFr": "uniforme, constant, identique en tous points",
+    "sentences": [
+      "The automated baking machine ensures that every loaf of bread baked in the commercial factory has a uniform golden-brown crust.",
+      "Federal aviation regulations require a uniform standard of pilot certification across all domestic airlines to guarantee passenger flight safety."
+    ],
+    "synonyms": [
+      "consistent",
+      "homogeneous",
+      "unvarying",
+      "regular"
+    ],
+    "mnemonic": "Uni-forme : d'une seule et même forme."
+  },
+  "universal": {
+    "pos": "adj.",
+    "definition": "applicable to all cases, conditions, or people in the world",
+    "definitionFr": "universel, applicable à tous ou répandu partout",
+    "sentences": [
+      "Music is often celebrated as a universal language capable of bridging cultural divides when spoken words fail to foster mutual empathy.",
+      "The concept of basic human dignity has attained near universal acceptance among international legal frameworks governing civil society and justice."
+    ],
+    "synonyms": [
+      "omnipresent",
+      "ubiquitous",
+      "general",
+      "all-inclusive"
+    ],
+    "mnemonic": "Qui concerne l'univers tout entier, tout le monde."
+  },
+  "vacillate": {
+    "pos": "verb",
+    "definition": "to waver between different opinions, courses of action, or decisions",
+    "definitionFr": "vaciller, hésiter continuellement entre deux choix",
+    "sentences": [
+      "The undecided voter continued to vacillate between the two presidential candidates until the final moments before casting her ballot.",
+      "If you vacillate too long before accepting the lucrative job offer, the firm may decide to extend the opportunity to another candidate."
+    ],
+    "synonyms": [
+      "waver",
+      "hesitate",
+      "fluctuate",
+      "oscillate"
+    ],
+    "mnemonic": "Vaciller comme une flamme au vent, incapable de se fixer."
+  },
+  "verbose": {
+    "pos": "adj.",
+    "definition": "using or expressed in more words than are needed",
+    "definitionFr": "verbeux, bavard, prolixe",
+    "sentences": [
+      "The professor criticized the student's verbose legal essay, advising him to convey his legal arguments with greater clarity and brevity.",
+      "Tired of hearing verbose speeches from windy politicians, the audience enthusiastically cheered the guest who delivered a crisp two-minute address."
+    ],
+    "synonyms": [
+      "wordy",
+      "prolix",
+      "loquacious",
+      "rambling"
+    ],
+    "mnemonic": "Verbeux : trop de verbe, noyé sous le flot de paroles."
+  },
+  "versed": {
+    "pos": "adj.",
+    "definition": "experienced or skilled in; knowledgeable about something",
+    "definitionFr": "versé dans, expérimenté, calé sur un sujet",
+    "sentences": [
+      "Because she was thoroughly versed in international contract law, the corporate attorney immediately spotted the dangerous loophole in the draft agreement.",
+      "Only a scholar deeply versed in classical Greek mythology could decipher the enigmatic symbolic inscriptions carved onto the ancient temple ruins."
+    ],
+    "synonyms": [
+      "proficient",
+      "knowledgeable",
+      "adept",
+      "competent"
+    ],
+    "mnemonic": "Être versé dans un domaine comme on s'y est plongé."
+  },
+  "viable": {
+    "pos": "adj.",
+    "definition": "capable of working successfully; feasible or able to survive",
+    "definitionFr": "viable, réalisable, capable de fonctionner ou survivre",
+    "sentences": [
+      "Before investing millions into the renewable energy project, venture capitalists demanded proof that the technology represented an economically viable solution.",
+      "The endangered plant species requires humid, shaded soil conditions to produce viable seeds capable of germinating during the following spring."
+    ],
+    "synonyms": [
+      "feasible",
+      "workable",
+      "sustainable",
+      "practicable"
+    ],
+    "mnemonic": "Viable : capable de vivre ou de réussir dans la durée."
+  },
+  "vibrant": {
+    "pos": "adj.",
+    "definition": "full of energy and life; bright and striking in appearance",
+    "definitionFr": "vibrant, éclatant, plein de vitalité ou de couleur",
+    "sentences": [
+      "The downtown arts district was transformed into a vibrant cultural center filled with bustling cafés, colorful murals, and live street music.",
+      "The painter selected vibrant shades of crimson and cobalt to capture the dramatic energy of the tropical island sunset."
+    ],
+    "synonyms": [
+      "lively",
+      "vivid",
+      "animated",
+      "dynamic"
+    ],
+    "mnemonic": "Qui vibre d'énergie et de couleur."
+  },
+  "vigorous": {
+    "pos": "adj.",
+    "definition": "strong, healthy, and full of energy, force, or intensity",
+    "definitionFr": "vigoureux, énergique, intense et résolu",
+    "sentences": [
+      "Doctors recommend that adults engage in thirty minutes of vigorous cardiovascular exercise daily to maintain optimal cardiac health and mental acuity.",
+      "The university faculty mounted a vigorous defense of academic freedom when state legislators attempted to censor sensitive historical research topics."
+    ],
+    "synonyms": [
+      "energetic",
+      "strenuous",
+      "robust",
+      "forceful"
+    ],
+    "mnemonic": "Plein de vigueur et de force."
+  },
+  "vital": {
+    "pos": "adj.",
+    "definition": "absolutely necessary, essential, or fundamental to life",
+    "definitionFr": "vital, indispensable, essentiel",
+    "sentences": [
+      "Maintaining a clean water supply is vital to the health and survival of any community, especially during catastrophic natural disasters.",
+      "The whistleblower played a vital role in exposing the pharmaceutical fraud by leaking confidential laboratory test reports to investigative reporters."
+    ],
+    "synonyms": [
+      "essential",
+      "crucial",
+      "indispensable",
+      "critical"
+    ],
+    "mnemonic": "Vital : indispensable à la vie (vita)."
+  },
+  "volatile": {
+    "pos": "adj.",
+    "definition": "liable to change rapidly and unpredictably, especially for the worse",
+    "definitionFr": "volatil, instable, changeant brusquement",
+    "sentences": [
+      "Because of ongoing geopolitical tensions in the oil-producing region, petroleum prices remained extraordinarily volatile throughout the turbulent financial quarter.",
+      "The negotiator treaded carefully during talks because the rebel commander possessed a volatile temper and could explode in anger at any moment."
+    ],
+    "synonyms": [
+      "capricious",
+      "erratic",
+      "unstable",
+      "turbulent"
+    ],
+    "mnemonic": "Volatil : qui s'évapore ou explose au moindre coup de chaud."
+  },
+  "zealous": {
+    "pos": "adj.",
+    "definition": "having or showing great energy or enthusiasm for a cause",
+    "definitionFr": "zélé, fervent, enthousiaste et dévoué",
+    "sentences": [
+      "The zealous environmental crusader organized weekly beach cleanup rallies and tirelessly petitioned the city council to ban single-use plastic bags.",
+      "Although the rookie detective was praised for his zealous pursuit of justice, his impulsive decisions frequently jeopardized delicate undercover investigations."
+    ],
+    "synonyms": [
+      "fervent",
+      "passionate",
+      "ardent",
+      "devout"
+    ],
+    "mnemonic": "Faire preuve d'un grand zèle pour une cause."
+  },
+  "abdicate": {
+    "pos": "verb",
+    "definition": "to renounce one's throne or fail to fulfill a responsibility",
+    "definitionFr": "abdiquer, renoncer au pouvoir ou à un devoir",
+    "sentences": [
+      "Under intense pressure from revolutionary leaders, the aging king chose to abdicate the throne in favor of his younger son.",
+      "The chief executive refused to abdicate her responsibility for the accounting scandal, choosing instead to cooperate openly with federal regulatory investigators."
+    ],
+    "synonyms": [
+      "renounce",
+      "relinquish",
+      "resign",
+      "surrender"
+    ],
+    "mnemonic": "Abdiquer : abandonner la couronne ou son devoir."
+  },
+  "abject": {
+    "pos": "adj.",
+    "definition": "experienced to the maximum degree, especially of misery or degradation",
+    "definitionFr": "abject, misérable, extrême (pauvreté ou lâcheté)",
+    "sentences": [
+      "Refugees escaping the war-torn province were forced to live in abject poverty, lacking clean running water, electricity, and adequate medical supplies.",
+      "His abject apology to the board of directors failed to salvage his ruined reputation after his reckless embezzlement scheme was uncovered."
+    ],
+    "synonyms": [
+      "wretched",
+      "degraded",
+      "miserable",
+      "despicable"
+    ],
+    "mnemonic": "Abject : jeté au plus bas, dégradant et misérable."
+  }
+}

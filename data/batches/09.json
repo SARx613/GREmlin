@@ -1,0 +1,1250 @@
+{
+  "abhorrent": {
+    "pos": "adj.",
+    "definition": "inspiring disgust and loathing; utterly repugnant",
+    "definitionFr": "odieux, abominable, révoltant",
+    "sentences": [
+      "The human rights committee condemned the violent acts as abhorrent, urging international courts to prosecute those responsible for such horrific cruelty.",
+      "To anyone who values honesty and integrity, the politician's shameless deceit was utterly abhorrent and provoked widespread public outrage."
+    ],
+    "synonyms": [
+      "repugnant",
+      "loathsome",
+      "detestable",
+      "revolting"
+    ],
+    "mnemonic": "Pensez à « abhorrer » en français : ce qui est abhorrent provoque l'horreur."
+  },
+  "abridge": {
+    "pos": "verb",
+    "definition": "to shorten a text without losing the core meaning",
+    "definitionFr": "abréger, condenser un texte",
+    "sentences": [
+      "The publisher decided to abridge the massive historical biography so that high school students could finish reading it in one semester.",
+      "Constitutional scholars warned that the newly proposed law would severely abridge the freedom of assembly guaranteed to all citizens."
+    ],
+    "synonyms": [
+      "shorten",
+      "condense",
+      "truncate",
+      "curtail"
+    ],
+    "mnemonic": "Abridge crée un « bridge » (pont) pour raccourcir le chemin à travers le texte."
+  },
+  "abstain": {
+    "pos": "verb",
+    "definition": "to restrain oneself from doing or enjoying something",
+    "definitionFr": "s'abstenir, renoncer volontairement",
+    "sentences": [
+      "Because of his intense training schedule, the athlete chose to abstain from sugary snacks and alcohol until the championship concluded.",
+      "Several neutral countries decided to abstain during the tense council vote rather than aligning themselves with either rival faction."
+    ],
+    "synonyms": [
+      "refrain",
+      "forbear",
+      "withhold",
+      "desist"
+    ],
+    "mnemonic": "Comme le français « s'abstenir », souvent suivi de « from » en anglais."
+  },
+  "abstract": {
+    "pos": "adj.",
+    "definition": "existing as an idea or concept rather than concrete reality",
+    "definitionFr": "abstrait, conceptuel, théorique",
+    "sentences": [
+      "The philosophy professor explained that justice is an abstract concept that requires practical laws to be realized in everyday life.",
+      "Rather than discussing abstract economic theories, the speaker presented concrete data about how inflation directly affected family grocery bills."
+    ],
+    "synonyms": [
+      "theoretical",
+      "conceptual",
+      "intangible",
+      "hypothetical"
+    ],
+    "mnemonic": "Identique au français : s'oppose à ce qui est concret."
+  },
+  "abundant": {
+    "pos": "adj.",
+    "definition": "existing or available in large quantities; plentiful",
+    "definitionFr": "abondant, copieux, en grande quantité",
+    "sentences": [
+      "Thanks to the heavy spring rains, the fertile valley yielded an abundant harvest that easily fed the entire regional population.",
+      "The coral reef provided an abundant supply of nutrients, allowing thousands of distinct marine species to flourish in close proximity."
+    ],
+    "synonyms": [
+      "plentiful",
+      "copious",
+      "bountiful",
+      "ample"
+    ],
+    "mnemonic": "Même racine qu'« abondant » en français."
+  },
+  "accentuate": {
+    "pos": "verb",
+    "definition": "to make something more noticeable or prominent",
+    "definitionFr": "accentuer, souligner, mettre en valeur",
+    "sentences": [
+      "The bright overhead stage lights served to accentuate the dramatic contrast between the colorful costumes and the dark background.",
+      "Rising economic inequality only served to accentuate the deep political divisions that had been brewing across the country for decades."
+    ],
+    "synonyms": [
+      "emphasize",
+      "highlight",
+      "underscore",
+      "accent"
+    ],
+    "mnemonic": "« Accentuer » : mettre un accent, faire ressortir."
+  },
+  "acclaim": {
+    "pos": "noun",
+    "definition": "enthusiastic and public praise or approval",
+    "definitionFr": "acclamation, louange publique, triomphe critique",
+    "sentences": [
+      "The director's innovative debut film earned widespread international acclaim from both seasoned critics and enthusiastic moviegoers around the globe.",
+      "Despite receiving critical acclaim for her groundbreaking architectural design, the firm struggled to secure enough financing to begin construction."
+    ],
+    "synonyms": [
+      "praise",
+      "applause",
+      "plaudits",
+      "commendation"
+    ],
+    "mnemonic": "Pensez aux acclamations d'une foule enthousiaste."
+  },
+  "accommodating": {
+    "pos": "adj.",
+    "definition": "willing to please others; obliging and adaptable",
+    "definitionFr": "arrangeant, serviable, complaisant",
+    "sentences": [
+      "The hotel staff was remarkably accommodating, readily adjusting dinner reservations and preparing special meals for our dietary restrictions without complaint.",
+      "Although the manager was usually quite accommodating to flexible work schedules, she refused to grant extensions during the busy audit week."
+    ],
+    "synonyms": [
+      "obliging",
+      "helpful",
+      "compliant",
+      "cooperative"
+    ],
+    "mnemonic": "Quelqu'un qui sait s'accommoder de vos demandes pour vous aider."
+  },
+  "accord": {
+    "pos": "noun",
+    "definition": "an official agreement, harmony, or state of mutual conformity",
+    "definitionFr": "accord, traité, entente, harmonie",
+    "sentences": [
+      "After weeks of intense bilateral negotiations, the two rival nations finally signed a peace accord ending decades of border conflict.",
+      "Her personal values were in complete accord with the charitable mission of the nonprofit organization where she chose to volunteer."
+    ],
+    "synonyms": [
+      "agreement",
+      "pact",
+      "concord",
+      "harmony"
+    ],
+    "mnemonic": "Même mot qu'en français : un accord officiel ou être d'accord."
+  },
+  "acute": {
+    "pos": "adj.",
+    "definition": "sharp, severe, or intense; possessing perceptive insight",
+    "definitionFr": "aigu, intense, pénétrant, perspicace",
+    "sentences": [
+      "The patient experienced an acute pain in his lower abdomen that required immediate emergency surgery to prevent further medical complications.",
+      "Known for her acute intellect, the detective noticed subtle inconsistencies in the witness testimony that everyone else had completely overlooked."
+    ],
+    "synonyms": [
+      "sharp",
+      "intense",
+      "keen",
+      "perceptive"
+    ],
+    "mnemonic": "Un angle aigu est pointu : une douleur ou un esprit aigu(ë)."
+  },
+  "adequate": {
+    "pos": "adj.",
+    "definition": "sufficient for a specific requirement; acceptable but not exceptional",
+    "definitionFr": "adéquat, suffisant, convenable",
+    "sentences": [
+      "Although the salary was adequate to cover basic living expenses, it left little extra money for emergency savings or luxury items.",
+      "The old generator provided an adequate amount of emergency power during the severe blizzard, keeping the hospital heaters running safely."
+    ],
+    "synonyms": [
+      "sufficient",
+      "enough",
+      "satisfactory",
+      "tolerable"
+    ],
+    "mnemonic": "Adéquat : juste ce qu'il faut, ni trop peu ni extraordinaire."
+  },
+  "adverse": {
+    "pos": "adj.",
+    "definition": "preventing success or development; harmful, unfavorable",
+    "definitionFr": "défavorable, contraire, néfaste",
+    "sentences": [
+      "The clinical trial was abruptly halted after several patients reported adverse side effects that threatened their overall long-term health.",
+      "Despite facing adverse weather conditions that included gale-force winds and torrential rain, the mountaineers managed to reach the summit safely."
+    ],
+    "synonyms": [
+      "unfavorable",
+      "detrimental",
+      "hostile",
+      "disadvantageous"
+    ],
+    "mnemonic": "Adverse comme un vent adverse ou des adversaires : opposé et nuisible."
+  },
+  "affable": {
+    "pos": "adj.",
+    "definition": "friendly, good-natured, and exceptionally easy to talk to",
+    "definitionFr": "affable, aimable, avenant",
+    "sentences": [
+      "Because of his warm demeanor and affable personality, the new department chair quickly gained the trust of all faculty members.",
+      "Even when dealing with irritable and demanding customers, the customer service representative remained unfailingly affable and thoroughly polite throughout the call."
+    ],
+    "synonyms": [
+      "genial",
+      "amiable",
+      "approachable",
+      "cordial"
+    ],
+    "mnemonic": "Affable en français : quelqu'un d'agréable et facile d'accès."
+  },
+  "agile": {
+    "pos": "adj.",
+    "definition": "able to move or think quickly and easily",
+    "definitionFr": "agile, leste, vif d'esprit",
+    "sentences": [
+      "The mountain goat proved remarkably agile as it bounded effortlessly across steep, rocky cliffs that would terrify human climbers.",
+      "In modern technology sectors, companies must remain intellectually agile enough to adapt their business strategies to sudden consumer trends."
+    ],
+    "synonyms": [
+      "nimble",
+      "supple",
+      "dexterous",
+      "lithe"
+    ],
+    "mnemonic": "Agile, aussi bien physiquement que mentalement."
+  },
+  "alarming": {
+    "pos": "adj.",
+    "definition": "worrying, disturbing, or causing great fear and apprehension",
+    "definitionFr": "alarmant, inquiétant, angoissant",
+    "sentences": [
+      "Scientists reported an alarming decline in bee populations, warning that agricultural food production could collapse without essential insect pollination.",
+      "The sudden and alarming rise in regional inflation forced the central bank to sharply increase interest rates within three months."
+    ],
+    "synonyms": [
+      "disturbing",
+      "frightening",
+      "disquieting",
+      "troubling"
+    ],
+    "mnemonic": "Ce qui sonne l'alarme : inquiétant au plus haut point."
+  },
+  "alienate": {
+    "pos": "verb",
+    "definition": "to cause someone to feel isolated, estranged, or hostile",
+    "definitionFr": "aliéner, éloigner, se mettre à dos",
+    "sentences": [
+      "The senator's harsh and uncompromising rhetoric threatened to alienate moderate voters who were crucial to winning the upcoming election.",
+      "By constantly criticizing his coworkers in public meetings, the arrogant manager managed to alienate everyone on his development team."
+    ],
+    "synonyms": [
+      "estrange",
+      "isolate",
+      "distance",
+      "detach"
+    ],
+    "mnemonic": "Rendre étranger (alien) à soi : s'aliéner quelqu'un."
+  },
+  "alleviate": {
+    "pos": "verb",
+    "definition": "to make pain, distress, or a problem less severe",
+    "definitionFr": "soulager, atténuer, apaiser",
+    "sentences": [
+      "The doctor prescribed physical therapy and mild painkillers to alleviate the chronic discomfort caused by the patient's spinal injury.",
+      "Constructing a new bypass highway helped to alleviate traffic congestion that had plagued the downtown business district for years."
+    ],
+    "synonyms": [
+      "relieve",
+      "mitigate",
+      "ease",
+      "palliate"
+    ],
+    "mnemonic": "Alléger un fardeau : alleviate soulage la douleur ou le problème."
+  },
+  "altruistic": {
+    "pos": "adj.",
+    "definition": "showing a selfless concern for the well-being of others",
+    "definitionFr": "altruiste, désintéressé",
+    "sentences": [
+      "Driven by purely altruistic motives, the wealthy philanthropist spent his retirement building free medical clinics in impoverished rural regions.",
+      "Skeptics questioned whether the billionaire's generous charitable foundation was genuinely altruistic or merely an elaborate strategy to reduce corporate taxes."
+    ],
+    "synonyms": [
+      "selfless",
+      "charitable",
+      "benevolent",
+      "philanthropic"
+    ],
+    "mnemonic": "Altruiste : tourné vers l'autre (alter) plutôt que vers soi."
+  },
+  "amateur": {
+    "pos": "noun",
+    "definition": "one engaging in an activity for pleasure rather than profession",
+    "definitionFr": "amateur, non-professionnel",
+    "sentences": [
+      "Although he was only an amateur astronomer using a backyard telescope, he managed to discover a previously undocumented distant comet.",
+      "The difference in technical quality between a seasoned professional photographer and a careless amateur was immediately evident in the portraits."
+    ],
+    "synonyms": [
+      "layman",
+      "nonprofessional",
+      "novice",
+      "dabbler"
+    ],
+    "mnemonic": "Fait par amour de l'art plutôt que pour l'argent (pro)."
+  },
+  "ambivalent": {
+    "pos": "adj.",
+    "definition": "having simultaneous conflicting feelings or contradictory attitudes",
+    "definitionFr": "ambivalent, partagé, mitigé",
+    "sentences": [
+      "She remained deeply ambivalent about accepting the lucrative job offer, torn between career advancement and having to relocate abroad.",
+      "Voters held ambivalent attitudes toward the controversial economic policy, appreciating the tax cuts while worrying about the growing public debt."
+    ],
+    "synonyms": [
+      "conflicted",
+      "equivocal",
+      "undecided",
+      "torn"
+    ],
+    "mnemonic": "Ambi- (deux) + valence : tiré par deux forces opposées."
+  },
+  "ameliorate": {
+    "pos": "verb",
+    "definition": "to make something bad or unsatisfactory significantly better",
+    "definitionFr": "améliorer, adoucir une situation difficile",
+    "sentences": [
+      "The new community food bank did much to ameliorate poverty and hunger among struggling families throughout the harsh winter months.",
+      "Diplomats worked tirelessly to ameliorate hostile tensions between the neighboring states before minor skirmishes escalated into an all-out war."
+    ],
+    "synonyms": [
+      "improve",
+      "better",
+      "upgrade",
+      "mitigate"
+    ],
+    "mnemonic": "Proche du français « améliorer »."
+  },
+  "amend": {
+    "pos": "verb",
+    "definition": "to modify, revise, or make improvements to a formal document",
+    "definitionFr": "amender, modifier, rectifier",
+    "sentences": [
+      "Lawmakers agreed to amend the outdated legislation after consumer advocacy groups demonstrated that the statute failed to regulate digital privacy.",
+      "The treaty was subsequently amended to include stringent environmental protections that had been neglected during the original round of talks."
+    ],
+    "synonyms": [
+      "modify",
+      "revise",
+      "alter",
+      "correct"
+    ],
+    "mnemonic": "Déposer un amendement pour amender une loi."
+  },
+  "amiable": {
+    "pos": "adj.",
+    "definition": "displaying a friendly, pleasant, and good-natured manner",
+    "definitionFr": "aimable, affable, chaleureux",
+    "sentences": [
+      "Our host was an amiable gentleman who went out of his way to make every visiting guest feel comfortable and welcome.",
+      "Despite the grueling schedule, the tour guide maintained an amiable attitude that kept the spirits of tired tourists surprisingly high."
+    ],
+    "synonyms": [
+      "friendly",
+      "affable",
+      "genial",
+      "good-natured"
+    ],
+    "mnemonic": "Amiable = aimable (tempérament agréable d'une personne)."
+  },
+  "amicable": {
+    "pos": "adj.",
+    "definition": "characterized by friendliness and absence of discord",
+    "definitionFr": "amical, à l'amiable, sans conflit",
+    "sentences": [
+      "After months of negotiations, the business partners reached an amicable settlement that allowed both to pursue separate ventures without resentment.",
+      "The couple decided that an amicable divorce was the healthiest choice for their young children, avoiding bitter courtroom battles entirely."
+    ],
+    "synonyms": [
+      "harmonious",
+      "peaceful",
+      "cordial",
+      "civil"
+    ],
+    "mnemonic": "Un accord « à l'amiable » : qualifie souvent un accord ou une relation pacifique."
+  },
+  "ample": {
+    "pos": "adj.",
+    "definition": "enough or more than enough; plentiful and spacious",
+    "definitionFr": "ample, abondant, largement suffisant",
+    "sentences": [
+      "There was ample time before the flight departed, so we leisurely enjoyed lunch at an airport café without feeling rushed.",
+      "The defense attorney presented ample evidence proving that her client was in another city when the crime was committed."
+    ],
+    "synonyms": [
+      "abundant",
+      "plentiful",
+      "copious",
+      "sufficient"
+    ],
+    "mnemonic": "Ample : largement suffisant en quantité ou espace."
+  },
+  "amplify": {
+    "pos": "verb",
+    "definition": "to increase the volume, strength, or scope of something",
+    "definitionFr": "amplifier, intensifier, accroître",
+    "sentences": [
+      "Social media algorithms often amplify extreme viewpoints by promoting controversial content that generates intense emotional engagement from users.",
+      "The acoustic design of the ancient stone theater was engineered to amplify the actors' voices without modern electronic equipment."
+    ],
+    "synonyms": [
+      "magnify",
+      "boost",
+      "intensify",
+      "escalate"
+    ],
+    "mnemonic": "Comme un amplificateur audio qui augmente le volume."
+  },
+  "anecdotal": {
+    "pos": "adj.",
+    "definition": "based on personal narrative rather than systematic scientific evidence",
+    "definitionFr": "anecdotique, non vérifié scientifiquement",
+    "sentences": [
+      "Although there was abundant anecdotal evidence praising the herbal remedy, clinical researchers found no rigorous scientific data supporting its effectiveness.",
+      "Relying on mere anecdotal claims from a few satisfied users is never sufficient to justify launching an expensive public health initiative."
+    ],
+    "synonyms": [
+      "unverified",
+      "informal",
+      "unsubstantiated",
+      "narrative"
+    ],
+    "mnemonic": "Fondé sur des anecdotes plutôt que sur des preuves statistiques."
+  },
+  "animosity": {
+    "pos": "noun",
+    "definition": "strong hostility, ill will, or active opposition between entities",
+    "definitionFr": "animosité, rancune, hostilité marquée",
+    "sentences": [
+      "The lingering animosity between the two corporate executives made it nearly impossible for their respective departments to collaborate effectively.",
+      "Despite decades of mutual suspicion and political animosity, the rival nations agreed to sign a temporary ceasefire to allow humanitarian aid."
+    ],
+    "synonyms": [
+      "hostility",
+      "enmity",
+      "antagonism",
+      "rancor"
+    ],
+    "mnemonic": "L'animosité, c'est l'inimitié active."
+  },
+  "antagonistic": {
+    "pos": "adj.",
+    "definition": "showing or feeling active opposition or hostility toward someone",
+    "definitionFr": "antagoniste, hostile, opposé",
+    "sentences": [
+      "The attorney adopted an antagonistic tone toward the hostile witness, challenging every assertion made during the contentious cross-examination.",
+      "Constantly adopting an antagonistic attitude toward constructive feedback will only alienate your colleagues and impede your professional growth."
+    ],
+    "synonyms": [
+      "hostile",
+      "adversarial",
+      "combative",
+      "opposed"
+    ],
+    "mnemonic": "L'antagoniste est le rival hostile dans une histoire."
+  },
+  "antiquated": {
+    "pos": "adj.",
+    "definition": "old-fashioned, outdated, or no longer suitable for modern times",
+    "definitionFr": "désuet, démodé, vétuste",
+    "sentences": [
+      "The hospital desperately needed modern computing systems, as its antiquated paper filing method frequently caused dangerous administrative delays.",
+      "Many younger employees criticized the company's dress code as antiquated, arguing that formal business attire had no bearing on productivity."
+    ],
+    "synonyms": [
+      "outdated",
+      "obsolete",
+      "archaic",
+      "outmoded"
+    ],
+    "mnemonic": "Antique, digne d'une antiquité dépassée."
+  },
+  "apathetic": {
+    "pos": "adj.",
+    "definition": "showing or feeling lack of interest, enthusiasm, or concern",
+    "definitionFr": "apathique, indifférent, désabusé",
+    "sentences": [
+      "Voters had grown so apathetic after years of empty political promises that turnout dropped to an all-time low in the municipal election.",
+      "The teacher tried various interactive games to engage her students, but the exhausted teenagers remained largely apathetic throughout the morning lecture."
+    ],
+    "synonyms": [
+      "indifferent",
+      "unconcerned",
+      "lethargic",
+      "impassive"
+    ],
+    "mnemonic": "Apathie : absence de pathos (émotion, intérêt)."
+  },
+  "appease": {
+    "pos": "verb",
+    "definition": "to pacify or placate someone by making concessions",
+    "definitionFr": "apaiser en cédant, calmer par des concessions",
+    "sentences": [
+      "In an attempt to appease angry demonstrators, the mayor announced immediate reforms to address police oversight and community safety.",
+      "Offering minor tax exemptions did little to appease the frustrated union leaders, who insisted on substantial wage increases for all workers."
+    ],
+    "synonyms": [
+      "placate",
+      "pacify",
+      "mollify",
+      "conciliate"
+    ],
+    "mnemonic": "Appease = apaiser (souvent historiquement par des concessions)."
+  },
+  "apprehensive": {
+    "pos": "adj.",
+    "definition": "anxious or fearful that something bad will happen",
+    "definitionFr": "appréhensif, inquiet, anxieux",
+    "sentences": [
+      "First-time homeowners felt deeply apprehensive about rising mortgage rates, fearing they might be unable to manage their monthly mortgage payments.",
+      "She was visibly apprehensive before stepping onto the stage, but her nervousness vanished the moment the audience applauded warmly."
+    ],
+    "synonyms": [
+      "anxious",
+      "fearful",
+      "uneasy",
+      "trepidatious"
+    ],
+    "mnemonic": "Avoir de l'appréhension face à l'avenir."
+  },
+  "appropriate": {
+    "pos": "verb",
+    "definition": "to take for one's own use; allocate",
+    "definitionFr": "s'approprier (sans droit) ; affecter des fonds",
+    "sentences": [
+      "The corrupt official attempted to appropriate state funds for his lavish private estate before auditors uncovered the illicit transfers.",
+      "Congress voted overwhelmingly to appropriate fifty million dollars in emergency funds for urgent disaster relief following the devastating coastal hurricane."
+    ],
+    "synonyms": [
+      "seize",
+      "commandeer",
+      "allocate",
+      "requisition"
+    ],
+    "mnemonic": "En tant que verbe, prononcé /-eɪt/ : s'approprier ou allouer des crédits."
+  },
+  "archaic": {
+    "pos": "adj.",
+    "definition": "very old, belonging to an earlier period, no longer current",
+    "definitionFr": "archaïque, désuet, primitif",
+    "sentences": [
+      "The legal document was filled with archaic terms like 'heretofore' and 'whereupon' that modern readers found completely incomprehensible.",
+      "Relying on archaic banking software exposed the financial institution to security vulnerabilities that modern cybersecurity systems easily prevent."
+    ],
+    "synonyms": [
+      "ancient",
+      "antiquated",
+      "obsolete",
+      "primitive"
+    ],
+    "mnemonic": "Archaïque : qui appartient à un âge ancien."
+  },
+  "arduous": {
+    "pos": "adj.",
+    "definition": "involving or requiring strenuous effort; difficult and tiring",
+    "definitionFr": "ardu, éprouvant, laborieux",
+    "sentences": [
+      "The explorers embarked on an arduous journey across the frozen Arctic tundra, enduring frostbite and fierce blizzards for six weeks.",
+      "Drafting a comprehensive constitutional reform proved to be an arduous task that required endless compromises among rival political factions."
+    ],
+    "synonyms": [
+      "strenuous",
+      "laborious",
+      "taxing",
+      "onerous"
+    ],
+    "mnemonic": "Ardu : difficile et pénible."
+  },
+  "assertive": {
+    "pos": "adj.",
+    "definition": "having or showing a confident, forceful, and self-assured personality",
+    "definitionFr": "assuré, ferme, qui s'affirme",
+    "sentences": [
+      "To succeed in high-stakes corporate negotiations, one must be assertive without crossing the delicate line into rude aggressiveness.",
+      "The therapist encouraged the timid client to adopt more assertive communication strategies when expressing his personal boundaries at work."
+    ],
+    "synonyms": [
+      "confident",
+      "forceful",
+      "decisive",
+      "firm"
+    ],
+    "mnemonic": "To assert (affirmer) -> assertive (qui s'affirme avec assurance)."
+  },
+  "astronomical": {
+    "pos": "adj.",
+    "definition": "relating to astronomy; extraordinarily or exceedingly large",
+    "definitionFr": "astronomique, gigantesque, exorbitant",
+    "sentences": [
+      "The cost of building the new underground transit line escalated to astronomical figures that far exceeded initial municipal projections.",
+      "Purchasing a penthouse in central Manhattan requires an astronomical amount of wealth that only a few billionaires possess."
+    ],
+    "synonyms": [
+      "colossal",
+      "enormous",
+      "immense",
+      "mammoth"
+    ],
+    "mnemonic": "Aussi grand que les distances en astronomie."
+  },
+  "astute": {
+    "pos": "adj.",
+    "definition": "having or showing an ability to accurately assess situations",
+    "definitionFr": "astucieux, perspicace, clairvoyant",
+    "sentences": [
+      "Thanks to her astute financial investments during the market downturn, the entrepreneur doubled her venture capital within two years.",
+      "An astute political observer noticed that the minister's subtle choice of words signaled an imminent change in foreign policy."
+    ],
+    "synonyms": [
+      "shrewd",
+      "perceptive",
+      "sharp",
+      "discerning"
+    ],
+    "mnemonic": "Astucieux au sens de très fin d'esprit et perspicace."
+  },
+  "augment": {
+    "pos": "verb",
+    "definition": "to make something greater by adding to it; increase",
+    "definitionFr": "augmenter, accroître, renforcer",
+    "sentences": [
+      "Many freelance workers take on evening tutoring jobs to augment their regular income and cope with rising living expenses.",
+      "The museum decided to augment its permanent art collection by acquiring several valuable masterpieces from prominent twentieth-century sculptors."
+    ],
+    "synonyms": [
+      "increase",
+      "expand",
+      "enhance",
+      "supplement"
+    ],
+    "mnemonic": "Augmenter : ajouter pour rendre plus grand."
+  },
+  "auspicious": {
+    "pos": "adj.",
+    "definition": "conducive to success; favorable, promising good fortune",
+    "definitionFr": "de bon augure, propice, prometteur",
+    "sentences": [
+      "Winning the first three matches of the season was an auspicious beginning for the newly appointed head soccer coach.",
+      "A bright and sunny morning provided an auspicious start to the outdoor wedding, delighting the nervous bride and groom."
+    ],
+    "synonyms": [
+      "promising",
+      "propitious",
+      "favorable",
+      "providential"
+    ],
+    "mnemonic": "Sous de bons auspices : de bon augure."
+  },
+  "austere": {
+    "pos": "adj.",
+    "definition": "severe, strict in manner; plain and unadorned in appearance",
+    "definitionFr": "austère, sévère, dépouillé",
+    "sentences": [
+      "The monastery rooms were remarkably austere, containing nothing more than a simple wooden cot, a desk, and plain whitewashed walls.",
+      "Faced with soaring inflation and ballooning deficits, the finance minister introduced austere budget measures that sharply curtailed government spending."
+    ],
+    "synonyms": [
+      "plain",
+      "severe",
+      "ascetic",
+      "unadorned"
+    ],
+    "mnemonic": "Austère : sans fard ni luxe, très sobre ou sévère."
+  },
+  "avarice": {
+    "pos": "noun",
+    "definition": "extreme greed for wealth or material gain",
+    "definitionFr": "avarice, cupidité insatiable",
+    "sentences": [
+      "Driven by insatiable avarice, the corporate tycoon hoarded billions while paying his factory workers wages far below subsistence levels.",
+      "In classic moral literature, excessive avarice is consistently portrayed as a fatal flaw that inevitably destroys wealthy dynasties from within."
+    ],
+    "synonyms": [
+      "greed",
+      "cupidity",
+      "rapacity",
+      "covetousness"
+    ],
+    "mnemonic": "L'avarice : le vice de l'avare de Molière, soif d'argent."
+  },
+  "averse": {
+    "pos": "adj.",
+    "definition": "having a strong dislike of or opposition to something",
+    "definitionFr": "opposé à, hostile à, réticent",
+    "sentences": [
+      "Because he was risk-averse by nature, the cautious investor avoided volatile tech stocks in favor of safe treasury bonds.",
+      "Although many traditional chefs are averse to using molecular gastronomy techniques, innovative culinary pioneers enthusiastically embrace scientific kitchen experimentation."
+    ],
+    "synonyms": [
+      "opposed",
+      "reluctant",
+      "loath",
+      "disinclined"
+    ],
+    "mnemonic": "Averse to = avoir de l'aversion pour."
+  },
+  "avid": {
+    "pos": "adj.",
+    "definition": "having or showing a keen interest in or enthusiasm for",
+    "definitionFr": "avide, passionné, fervent",
+    "sentences": [
+      "An avid reader since early childhood, Maria finished at least three dense literary novels each week throughout her summer vacation.",
+      "The young collector was an avid fan of antique postage stamps, constantly scouring flea markets for rare nineteenth-century editions."
+    ],
+    "synonyms": [
+      "eager",
+      "enthusiastic",
+      "ardent",
+      "fervent"
+    ],
+    "mnemonic": "Avide de connaissances ou de lecture : passionné."
+  },
+  "banal": {
+    "pos": "adj.",
+    "definition": "so lacking in originality as to be obvious and boring",
+    "definitionFr": "banal, fade, dépourvu d'originalité",
+    "sentences": [
+      "Film critics panned the romantic comedy for its banal plot, noting that every twist was entirely predictable from the opening scene.",
+      "Instead of offering groundbreaking solutions to the housing crisis, the politician repeated banal slogans that voters had heard for years."
+    ],
+    "synonyms": [
+      "trite",
+      "hackneyed",
+      "platitudinous",
+      "pedestrian"
+    ],
+    "mnemonic": "Banal en français : ordinaire, rebattu."
+  },
+  "benevolent": {
+    "pos": "adj.",
+    "definition": "well meaning, kindly, and dedicated to charitable acts",
+    "definitionFr": "bienveillant, charitable, généreux",
+    "sentences": [
+      "The benevolent ruler established free schools and hospitals throughout his kingdom, earning the enduring love of his grateful subjects.",
+      "Behind her stern demeanor lay a benevolent heart that frequently motivated her to anonymously fund scholarships for disadvantaged college students."
+    ],
+    "synonyms": [
+      "kindly",
+      "charitable",
+      "benign",
+      "altruistic"
+    ],
+    "mnemonic": "Bene (bien) + volent (vouloir) : qui veut le bien d'autrui."
+  },
+  "benign": {
+    "pos": "adj.",
+    "definition": "gentle, harmless, kindly, or not malignant in medical terms",
+    "definitionFr": "bénin, inoffensif, doux",
+    "sentences": [
+      "The patient breathed a huge sigh of relief when the biopsy revealed that the small tumor was entirely benign and harmless.",
+      "The island's benign climate, with mild temperatures and gentle sea breezes year-round, made it a popular haven for retired couples."
+    ],
+    "synonyms": [
+      "harmless",
+      "gentle",
+      "innocuous",
+      "nonmalignant"
+    ],
+    "mnemonic": "Bénin : qui n'est pas grave ou dangereux."
+  },
+  "bias": {
+    "pos": "noun",
+    "definition": "prejudice in favor of or against one thing or group",
+    "definitionFr": "biais, parti pris, préjugé",
+    "sentences": [
+      "The study was rejected by scientific peers because the researchers had exhibited an obvious confirmation bias while interpreting experimental data.",
+      "To ensure a fair trial, the judge dismissed potential jurors who displayed any personal bias toward the high-profile defendant."
+    ],
+    "synonyms": [
+      "prejudice",
+      "partiality",
+      "predilection",
+      "slant"
+    ],
+    "mnemonic": "Un biais cognitif : une inclinaison d'un côté."
+  },
+  "brusque": {
+    "pos": "adj.",
+    "definition": "abrupt or offhand in speech or manner",
+    "definitionFr": "brusque, sec, expéditif",
+    "sentences": [
+      "The surgeon's brusque manner often upset anxious patients, even though her surgical expertise was universally admired across the hospital staff.",
+      "Offended by the waiter's brusque response to a simple question, the diner decided not to leave any monetary tip."
+    ],
+    "synonyms": [
+      "curt",
+      "abrupt",
+      "blunt",
+      "terse"
+    ],
+    "mnemonic": "Même mot en français : quelqu'un de brusque, cassant."
+  },
+  "bureaucracy": {
+    "pos": "noun",
+    "definition": "a system of administration characterized by rigid and complex procedures",
+    "definitionFr": "bureaucratie, lourdeur administrative",
+    "sentences": [
+      "Entrepreneurs complained that excessive governmental bureaucracy and convoluted permit procedures discouraged foreign investors from launching new businesses in the city.",
+      "Navigating the hospital's tangled bureaucracy took months of paperwork before the patient could finally receive insurance approval for specialized surgery."
+    ],
+    "synonyms": [
+      "red tape",
+      "administration",
+      "officialdom",
+      "regimentation"
+    ],
+    "mnemonic": "Le règne des bureaux et des formulaires administratifs."
+  },
+  "captivating": {
+    "pos": "adj.",
+    "definition": "capable of attracting and holding interest; charming, enchanting",
+    "definitionFr": "captivant, fascinant, envoûtant",
+    "sentences": [
+      "The novelist wove a captivating mystery that held readers spellbound until the final surprising revelation on the last page.",
+      "Her captivating singing performance silenced the noisy auditorium, leaving the audience utterly mesmerized for the duration of the concert."
+    ],
+    "synonyms": [
+      "entrancing",
+      "fascinating",
+      "beguiling",
+      "enchanting"
+    ],
+    "mnemonic": "Qui captive l'attention : impossible d'en détacher les yeux."
+  },
+  "celestial": {
+    "pos": "adj.",
+    "definition": "positioned in or relating to the sky, outer space, or heaven",
+    "definitionFr": "céleste, astronomique, divin",
+    "sentences": [
+      "Ancient navigators relied on the positions of celestial bodies like the North Star to guide their wooden ships across oceans.",
+      "The choir's performance in the ancient cathedral had a celestial beauty that moved many listeners to tears of profound joy."
+    ],
+    "synonyms": [
+      "heavenly",
+      "astronomical",
+      "stellar",
+      "ethereal"
+    ],
+    "mnemonic": "Céleste : du ciel et des étoiles."
+  },
+  "cerebral": {
+    "pos": "adj.",
+    "definition": "intellectual rather than emotional or physical; relating to the brain",
+    "definitionFr": "cérébral, intellectuel, réfléchi",
+    "sentences": [
+      "While some viewers prefer action thrillers, others appreciate cerebral films that explore philosophical paradoxes and complex psychological dilemmas.",
+      "The chess grandmaster was renowned for his cerebral playing style, outmaneuvering opponents through deep theoretical preparation rather than reckless aggression."
+    ],
+    "synonyms": [
+      "intellectual",
+      "analytical",
+      "erudite",
+      "academic"
+    ],
+    "mnemonic": "Qui fait appel au cerveau plutôt qu'aux émotions."
+  },
+  "certitude": {
+    "pos": "noun",
+    "definition": "absolute certainty or conviction that something is the case",
+    "definitionFr": "certitude absolue, conviction inébranlable",
+    "sentences": [
+      "He spoke with such absolute certitude about the economic forecast that few audience members dared to question his bold conclusions.",
+      "Scientific inquiry requires intellectual modesty, because what is held as dogmatic certitude today may be overturned by tomorrow's empirical discoveries."
+    ],
+    "synonyms": [
+      "certainty",
+      "conviction",
+      "assurance",
+      "confidence"
+    ],
+    "mnemonic": "Certitude absolue : absence de doute."
+  },
+  "charismatic": {
+    "pos": "adj.",
+    "definition": "exercising a compelling charm that inspires devotion in others",
+    "definitionFr": "charismatique, fascinant, séduisant",
+    "sentences": [
+      "The charismatic political leader could electrify a crowd of thousands within minutes simply by walking onto the campaign stage.",
+      "Despite his charismatic personality and engaging public presence, the CEO failed to deliver on his ambitious operational promises to shareholders."
+    ],
+    "synonyms": [
+      "charming",
+      "magnetic",
+      "captivating",
+      "persuasive"
+    ],
+    "mnemonic": "Doté d'un charisme naturel qui attire les foules."
+  },
+  "civil": {
+    "pos": "adj.",
+    "definition": "courteous and polite; relating to ordinary citizens rather than military",
+    "definitionFr": "courtois, poli ; civil (relatif aux citoyens)",
+    "sentences": [
+      "Despite their bitter disagreements during the debate, the two political rivals managed to remain civil and shake hands afterwards.",
+      "Human rights organizations monitor civil liberties to guarantee that peaceful protesters are not unjustly detained by authoritarian state authorities."
+    ],
+    "synonyms": [
+      "polite",
+      "courteous",
+      "civic",
+      "cordial"
+    ],
+    "mnemonic": "Civilisé et poli, ou relatif aux citoyens (droit civil)."
+  },
+  "clan": {
+    "pos": "noun",
+    "definition": "a group of close-knit families or people with common interests",
+    "definitionFr": "clan, tribu, groupe soudé",
+    "sentences": [
+      "Every summer, the extended family clan gathered at the ancestral lakeside cabin to celebrate birthdays and preserve old genealogical traditions.",
+      "The rival political clan controlled municipal offices for decades, rewarding loyal members with lucrative government contracts and administrative appointments."
+    ],
+    "synonyms": [
+      "tribe",
+      "faction",
+      "clique",
+      "dynasty"
+    ],
+    "mnemonic": "Un clan écossais ou un clan familial très fermé."
+  },
+  "coerce": {
+    "pos": "verb",
+    "definition": "to persuade an unwilling person to do something using threats",
+    "definitionFr": "contraindre par la force ou la menace",
+    "sentences": [
+      "The ruthless blackmailer attempted to coerce the prominent executive into transferring confidential corporate files under threat of public scandal.",
+      "International law strictly prohibits authoritarian regimes from using torture or psychological intimidation to coerce confessions from political prisoners."
+    ],
+    "synonyms": [
+      "compel",
+      "force",
+      "pressurize",
+      "extort"
+    ],
+    "mnemonic": "Coercition : forcer quelqu'un contre sa volonté."
+  },
+  "cohesive": {
+    "pos": "adj.",
+    "definition": "forming a united, well-integrated whole; tightly bonded",
+    "definitionFr": "cohésif, uni, soudé",
+    "sentences": [
+      "Effective team-building workshops helped transform the fragmented group of software engineers into a cohesive and productive working unit.",
+      "The editor praised the essay for presenting a cohesive argument where each paragraph logically supported the author's primary thesis statement."
+    ],
+    "synonyms": [
+      "unified",
+      "integrated",
+      "coherent",
+      "connected"
+    ],
+    "mnemonic": "Qui a de la cohésion : les parties tiennent bien ensemble."
+  },
+  "collaborative": {
+    "pos": "adj.",
+    "definition": "produced or conducted by two or more parties working together",
+    "definitionFr": "collaboratif, concerté, collectif",
+    "sentences": [
+      "Modern scientific breakthroughs increasingly require collaborative research efforts involving universities, industrial partners, and laboratory facilities across multiple continents.",
+      "The students achieved an outstanding project score because their collaborative attitude allowed each team member to contribute unique artistic skills."
+    ],
+    "synonyms": [
+      "cooperative",
+      "collective",
+      "joint",
+      "shared"
+    ],
+    "mnemonic": "Collaborer : travailler ensemble vers un but commun."
+  },
+  "comradery": {
+    "pos": "noun",
+    "definition": "mutual trust and friendship among people who spend time together",
+    "definitionFr": "camaraderie, fraternité, esprit de corps",
+    "sentences": [
+      "After enduring months of grueling training exercises in freezing weather, the soldiers developed a profound comradery that lasted lifelong.",
+      "The vibrant comradery among the theater cast members was clearly evident in the warmth and humor they displayed backstage."
+    ],
+    "synonyms": [
+      "camaraderie",
+      "fellowship",
+      "brotherhood",
+      "solidarity"
+    ],
+    "mnemonic": "Variante orthographique de camaraderie en anglais."
+  },
+  "concise": {
+    "pos": "adj.",
+    "definition": "giving a lot of information clearly and in few words",
+    "definitionFr": "concis, succinct, bref et précis",
+    "sentences": [
+      "The executive praised the junior analyst for writing a concise memo that summarized fifty pages of financial data onto one sheet.",
+      "When presenting during brief elevator pitches, entrepreneurs must deliver a concise explanation of their business model within ninety seconds."
+    ],
+    "synonyms": [
+      "succinct",
+      "brief",
+      "terse",
+      "pithy"
+    ],
+    "mnemonic": "Concis : va droit au but sans mots superflus."
+  },
+  "concoct": {
+    "pos": "verb",
+    "definition": "to create or devise a story, plan, or mixture",
+    "definitionFr": "concocter, échafauder, inventer",
+    "sentences": [
+      "To avoid getting grounded for missing curfew, the guilty teenager attempted to concoct an absurd story about an alien abduction.",
+      "The inventive chef managed to concoct an exquisite savory sauce using wild berries, honey, and a splash of vintage balsamic vinegar."
+    ],
+    "synonyms": [
+      "devise",
+      "fabricate",
+      "invent",
+      "formulate"
+    ],
+    "mnemonic": "Concocter une recette ou une histoire inventée de toutes pièces."
+  },
+  "condemn": {
+    "pos": "verb",
+    "definition": "to express complete disapproval of; sentence to punishment",
+    "definitionFr": "condamner, réprouver publiquement",
+    "sentences": [
+      "Leaders from around the globe gathered to condemn the unprovoked military aggression launched against a peaceful neighboring sovereign democracy.",
+      "City building inspectors were forced to condemn the decaying tenement building after discovering severe structural flaws that endangered tenants."
+    ],
+    "synonyms": [
+      "denounce",
+      "censure",
+      "criticize",
+      "sentence"
+    ],
+    "mnemonic": "Condamner moralement ou juridiquement."
+  },
+  "connoisseur": {
+    "pos": "noun",
+    "definition": "an expert judge in matters of taste or fine arts",
+    "definitionFr": "connaisseur, expert avisé, dégustateur",
+    "sentences": [
+      "As a recognized wine connoisseur, Jacques could identify the vintage and specific vineyard of a vintage bottle from a single sip.",
+      "The wealthy art connoisseur spent decades curating an unmatched collection of rare impressionist paintings inside his private urban gallery."
+    ],
+    "synonyms": [
+      "expert",
+      "aficionado",
+      "specialist",
+      "authority"
+    ],
+    "mnemonic": "Emprunté au français « connaisseur »."
+  },
+  "connotation": {
+    "pos": "noun",
+    "definition": "an idea or feeling that a word invokes beyond its literal meaning",
+    "definitionFr": "connotation, nuance suggestive d'un mot",
+    "sentences": [
+      "While 'frugal' and 'cheap' both denote spending little money, the latter word carries an overwhelmingly negative connotation of stinginess.",
+      "Careful writers pay close attention to connotation, ensuring that subtle emotional associations do not contradict the intended tone of an essay."
+    ],
+    "synonyms": [
+      "implication",
+      "undertone",
+      "nuance",
+      "suggestion"
+    ],
+    "mnemonic": "Connotation vs dénotation (sens littéral)."
+  },
+  "consensus": {
+    "pos": "noun",
+    "definition": "a general agreement reached by a group as a whole",
+    "definitionFr": "consensus, accord général",
+    "sentences": [
+      "After hours of heated debate among committee members, a broad consensus emerged regarding how to allocate the remaining grant money.",
+      "There is now an overwhelming scientific consensus that human industrial activities are driving dangerous disruptions across global climate patterns."
+    ],
+    "synonyms": [
+      "agreement",
+      "unanimity",
+      "concord",
+      "accord"
+    ],
+    "mnemonic": "Un consensus : accord de tous les esprits (cum + sentire)."
+  },
+  "conservative": {
+    "pos": "adj.",
+    "definition": "averse to change; holding traditional or cautious values",
+    "definitionFr": "conservateur, prudent, traditionnel",
+    "sentences": [
+      "The accountant recommended a conservative financial forecast, estimating revenues modestly to ensure the company would not overextend its budget.",
+      "Older board members favored a conservative corporate strategy, rejecting risky investments in emerging digital technologies until their safety was proven."
+    ],
+    "synonyms": [
+      "traditional",
+      "cautious",
+      "conventional",
+      "moderate"
+    ],
+    "mnemonic": "Qui cherche à conserver l'existant plutôt qu'à risquer la nouveauté."
+  },
+  "considerable": {
+    "pos": "adj.",
+    "definition": "notably large in size, amount, extent, or importance",
+    "definitionFr": "considérable, important, substantiel",
+    "sentences": [
+      "Renovating the historic theater required a considerable financial investment, but the resulting cultural revitalization justified every taxpayer dollar spent.",
+      "She accumulated a considerable amount of practical managerial experience while coordinating complex disaster relief operations across three developing nations."
+    ],
+    "synonyms": [
+      "substantial",
+      "significant",
+      "sizable",
+      "ample"
+    ],
+    "mnemonic": "Considérable : digne d'être considéré, très important."
+  },
+  "conspire": {
+    "pos": "verb",
+    "definition": "to make secret plans together to commit an unlawful act",
+    "definitionFr": "conspirer, comploter, conspirer (les événements se liguent)",
+    "sentences": [
+      "Prosecutors proved that the corrupt executives did conspire to artificially inflate stock prices before dumping their shares on unsuspecting investors.",
+      "Torrential downpours, mechanical failures, and lost luggage seemed to conspire against the family, ruining what was supposed to be a relaxing vacation."
+    ],
+    "synonyms": [
+      "plot",
+      "scheme",
+      "collude",
+      "connive"
+    ],
+    "mnemonic": "Conspirer : respirer ensemble (au secret) pour comploter."
+  },
+  "constrain": {
+    "pos": "verb",
+    "definition": "to severely restrict the scope, extent, or activity of",
+    "definitionFr": "contraindre, limiter, restreindre",
+    "sentences": [
+      "Severe budgetary limits constrain the school district from hiring additional specialized counselors to support students experiencing emotional distress.",
+      "Tight deadlines and limited computing resources often constrain software developers, forcing them to postpone nonessential platform features until later releases."
+    ],
+    "synonyms": [
+      "restrict",
+      "limit",
+      "confine",
+      "curb"
+    ],
+    "mnemonic": "Contraindre : poser des contraintes qui limitent."
+  },
+  "contemporary": {
+    "pos": "adj.",
+    "definition": "living or occurring at the same time; modern in style",
+    "definitionFr": "contemporain, de la même époque, moderne",
+    "sentences": [
+      "While some purists prefer classical sculpture, the city council chose to install contemporary abstract art in the newly renovated public plaza.",
+      "Historians examined contemporary newspaper accounts from 1918 to understand how ordinary citizens perceived the onset of the devastating influenza epidemic."
+    ],
+    "synonyms": [
+      "modern",
+      "current",
+      "present-day",
+      "coexisting"
+    ],
+    "mnemonic": "Con- (avec) + tempus (temps) : du même temps, de notre époque."
+  },
+  "controversial": {
+    "pos": "adj.",
+    "definition": "giving rise or likely to give rise to public disagreement",
+    "definitionFr": "controversé, polémique, litigieux",
+    "sentences": [
+      "The city council approved a controversial zoning policy that sparked heated protests from residential homeowners throughout the quiet neighborhood.",
+      "His controversial opinions regarding human genetic modification provoked fierce debates among leading biological researchers attending the annual international symposium."
+    ],
+    "synonyms": [
+      "contentious",
+      "disputed",
+      "debated",
+      "divisive"
+    ],
+    "mnemonic": "Sujet à controverse : qui fait débat."
+  },
+  "conventional": {
+    "pos": "adj.",
+    "definition": "based on or in accordance with what is generally done",
+    "definitionFr": "conventionnel, classique, conforme aux usages",
+    "sentences": [
+      "Rather than pursuing conventional career paths in finance or corporate law, she chose to become an artisan baker in a rural village.",
+      "Traditional doctors initially doubted the holistic therapy, but subsequent studies demonstrated that it worked just as effectively as conventional treatments."
+    ],
+    "synonyms": [
+      "traditional",
+      "standard",
+      "customary",
+      "orthodox"
+    ],
+    "mnemonic": "Conforme aux conventions établies."
+  },
+  "converge": {
+    "pos": "verb",
+    "definition": "to tend to meet at a point; to come together",
+    "definitionFr": "converger, se rassembler en un même point",
+    "sentences": [
+      "Every autumn, thousands of migrating hawks converge on the mountain ridge to ride the powerful thermal air currents south.",
+      "Although the two economists began from opposing ideological frameworks, their independent empirical models did converge on identical policy recommendations."
+    ],
+    "synonyms": [
+      "meet",
+      "intersect",
+      "merge",
+      "coincide"
+    ],
+    "mnemonic": "Converger vers un point commun."
+  },
+  "copious": {
+    "pos": "adj.",
+    "definition": "abundant in supply or quantity; profuse in yield",
+    "definitionFr": "copieux, abondant, profus",
+    "sentences": [
+      "The diligent medical student took copious notes during every cardiology lecture, filling multiple thick notebooks with detailed physiological diagrams.",
+      "After the tropical storm passed over the island, copious amounts of rainfall caused rivers to overflow and flood surrounding lowlands."
+    ],
+    "synonyms": [
+      "abundant",
+      "plentiful",
+      "profuse",
+      "bountiful"
+    ],
+    "mnemonic": "Copieux comme un repas copieux : en abondance."
+  },
+  "cordial": {
+    "pos": "adj.",
+    "definition": "warm, affectionate, and deeply polite; genial in manner",
+    "definitionFr": "cordial, chaleureux, bienveillant",
+    "sentences": [
+      "The ambassador received a cordial welcome from the foreign dignitaries, establishing a constructive and friendly atmosphere for subsequent diplomatic negotiations.",
+      "Despite being fierce commercial rivals in the marketplace, the two company founders maintained a cordial friendship outside of business hours."
+    ],
+    "synonyms": [
+      "warm",
+      "friendly",
+      "genial",
+      "affable"
+    ],
+    "mnemonic": "Du cœur (cor) : qui vient du cœur, chaleureux."
+  }
+}
