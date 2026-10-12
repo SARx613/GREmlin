@@ -5,6 +5,7 @@ import Button from '../components/Button';
 import Reminders from '../components/Reminders';
 import type { useAccount } from '../hooks/useAccount';
 import { useInstall } from '../hooks/useInstall';
+import { useOffline } from '../hooks/useOffline';
 import { canSpeak, listVoices, speak, voiceScore } from '../lib/speak';
 import { parseProgress } from '../lib/storage';
 import type { Settings as SettingsType } from '../lib/settings';
@@ -62,6 +63,7 @@ const Section = ({ title, children }: { title: string; children: React.ReactNode
 export default function Settings({ settings, onChange, progress, account, onToggleSound, onImport, onReset, onBack }: Props) {
   const fileRef = useRef<HTMLInputElement>(null);
   const app = useInstall();
+  const offline = useOffline();
   // les voix se chargent de façon asynchrone dans certains navigateurs
   const [voices, setVoices] = useState(() => listVoices(settings.accent));
   useEffect(() => {
@@ -113,6 +115,21 @@ export default function Settings({ settings, onChange, progress, account, onTogg
           )}
         </Section>
       )}
+
+      <Section title="Hors ligne">
+        {offline.state === 'ready' ? (
+          <p className="text-muted">✓ Tout est téléchargé sur cet appareil : GREmlin fonctionne sans connexion (la synchronisation du compte reprend au retour du réseau).</p>
+        ) : offline.state === 'checking' ? (
+          <p className="text-muted">Téléchargement de l'app en cours…</p>
+        ) : (
+          <p className="text-muted">Le mode hors ligne n'est disponible que sur la version publiée de l'app, ouverte une première fois avec du réseau.</p>
+        )}
+        {offline.state === 'ready' && (
+          <Button className="mt-3 flex items-center gap-2" disabled={offline.updating || !offline.online} onClick={() => void offline.refresh()}>
+            <Download size={18} /> {offline.updating ? 'Recherche…' : 'Vérifier les mises à jour'}
+          </Button>
+        )}
+      </Section>
 
       <Section title="Apparence">
         <Choice

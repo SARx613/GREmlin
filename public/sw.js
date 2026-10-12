@@ -1,8 +1,13 @@
-// Service worker minimal : l'app fonctionne hors ligne après la première visite.
+// Service worker : l'app est téléchargée EN ENTIER à l'installation, puis fonctionne sans réseau.
+// - installation : tous les fichiers du build (JS, CSS, polices, icônes) sont mis en cache d'un coup
+//   (la liste et la version sont injectées par le plugin « precache » de vite.config.ts)
 // - pages : réseau d'abord (pour recevoir les mises à jour), cache en secours
-// - assets (JS/CSS hachés, icônes, polices) : cache d'abord, rempli au fil de l'eau
-const CACHE = 'gremlin-v3';
-const SHELL = ['/', '/manifest.webmanifest', '/favicon.svg', '/icon-192.png'];
+// - assets : cache d'abord
+const BUILD = '__BUILD__';
+const CACHE = 'gremlin-' + BUILD;
+// ignoreVary : les modules ES envoient un en-tête Origin que le cache ne retrouverait pas sinon (Vary: Origin)
+const MATCH = { ignoreVary: true };
+const SHELL = ['/', ...JSON.parse('__PRECACHE__')];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)));
@@ -18,15 +23,12 @@ self.addEventListener('activate', (e) => {
   );
 });
 
-const FONT_HOSTS = ['fonts.googleapis.com', 'fonts.gstatic.com'];
-
 self.addEventListener('fetch', (e) => {
   const req = e.request;
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
-  const sameOrigin = url.origin === self.location.origin;
-  if (!sameOrigin && !FONT_HOSTS.includes(url.hostname)) return;
-  if (sameOrigin && url.pathname.startsWith('/api/')) return; // jamais d'API en cache
+  if (url.origin !== self.location.origin) return;
+  if (url.pathname.startsWith('/api/')) return; // jamais d'API en cache
 
   if (req.mode === 'navigate') {
     e.respondWith(
@@ -36,17 +38,17 @@ self.addEventListener('fetch', (e) => {
           caches.open(CACHE).then((c) => c.put('/', copy));
           return res;
         })
-        .catch(() => caches.match('/')),
+        .catch(() => caches.match('/', MATCH)),
     );
     return;
   }
 
   e.respondWith(
-    caches.match(req).then(
+    caches.match(req, MATCH).then(
       (hit) =>
         hit ||
         fetch(req).then((res) => {
-          if (res.ok || res.type === 'opaque') {
+          if (res.ok) {
             const copy = res.clone();
             caches.open(CACHE).then((c) => c.put(req, copy));
           }
