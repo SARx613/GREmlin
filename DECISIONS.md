@@ -37,3 +37,11 @@
 - **Favoris ★** : synchronisés avec le compte (union des deux côtés lors de la fusion) ; révision en un clic (10 mots max par leçon).
 - **Blitz** : 60 s de QCM éclair sur les mots déjà travaillés (tout le vocabulaire si moins de 12). +1 point, ×2 dès 5 bonnes réponses d'affilée, −2 s par erreur. N'altère pas les boîtes de répétition ; le record est synchronisé.
 - **Dictée** : le mot est prononcé, on l'écrit (boîte 4+, seulement si le son est actif). **Succès** : calculés à partir de la progression, rien de plus à stocker. **Installation** : bouton dans les réglages (événement `beforeinstallprompt`, consigne pour iPhone).
+
+## Méthode express (tri global, leçons ciblées, phrases GRE)
+
+- **Tri express** : un seul paquet de flashcards sur les 1 134 mots (mélangé, figé à l'ouverture). Glisser ≥ 90 px ou ← / → ; toucher/espace retourne la carte ; retour arrière annule. Réutilise `markKnown` / `markUnknown` : « je connais » = boîte 4 (donc compté maîtrisé), « à apprendre » = pile prioritaire. Le *contrôle* (`verified`) permet de revérifier les « connus » qu'aucune leçon n'a testés (swipe par erreur).
+- **Leçon « Apprendre »** (`mode: 'learn'`) : jusqu'à 8 mots triés « à apprendre » tous chapitres confondus, complétés par les mots dus (10 max).
+- **Phrases GRE** : questions générées à la volée à partir des 2 phrases de chaque mot (Text Completion 5 choix ; Sentence Equivalence 6 choix dont mot + un synonyme). Ordre de priorité : « à apprendre », en cours, jamais vus ; les mots connus/maîtrisés sont écartés. Distracteurs pris dans cette même pile (même nature, jamais apparentés). Série de 10 ; une erreur revient une fois avec une autre phrase, une 2e erreur clôt la question (liste « à retravailler »). Comme le Blitz, ne modifie pas les boîtes de répétition.
+- **Mots difficiles dans les phrases** (`lexicon.ts`) : les mots du vocabulaire (formes régulières : -s, -ed, -ing, -ly…) sont soulignés et cliquables ; la fiche permet d'ajouter un mot non trié à la pile « à apprendre ».
+- **Limite connue** : 2 phrases par mot seulement, donc la banque de phrases s'épuise vite sur une petite pile ; à enrichir dans `data/batches`.

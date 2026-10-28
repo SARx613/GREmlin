@@ -215,3 +215,46 @@ test('succès : la liste s\'affiche sur l\'écran de statistiques', async ({ pag
   await expect(page.getByText('Succès · 0 / 14')).toBeVisible();
   await expect(page.getByText('Première leçon')).toBeVisible();
 });
+
+const saved = (page: Page) => page.evaluate(() => JSON.parse(localStorage.getItem('gre-progress-v1')!));
+
+test('tri express : ← / → trient tous les mots, annuler défait, la pile « à apprendre » nourrit la leçon', async ({ page }) => {
+  await page.goto('/');
+  await page.getByText('Tri express · flashcards').click();
+  await expect(page.getByText('1 / 1134')).toBeVisible();
+  await page.keyboard.press('ArrowRight');
+  await page.keyboard.press('ArrowLeft');
+  await page.keyboard.press('ArrowLeft');
+  let p = await saved(page);
+  const states = Object.values<{ known: boolean }>(p.words).map((w) => w.known);
+  expect(states).toEqual([true, false, false]);
+  await page.keyboard.press('Backspace');
+  p = await saved(page);
+  expect(Object.keys(p.words)).toHaveLength(2);
+  await page.getByRole('button', { name: 'Retour' }).click();
+  await expect(page.getByText('1132 mots à trier')).toBeVisible();
+  await page.getByRole('button', { name: /Apprendre mes mots · 1 à apprendre/ }).click();
+  await expect(page.getByText('Nouveau mot')).toBeVisible();
+});
+
+test('phrases GRE : série de 10, mot souligné cliquable, erreurs listées à la fin', async ({ page }) => {
+  await page.goto('/');
+  await page.getByText('Phrases GRE', { exact: true }).click();
+  await page.getByRole('button', { name: '10 phrases' }).click();
+  await expect(page.getByRole('progressbar')).toBeVisible();
+  for (let i = 0; i < 80 && !(await page.getByText('Série terminée').count()); i++) {
+    const two = (await page.locator('main h2').first().innerText()).toLowerCase().includes('2 mots');
+    if (i === 0) {
+      const dotted = page.locator('main button.border-dotted').first();
+      if (await dotted.count()) {
+        await dotted.click();
+        await expect(page.locator('main [aria-live]')).toContainText(/\w+/);
+      }
+    }
+    await page.keyboard.press('1');
+    if (two) await page.keyboard.press('2');
+    await checkThenContinue(page);
+  }
+  await expect(page.getByText('Série terminée')).toBeVisible();
+  await expect(page.getByRole('button', { name: '10 autres phrases' })).toBeVisible();
+});

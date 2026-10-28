@@ -34,6 +34,14 @@ export function pickWords(
     return { ids: dueIds(all, words, now).slice(0, MAX_WORDS), applySrs: true };
   }
 
+  // « Apprendre » : d'abord les mots triés « je ne connais pas », tous chapitres confondus ; les mots dus complètent
+  if (config.mode === 'learn') {
+    const all = data.chapters.flatMap((c) => c.wordIds);
+    const fresh = all.filter((id) => getWP(words, id).box === 0 && getWP(words, id).known === false).slice(0, MAX_NEW);
+    const due = dueIds(all, words, now).slice(0, MAX_WORDS - fresh.length);
+    return { ids: [...due, ...fresh], applySrs: true };
+  }
+
   if (config.mode === 'chapter') {
     const due = dueIds(chapterIds, words, now).slice(0, MAX_WORDS);
     const fresh = newIds(chapterIds, words).slice(0, Math.min(MAX_NEW, MAX_WORDS - due.length));

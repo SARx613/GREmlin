@@ -66,7 +66,7 @@ function indexOf(data: WordsData): Index {
 const lower = (s: string) => s.toLowerCase();
 
 /** Vrai si a et b sont synonymes (dans un sens ou dans l'autre) ou partagent un synonyme. */
-function related(a: Word, b: Word): boolean {
+export function related(a: Word, b: Word): boolean {
   const as = a.synonyms.map(lower);
   const bs = b.synonyms.map(lower);
   return as.includes(lower(b.word)) || bs.includes(lower(a.word)) || as.some((s) => bs.includes(s));

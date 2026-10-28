@@ -21,6 +21,9 @@ import Settings from './screens/Settings';
 import Stats from './screens/Stats';
 import LessonEnd from './screens/LessonEnd';
 import Triage from './screens/Triage';
+import FlashSort from './screens/FlashSort';
+import GreSentences from './screens/GreSentences';
+import type { DeckKind } from './lib/flash';
 import type { LessonConfig, LessonSnapshot, LessonState } from './types';
 
 type Screen =
@@ -32,6 +35,8 @@ type Screen =
   | { name: 'settings' }
   | { name: 'chapter'; chapterId: string }
   | { name: 'triage'; chapterId: string }
+  | { name: 'flash'; kind: DeckKind }
+  | { name: 'gre' }
   | { name: 'lesson'; snapshot: LessonSnapshot }
   | { name: 'end'; config: LessonConfig; result: LessonResult };
 
@@ -153,6 +158,9 @@ export default function App() {
           onBlitz={() => openOtherScreen({ name: 'blitz' })}
           onSprint={() => openOtherScreen({ name: 'sprint' })}
           onSpeedMatch={() => openOtherScreen({ name: 'speedMatch' })}
+          onFlash={(kind) => openOtherScreen({ name: 'flash', kind })}
+          onGre={() => openOtherScreen({ name: 'gre' })}
+          onLearn={() => startLesson({ mode: 'learn' })}
           onStats={() => openOtherScreen({ name: 'stats' })}
           onSettings={() => openOtherScreen({ name: 'settings' })}
           onToggleStar={onToggleStar}
@@ -239,6 +247,30 @@ export default function App() {
         />
       );
       break;
+    case 'flash':
+      view = (
+        <FlashSort
+          key={screen.kind}
+          kind={screen.kind}
+          progress={progress}
+          update={update}
+          onBack={home}
+          onGre={() => setScreen({ name: 'gre' })}
+          onStart={startLesson}
+        />
+      );
+      break;
+    case 'gre':
+      view = (
+        <GreSentences
+          progress={progress}
+          update={update}
+          onBack={home}
+          onSort={() => setScreen({ name: 'flash', kind: 'sort' })}
+          onStart={startLesson}
+        />
+      );
+      break;
     case 'lesson':
       // la clé repart de zéro quand on lance une autre leçon
       view = (
@@ -271,7 +303,7 @@ export default function App() {
   return (
     <>
       <Notices />
-      {screen.name === 'lesson' ? view : <div className="mx-auto min-h-full w-full max-w-[760px] px-3 sm:px-6">{view}</div>}
+      {screen.name === 'lesson' || screen.name === 'gre' ? view : <div className="mx-auto min-h-full w-full max-w-[760px] px-3 sm:px-6">{view}</div>}
     </>
   );
 }

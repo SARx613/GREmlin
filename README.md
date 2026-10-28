@@ -17,6 +17,8 @@ Pour tester le compte Google en local, utiliser `vercel dev` (sert aussi `api/ac
 
 ## Fonctionnalités
 
+**Méthode express** : *Tri express* (les 1 134 mots en flashcards, glisser ou ← / → : « je connais » / « à apprendre ») → *Apprendre mes mots* (leçons uniquement sur la pile « à apprendre », tous chapitres confondus) → *Phrases GRE* (Text Completion à 5 choix et Sentence Equivalence 2 sur 6, avec mots difficiles cliquables dans les phrases).
+
 Leçons thématiques (QCM, phrases à trous, synonymes, Sentence Equivalence, paires, écriture, écoute, dictée) · répétition espacée adaptative · tri « je connais » · mot du jour · favoris ★ · Sprint Traduction (chrono 5 min avec combo et tolérance de frappe) · Speed Match (90 s de paires effrénées) · Blitz 60 s · 46 chapitres équilibrés en 5 séries thématiques · statistiques et succès · recherche et filtres · mode sombre · voix américaine réglable · rappels et mots surprise par notification · compte Google avec synchronisation · installable et utilisable hors ligne.
 
 ## Données

@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import { ArrowRightLeft, BarChart3, BookOpen, Check, Flame, Play, Settings, Shuffle, Star, Timer, Volume2, VolumeX, Zap } from 'lucide-react';
+import { ArrowRightLeft, BarChart3, BookOpen, BookOpenText, Check, Flame, Layers, Play, Settings, Shuffle, Star, Timer, Volume2, VolumeX, Zap } from 'lucide-react';
 import Button from '../components/Button';
 import ProgressBar from '../components/ProgressBar';
 import ThemeExplorer from '../components/ThemeExplorer';
 import WordOfTheDay from '../components/WordOfTheDay';
 import WordSearch from '../components/WordSearch';
 import { data } from '../lib/data';
+import { sortCounts, type DeckKind } from '../lib/flash';
 import { chapterDueCount, chapterProgress, currentStreak, dueIds, masteredCount } from '../lib/srs';
 import { lessonsToday } from '../lib/stats';
 import type { LessonConfig, Progress } from '../types';
@@ -19,6 +20,9 @@ type Props = {
   onReview: () => void;
   onChapter: (id: string) => void;
   onToggleSound: () => void;
+  onFlash: (kind: DeckKind) => void;
+  onGre: () => void;
+  onLearn: () => void;
   onBlitz: () => void;
   onSprint: () => void;
   onSpeedMatch: () => void;
@@ -30,7 +34,7 @@ type Props = {
 
 const iconBtn = 'rounded-xl2 p-2 text-blue-ink transition-colors duration-150 hover:bg-blue-light';
 
-export default function Home({ progress, dailyGoal, hasPending, openWordId, onResume, onReview, onChapter, onToggleSound, onBlitz, onSprint, onSpeedMatch, onStats, onSettings, onToggleStar, onStart }: Props) {
+export default function Home({ progress, dailyGoal, hasPending, openWordId, onResume, onReview, onChapter, onToggleSound, onFlash, onGre, onLearn, onBlitz, onSprint, onSpeedMatch, onStats, onSettings, onToggleStar, onStart }: Props) {
   const now = Date.now();
   const allIds = data.chapters.flatMap((c) => c.wordIds);
   const dueCount = dueIds(allIds, progress.words, now).length;
@@ -38,6 +42,7 @@ export default function Home({ progress, dailyGoal, hasPending, openWordId, onRe
   const groups = [...new Set(data.chapters.map((c) => c.group))];
   const today = lessonsToday(progress.days, now);
   const goalDone = today >= dailyGoal;
+  const counts = sortCounts(data, progress.words);
   const starred = (progress.starred ?? []).filter((id) => data.words[id]);
   const [mainTab, setMainTab] = useState<'chapters' | 'themes'>('chapters');
 
@@ -98,6 +103,52 @@ export default function Home({ progress, dailyGoal, hasPending, openWordId, onRe
         {dueCount ? `Réviser (${dueCount} ${dueCount > 1 ? 'mots dus' : 'mot dû'})` : 'Réviser'}
       </Button>
       {dueCount === 0 && <p className="mt-2 text-center text-sm text-muted">Rien à réviser, reviens demain</p>}
+
+      {/* Méthode express : trier tous les mots, puis ne travailler que ceux qu'on ne connaît pas */}
+      <div className="mt-4 grid gap-2.5">
+        <button
+          type="button"
+          onClick={() => onFlash('sort')}
+          className="flex w-full items-center justify-between gap-3 rounded-xl2 border-2 border-b-4 border-blue bg-blue-light p-3.5 text-left transition-colors duration-150 hover:brightness-95"
+        >
+          <span className="flex items-center gap-3">
+            <Layers size={24} className="text-blue-ink" />
+            <span>
+              <span className="block text-base font-bold text-blue-ink">Tri express · flashcards</span>
+              <span className="block text-xs text-blue-ink">
+                {counts.unsorted > 0 ? `${counts.unsorted} mots à trier : je connais / à apprendre` : `Tout est trié · ${counts.learn} à apprendre`}
+              </span>
+            </span>
+          </span>
+          <span className="shrink-0 text-sm font-bold text-blue-ink">{counts.unsorted > 0 ? 'Trier' : 'Revoir'}</span>
+        </button>
+
+        <button
+          type="button"
+          onClick={onGre}
+          className="flex w-full items-center justify-between gap-3 rounded-xl2 border-2 border-b-4 border-line bg-surface p-3.5 text-left transition-colors duration-150 hover:bg-soft"
+        >
+          <span className="flex items-center gap-3">
+            <BookOpenText size={24} className="text-blue" />
+            <span>
+              <span className="block text-base font-bold text-ink">Phrases GRE</span>
+              <span className="block text-xs text-muted">Complète des phrases avec du vocabulaire difficile</span>
+            </span>
+          </span>
+          <span className="shrink-0 text-sm font-bold text-blue">Jouer</span>
+        </button>
+
+        {counts.learn > 0 && (
+          <Button variant="blue" full onClick={onLearn}>
+            Apprendre mes mots · {counts.learn} à apprendre
+          </Button>
+        )}
+        {counts.check > 0 && counts.unsorted === 0 && (
+          <button type="button" onClick={() => onFlash('check')} className="text-center text-sm font-bold text-blue-ink underline">
+            Revérifier mes {counts.check} mots « connus »
+          </button>
+        )}
+      </div>
 
       {/* Entraînement rapide et jeux */}
       <div className="mt-4 grid gap-2.5">

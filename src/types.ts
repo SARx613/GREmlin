@@ -28,6 +28,7 @@ export type WordProgress = {
   seen: number;
   misses: number;
   known?: boolean; // true = « je connais », false = « je ne connais pas » (prioritaire)
+  verified?: boolean; // « je connais » reconfirmé au contrôle des mots connus
 };
 
 export type Streak = { count: number; lastDay: string | null; best?: number };
@@ -96,7 +97,7 @@ export type Exercise = SingleExercise | PairsExercise;
 
 export type QueueItem = { kind: 'intro'; wordId: string } | { kind: 'ex'; exercise: Exercise };
 
-export type LessonMode = 'chapter' | 'selection' | 'review' | 'free';
+export type LessonMode = 'chapter' | 'selection' | 'review' | 'learn' | 'free';
 
 export type LessonConfig = {
   mode: LessonMode;
